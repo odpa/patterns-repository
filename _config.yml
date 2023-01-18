@@ -1,0 +1,292 @@
+# This is a generated config. Do not mess with it unless you know what you are doing!
+
+author:
+  name: ODPA
+baseurl: /
+description: A Portal for ODPA
+markdown: GFM
+collections:
+  ActingFor:
+    output: true
+  Action:
+    output: true
+  AffectedBy:
+    output: true
+  Affordance:
+    output: true
+  AgentRole:
+    output: true
+  Airline:
+    output: true
+  Airline.owl:
+    output: true
+  An_Ontology_Design_Pattern_for_Activity_Reasoning:
+    output: true
+  AOS_AGROVOC_Concept_Server_fundation_ontology_model:
+    output: true
+  AquaticResourceObservation:
+    output: true
+  AquaticResources:
+    output: true
+  Bag:
+    output: true
+  BasicPlan:
+    output: true
+  BasicPlanExecution:
+    output: true
+  Biological_Entities:
+    output: true
+  Born_Digital_Archives:
+    output: true
+  CatchRecord:
+    output: true
+  Classification:
+    output: true
+  ClimaticZone:
+    output: true
+  Co-participation:
+    output: true
+  Collection:
+    output: true
+  CollectionEntity:
+    output: true
+  CommunicationEvent:
+    output: true
+  Communities:
+    output: true
+  Componency:
+    output: true
+  Computer_System:
+    output: true
+  ConceptTerms:
+    output: true
+  Constituency:
+    output: true
+  ContextualizedWinstonPartWhole:
+    output: true
+  Controlflow:
+    output: true
+  COP:
+    output: true
+  CountingAs:
+    output: true
+  Course:
+    output: true
+  DataTransformationPattern:
+    output: true
+  Description:
+    output: true
+  DescriptionAndSituation:
+    output: true
+  DigitalVideo:
+    output: true
+  EthnicGroup:
+    output: true
+  EventCore:
+    output: true
+  EventProcessing:
+    output: true
+  Experience_&_Observation:
+    output: true
+  GearSpecies:
+    output: true
+  GearVessel:
+    output: true
+  GearWaterArea:
+    output: true
+  GO_Top:
+    output: true
+  HistoricalMap:
+    output: true
+  InformationObjectsAndRepresentationLanguages:
+    output: true
+  IntensionExtension:
+    output: true
+  Invoice:
+    output: true
+  LCA_Pattern:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Co-participation_ODP:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_LocationODP:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Multiple_Inheritance_ODP:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object-Role_ODP:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_and_Universal_Restriction_ODPs:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_or_Datatype_Property_or_Simple_Part-Whole_relation_ODPs:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Simple_Part-Whole_relation_%22or%22_Constituency_%22or%22_Componency_%22or%22_Collection-Entity_ODPs: 
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Specified_Values_ODP:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_%22or%22_Simple_Part-Whole_relation_ODPs:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Datatype_Property_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Disjoint_Classes_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Object_Property_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Participation_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP:
+    output: true
+  LinnaeanTaxonomy:
+    output: true
+  List:
+    output: true
+  Literal_Reification:
+    output: true
+  Material_Transformation:
+    output: true
+  Move:
+    output: true
+  Musicalobject:
+    output: true
+  Nary_Participation:
+    output: true
+  NewsReportingEvent:
+    output: true
+  Notepattern:
+    output: true
+  Objectrole:
+    output: true
+  Object_with_states:
+    output: true
+  Observation:
+    output: true
+  OOPMetrics:
+    output: true
+  Parameter:
+    output: true
+  ParticipantRole:
+    output: true
+  Participation:
+    output: true
+  PartOf:
+    output: true
+  PeriodicInterval:
+    output: true
+  Persons:
+    output: true
+  PharmaInnova:
+    output: true
+  Place:
+    output: true
+  PlanConditions:
+    output: true
+  Policy:
+    output: true
+  Pollution:
+    output: true
+  Price:
+    output: true
+  Reactor_pattern:
+    output: true
+  RecurrentSituationSeries:
+    output: true
+  Region:
+    output: true
+  ResourceAbundanceObservation:
+    output: true
+  ResourceExploitationObservation:
+    output: true
+  Role_task:
+    output: true
+  RTMSmapping:
+    output: true
+  Scorepart:
+    output: true
+  Sequence:
+    output: true
+  Set:
+    output: true
+  SimpleOrAggregated:
+    output: true
+  Situation:
+    output: true
+  SmartHome_Event:
+    output: true
+  SmartHome_FeatureOfInterest:
+    output: true
+  SmartHome_Geometry:
+    output: true
+  SmartHome_Network:
+    output: true
+  SmartHome_Object:
+    output: true
+  SmartHome_Place:
+    output: true
+  SmartHome_Property:
+    output: true
+  SmartHome_Sensing:
+    output: true
+  SmartHome_Situation:
+    output: true
+  SmartHome_TimeInterval:
+    output: true
+  SpatioTemporalExtent:
+    output: true
+  SpeciesBathymetry:
+    output: true
+  SpeciesConditions:
+    output: true
+  SpeciesConservation:
+    output: true
+  SpeciesEat:
+    output: true
+  SpeciesHabitat:
+    output: true
+  SpeciesNames:
+    output: true
+  Standard_Enforcer_Pattern:
+    output: true
+  Tagging:
+    output: true
+  TaskExecution:
+    output: true
+  TimeIndexedClassification:
+    output: true
+  TimeIndexedPartOf:
+    output: true
+  TimeIndexedSituation:
+    output: true
+  TimeInterval:
+    output: true
+  Time_indexed_participation:
+    output: true
+  Time_indexed_person_role:
+    output: true
+  Topic:
+    output: true
+  Trajectory:
+    output: true
+  Transition:
+    output: true
+  TransportPattern:
+    output: true
+  Types_of_entities:
+    output: true
+  VerticalDistribution:
+    output: true
+  VesselSpecies:
+    output: true
+  VesselWaterArea:
+    output: true
+  Vocabulary_Alignment_Pattern:
+    output: true
+  WinstonPartWhole:
+    output: true
+  WOP2012TestPatterns:
+    output: true
+  Xsd:
+    output: true
