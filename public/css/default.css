@@ -223,7 +223,7 @@ a:active {
 /* Tables */
 table {
     border-spacing: 1;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -261,7 +261,7 @@ table th {
 
 table td {
     text-align: left;
-    padding: 1rem;
+    padding: 1rem !important;
 }
 
 tbody tr:nth-child(even) {
