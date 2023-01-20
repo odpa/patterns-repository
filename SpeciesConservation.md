@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Speciesconservation.jpg](../images/1/1b/Speciesconservation.jpg)](../Image/Speciesconservation.jpg "Image:Speciesconservation.jpg")
+[![Image:Speciesconservation.jpg](public/images/1/1b/Speciesconservation.jpg)](../Image/Speciesconservation.jpg "Image:Speciesconservation.jpg")
 
 
 
@@ -67,7 +67,7 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __AquaticSpecies__ 
  (owl:Class) Aquatic species are conceptual entities that are characterized together with resources and water areas.
  
@@ -81,17 +81,17 @@ __AquaticSpecies__
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[AquaticSpecies](../Submissions/SpeciesConservation/AquaticSpecies "Submissions:SpeciesConservation/AquaticSpecies") 
  page_ 
 
 
 
-[![DatatypeProperty](../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasConservationStatus__ 
  (owl:DatatypeProperty)
  
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasConservationStatus](../Submissions/SpeciesConservation/hasConservationStatus "Submissions:SpeciesConservation/hasConservationStatus") 
  page_ 
 

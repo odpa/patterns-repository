@@ -1,0 +1,45 @@
+Phase: SCRules
+Input:  Lookup Split Token NounChunk
+Options: control = appelt
+
+Macro: LIST
+
+(
+({NounChunk}{Token.string == ","})[0,10]
+{NounChunk}
+({Token.string == ","})?
+{Token.category == CC}
+{NounChunk}
+)
+
+
+Macro: ADJLIST
+
+(
+({Token.category == JJ}{Token.string == ","})[0,10]
+{Token.category == JJ}
+({Token.string == ","})?
+{Token.category == CC}
+{Token.category == JJ}
+)
+
+// 26
+Rule:SC_DefinedClass
+// [A | any] NP<subclass> be [a] NP<superclass> REPRO VB [(NP<class/property >,)* and] NP<class>
+// A device is any machine or component that attaches to a computer.
+
+
+(
+({NounChunk}):subclass
+{Lookup.minorType == be}
+({NounChunk}):superclass
+{Token.category == WDT}
+({Token.category == VB}|{Token.category == VBZ}|{Token.category == VBP})
+({Token.category == TO})?
+{NounChunk}
+)
+
+-->
+:subclass.SubclassDefined = {rule=SC_DefinedClass},
+:superclass.Superclass = {rule=SC_DefinedClass}
+

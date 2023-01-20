@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Timeindexedpersonrole.jpg](../images/d/d2/Timeindexedpersonrole.jpg)](../Image/Timeindexedpersonrole.jpg "Image:Timeindexedpersonrole.jpg")
+[![Image:Timeindexedpersonrole.jpg](public/images/d/d2/Timeindexedpersonrole.jpg)](../Image/Timeindexedpersonrole.jpg "Image:Timeindexedpersonrole.jpg")
 
 
 
@@ -67,21 +67,21 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Person__ 
  (owl:Class) Persons in commonsense intuition, i.e. either as physical agents (humans) or social persons.
  
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Person](../Submissions/Time_indexed_person_role/Person "Submissions:Time indexed person role/Person") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __TimeIndexedPersonRole__ 
  (owl:Class) A situation that expresses time indexing for the relation between persons and roles they play.
  
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[TimeIndexedPersonRole](../Submissions/Time_indexed_person_role/TimeIndexedPersonRole "Submissions:Time indexed person role/TimeIndexedPersonRole") 
  page_ 
 

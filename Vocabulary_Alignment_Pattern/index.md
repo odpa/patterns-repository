@@ -3,8 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[index.md](./index.md)  
-[_Conjoint_Instances_of_an_external_Class.md](./_Conjoint_Instances_of_an_external_Class.md)  
-[_Subclass_of_an_external_Class.md](./_Subclass_of_an_external_Class.md)  
-[_Sub_property_of_an_external_Property.md](./_Sub_property_of_an_external_Property.md)  
+[../.git](../.git)  
+[_Conjoint_Instances_of_an_external_Class.md](../Vocabulary_Alignment_Pattern/_Conjoint_Instances_of_an_external_Class)  
+[_Subclass_of_an_external_Class.md](../Vocabulary_Alignment_Pattern/_Subclass_of_an_external_Class)  
+[_Sub_property_of_an_external_Property.md](../Vocabulary_Alignment_Pattern/_Sub_property_of_an_external_Property)  

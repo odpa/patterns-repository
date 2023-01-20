@@ -3,8 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Entity.md](./Entity.md)  
-[hasConstituent.md](./hasConstituent.md)  
-[index.md](./index.md)  
-[isConstituentOf.md](./isConstituentOf.md)  
+[../.git](../.git)  
+[Entity.md](../CollectionEntity)  
+[hasConstituent.md](../Constituency/hasConstituent)  
+[isConstituentOf.md](../Constituency/isConstituentOf)  

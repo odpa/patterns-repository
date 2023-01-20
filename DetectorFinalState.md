@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:DetectorFinalState-pattern.png](../images/5/51/DetectorFinalState-pattern.png)](../Image/DetectorFinalState-pattern.png "Image:DetectorFinalState-pattern.png")
+[![Image:DetectorFinalState-pattern.png](public/images/5/51/DetectorFinalState-pattern.png)](../Image/DetectorFinalState-pattern.png "Image:DetectorFinalState-pattern.png")
 
 
 

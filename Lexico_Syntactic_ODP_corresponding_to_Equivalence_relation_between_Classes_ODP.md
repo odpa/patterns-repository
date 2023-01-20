@@ -69,14 +69,14 @@ NP<class> be (the same as/synonym of)/know as/call/(refer to as) NP<class>
 
 __Reusable JAPE code__ 
  :
- [EQ 1.jape](../images/c/c0/EQ_1.jape "EQ 1.jape") 
+ [EQ 1.jape](public/images/c/c0/EQ_1.jape "EQ 1.jape") 
 
 
 
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP/1 "Submissions:Lexico Syntactic ODP corresponding to Equivalence relation between Classes ODP/1") 
  page_ 
 

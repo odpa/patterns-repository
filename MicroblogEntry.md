@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:MicroblogEntry.png](../images/5/58/MicroblogEntry.png)](../Image/MicroblogEntry.png "Image:MicroblogEntry.png")
+[![Image:MicroblogEntry.png](public/images/5/58/MicroblogEntry.png)](../Image/MicroblogEntry.png "Image:MicroblogEntry.png")
 
 
 

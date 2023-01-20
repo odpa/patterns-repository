@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:timeindexedpartof.jpg](../images/c/c0/Timeindexedpartof.jpg)](../Image/Timeindexedpartof.jpg "Image:timeindexedpartof.jpg")
+[![Image:timeindexedpartof.jpg](public/images/c/c0/Timeindexedpartof.jpg)](../Image/Timeindexedpartof.jpg "Image:timeindexedpartof.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) Any physical, social, or mental object, or a substance
  
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/TimeIndexedPartOf/Object "Submissions:TimeIndexedPartOf/Object") 
  page_ 
 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Time Indexed Part Of__ 
  (owl:Class) A
  [situation](../Submissions/Situation/Situation "Submissions:Situation/Situation") 
@@ -95,14 +95,14 @@ __Time Indexed Part Of__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[TimeIndexedPartOf](../Submissions/TimeIndexedPartOf/TimeIndexedPartOf "Submissions:TimeIndexedPartOf/TimeIndexedPartOf") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __at time__ 
  (owl:ObjectProperty) A relation between a temporary part-of situation and the time it occurs at. It is a subproperty of
  [is setting for](../Submissions/Situation/isSettingFor "Submissions:Situation/isSettingFor") 
@@ -115,14 +115,14 @@ __at time__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[atTime](../Submissions/TimeIndexedPartOf/atTime "Submissions:TimeIndexedPartOf/atTime") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is time of__ 
  (owl:ObjectProperty) The inverse of the
  [at time](../Submissions/TimeIndexedPartOf/atTime "Submissions:TimeIndexedPartOf/atTime") 
@@ -131,14 +131,14 @@ __is time of__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isTimeOf](../Submissions/TimeIndexedPartOf/isTimeOf "Submissions:TimeIndexedPartOf/isTimeOf") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __includes whole object__ 
  (owl:ObjectProperty) A relation between a temporary part-of situation and the whole object involved. It is a subproperty of
  [is setting for](../Submissions/Situation/isSettingFor "Submissions:Situation/isSettingFor") 
@@ -151,14 +151,14 @@ __includes whole object__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[includesWholeObject](../Submissions/TimeIndexedPartOf/includesWholeObject "Submissions:TimeIndexedPartOf/includesWholeObject") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is whole object of__ 
  (owl:ObjectProperty) The inverse of the
  [includes whole object](../Submissions/TimeIndexedPartOf/includesWholeObject "Submissions:TimeIndexedPartOf/includesWholeObject") 
@@ -167,14 +167,14 @@ __is whole object of__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isWholeObjectOf](../Submissions/TimeIndexedPartOf/isWholeObjectOf "Submissions:TimeIndexedPartOf/isWholeObjectOf") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __includes part object__ 
  (owl:ObjectProperty) A relation between a temporary part-of situation and the part(s) involved. It is a subproperty of
  [is setting for](../Submissions/Situation/isSettingFor "Submissions:Situation/isSettingFor") 
@@ -187,14 +187,14 @@ __includes part object__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[includesPartObject](../Submissions/TimeIndexedPartOf/includesPartObject "Submissions:TimeIndexedPartOf/includesPartObject") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is part object of__ 
  (owl:ObjectProperty) The inverse of the
  [includes part object](../Submissions/TimeIndexedPartOf/includesPartObject "Submissions:TimeIndexedPartOf/includesPartObject") 
@@ -203,7 +203,7 @@ __is part object of__
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isPartObjectOf](../Submissions/TimeIndexedPartOf/isPartObjectOf "Submissions:TimeIndexedPartOf/isPartObjectOf") 
  page_ 
 

@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasSpatioTemporalExtent.md](./hasSpatioTemporalExtent.md)  
-[hasTrajectory.md](./hasTrajectory.md)  
-[index.md](./index.md)  
-[SpatioTemporalExtent.md](./SpatioTemporalExtent.md)  
-[Trajectory.md](./Trajectory.md)  
+[../.git](../.git)  
+[hasSpatioTemporalExtent.md](../EventCore/hasSpatioTemporalExtent)  
+[hasTrajectory.md](../Pollution/hasTrajectory)  
+[SpatioTemporalExtent.md](../SpatioTemporalExtent)  
+[Trajectory.md](../Trajectory)  

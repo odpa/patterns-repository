@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:objectrole.jpg](../images/a/a4/Objectrole.jpg)](../Image/Objectrole.jpg "Image:objectrole.jpg")
+[![Image:objectrole.jpg](public/images/a/a4/Objectrole.jpg)](../Image/Objectrole.jpg "Image:objectrole.jpg")
 
 
 
@@ -68,7 +68,7 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Role__ 
  (owl:Class) A
  [Concept](../Submissions/Classification/Concept "Submissions:Classification/Concept") 
@@ -79,28 +79,28 @@ __Role__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Role](../Submissions/Objectrole/Role "Submissions:Objectrole/Role") 
  page_ 
 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) Any physical, social, or mental object, or a substance.
  
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/Objectrole/Object "Submissions:Objectrole/Object") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isRoleOf__ 
  (owl:ObjectProperty) A relation between an
  [Object](../Submissions/Objectrole/Object "Submissions:Objectrole/Object") 
@@ -113,14 +113,14 @@ __isRoleOf__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isRoleOf](../Submissions/Objectrole/isRoleOf "Submissions:Objectrole/isRoleOf") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasRole__ 
  (owl:ObjectProperty) A relation between an
  [Object](../Submissions/Objectrole/Object "Submissions:Objectrole/Object") 
@@ -133,7 +133,7 @@ __hasRole__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasRole](../Submissions/Objectrole/hasRole "Submissions:Objectrole/hasRole") 
  page_ 
 

@@ -69,14 +69,14 @@ NP<superclass> be/CATV [either] NP<subclass> or/and NP<subclass>
 
 __Reusable JAPE code__ 
  :
- [SC\_Di\_EC\_3.jape](../images/c/c3/SC_Di_EC_3.jape "SC Di EC 3.jape") 
+ [SC\_Di\_EC\_3.jape](public/images/c/c3/SC_Di_EC_3.jape "SC Di EC 3.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs/1 "Submissions:Lexico Syntactic ODPs corresponding to SubclassOf relation, Disjoint Classes, and Exhaustive Classes ODPs/1") 
  page_ 
 
@@ -105,14 +105,14 @@ NP<superclass> CATV CD CN-CATV [PARA] [(NP<subclass>,)*and] NP <subclass>
 
 __Reusable JAPE code__ 
  :
- [SC\_Di\_EC\_4\_5.jape](../images/2/2e/SC_Di_EC_4_5.jape "SC Di EC 4 5.jape") 
+ [SC\_Di\_EC\_4\_5.jape](public/images/2/2e/SC_Di_EC_4_5.jape "SC Di EC 4 5.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[2](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs/2 "Submissions:Lexico Syntactic ODPs corresponding to SubclassOf relation, Disjoint Classes, and Exhaustive Classes ODPs/2") 
  page_ 
 
@@ -147,7 +147,7 @@ __Reusable JAPE code__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[3](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs/3 "Submissions:Lexico Syntactic ODPs corresponding to SubclassOf relation, Disjoint Classes, and Exhaustive Classes ODPs/3") 
  page_ 
 
@@ -176,14 +176,14 @@ NP<superclass> be divided/separate in/into CD CN-CATV [PARA] [(NP<subclass >,)* 
 
 __Reusable JAPE code__ 
  :
- [SC\_Di\_EC\_2.jape](../images/e/ec/SC_Di_EC_2.jape "SC Di EC 2.jape") 
+ [SC\_Di\_EC\_2.jape](public/images/e/ec/SC_Di_EC_2.jape "SC Di EC 2.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[4](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs/4 "Submissions:Lexico Syntactic ODPs corresponding to SubclassOf relation, Disjoint Classes, and Exhaustive Classes ODPs/4") 
  page_ 
 

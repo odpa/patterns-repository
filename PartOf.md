@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:partof.jpg](../images/b/b4/Partof.jpg)](../Image/Partof.jpg "Image:partof.jpg")
+[![Image:partof.jpg](public/images/b/b4/Partof.jpg)](../Image/Partof.jpg "Image:partof.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Entity__ 
  (owl:Class) Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.
  
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Entity](../Submissions/PartOf/Entity "Submissions:PartOf/Entity") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasPart__ 
  (owl:ObjectProperty) A transitive relation expressing parthood between any entities, e.g.
  _the human body has a brain as part_ 
@@ -93,14 +93,14 @@ __hasPart__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasPart](../Submissions/PartOf/hasPart "Submissions:PartOf/hasPart") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isPartOf__ 
  (owl:ObjectProperty) A transitive relation expressing parthood between any entities, e.g.
  _brain is a part of the human body_ 
@@ -111,7 +111,7 @@ __isPartOf__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isPartOf](../Submissions/PartOf/isPartOf "Submissions:PartOf/isPartOf") 
  page_ 
 

@@ -3,11 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasContinent.md](./hasContinent.md)  
-[hasCountry.md](./hasCountry.md)  
-[hasEthnicGroup.md](./hasEthnicGroup.md)  
-[hasIsland.md](./hasIsland.md)  
-[hasOfficeHolder.md](./hasOfficeHolder.md)  
-[hasTown.md](./hasTown.md)  
-[index.md](./index.md)  
+[../.git](../.git)  
+[hasContinent.md](../EthnicGroup/hasContinent)  
+[hasCountry.md](../EthnicGroup/hasCountry)  
+[hasEthnicGroup.md](../EthnicGroup/hasEthnicGroup)  
+[hasIsland.md](../EthnicGroup/hasIsland)  
+[hasOfficeHolder.md](../EthnicGroup/hasOfficeHolder)  
+[hasTown.md](../EthnicGroup/hasTown)  

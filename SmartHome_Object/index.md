@@ -3,12 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[index.md](./index.md)  
-[Location.md](./Location.md)  
-[MobileObject.md](./MobileObject.md)  
-[NodeHolder.md](./NodeHolder.md)  
-[NonMobileObject.md](./NonMobileObject.md)  
-[SmartHomeAgent.md](./SmartHomeAgent.md)  
-[SmartHomeObject.md](./SmartHomeObject.md)  
-[SmartObject.md](./SmartObject.md)  
+[../.git](../.git)  
+[Location.md](../EventProcessing/hasEventLocation)  
+[MobileObject.md](../SmartHome_Object/MobileObject)  
+[NodeHolder.md](../SmartHome_Object/NodeHolder)  
+[NonMobileObject.md](../SmartHome_Object/NonMobileObject)  
+[SmartHomeAgent.md](../SmartHome_Object/SmartHomeAgent)  
+[SmartHomeObject.md](../SmartHome_Object/SmartHomeObject)  
+[SmartObject.md](../SmartHome_Object/SmartObject)  

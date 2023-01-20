@@ -1,4 +1,4 @@
-[![Image:Partition-diagram.png](../images/e/e1/Partition-diagram.png)](../Image/Partition-diagram.png "Image:Partition-diagram.png")
+[![Image:Partition-diagram.png](public/images/e/e1/Partition-diagram.png)](../Image/Partition-diagram.png "Image:Partition-diagram.png")
 
 
 

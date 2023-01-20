@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Quantity_Triad_Pattern.png](../images/3/3d/Quantity_Triad_Pattern.png)](../Image/Quantity_Triad_Pattern.png "Image:Quantity_Triad_Pattern.png")
+[![Image:Quantity_Triad_Pattern.png](public/images/3/3d/Quantity_Triad_Pattern.png)](../Image/Quantity_Triad_Pattern.png "Image:Quantity_Triad_Pattern.png")
 
 
 

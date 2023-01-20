@@ -61,41 +61,41 @@ _The
 
 
 
-[![DatatypeProperty](../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasLowerTimestampValue__ 
  (owl:DatatypeProperty)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasLowerTimestampValue](../Submissions/SmartHome_TimeInterval/hasLowerTimestampValue "Submissions:SmartHome TimeInterval/hasLowerTimestampValue") 
  page_ 
 
 
 
-[![DatatypeProperty](../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasUpperTimestampValue__ 
  (owl:DatatypeProperty)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasUpperTimestampValue](../Submissions/SmartHome_TimeInterval/hasUpperTimestampValue "Submissions:SmartHome TimeInterval/hasUpperTimestampValue") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeTemporalDistance__ 
  (owl:Class)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeTemporalDistance](../Submissions/SmartHome_TimeInterval/SmartHomeTemporalDistance "Submissions:SmartHome TimeInterval/SmartHomeTemporalDistance") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeTimeInterval__ 
  (owl:Class)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeTimeInterval](../Submissions/SmartHome_TimeInterval/SmartHomeTimeInterval "Submissions:SmartHome TimeInterval/SmartHomeTimeInterval") 
  page_ 
 

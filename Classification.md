@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:classification.jpg](../images/c/ca/Classification.jpg)](../Image/Classification.jpg "Image:classification.jpg")
+[![Image:classification.jpg](public/images/c/ca/Classification.jpg)](../Image/Classification.jpg "Image:classification.jpg")
 
 
 
@@ -68,7 +68,7 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Concept__ 
  (owl:Class) A concept is a Social Object. The
  [classifies](../Submissions/Classification/classifies "Submissions:Classification/classifies") 
@@ -77,28 +77,28 @@ __Concept__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Concept](../Submissions/Classification/Concept "Submissions:Classification/Concept") 
  page_ 
 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Entity__ 
  (owl:Class) Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.
  
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Entity](../Submissions/Classification/Entity "Submissions:Classification/Entity") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __classifies__ 
  (owl:ObjectProperty) A relation between a
  [Concept](../Submissions/Classification/Concept "Submissions:Classification/Concept") 
@@ -109,14 +109,14 @@ __classifies__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[classifies](../Submissions/Classification/classifies "Submissions:Classification/classifies") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is classified by__ 
  (owl:ObjectProperty) A relation between a
  [Concept](../Submissions/Classification/Concept "Submissions:Classification/Concept") 
@@ -127,7 +127,7 @@ __is classified by__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isClassifiedBy](../Submissions/Classification/isClassifiedBy "Submissions:Classification/isClassifiedBy") 
  page_ 
 

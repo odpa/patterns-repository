@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Imagen3.jpg](../images/b/b4/Imagen3.jpg)](../Image/Imagen3.jpg "Image:Imagen3.jpg")
+[![Image:Imagen3.jpg](public/images/b/b4/Imagen3.jpg)](../Image/Imagen3.jpg "Image:Imagen3.jpg")
 
 
 
@@ -67,71 +67,71 @@ _The
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Header__ 
  (owl:Class) The header usually contains important information to identify the invoice like for example the complete address and the company-identification-code.
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Header](../Submissions/PharmaInnova/Header "Submissions:PharmaInnova/Header") 
  page_ 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Body__ 
  (owl:Class) The body contains all relevant invoice information like the amount of products, their net price etc.
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Body](../Submissions/PharmaInnova/Body "Submissions:PharmaInnova/Body") 
  page_ 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Summary__ 
  (owl:Class) Contains a summary of the most relevant invoice information like the payment terms and the total amount.
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Summary](../Submissions/PharmaInnova/Summary "Submissions:PharmaInnova/Summary") 
  page_ 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Invoice__ 
  (owl:Class)
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Invoice](../Submissions/PharmaInnova/Invoice "Submissions:PharmaInnova/Invoice") 
  page_ 
 
 
 
-[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __has\_summary__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[has\_summary](../Submissions/PharmaInnova/has_summary "Submissions:PharmaInnova/has summary") 
  page_ 
 
 
 
-[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __has\_header__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[has\_header](../Submissions/PharmaInnova/has_header "Submissions:PharmaInnova/has header") 
  page_ 
 
 
 
-[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __has\_body__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[has\_body](../Submissions/PharmaInnova/has_body "Submissions:PharmaInnova/has body") 
  page_ 
 

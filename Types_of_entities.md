@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Typesofentities.jpg](../images/9/9c/Typesofentities.jpg)](../Image/Typesofentities.jpg "Image:Typesofentities.jpg")
+[![Image:Typesofentities.jpg](public/images/9/9c/Typesofentities.jpg)](../Image/Typesofentities.jpg "Image:Typesofentities.jpg")
 
 
 
@@ -68,7 +68,7 @@ _The
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Abstract__ 
  (owl:Class) any entity that cannot be located in space-time. E.g. mathematical entities, formal semantics
 elements, regions within dimensional spaces, etc.
@@ -76,14 +76,14 @@ elements, regions within dimensional spaces, etc.
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Abstract](../Submissions/Types_of_entities/Abstract "Submissions:Types of entities/Abstract") 
  page_ 
 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Event__ 
  (owl:Class) any physical, social, or mental process, event, or state. More theoretically, events can be
 classified in different ways, possibly based on aspect (e.g. stative, continuous, achievements, etc.), or
@@ -92,28 +92,28 @@ on agentivity, typical participants (e.g. human, physical, abstract, food, etc.)
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Event](../Submissions/Types_of_entities/Event "Submissions:Types of entities/Event") 
  page_ 
 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) any physical, social, or mental object, or a substance.
  
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/Types_of_entities/Object "Submissions:Types of entities/Object") 
  page_ 
 
 
 
 
-[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Quality__ 
  (owl:Class) any aspect of an entity (but not a part of it), which cannot exist without that entity. For
 example, the way the surface of a specific physical object looks like is a Quality.
@@ -121,7 +121,7 @@ example, the way the surface of a specific physical object looks like is a Quali
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Quality](../Submissions/Types_of_entities/Quality "Submissions:Types of entities/Quality") 
  page_ 
 
@@ -151,7 +151,7 @@ The Rock Music Festival (Event) is organized by a friend of mine (Object).
 
 
 
-[![Image:Types of entitiesExampleDiagram.jpg](../images/a/ae/Types_of_entitiesExampleDiagram.jpg)](../Image/Types_of_entitiesExampleDiagram.jpg "Image:Types of entitiesExampleDiagram.jpg")
+[![Image:Types of entitiesExampleDiagram.jpg](public/images/a/ae/Types_of_entitiesExampleDiagram.jpg)](../Image/Types_of_entitiesExampleDiagram.jpg "Image:Types of entitiesExampleDiagram.jpg")
 
 
 

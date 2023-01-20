@@ -6,7 +6,7 @@ __Description:__
 
 
 
-[![Image:ResourceSoA.jpg‎](../../images/a/a4/ResourceSoA.jpg)](../../Image/ResourceSoA.jpg "Image:ResourceSoA.jpg‎")
+[![Image:ResourceSoA.jpg‎](../public/images/a/a4/ResourceSoA.jpg)](../../Image/ResourceSoA.jpg "Image:ResourceSoA.jpg‎")
 
 
 

@@ -3,6 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[index.md](./index.md)  
-[Scenario_1.md](./Scenario_1.md)  
+[../.git](../.git)  
+[Scenario_1.md](../AgentRole/Scenario_1)  

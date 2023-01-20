@@ -6,7 +6,7 @@
 
 
 
-[![](../images/thumb/d/df/ODPEEP.jpg/800px-ODPEEP.jpg)](../Image/ODPEEP.jpg "ODPEEP.jpg")
+[![](public/images/thumb/d/df/ODPEEP.jpg/800px-ODPEEP.jpg)](../Image/ODPEEP.jpg "ODPEEP.jpg")
 
 
 

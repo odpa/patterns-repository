@@ -3,7 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[index.md](./index.md)  
-[sequence.md](./sequence.md)  
-[sequence_embedding.md](./sequence_embedding.md)  
+[../.git](../.git)  
+[sequence.md](../Action/has_consequence)  
+[sequence_embedding.md](../Xsd/sequence_embedding)  

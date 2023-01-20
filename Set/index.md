@@ -3,7 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[index.md](./index.md)  
-[Set.md](./Set.md)  
-[size.md](./size.md)  
+[../.git](../.git)  
+[Set.md](../Set)  
+[size.md](../Bag/size)  

@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasRole.md](./hasRole.md)  
-[index.md](./index.md)  
-[isRoleOf.md](./isRoleOf.md)  
-[Object.md](./Object.md)  
-[Role.md](./Role.md)  
+[../.git](../.git)  
+[hasRole.md](../Objectrole/hasRole)  
+[isRoleOf.md](../Objectrole/isRoleOf)  
+[Object.md](../Object)  
+[Role.md](../AgentRole)  

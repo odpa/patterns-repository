@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:class-by-attribute-value.png](../images/f/fa/Class-by-attribute-value.png)](../Image/Class-by-attribute-value.png "Image:class-by-attribute-value.png")
+[![Image:class-by-attribute-value.png](public/images/f/fa/Class-by-attribute-value.png)](../Image/Class-by-attribute-value.png "Image:class-by-attribute-value.png")
 
 
 

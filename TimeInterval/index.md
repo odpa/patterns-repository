@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasIntervalDate.md](./hasIntervalDate.md)  
-[hasIntervalEndDate.md](./hasIntervalEndDate.md)  
-[hasIntervalStartDate.md](./hasIntervalStartDate.md)  
-[index.md](./index.md)  
-[TimeInterval.md](./TimeInterval.md)  
+[../.git](../.git)  
+[hasIntervalDate.md](../TimeInterval/hasIntervalDate)  
+[hasIntervalEndDate.md](../TimeInterval/hasIntervalEndDate)  
+[hasIntervalStartDate.md](../TimeInterval/hasIntervalStartDate)  
+[TimeInterval.md](../SmartHome_TimeInterval)  

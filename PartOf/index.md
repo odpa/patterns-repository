@@ -3,8 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Entity.md](./Entity.md)  
-[hasPart.md](./hasPart.md)  
-[index.md](./index.md)  
-[isPartOf.md](./isPartOf.md)  
+[../.git](../.git)  
+[Entity.md](../CollectionEntity)  
+[hasPart.md](../An_Ontology_Design_Pattern_for_Activity_Reasoning/hasPart)  
+[isPartOf.md](../An_Ontology_Design_Pattern_for_Activity_Reasoning/isPartOf)  

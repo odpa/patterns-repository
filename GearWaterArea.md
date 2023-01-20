@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Gearwaterarea.jpg](../images/6/6e/Gearwaterarea.jpg)](../Image/Gearwaterarea.jpg "Image:Gearwaterarea.jpg")
+[![Image:Gearwaterarea.jpg](public/images/6/6e/Gearwaterarea.jpg)](../Image/Gearwaterarea.jpg "Image:Gearwaterarea.jpg")
 
 
 
@@ -67,7 +67,7 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __GearType__ 
  (owl:Class) Gear types are conceptual entities that are characterized together with AquaticSpecies that are either targeted or can be incidentally caught.
  
@@ -76,37 +76,37 @@ __GearType__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[GearType](../Submissions/GearWaterArea/GearType "Submissions:GearWaterArea/GearType") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __WaterArea__ 
  (owl:Class) A physical water area. Mappable to fi:WaterAreaRef
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[WaterArea](../Submissions/GearWaterArea/WaterArea "Submissions:GearWaterArea/WaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isUsedInWaterArea__ 
  (owl:ObjectProperty)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isUsedInWaterArea](../Submissions/GearWaterArea/isUsedInWaterArea "Submissions:GearWaterArea/isUsedInWaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isSuitableForGearType__ 
  (owl:ObjectProperty)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isSuitableForGearType](../Submissions/GearWaterArea/isSuitableForGearType "Submissions:GearWaterArea/isSuitableForGearType") 
  page_ 
 

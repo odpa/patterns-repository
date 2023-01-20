@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:collectionentity.jpg](../images/0/03/Collectionentity.jpg)](../Image/Collectionentity.jpg "Image:collectionentity.jpg")
+[![Image:collectionentity.jpg](public/images/0/03/Collectionentity.jpg)](../Image/Collectionentity.jpg "Image:collectionentity.jpg")
 
 
 
@@ -68,7 +68,7 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Collection__ 
  (owl:Class) Any container for entities that share one or more common properties. E.g.
  _stone objects_ 
@@ -81,28 +81,28 @@ __Collection__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Collection](../Submissions/CollectionEntity/Collection "Submissions:CollectionEntity/Collection") 
  page_ 
 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Entity__ 
  (owl:Class) Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.
  
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Entity](../Submissions/CollectionEntity/Entity "Submissions:CollectionEntity/Entity") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasMember__ 
  (owl:ObjectProperty) A relation between collections and entities, e.g. 'my collection of saxophones includes an old Adolphe Sax original alto' (i.e. my collection has member an Adolphe Sax alto). The object property
  [isMemberOf](../Submissions/CollectionEntity/isMemberOf "Submissions:CollectionEntity/isMemberOf") 
@@ -111,14 +111,14 @@ __hasMember__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasMember](../Submissions/CollectionEntity/hasMember "Submissions:CollectionEntity/hasMember") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isMemberOf__ 
  (owl:ObjectProperty) The inverse of
  [hasMember](../Submissions/CollectionEntity/hasMember "Submissions:CollectionEntity/hasMember") 
@@ -127,7 +127,7 @@ __isMemberOf__
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isMemberOf](../Submissions/CollectionEntity/isMemberOf "Submissions:CollectionEntity/isMemberOf") 
  page_ 
 

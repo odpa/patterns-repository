@@ -3,6 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[1.md](./1.md)  
-[index.md](./index.md)  
+[../.git](../.git)  
+[1.md](../Normalization@oldid=10071)  

@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[byAgent.md](./byAgent.md)  
-[index.md](./index.md)  
-[isTaggingAgentIn.md](./isTaggingAgentIn.md)  
-[isTagUsedIn.md](./isTagUsedIn.md)  
-[usingTag.md](./usingTag.md)  
+[../.git](../.git)  
+[byAgent.md](../Tagging/byAgent)  
+[isTaggingAgentIn.md](../Tagging/isTaggingAgentIn)  
+[isTagUsedIn.md](../Tagging/isTagUsedIn)  
+[usingTag.md](../Tagging/usingTag)  

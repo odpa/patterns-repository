@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[describes.md](./describes.md)  
-[index.md](./index.md)  
-[isDescribedBy.md](./isDescribedBy.md)  
-[isSatisfiedBy.md](./isSatisfiedBy.md)  
-[satisfies.md](./satisfies.md)  
+[../.git](../.git)  
+[describes.md](../DescriptionAndSituation/describes)  
+[isDescribedBy.md](../DescriptionAndSituation/isDescribedBy)  
+[isSatisfiedBy.md](../BasicPlan/isSatisfiedBy)  
+[satisfies.md](../BasicPlan/satisfies)  

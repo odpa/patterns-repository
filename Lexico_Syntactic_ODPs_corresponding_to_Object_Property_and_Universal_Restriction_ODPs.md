@@ -69,14 +69,14 @@ NP<class> VB NEG(be/have/CATV/PART) just/only/exclusively NP<class>
 
 __Reusable JAPE code__ 
  :
- [OP\_UR\_1\_2.jape](../images/8/8a/OP_UR_1_2.jape "OP UR 1 2.jape") 
+ [OP\_UR\_1\_2.jape](public/images/8/8a/OP_UR_1_2.jape "OP UR 1 2.jape") 
 
 
 
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Object_Property_and_Universal_Restriction_ODPs/1 "Submissions:Lexico Syntactic ODPs corresponding to Object Property and Universal Restriction ODPs/1") 
  page_ 
 

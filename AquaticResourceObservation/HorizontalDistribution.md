@@ -14,7 +14,7 @@ ___HorizontalDistribution__
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/45px-Class.gif)](../../Image/Class.gif "Class")
+[![Class](../public/images/thumb/2/27/Class.gif/45px-Class.gif)](../../Image/Class.gif "Class")
 
 
 __Name__ 

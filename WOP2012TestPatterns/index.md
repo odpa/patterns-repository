@@ -3,6 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[accessVerification.md](./accessVerification.md)  
-[index.md](./index.md)  
+[../.git](../.git)  
+[accessVerification.md](../WOP2012TestPatterns/accessVerification)  

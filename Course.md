@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Course_diagram.png](../images/c/c8/Course_diagram.png)](../Image/Course_diagram.png "Image:Course_diagram.png")
+[![Image:Course_diagram.png](public/images/c/c8/Course_diagram.png)](../Image/Course_diagram.png "Image:Course_diagram.png")
 
 
 
@@ -67,11 +67,11 @@ _The
 
 
 
-[![DatatypeProperty](../../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasName__ 
  (owl:DatatypeProperty) the first name of the person
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[taughtBy](../Submissions/Course/taughtBy "Submissions:Course/taughtBy") 
  page_ 
 
@@ -79,37 +79,37 @@ _[taughtBy](../Submissions/Course/taughtBy "Submissions:Course/taughtBy")
 
 [Submissions:Course/takenBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/takenBy "Submissions:Course/takenBy (not yet written)") 
 
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[takenBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/takenBy "Submissions:Course/takenBy (not yet written)") 
  page_ 
 
 
 
-[![DatatypeProperty](../../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasNumber__ 
  (owl:DatatypeProperty) the number of course
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasNumber](../Submissions/Course/hasNumber "Submissions:Course/hasNumber") 
  page_ 
 
 
 
-[![DatatypeProperty](../../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasFirstName__ 
  (owl:DatatypeProperty) the first name of person
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasFirstName](../Submissions/Course/hasFirstName "Submissions:Course/hasFirstName") 
  page_ 
 
 
 
-[![DatatypeProperty](../../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasLastName__ 
  (owl:DatatypeProperty) the last name of the person
  
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasLastName](../Submissions/Course/hasLastName "Submissions:Course/hasLastName") 
  page_ 
 
@@ -117,7 +117,7 @@ _[hasLastName](../Submissions/Course/hasLastName "Submissions:Course/hasLastName
 
 [Submissions:Course/hasDateOfBirth](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/hasDateOfBirth "Submissions:Course/hasDateOfBirth (not yet written)") 
 
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasDateOfBirth](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/hasDateOfBirth "Submissions:Course/hasDateOfBirth (not yet written)") 
  page_ 
 
@@ -125,7 +125,7 @@ _[hasDateOfBirth](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontolog
 
 [Submissions:Course/hasID](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/hasID "Submissions:Course/hasID (not yet written)") 
 
-[![](../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasID](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Course/hasID "Submissions:Course/hasID (not yet written)") 
  page_ 
 

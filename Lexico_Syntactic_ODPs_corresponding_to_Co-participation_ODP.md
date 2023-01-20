@@ -75,7 +75,7 @@ __Reusable JAPE code__
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Co-participation_ODP/1 "Submissions:Lexico Syntactic ODPs corresponding to Co-participation ODP/1") 
  page_ 
 
@@ -110,7 +110,7 @@ __Reusable JAPE code__
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[2](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Co-participation_ODP/2 "Submissions:Lexico Syntactic ODPs corresponding to Co-participation ODP/2") 
  page_ 
 

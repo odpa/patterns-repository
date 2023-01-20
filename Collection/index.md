@@ -3,8 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Collection.md](./Collection.md)  
-[hasMember.md](./hasMember.md)  
-[index.md](./index.md)  
-[isMemberOf.md](./isMemberOf.md)  
+[../.git](../.git)  
+[Collection.md](../Collection)  
+[hasMember.md](../AOS_AGROVOC_Concept_Server_fundation_ontology_model/hasMember)  
+[isMemberOf.md](../AOS_AGROVOC_Concept_Server_fundation_ontology_model/isMemberOf)  

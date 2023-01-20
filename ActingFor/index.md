@@ -3,9 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[actsFor.md](./actsFor.md)  
-[actsThrough.md](./actsThrough.md)  
-[Agent.md](./Agent.md)  
-[index.md](./index.md)  
-[SocialAgent.md](./SocialAgent.md)  
+[../.git](../.git)  
+[actsFor.md](../ActingFor/actsFor)  
+[actsThrough.md](../ActingFor/actsThrough)  
+[Agent.md](../ActingFor/Agent)  
+[SocialAgent.md](../ActingFor/SocialAgent)  

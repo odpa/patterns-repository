@@ -61,41 +61,41 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __FeatureOfInterest__ 
  (owl:Class) A feature of interest is an abstraction of a real world phenomena (object, event, etc). A feature of interest is then described in terms of its properties or qualities, which are qualifiable, quantifiable, observable or operable qualities of the feature of interest.
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[FeatureOfInterest](../Submissions/AffectedBy/FeatureOfInterest "Submissions:AffectedBy/FeatureOfInterest") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Quality__ 
  (owl:Class) A quality of a feature of interest. An aspect of a feature of interest that is intrinsec to and cannot exist without the feature of interest. Every quality belongs to the feature of interest it is intrinsic to.
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Quality](../Submissions/AffectedBy/Quality "Submissions:AffectedBy/Quality") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __affectedBy__ 
  (owl:ObjectProperty) A relation between qualities. A quality is affected by another quality if the value of the latter affects the value of the former.
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[affectedBy](../Submissions/AffectedBy/affectedBy "Submissions:AffectedBy/affectedBy") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __belongsTo__ 
  (owl:ObjectProperty) A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to.
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[belongsTo](../Submissions/AffectedBy/belongsTo "Submissions:AffectedBy/belongsTo") 
  page_ 
 
@@ -103,7 +103,7 @@ _[belongsTo](../Submissions/AffectedBy/belongsTo "Submissions:AffectedBy/belongs
 
 [Submissions:AffectedBy/influencedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:AffectedBy/influencedBy "Submissions:AffectedBy/influencedBy (not yet written)") 
 
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[influencedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:AffectedBy/influencedBy "Submissions:AffectedBy/influencedBy (not yet written)") 
  page_ 
 
@@ -121,7 +121,7 @@ _[influencedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology 
 
 
 
-[![](../images/thumb/8/8a/ODPAffectedBy_Diagram.png/800px-ODPAffectedBy_Diagram.png)](../Image/ODPAffectedBy_Diagram.png "ODPAffectedBy Diagram.png")
+[![](public/images/thumb/8/8a/ODPAffectedBy_Diagram.png/800px-ODPAffectedBy_Diagram.png)](../Image/ODPAffectedBy_Diagram.png "ODPAffectedBy Diagram.png")
 
 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:class-union.png](../images/5/53/Class-union.png)](../Image/Class-union.png "Image:class-union.png")
+[![Image:class-union.png](public/images/5/53/Class-union.png)](../Image/Class-union.png "Image:class-union.png")
 
 
 

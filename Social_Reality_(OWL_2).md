@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Relative-facts.png](../images/2/2a/Relative-facts.png)](../Image/Relative-facts.png "Image:Relative-facts.png")
+[![Image:Relative-facts.png](public/images/2/2a/Relative-facts.png)](../Image/Relative-facts.png "Image:Relative-facts.png")
 
 
 

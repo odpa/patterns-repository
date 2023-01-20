@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Ontology_strategy_design.png](../images/0/0c/Ontology_strategy_design.png)](../Image/Ontology_strategy_design.png "Image:Ontology_strategy_design.png")
+[![Image:Ontology_strategy_design.png](public/images/0/0c/Ontology_strategy_design.png)](../Image/Ontology_strategy_design.png "Image:Ontology_strategy_design.png")
 
 
 

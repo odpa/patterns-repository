@@ -1,0 +1,93 @@
+Phase: SCRules
+Input:  Lookup Split Token NounChunk
+Options: control = appelt
+
+Macro: LIST
+
+(
+({NounChunk}{Token.string == ","})[0,10]
+{NounChunk}
+({Token.string == ","})?
+{Token.category == CC}
+{NounChunk}
+)
+
+
+Macro: ADJLIST
+
+(
+({Token.category == JJ}{Token.string == ","})[0,10]
+{Token.category == JJ}
+({Token.string == ","})?
+{Token.category == CC}
+{Token.category == JJ}
+)
+
+// 22
+Rule:SC_Di_EC3
+// NP<superclass> be CATV either NP<subclass> or NP<subclass>
+// Animals are classified into either vertebrates, or invertebrates.
+
+
+(
+({NounChunk}):superclass
+{Lookup.minorType == be}
+{Lookup.minorType == CATV}
+({Token.category == CC})?
+({NounChunk}):subclass_Di_EC
+{Token.kind == punctuation}
+{Token.root == or}
+({NounChunk}):subclass_Di_EC2
+)
+
+-->
+:superclass.Superclass = {rule=SC_Di_EC3},
+:subclass_Di_EC.Subclass_Di_EC = {rule=SC_Di_EC3},
+:subclass_Di_EC2.Subclass_Di_EC = {rule=SC_Di_EC3}
+
+// 23
+Rule:SC_Di_EC4
+// NP<superclass> be CATV CD CN PARA (NP<subclass>,)*and NP <subclass> 
+// Membrane proteins are classified into two categories: integral proteins and peripheral proteins.
+
+(
+({NounChunk}):superclass
+{Lookup.minorType == be}
+{Lookup.minorType == CATV}
+{Lookup.majorType == numbers}
+{Lookup.majorType == CN}
+({Token.kind == punctuation})?
+(LIST):subclass_Di_EC
+)
+
+-->
+:superclass.Superclass = {rule=SC_Di_EC6},
+{
+// "subclass" matches LHS label
+  List annList = new ArrayList((AnnotationSet)bindings.get("subclass_Di_EC"));
+
+  //sort the list by offset
+  Collections.sort(annList, new OffsetComparator());
+
+  //iterate through the matched annotations
+  for(int i = 0; i < annList.size(); i++)
+   {
+    Annotation anAnn = (Annotation)annList.get(i);
+
+// check that the new annotation is a NounChunk 
+if ((anAnn.getType().equals("NounChunk")) )
+
+{ 
+    FeatureMap features = Factory.newFeatureMap();
+
+// change this for a different rule name"
+    features.put("rule", "SC_Di_EC6");
+  
+// change "Subclass" for a different annotation name
+ annotations.add(anAnn.getStartNode(), anAnn.getEndNode(), "Subclass_Di_EC",
+ features);
+
+}
+}
+}
+

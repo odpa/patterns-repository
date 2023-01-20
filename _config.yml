@@ -120,7 +120,7 @@ collections:
     output: true
   Lexico_Syntactic_ODPs_corresponding_to_Object_Property_or_Datatype_Property_or_Simple_Part-Whole_relation_ODPs:
     output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Simple_Part-Whole_relation_%22or%22_Constituency_%22or%22_Componency_%22or%22_Collection-Entity_ODPs: 
+  Lexico_Syntactic_ODPs_corresponding_to_Simple_Part-Whole_relation_%22or%22_Constituency_%22or%22_Componency_%22or%22_Collection-Entity_ODPs:
     output: true
   Lexico_Syntactic_ODPs_corresponding_to_Specified_Values_ODP:
     output: true
@@ -290,3 +290,6 @@ collections:
     output: true
   Xsd:
     output: true
+excludes:
+- public
+- _layout

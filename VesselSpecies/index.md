@@ -3,8 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[catchesSpecies.md](./catchesSpecies.md)  
-[index.md](./index.md)  
-[isCaughtBy.md](./isCaughtBy.md)  
-[isCaughtByVesselType.md](./isCaughtByVesselType.md)  
+[../.git](../.git)  
+[catchesSpecies.md](../GearSpecies/catchesSpecies)  
+[isCaughtBy.md](../GearSpecies/isCaughtBy)  
+[isCaughtByVesselType.md](../VesselSpecies/isCaughtByVesselType)  

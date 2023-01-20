@@ -3,11 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[expresses.md](./expresses.md)  
-[index.md](./index.md)  
-[InformationObject.md](./InformationObject.md)  
-[isAbout.md](./isAbout.md)  
-[isExpressedBy.md](./isExpressedBy.md)  
-[isReferenceOf.md](./isReferenceOf.md)  
-[SocialObject.md](./SocialObject.md)  
+[../.git](../.git)  
+[expresses.md](../IntensionExtension/expresses)  
+[InformationObject.md](../EventCore/hasInformationObject)  
+[isAbout.md](../IntensionExtension/isAbout)  
+[isExpressedBy.md](../IntensionExtension/isExpressedBy)  
+[isReferenceOf.md](../IntensionExtension/isReferenceOf)  
+[SocialObject.md](../IntensionExtension/SocialObject)  

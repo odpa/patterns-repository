@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:HazardousSituation ODP.png](../images/9/91/HazardousSituation_ODP.png)](../Image/HazardousSituation_ODP.png "Image:HazardousSituation ODP.png")
+[![Image:HazardousSituation ODP.png](public/images/9/91/HazardousSituation_ODP.png)](../Image/HazardousSituation_ODP.png "Image:HazardousSituation ODP.png")
 
 
 

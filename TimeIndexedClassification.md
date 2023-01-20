@@ -61,11 +61,11 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __TimeIndexedClassification__ 
  (owl:Class) A Situation to represent classification ('counting as') of an entity at some time.
  
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[TimeIndexedClassification](../Submissions/TimeIndexedClassification/TimeIndexedClassification "Submissions:TimeIndexedClassification/TimeIndexedClassification") 
  page_ 
 

@@ -14,7 +14,7 @@ ___grounding__
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](http://ontologydesignpatterns.org/wiki/Image%253AObjectProperty.gif.html "ObjectProperty")
+[![ObjectProperty](../public/images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](http://ontologydesignpatterns.org/wiki/Image%253AObjectProperty.gif.html "ObjectProperty")
 
 
 __Name__ 

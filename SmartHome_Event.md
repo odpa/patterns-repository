@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:SHEvent.png](../images/5/5b/SHEvent.png)](../Image/SHEvent.png "Image:SHEvent.png")
+[![Image:SHEvent.png](public/images/5/5b/SHEvent.png)](../Image/SHEvent.png "Image:SHEvent.png")
 
 
 
@@ -67,31 +67,31 @@ _The
 
 
 
-[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __ComplexEvent__ 
  (owl:Class)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[ComplexEvent](../Submissions/SmartHome_Event/ComplexEvent "Submissions:SmartHome Event/ComplexEvent") 
  page_ 
 
 
 
-[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __EventCondition__ 
  (owl:Class)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[EventCondition](../Submissions/SmartHome_Event/EventCondition "Submissions:SmartHome Event/EventCondition") 
  page_ 
 
 
 
-[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Manifestation__ 
  (owl:Class)
  
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Manifestation](../Submissions/SmartHome_Event/Manifestation "Submissions:SmartHome Event/Manifestation") 
  page_ 
 
@@ -99,7 +99,7 @@ _[Manifestation](../Submissions/SmartHome_Event/Manifestation "Submissions:Smart
 
 [Submissions:SmartHome Event/event](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:SmartHome_Event/event "Submissions:SmartHome Event/event (not yet written)") 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[event](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:SmartHome_Event/event "Submissions:SmartHome Event/event (not yet written)") 
  page_ 
 

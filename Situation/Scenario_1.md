@@ -6,7 +6,7 @@ __Description:__
 
 
 
-[![Image:SituationExampleDiagram.jpg](../../images/0/0e/SituationExampleDiagram.jpg)](../../Image/SituationExampleDiagram.jpg "Image:SituationExampleDiagram.jpg")
+[![Image:SituationExampleDiagram.jpg](../public/images/0/0e/SituationExampleDiagram.jpg)](../../Image/SituationExampleDiagram.jpg "Image:SituationExampleDiagram.jpg")
 
 
 
