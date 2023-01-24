@@ -13,340 +13,6 @@
         text-decoration: underline;
     }
 
-    @media print {
-        *,
-        *:before,
-        *:after {
-            background: transparent !important;
-            color: #000 !important;
-            box-shadow: none !important;
-            text-shadow: none !important;
-        }
-
-        a,
-        a:visited {
-            text-decoration: underline;
-        }
-
-        a[href]:after {
-            content: ' (' attr(href) ')';
-        }
-
-        abbr[title]:after {
-            content: ' (' attr(title) ')';
-        }
-
-        a[href^='#']:after,
-        a[href^='javascript:']:after {
-            content: '';
-        }
-
-        pre,
-        blockquote {
-            border: 1px solid #999;
-            page-break-inside: avoid;
-        }
-
-        thead {
-            display: table-header-group;
-        }
-
-        tr,
-        img {
-            page-break-inside: avoid;
-        }
-
-        img {
-            max-width: 100% !important;
-        }
-
-        p,
-        h2,
-        h3 {
-            orphans: 3;
-            widows: 3;
-        }
-
-        h2,
-        h3 {
-            page-break-after: avoid;
-        }
-    }
-
-    html {
-        font-size: 12px;
-    }
-
-    @media screen and (min-width: 32rem) and (max-width: 48rem) {
-        html {
-            font-size: 15px;
-        }
-    }
-
-    @media screen and (min-width: 48rem) {
-        html {
-            font-size: 16px;
-        }
-    }
-
-    body {
-        line-height: 1.85;
-    }
-
-    p,
-    .splendor-p {
-        font-size: 1rem;
-        margin-bottom: 1.3rem;
-    }
-
-    h1,
-    .splendor-h1,
-    h2,
-    .splendor-h2,
-    h3,
-    .splendor-h3,
-    h4,
-    .splendor-h4 {
-        margin: 1.414rem 0 0.5rem;
-        font-weight: inherit;
-        line-height: 1.42;
-    }
-
-    h1,
-    .splendor-h1 {
-        margin-top: 0;
-        font-size: 3.998rem;
-    }
-
-    h2,
-    .splendor-h2 {
-        font-size: 2.827rem;
-    }
-
-    h3,
-    .splendor-h3 {
-        font-size: 1.999rem;
-    }
-
-    h4,
-    .splendor-h4 {
-        font-size: 1.414rem;
-    }
-
-    h5,
-    .splendor-h5 {
-        font-size: 1.121rem;
-    }
-
-    h6,
-    .splendor-h6 {
-        font-size: 0.88rem;
-    }
-
-    small,
-    .splendor-small {
-        font-size: 0.707em;
-    }
-
-    /* https://github.com/mrmrs/fluidity */
-
-    img,
-    canvas,
-    iframe,
-    video,
-    svg,
-    select,
-    textarea {
-        max-width: 100%;
-    }
-
-    @import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
-
-    html {
-        font-size: 18px;
-        max-width: 100%;
-    }
-
-    body {
-        color: #444;
-        font-family: 'Merriweather', Georgia, serif;
-        margin: 0;
-        max-width: 100%;
-    }
-
-    /* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
-
-    p,
-    *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
-        margin: 1rem auto 1rem;
-        max-width: 36rem;
-        padding: 0.25rem;
-    }
-
-    div {
-        width: 100%;
-    }
-
-    blockquote p {
-        font-size: 1.5rem;
-        font-style: italic;
-        margin: 1rem auto 1rem;
-        max-width: 48rem;
-    }
-
-    li {
-        margin-left: 2rem;
-    }
-
-    /* Counteract the specificity of the gross *:not() chain. */
-
-    h1 {
-        padding: 4rem 0 !important;
-    }
-
-    /*  === End gross hack */
-
-    p {
-        color: #555;
-        height: auto;
-        line-height: 1.45;
-    }
-
-    pre,
-    code {
-        font-family: Menlo, Monaco, 'Courier New', monospace;
-    }
-
-    pre {
-        background-color: #fafafa;
-        font-size: 0.8rem;
-        overflow-x: scroll;
-        padding: 1.125em;
-    }
-
-    a,
-    a:visited {
-        color: #3498db;
-    }
-
-    a:hover,
-    a:focus,
-    a:active {
-        color: #2980b9;
-    }
-
-    /* Tables */
-    table {
-        border-spacing: 1;
-        /* border-collapse: collapse; */
-        background: #fff;
-        border-radius: 10px;
-        overflow: hidden;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    table * {
-        position: relative;
-    }
-
-    table td,
-    table th {
-        padding-left: 8px;
-    }
-
-    table thead tr {
-        height: 60px;
-        background: #d6d6d6;
-    }
-
-    table tbody tr {
-        height: 50px;
-    }
-
-    table tbody tr:last-child {
-        border: 0;
-    }
-
-    table th {
-        width: fit-content;
-        text-align: center;
-    }
-
-    table td {
-        text-align: left;
-        padding: 1rem !important;
-    }
-
-    tbody tr:nth-child(even) {
-        background-color: #f5f5f5;
-    }
-
-    tbody tr {
-        font-family: OpenSans-Regular;
-        font-size: 15px;
-        color: gray;
-        line-height: 1.2;
-        font-weight: unset;
-    }
-
-    tbody tr:hover {
-        color: #555;
-        background-color: #f5f5f5;
-        cursor: pointer;
-    }
-
-    @media screen and (max-width: 992px) {
-        table {
-            display: block;
-        }
-
-        table > *,
-        table tr,
-        table td,
-        table th {
-            display: block;
-        }
-
-        table thead {
-            display: none;
-        }
-
-        table tbody tr {
-            height: auto;
-            padding: 37px 0;
-        }
-
-        table tbody tr td {
-            padding-left: 40% !important;
-            margin-bottom: 24px;
-        }
-
-        table tbody tr td:last-child {
-            margin-bottom: 0;
-        }
-
-        table tbody tr td:before {
-            font-family: OpenSans-Regular;
-            font-size: 14px;
-            color: #999;
-            line-height: 1.2;
-            font-weight: unset;
-            position: absolute;
-            width: 40%;
-            left: 30px;
-            top: 0;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .container-table100 {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-
     a[href]:after {
         content: ' (' attr(href) ')';
     }
@@ -506,10 +172,6 @@ div {
     width: 100%;
 }
 
-/* div img {
-    width: 100%;
-} */
-
 blockquote p {
     font-size: 1.5rem;
     font-style: italic;
@@ -556,4 +218,116 @@ a:hover,
 a:focus,
 a:active {
     color: #2980b9;
+}
+
+/* Tables */
+table {
+    border-spacing: 1;
+    /* border-collapse: collapse; */
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+table thead tr {
+    height: 60px;
+    background: #d6d6d6;
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table th {
+    width: fit-content;
+    text-align: center;
+}
+
+table td {
+    text-align: left;
+    padding: 1rem !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    table {
+        display: block;
+    }
+
+    table > *,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 37px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 40% !important;
+        margin-bottom: 24px;
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table tbody tr td:before {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.2;
+        font-weight: unset;
+        position: absolute;
+        width: 40%;
+        left: 30px;
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-table100 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
