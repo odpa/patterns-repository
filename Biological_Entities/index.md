@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[family.md](../Biological_Entities/family)  
-[group.md](../Biological_Entities/group)  
-[includesFamily.md](../Biological_Entities/includesFamily)  
-[includesOrder.md](../Biological_Entities/includesOrder)  
-[includesSpecies.md](../Biological_Entities/includesSpecies)  
-[order.md](../Biological_Entities/order)  
-[species.md](../Biological_Entities/species)  
+[../](../)  
+[family.md](./family.md)  
+[group.md](./group.md)  
+[includesFamily.md](./includesFamily.md)  
+[includesOrder.md](./includesOrder.md)  
+[includesSpecies.md](./includesSpecies.md)  
+[order.md](./order.md)  
+[species.md](./species.md)  

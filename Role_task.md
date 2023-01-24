@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:taskrole.jpg](public/images/0/0c/Taskrole.jpg)](../Image/Taskrole.jpg "Image:taskrole.jpg")
+[![Image:taskrole.jpg](../images/0/0c/Taskrole.jpg)](../Image/Taskrole.jpg "Image:taskrole.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __role__ 
  (owl:Class) A concept that classifies an object. For example, the role developer classifies a person, the role server classifies a computer machine. A hasTask only Tasks. It is disjoint with Task.
  
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Role](../Submissions/Role_task/Role "Submissions:Role task/Role") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __has task__ 
  (owl:ObjectProperty) A relation between roles and tasks, e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams'). It is the inverse of
  [isTaskOf](../Submissions/Role_task/isTaskOf "Submissions:Role task/isTaskOf") 
@@ -91,14 +91,14 @@ __has task__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasTask](../Submissions/Role_task/hasTask "Submissions:Role task/hasTask") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Task__ 
  (owl:Class) A piece of work to be done or undertaken. A Task is assigned to only
  [Roles](../Submissions/Role_task/Role "Submissions:Role task/Role") 
@@ -109,14 +109,14 @@ __Task__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Task](../Submissions/Role_task/Task "Submissions:Role task/Task") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is task ok__ 
  (owl:ObjectProperty) A relation between
  [roles](../Submissions/Role_task/Role "Submissions:Role task/Role") 
@@ -129,7 +129,7 @@ __is task ok__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isTaskOf](../Submissions/Role_task/isTaskOf "Submissions:Role task/isTaskOf") 
  page_ 
 

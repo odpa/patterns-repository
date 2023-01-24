@@ -61,31 +61,31 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SensingProcess__ 
  (owl:Class)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SensingProcess](../Submissions/SmartHome_Sensing/SensingProcess "Submissions:SmartHome Sensing/SensingProcess") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeSensor__ 
  (owl:Class)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeSensor](../Submissions/SmartHome_Sensing/SmartHomeSensor "Submissions:SmartHome Sensing/SmartHomeSensor") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeSensorOutput__ 
  (owl:Class)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeSensorOutput](../Submissions/SmartHome_Sensing/SmartHomeSensorOutput "Submissions:SmartHome Sensing/SmartHomeSensorOutput") 
  page_ 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:biologicalentities.jpg](public/images/3/34/Biologicalentities.jpg)](../Image/Biologicalentities.jpg "Image:biologicalentities.jpg")
+[![Image:biologicalentities.jpg](../images/3/34/Biologicalentities.jpg)](../Image/Biologicalentities.jpg "Image:biologicalentities.jpg")
 
 
 
@@ -69,14 +69,14 @@ _The
 
 [Submissions:Biological Entities/biological entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __family__ 
  (owl:Class) A type of
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -91,14 +91,14 @@ __family__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[family](../Submissions/Biological_Entities/family "Submissions:Biological Entities/family") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __group__ 
  (owl:Class) A type of
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -113,14 +113,14 @@ __group__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[group](../Submissions/Biological_Entities/group "Submissions:Biological Entities/group") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __species__ 
  (owl:Class) A type of
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -135,14 +135,14 @@ __species__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[species](../Submissions/Biological_Entities/species "Submissions:Biological Entities/species") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __order__ 
  (owl:Class) A type of
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -157,14 +157,14 @@ __order__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[order](../Submissions/Biological_Entities/order "Submissions:Biological Entities/order") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __includesOrder__ 
  (owl:ObjectProperty) This object property relates two biological entities. In fact both its domain and its range are the class
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -172,14 +172,14 @@ __includesOrder__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[includesOrder](../Submissions/Biological_Entities/includesOrder "Submissions:Biological Entities/includesOrder") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __includesFamily__ 
  (owl:ObjectProperty) This object property relates two biological entities. In fact both its domain and its range are the class
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -187,14 +187,14 @@ __includesFamily__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[includesFamily](../Submissions/Biological_Entities/includesFamily "Submissions:Biological Entities/includesFamily") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __includesSpecies__ 
  (owl:ObjectProperty) This object property relates two biological entities. In fact both its domain and its range are the class
  [biological\_entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/biological_entity "Submissions:Biological Entities/biological entity (not yet written)") 
@@ -202,7 +202,7 @@ __includesSpecies__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[includesSpecies](../Submissions/Biological_Entities/includesSpecies "Submissions:Biological Entities/includesSpecies") 
  page_ 
 
@@ -210,7 +210,7 @@ _[includesSpecies](../Submissions/Biological_Entities/includesSpecies "Submissio
 
 [Submissions:Biological Entities/hasCode](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasCode "Submissions:Biological Entities/hasCode (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasCode](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasCode "Submissions:Biological Entities/hasCode (not yet written)") 
  page_ 
 
@@ -218,7 +218,7 @@ _[hasCode](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Eleme
 
 [Submissions:Biological Entities/hasID](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasID "Submissions:Biological Entities/hasID (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasID](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasID "Submissions:Biological Entities/hasID (not yet written)") 
  page_ 
 
@@ -226,7 +226,7 @@ _[hasID](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element
 
 [Submissions:Biological Entities/hasMeta](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasMeta "Submissions:Biological Entities/hasMeta (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasMeta](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasMeta "Submissions:Biological Entities/hasMeta (not yet written)") 
  page_ 
 
@@ -234,7 +234,7 @@ _[hasMeta](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Eleme
 
 [Submissions:Biological Entities/hasName](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasName "Submissions:Biological Entities/hasName (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasName](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasName "Submissions:Biological Entities/hasName (not yet written)") 
  page_ 
 
@@ -242,7 +242,7 @@ _[hasName](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Eleme
 
 [Submissions:Biological Entities/hasNameFull](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasNameFull "Submissions:Biological Entities/hasNameFull (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasNameFull](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasNameFull "Submissions:Biological Entities/hasNameFull (not yet written)") 
  page_ 
 
@@ -250,7 +250,7 @@ _[hasNameFull](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology E
 
 [Submissions:Biological Entities/hasNameScientific](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasNameScientific "Submissions:Biological Entities/hasNameScientific (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasNameScientific](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Biological_Entities/hasNameScientific "Submissions:Biological Entities/hasNameScientific (not yet written)") 
  page_ 
 

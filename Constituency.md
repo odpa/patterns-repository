@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:constituency.jpg](public/images/2/24/Constituency.jpg)](../Image/Constituency.jpg "Image:constituency.jpg")
+[![Image:constituency.jpg](../images/2/24/Constituency.jpg)](../Image/Constituency.jpg "Image:constituency.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Entity__ 
  (owl:Class) Anything: real, possible, or imaginary, which some modeller wants to talk about for some purpose.
  
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Entity](../Submissions/Constituency/Entity "Submissions:Constituency/Entity") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasConstituent__ 
  (owl:ObjectProperty) Constituency depends on some layering of the world described by the ontology. 
 For example, scientiﬁc granularity (e.g. body-organ-tissue-cell) or ontological 'strata' (e.g. social-mental-biological-physical) are typical layerings. Intuitively, a constituent is a part belonging to a lower 
@@ -95,14 +95,14 @@ conceptualized at a different layer from the persons that constitute it, a perso
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasConstituent](../Submissions/Constituency/hasConstituent "Submissions:Constituency/hasConstituent") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isConstituentOf__ 
  (owl:ObjectProperty) The inverse of the
  [hasConstituent](../Submissions/Constituency/hasConstituent "Submissions:Constituency/hasConstituent") 
@@ -111,7 +111,7 @@ __isConstituentOf__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isConstituentOf](../Submissions/Constituency/isConstituentOf "Submissions:Constituency/isConstituentOf") 
  page_ 
 

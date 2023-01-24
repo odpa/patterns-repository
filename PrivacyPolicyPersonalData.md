@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Privacypolicy.png](public/images/c/cf/Privacypolicy.png)](../Image/Privacypolicy.png "Image:Privacypolicy.png")
+[![Image:Privacypolicy.png](../images/c/cf/Privacypolicy.png)](../Image/Privacypolicy.png "Image:Privacypolicy.png")
 
 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:ComputationalEnvironment.jpeg](public/images/8/8d/ComputationalEnvironment.jpeg)](../Image/ComputationalEnvironment.jpeg "Image:ComputationalEnvironment.jpeg")
+[![Image:ComputationalEnvironment.jpeg](../images/8/8d/ComputationalEnvironment.jpeg)](../Image/ComputationalEnvironment.jpeg "Image:ComputationalEnvironment.jpeg")
 
 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:licenselinkeddataresources.png](public/images/0/08/Licenselinkeddataresources.png)](../Image/Licenselinkeddataresources.png "Image:licenselinkeddataresources.png")
+[![Image:licenselinkeddataresources.png](../images/0/08/Licenselinkeddataresources.png)](../Image/Licenselinkeddataresources.png "Image:licenselinkeddataresources.png")
 
 
 
@@ -69,7 +69,7 @@ _The
 
 [Submissions:LicenseLinkedDataResources/http://vocab.deri.ie/void](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://vocab.deri.ie/void "Submissions:LicenseLinkedDataResources/http://vocab.deri.ie/void (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[http://vocab.deri.ie/void#](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://vocab.deri.ie/void "Submissions:LicenseLinkedDataResources/http://vocab.deri.ie/void (not yet written)") 
  page_ 
 
@@ -77,7 +77,7 @@ _[http://vocab.deri.ie/void#](http://ontologydesignpatterns.org/wiki/Special:Add
 
 [Submissions:LicenseLinkedDataResources/http://xmlns.com/foaf/0.1/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://xmlns.com/foaf/0.1/ "Submissions:LicenseLinkedDataResources/http://xmlns.com/foaf/0.1/ (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[http://xmlns.com/foaf/0.1/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://xmlns.com/foaf/0.1/ "Submissions:LicenseLinkedDataResources/http://xmlns.com/foaf/0.1/ (not yet written)") 
  page_ 
 
@@ -85,7 +85,7 @@ _[http://xmlns.com/foaf/0.1/](http://ontologydesignpatterns.org/wiki/Special:Add
 
 [Submissions:LicenseLinkedDataResources/http://creativecommons.org/ns](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://creativecommons.org/ns "Submissions:LicenseLinkedDataResources/http://creativecommons.org/ns (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[http://creativecommons.org/ns#](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://creativecommons.org/ns "Submissions:LicenseLinkedDataResources/http://creativecommons.org/ns (not yet written)") 
  page_ 
 
@@ -93,7 +93,7 @@ _[http://creativecommons.org/ns#](http://ontologydesignpatterns.org/wiki/Special
 
 [Submissions:LicenseLinkedDataResources/http://purl.org/dc/terms/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://purl.org/dc/terms/ "Submissions:LicenseLinkedDataResources/http://purl.org/dc/terms/ (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[http://purl.org/dc/terms/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://purl.org/dc/terms/ "Submissions:LicenseLinkedDataResources/http://purl.org/dc/terms/ (not yet written)") 
  page_ 
 
@@ -101,7 +101,7 @@ _[http://purl.org/dc/terms/](http://ontologydesignpatterns.org/wiki/Special:AddD
 
 [Submissions:LicenseLinkedDataResources/http://purl.org/dc/elements/1.1/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://purl.org/dc/elements/1.1/ "Submissions:LicenseLinkedDataResources/http://purl.org/dc/elements/1.1/ (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[http://purl.org/dc/elements/1.1/](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:LicenseLinkedDataResources/http://purl.org/dc/elements/1.1/ "Submissions:LicenseLinkedDataResources/http://purl.org/dc/elements/1.1/ (not yet written)") 
  page_ 
 

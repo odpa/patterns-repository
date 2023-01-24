@@ -69,14 +69,14 @@ NP<class> differ/be different/be differentiate from NP<class>
 
 __Reusable JAPE code__ 
  :
- [DC\_1.jape](public/images/0/01/DC_1.jape "DC 1.jape") 
+ [DC\_1.jape](../images/0/01/DC_1.jape "DC 1.jape") 
 
 
 
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Disjoint_Classes_ODP/1 "Submissions:Lexico Syntactic ODP corresponding to Disjoint Classes ODP/1") 
  page_ 
 

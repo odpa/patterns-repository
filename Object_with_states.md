@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:ObjectWithStatesODP.png](public/images/1/11/ObjectWithStatesODP.png)](../Image/ObjectWithStatesODP.png "Image:ObjectWithStatesODP.png")
+[![Image:ObjectWithStatesODP.png](../images/1/11/ObjectWithStatesODP.png)](../Image/ObjectWithStatesODP.png "Image:ObjectWithStatesODP.png")
 
 
 
@@ -67,51 +67,51 @@ _The
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasState__ 
  (owl:ObjectProperty) Defines the state of an object.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasState](../Submissions/Object_with_states/hasState "Submissions:Object with states/hasState") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isStateOf__ 
  (owl:ObjectProperty) Defines the object that has an state
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isStateOf](../Submissions/Object_with_states/isStateOf "Submissions:Object with states/isStateOf") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) Objects are entities that have different states and that in each state different restrictions on their properties apply.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/Object_with_states/Object "Submissions:Object with states/Object") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __State__ 
  (owl:Class) States are the different states that an object can have. States must belong to a single collection of non-duplicate elements (i.e., to a set).
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[State](../Submissions/Object_with_states/State "Submissions:Object with states/State") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __StateSet__ 
  (owl:Class) State sets are sets of states (i.e., collections of non-duplicate states).
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[StateSet](../Submissions/Object_with_states/StateSet "Submissions:Object with states/StateSet") 
  page_ 
 

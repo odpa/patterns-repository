@@ -61,41 +61,41 @@ _The
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __partOf__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[partOf](../Submissions/TransportPattern/partOf "Submissions:TransportPattern/partOf") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __referenceFrame__ 
  (owl:ObjectProperty) This property is significant in that it serves to restrict and disambiguate a myriad of inherent facets, often in juxtaposition, associated with the Earths complex phenomena. The reference frame is provided to restrict the input values for a given instantiation, inherently providing context to the local representation.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[referenceFrame](../Submissions/TransportPattern/referenceFrame "Submissions:TransportPattern/referenceFrame") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __transportEvent__ 
  (owl:Class) A Transport Event describes a specific transport phenomenon, as movement of some mass or energy (measurable entity) from one location to another, based on a common and persistent frame of reference.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[transportEvent](../Submissions/TransportPattern/transportEvent "Submissions:TransportPattern/transportEvent") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __transportEntity__ 
  (owl:Class) The Transport Entity concept represents the identity of the circumscribed portion of energy or mass that is moved.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[transportEntity](../Submissions/TransportPattern/transportEntity "Submissions:TransportPattern/transportEntity") 
  page_ 
 
@@ -103,7 +103,7 @@ _[transportEntity](../Submissions/TransportPattern/transportEntity "Submissions:
 
 [Submissions:TransportPattern/transportMechanism](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:TransportPattern/transportMechanism "Submissions:TransportPattern/transportMechanism (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[transportMechanism](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:TransportPattern/transportMechanism "Submissions:TransportPattern/transportMechanism (not yet written)") 
  page_ 
 

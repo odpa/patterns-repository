@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Time-period.jpg](public/images/e/ee/Time-period.jpg)](../Image/Time-period.jpg "Image:Time-period.jpg")
+[![Image:Time-period.jpg](../images/e/ee/Time-period.jpg)](../Image/Time-period.jpg "Image:Time-period.jpg")
 
 
 

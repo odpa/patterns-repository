@@ -3,10 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[po-component.md](../WinstonPartWhole/po-component)  
-[po-feature.md](../WinstonPartWhole/po-feature)  
-[po-member.md](../WinstonPartWhole/po-member)  
-[po-place.md](../WinstonPartWhole/po-place)  
-[po-portion.md](../WinstonPartWhole/po-portion)  
-[po-stuff.md](../WinstonPartWhole/po-stuff)  
+[../](../)  
+[po-component.md](./po-component.md)  
+[po-feature.md](./po-feature.md)  
+[po-member.md](./po-member.md)  
+[po-place.md](./po-place.md)  
+[po-portion.md](./po-portion.md)  
+[po-stuff.md](./po-stuff.md)  

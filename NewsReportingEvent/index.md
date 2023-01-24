@@ -3,13 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasPresentationContext.md](../NewsReportingEvent/hasPresentationContext)  
-[Media.md](../NewsReportingEvent/Media)  
-[NewsEventReporter.md](../NewsReportingEvent/NewsEventReporter)  
-[NewsPresentationContext.md](../NewsReportingEvent/NewsPresentationContext)  
-[NewsProvider.md](../NewsReportingEvent/NewsProvider)  
-[NewsReportingEvent.md](../NewsReportingEvent)  
-[owns.md](../NewsReportingEvent/owns)  
-[PresentationContext.md](../NewsReportingEvent/hasPresentationContext)  
-[presentedAt.md](../NewsReportingEvent/presentedAt)  
+[../](../)  
+[hasPresentationContext.md](./hasPresentationContext.md)  
+[Media.md](./Media.md)  
+[NewsEventReporter.md](./NewsEventReporter.md)  
+[NewsPresentationContext.md](./NewsPresentationContext.md)  
+[NewsProvider.md](./NewsProvider.md)  
+[NewsReportingEvent.md](./NewsReportingEvent.md)  
+[owns.md](./owns.md)  
+[PresentationContext.md](./PresentationContext.md)  
+[presentedAt.md](./presentedAt.md)  

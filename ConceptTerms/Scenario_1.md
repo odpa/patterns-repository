@@ -10,7 +10,7 @@ __Description:__
 
 
 
-[![Image:ConceptTermsEurovocExample.jpg](../public/images/9/9e/ConceptTermsEurovocExample.jpg)](../../Image/ConceptTermsEurovocExample.jpg "Image:ConceptTermsEurovocExample.jpg")
+[![Image:ConceptTermsEurovocExample.jpg](../../images/9/9e/ConceptTermsEurovocExample.jpg)](../../Image/ConceptTermsEurovocExample.jpg "Image:ConceptTermsEurovocExample.jpg")
 
 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Stub-metapattern.png](public/images/c/cd/Stub-metapattern.png)](../Image/Stub-metapattern.png "Image:Stub-metapattern.png")
+[![Image:Stub-metapattern.png](../images/c/cd/Stub-metapattern.png)](../Image/Stub-metapattern.png "Image:Stub-metapattern.png")
 
 
 

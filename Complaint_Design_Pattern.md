@@ -63,7 +63,7 @@ _The
 
 [Submissions:Complaint Design Pattern/basedOn](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/basedOn&action=edit&redlink=1 "Submissions:Complaint Design Pattern/basedOn (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[basedOn](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/basedOn&action=edit&redlink=1 "Submissions:Complaint Design Pattern/basedOn (not yet written)") 
  page_ 
 
@@ -71,7 +71,7 @@ _[basedOn](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Co
 
 [Submissions:Complaint Design Pattern/expressedIn](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/expressedIn&action=edit&redlink=1 "Submissions:Complaint Design Pattern/expressedIn (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[expressedIn](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/expressedIn&action=edit&redlink=1 "Submissions:Complaint Design Pattern/expressedIn (not yet written)") 
  page_ 
 
@@ -79,7 +79,7 @@ _[expressedIn](http://ontologydesignpatterns.org/wiki/index.php?title=Submission
 
 [Submissions:Complaint Design Pattern/hasComplaintMotivation](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasComplaintMotivation&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasComplaintMotivation (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasComplaintMotivation](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasComplaintMotivation&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasComplaintMotivation (not yet written)") 
  page_ 
 
@@ -87,7 +87,7 @@ _[hasComplaintMotivation](http://ontologydesignpatterns.org/wiki/index.php?title
 
 [Submissions:Complaint Design Pattern/justifiedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/justifiedBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/justifiedBy (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[justifiedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/justifiedBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/justifiedBy (not yet written)") 
  page_ 
 
@@ -95,7 +95,7 @@ _[justifiedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submission
 
 [Submissions:Complaint Design Pattern/madeBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/madeBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/madeBy (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[madeBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/madeBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/madeBy (not yet written)") 
  page_ 
 
@@ -103,7 +103,7 @@ _[madeBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Com
 
 [Submissions:Complaint Design Pattern/supportedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/supportedBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/supportedBy (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[supportedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/supportedBy&action=edit&redlink=1 "Submissions:Complaint Design Pattern/supportedBy (not yet written)") 
  page_ 
 
@@ -111,7 +111,7 @@ _[supportedBy](http://ontologydesignpatterns.org/wiki/index.php?title=Submission
 
 [Submissions:Complaint Design Pattern/hasSpace](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasSpace&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasSpace (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasSpace](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasSpace&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasSpace (not yet written)") 
  page_ 
 
@@ -119,7 +119,7 @@ _[hasSpace](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:C
 
 [Submissions:Complaint Design Pattern/hasStampTime](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasStampTime&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasStampTime (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasStampTime](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasStampTime&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasStampTime (not yet written)") 
  page_ 
 
@@ -127,7 +127,7 @@ _[hasStampTime](http://ontologydesignpatterns.org/wiki/index.php?title=Submissio
 
 [Submissions:Complaint Design Pattern/hasTimeOccurrence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasTimeOccurrence&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasTimeOccurrence (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasTimeOccurrence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/hasTimeOccurrence&action=edit&redlink=1 "Submissions:Complaint Design Pattern/hasTimeOccurrence (not yet written)") 
  page_ 
 
@@ -135,7 +135,7 @@ _[hasTimeOccurrence](http://ontologydesignpatterns.org/wiki/index.php?title=Subm
 
 [Submissions:Complaint Design Pattern/Agent](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Agent&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Agent (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Agent](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Agent&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Agent (not yet written)") 
  page_ 
 
@@ -143,7 +143,7 @@ _[Agent](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Comp
 
 [Submissions:Complaint Design Pattern/Complainant](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complainant&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complainant (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Complainant](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complainant&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complainant (not yet written)") 
  page_ 
 
@@ -151,7 +151,7 @@ _[Complainant](http://ontologydesignpatterns.org/wiki/index.php?title=Submission
 
 [Submissions:Complaint Design Pattern/Complaint](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complaint&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complaint (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Complaint](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complaint&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complaint (not yet written)") 
  page_ 
 
@@ -159,7 +159,7 @@ _[Complaint](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:
 
 [Submissions:Complaint Design Pattern/Complaint Recipient](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complaint_Recipient&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complaint Recipient (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Complaint\_Recipient](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Complaint_Recipient&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Complaint Recipient (not yet written)") 
  page_ 
 
@@ -167,7 +167,7 @@ _[Complaint\_Recipient](http://ontologydesignpatterns.org/wiki/index.php?title=S
 
 [Submissions:Complaint Design Pattern/Evidence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Evidence&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Evidence (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Evidence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Evidence&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Evidence (not yet written)") 
  page_ 
 
@@ -175,7 +175,7 @@ _[Evidence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:C
 
 [Submissions:Complaint Design Pattern/Fact](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Fact&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Fact (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Fact](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Fact&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Fact (not yet written)") 
  page_ 
 
@@ -183,7 +183,7 @@ _[Fact](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Compl
 
 [Submissions:Complaint Design Pattern/Medium](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Medium&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Medium (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Medium](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Medium&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Medium (not yet written)") 
  page_ 
 
@@ -191,7 +191,7 @@ _[Medium](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Com
 
 [Submissions:Complaint Design Pattern/Motivation](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Motivation&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Motivation (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Motivation](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Motivation&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Motivation (not yet written)") 
  page_ 
 
@@ -199,7 +199,7 @@ _[Motivation](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions
 
 [Submissions:Complaint Design Pattern/Request](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Request&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Request (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Request](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/Request&action=edit&redlink=1 "Submissions:Complaint Design Pattern/Request (not yet written)") 
  page_ 
 
@@ -207,7 +207,7 @@ _[Request](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Co
 
 [Submissions:Complaint Design Pattern/ThirdParty](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/ThirdParty&action=edit&redlink=1 "Submissions:Complaint Design Pattern/ThirdParty (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[ThirdParty](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/ThirdParty&action=edit&redlink=1 "Submissions:Complaint Design Pattern/ThirdParty (not yet written)") 
  page_ 
 
@@ -215,7 +215,7 @@ _[ThirdParty](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions
 
 [Submissions:Complaint Design Pattern/partOf](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/partOf&action=edit&redlink=1 "Submissions:Complaint Design Pattern/partOf (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[partOf](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/partOf&action=edit&redlink=1 "Submissions:Complaint Design Pattern/partOf (not yet written)") 
  page_ 
 
@@ -223,7 +223,7 @@ _[partOf](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Com
 
 [Submissions:Complaint Design Pattern/addressedTo](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/addressedTo&action=edit&redlink=1 "Submissions:Complaint Design Pattern/addressedTo (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[addressedTo](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Complaint_Design_Pattern/addressedTo&action=edit&redlink=1 "Submissions:Complaint Design Pattern/addressedTo (not yet written)") 
  page_ 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:CP-SoA-01v1.jpg](public/images/f/f5/CP-SoA-01v1.jpg)](../Image/CP-SoA-01v1.jpg "Image:CP-SoA-01v1.jpg")
+[![Image:CP-SoA-01v1.jpg](../images/f/f5/CP-SoA-01v1.jpg)](../Image/CP-SoA-01v1.jpg "Image:CP-SoA-01v1.jpg")
 
 
 
@@ -67,27 +67,27 @@ _The
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasAggregatedMember__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasAggregatedMember](../Submissions/SimpleOrAggregated/hasAggregatedMember "Submissions:SimpleOrAggregated/hasAggregatedMember") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isAggregatedMemberOf__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isAggregatedMemberOf](../Submissions/SimpleOrAggregated/isAggregatedMemberOf "Submissions:SimpleOrAggregated/isAggregatedMemberOf") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __AggregatedObject__ 
  (owl:Class) An object that is an aggregation of two or more objects.
  
@@ -102,13 +102,13 @@ __AggregatedObject__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[AggregatedObject](../Submissions/SimpleOrAggregated/AggregatedObject "Submissions:SimpleOrAggregated/AggregatedObject") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) Any physical, social, or mental object, or a substance.
  
@@ -123,23 +123,23 @@ __Object__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/SimpleOrAggregated/Object "Submissions:SimpleOrAggregated/Object") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __ObjectByCardinality__ 
  (owl:Class)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[ObjectByCardinality](../Submissions/SimpleOrAggregated/ObjectByCardinality "Submissions:SimpleOrAggregated/ObjectByCardinality") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SimpleObject__ 
  (owl:Class) A simple object, that is, an object that has no aggregated objects.
  
@@ -154,7 +154,7 @@ __SimpleObject__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SimpleObject](../Submissions/SimpleOrAggregated/SimpleObject "Submissions:SimpleOrAggregated/SimpleObject") 
  page_ 
 

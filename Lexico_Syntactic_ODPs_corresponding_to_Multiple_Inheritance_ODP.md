@@ -75,7 +75,7 @@ __Reusable JAPE code__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Multiple_Inheritance_ODP/1 "Submissions:Lexico Syntactic ODPs corresponding to Multiple Inheritance ODP/1") 
  page_ 
 

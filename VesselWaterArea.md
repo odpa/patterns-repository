@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Vesselwaterarea.jpg](public/images/d/db/Vesselwaterarea.jpg)](../Image/Vesselwaterarea.jpg "Image:Vesselwaterarea.jpg")
+[![Image:Vesselwaterarea.jpg](../images/d/db/Vesselwaterarea.jpg)](../Image/Vesselwaterarea.jpg "Image:Vesselwaterarea.jpg")
 
 
 
@@ -67,7 +67,7 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __VesselType__ 
  (owl:Class) Vessel types are conceptual entities.
  
@@ -76,37 +76,37 @@ __VesselType__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[VesselType](../Submissions/VesselWaterArea/VesselType "Submissions:VesselWaterArea/VesselType") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __WaterArea__ 
  (owl:Class) A physical water area. Mappable to fi:WaterAreaRef
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[WaterArea](../Submissions/VesselWaterArea/WaterArea "Submissions:VesselWaterArea/WaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __canCrossWaterArea__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[canCrossWaterArea](../Submissions/VesselWaterArea/canCrossWaterArea "Submissions:VesselWaterArea/canCrossWaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __canBeCrossedByVesselType__ 
  (owl:ObjectProperty) A physical water area. Mappable to fi:WaterAreaRef
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[canBeCrossedByVesselType](../Submissions/VesselWaterArea/canBeCrossedByVesselType "Submissions:VesselWaterArea/canBeCrossedByVesselType") 
  page_ 
 

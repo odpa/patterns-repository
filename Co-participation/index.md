@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[coparticipatesWith.md](../Co-participation/coparticipatesWith)  
+[../](../)  
+[coparticipatesWith.md](./coparticipatesWith.md)  

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Specieshabitat.jpg](public/images/6/63/Specieshabitat.jpg)](../Image/Specieshabitat.jpg "Image:Specieshabitat.jpg")
+[![Image:Specieshabitat.jpg](../images/6/63/Specieshabitat.jpg)](../Image/Specieshabitat.jpg "Image:Specieshabitat.jpg")
 
 
 
@@ -67,31 +67,31 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Habitat__ 
  (owl:Class) Habitat is the biological and ecological context of a species in the area of an aquatic resource.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Habitat](../Submissions/SpeciesHabitat/Habitat "Submissions:SpeciesHabitat/Habitat") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasHabitat__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasHabitat](../Submissions/SpeciesHabitat/hasHabitat "Submissions:SpeciesHabitat/hasHabitat") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isHabitatFor__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isHabitatFor](../Submissions/SpeciesHabitat/isHabitatFor "Submissions:SpeciesHabitat/isHabitatFor") 
  page_ 
 

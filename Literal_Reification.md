@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Literalreification_new.png](public/images/1/12/Literalreification_new.png)](../Image/Literalreification_new.png "Image:Literalreification_new.png")
+[![Image:Literalreification_new.png](../images/1/12/Literalreification_new.png)](../Image/Literalreification_new.png "Image:Literalreification_new.png")
 
 
 
@@ -69,7 +69,7 @@ _The
 
 [Submissions:Literal Reification/Literal](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/Literal "Submissions:Literal Reification/Literal (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Literal](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/Literal "Submissions:Literal Reification/Literal (not yet written)") 
  page_ 
 
@@ -77,7 +77,7 @@ _[Literal](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Eleme
 
 [Submissions:Literal Reification/hasSameLiteralValueAs](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasSameLiteralValueAs "Submissions:Literal Reification/hasSameLiteralValueAs (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasSameLiteralValueAs](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasSameLiteralValueAs "Submissions:Literal Reification/hasSameLiteralValueAs (not yet written)") 
  page_ 
 
@@ -85,7 +85,7 @@ _[hasSameLiteralValueAs](http://ontologydesignpatterns.org/wiki/Special:AddData/
 
 [Submissions:Literal Reification/hasLiteral](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasLiteral "Submissions:Literal Reification/hasLiteral (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasLiteral](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasLiteral "Submissions:Literal Reification/hasLiteral (not yet written)") 
  page_ 
 
@@ -93,7 +93,7 @@ _[hasLiteral](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology El
 
 [Submissions:Literal Reification/isLiteralOf](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/isLiteralOf "Submissions:Literal Reification/isLiteralOf (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isLiteralOf](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/isLiteralOf "Submissions:Literal Reification/isLiteralOf (not yet written)") 
  page_ 
 
@@ -101,7 +101,7 @@ _[isLiteralOf](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology E
 
 [Submissions:Literal Reification/hasLiteralValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasLiteralValue "Submissions:Literal Reification/hasLiteralValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasLiteralValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Literal_Reification/hasLiteralValue "Submissions:Literal Reification/hasLiteralValue (not yet written)") 
  page_ 
 

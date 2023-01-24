@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Action.md](../Action)  
-[executesTask.md](../BasicPlan/executesTask)  
-[isExecutedIn.md](../BasicPlan/isExecutedIn)  
+[../](../)  
+[Action.md](./Action.md)  
+[executesTask.md](./executesTask.md)  
+[isExecutedIn.md](./isExecutedIn.md)  

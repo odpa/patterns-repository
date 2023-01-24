@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[actsFor.md](../ActingFor/actsFor)  
-[actsThrough.md](../ActingFor/actsThrough)  
-[introduces.md](../Persons/introduces)  
-[isIntroducedBy.md](../Persons/isIntroducedBy)  
-[NaturalPerson.md](../Persons/NaturalPerson)  
-[Person.md](../Persons/NaturalPerson)  
-[SocialPerson.md](../Persons/SocialPerson)  
+[../](../)  
+[actsFor.md](./actsFor.md)  
+[actsThrough.md](./actsThrough.md)  
+[introduces.md](./introduces.md)  
+[isIntroducedBy.md](./isIntroducedBy.md)  
+[NaturalPerson.md](./NaturalPerson.md)  
+[Person.md](./Person.md)  
+[SocialPerson.md](./SocialPerson.md)  

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Normalisation abstract.png](public/images/5/55/Normalisation_abstract.png)](../Image/Normalisation_abstract.png "Image:Normalisation abstract.png")
+[![Image:Normalisation abstract.png](../images/5/55/Normalisation_abstract.png)](../Image/Normalisation_abstract.png "Image:Normalisation abstract.png")
 
 
 

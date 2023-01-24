@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Activityspec op.png](public/images/2/21/Activityspec_op.png)](../Image/Activityspec_op.png "Image:Activityspec op.png")
+[![Image:Activityspec op.png](../images/2/21/Activityspec_op.png)](../Image/Activityspec_op.png "Image:Activityspec op.png")
 
 
 

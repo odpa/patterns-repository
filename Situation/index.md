@@ -3,9 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Entity.md](../CollectionEntity)  
-[hasSetting.md](../Situation/hasSetting)  
-[isSettingFor.md](../Situation/isSettingFor)  
-[Scenario_1.md](../AgentRole/Scenario_1)  
-[Situation.md](../DescriptionAndSituation)  
+[../](../)  
+[Entity.md](./Entity.md)  
+[hasSetting.md](./hasSetting.md)  
+[isSettingFor.md](./isSettingFor.md)  
+[Scenario_1.md](./Scenario_1.md)  
+[Situation.md](./Situation.md)  

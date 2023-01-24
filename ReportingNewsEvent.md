@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:ReportingNewsEvent-scheme.png‎](public/images/d/d9/ReportingNewsEvent-scheme.png)](../Image/ReportingNewsEvent-scheme.png "Image:ReportingNewsEvent-scheme.png‎")
+[![Image:ReportingNewsEvent-scheme.png‎](../images/d/d9/ReportingNewsEvent-scheme.png)](../Image/ReportingNewsEvent-scheme.png "Image:ReportingNewsEvent-scheme.png‎")
 
 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:PeriodicIntervalv0.jpg](public/images/6/60/PeriodicIntervalv0.jpg)](../Image/PeriodicIntervalv0.jpg "Image:PeriodicIntervalv0.jpg")
+[![Image:PeriodicIntervalv0.jpg](../images/6/60/PeriodicIntervalv0.jpg)](../Image/PeriodicIntervalv0.jpg "Image:PeriodicIntervalv0.jpg")
 
 
 
@@ -67,31 +67,31 @@ _The
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasIntervalDurationPerPeriod__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasIntervalDurationPerPeriod](../Submissions/PeriodicInterval/hasIntervalDurationPerPeriod "Submissions:PeriodicInterval/hasIntervalDurationPerPeriod") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasPeriod__ 
  (owl:ObjectProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasPeriod](../Submissions/PeriodicInterval/hasPeriod "Submissions:PeriodicInterval/hasPeriod") 
  page_ 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __PeriodicInterval__ 
  (owl:Class)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[PeriodicInterval](../Submissions/PeriodicInterval/PeriodicInterval "Submissions:PeriodicInterval/PeriodicInterval") 
  page_ 
 

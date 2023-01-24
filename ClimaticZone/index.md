@@ -3,12 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticResource.md](../AquaticResourceObservation/AquaticResource)  
-[AquaticResourceObservation.md](../AquaticResourceObservation)  
-[ClimaticZone.md](../ClimaticZone)  
-[hasClimaticZone.md](../AquaticResourceObservation/hasClimaticZone)  
-[hasReferenceYear.md](../AquaticResourceObservation/hasReferenceYear)  
-[hasResource.md](../AquaticResourceObservation/hasResource)  
-[isClimaticZoneOf.md](../AquaticResourceObservation/isClimaticZoneOf)  
-[isResourceOf.md](../AquaticResourceObservation/isResourceOf)  
+[../](../)  
+[AquaticResource.md](./AquaticResource.md)  
+[AquaticResourceObservation.md](./AquaticResourceObservation.md)  
+[ClimaticZone.md](./ClimaticZone.md)  
+[hasClimaticZone.md](./hasClimaticZone.md)  
+[hasReferenceYear.md](./hasReferenceYear.md)  
+[hasResource.md](./hasResource.md)  
+[isClimaticZoneOf.md](./isClimaticZoneOf.md)  
+[isResourceOf.md](./isResourceOf.md)  

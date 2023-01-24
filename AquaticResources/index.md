@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticResource.md](../AquaticResourceObservation/AquaticResource)  
-[AquaticSpecies.md](../AquaticResources/AquaticSpecies)  
-[hasSpecies.md](../AquaticResources/hasSpecies)  
-[hasWaterArea.md](../AquaticResources/hasWaterArea)  
-[isSpeciesPresentIn.md](../AquaticResources/isSpeciesPresentIn)  
-[isWaterAreaOf.md](../AquaticResources/isWaterAreaOf)  
-[WaterArea.md](../GearWaterArea)  
+[../](../)  
+[AquaticResource.md](./AquaticResource.md)  
+[AquaticSpecies.md](./AquaticSpecies.md)  
+[hasSpecies.md](./hasSpecies.md)  
+[hasWaterArea.md](./hasWaterArea.md)  
+[isSpeciesPresentIn.md](./isSpeciesPresentIn.md)  
+[isWaterAreaOf.md](./isWaterAreaOf.md)  
+[WaterArea.md](./WaterArea.md)  

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Disjoint-sib-example.png](public/images/7/7e/Disjoint-sib-example.png)](../Image/Disjoint-sib-example.png "Image:Disjoint-sib-example.png")
+[![Image:Disjoint-sib-example.png](../images/7/7e/Disjoint-sib-example.png)](../Image/Disjoint-sib-example.png "Image:Disjoint-sib-example.png")
 
 
 

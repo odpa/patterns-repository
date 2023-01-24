@@ -3,13 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Affordance.md](../Affordance)  
-[affordanceStrength.md](../Affordance/affordanceStrength)  
-[Frame.md](../Affordance/Frame)  
-[hasParameter.md](../Affordance/hasParameter)  
-[hasTask.md](../Affordance/hasTask)  
-[holds.md](../Affordance/holds)  
-[isHeldBy.md](../Affordance/isHeldBy)  
-[Situation.md](../DescriptionAndSituation)  
-[TaskParameter.md](../Affordance/TaskParameter)  
+[../](../)  
+[Affordance.md](./Affordance.md)  
+[affordanceStrength.md](./affordanceStrength.md)  
+[Frame.md](./Frame.md)  
+[hasParameter.md](./hasParameter.md)  
+[hasTask.md](./hasTask.md)  
+[holds.md](./holds.md)  
+[isHeldBy.md](./isHeldBy.md)  
+[Situation.md](./Situation.md)  
+[TaskParameter.md](./TaskParameter.md)  

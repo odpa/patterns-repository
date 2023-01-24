@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:TemplatePatternBeforeAndAfter.png](public/images/4/4c/TemplatePatternBeforeAndAfter.png)](../Image/TemplatePatternBeforeAndAfter.png "Image:TemplatePatternBeforeAndAfter.png")
+[![Image:TemplatePatternBeforeAndAfter.png](../images/4/4c/TemplatePatternBeforeAndAfter.png)](../Image/TemplatePatternBeforeAndAfter.png "Image:TemplatePatternBeforeAndAfter.png")
 
 
 

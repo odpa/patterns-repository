@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:coparticipation.jpg](public/images/e/e3/Coparticipation.jpg)](../Image/Coparticipation.jpg "Image:coparticipation.jpg")
+[![Image:coparticipation.jpg](../images/e/e3/Coparticipation.jpg)](../Image/Coparticipation.jpg "Image:coparticipation.jpg")
 
 
 
@@ -68,14 +68,14 @@ _The
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __coparticipatesWith__ 
  (owl:ObjectProperty) A symmetric binary relation between objects. It is intedned to represent coparticipation in same event, and such event and the related participation relations should be added separately.
  
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[coparticipatesWith](../Submissions/Co-participation/coparticipatesWith "Submissions:Co-participation/coparticipatesWith") 
  page_ 
 

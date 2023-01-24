@@ -1,4 +1,4 @@
-[![Image:Npa-diagram.png](public/images/f/f1/Npa-diagram.png)](../Image/Npa-diagram.png "Image:Npa-diagram.png")
+[![Image:Npa-diagram.png](../images/f/f1/Npa-diagram.png)](../Image/Npa-diagram.png "Image:Npa-diagram.png")
 
 
 

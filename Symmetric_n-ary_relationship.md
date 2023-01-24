@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Symmetric_n-ary_relationship_v1.jpg‎](public/images/4/49/Symmetric_n-ary_relationship_v1.jpg)](../Image/Symmetric_n-ary_relationship_v1.jpg "Image:Symmetric_n-ary_relationship_v1.jpg‎")
+[![Image:Symmetric_n-ary_relationship_v1.jpg‎](../images/4/49/Symmetric_n-ary_relationship_v1.jpg)](../Image/Symmetric_n-ary_relationship_v1.jpg "Image:Symmetric_n-ary_relationship_v1.jpg‎")
 
 
 
@@ -73,7 +73,7 @@ __Diagram__
 |  |  |
 | --- | --- |
 |  Problem example  |  For example, we might want to represent the distance expressed in kilometres between two places.  |
-|  Pattern solution example  | [http://ontologydesignpatterns.org/wiki/images/b/bd/Symmetric\_n-ary\_relationship\_distance.jpg](public/images/b/bd/Symmetric_n-ary_relationship_distance.jpg "http://ontologydesignpatterns.org/wiki/public/images/b/bd/Symmetric_n-ary_relationship_distance.jpg")  |
+|  Pattern solution example  | [http://ontologydesignpatterns.org/wiki/images/b/bd/Symmetric\_n-ary\_relationship\_distance.jpg](../images/b/bd/Symmetric_n-ary_relationship_distance.jpg "http://ontologydesignpatterns.org/wiki/../images/b/bd/Symmetric_n-ary_relationship_distance.jpg")  |
 |  Consequences  |  The main advantage of this pattern is that allows representing distance between places without including redundancy in the ontology.  |
 
 

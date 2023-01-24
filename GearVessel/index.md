@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[GearType.md](../GearSpecies/GearType)  
-[usedByVesselType.md](../GearVessel/usedByVesselType)  
-[usesGearType.md](../GearVessel/usesGearType)  
-[VesselType.md](../GearVessel/usedByVesselType)  
+[../](../)  
+[GearType.md](./GearType.md)  
+[usedByVesselType.md](./usedByVesselType.md)  
+[usesGearType.md](./usesGearType.md)  
+[VesselType.md](./VesselType.md)  

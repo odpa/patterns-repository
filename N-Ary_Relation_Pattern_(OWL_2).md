@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Nary-relation.png](public/images/0/04/Nary-relation.png)](../Image/Nary-relation.png "Image:Nary-relation.png")
+[![Image:Nary-relation.png](../images/0/04/Nary-relation.png)](../Image/Nary-relation.png "Image:Nary-relation.png")
 
 
 

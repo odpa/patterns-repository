@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Speciesbathymetry.jpg](public/images/7/7c/Speciesbathymetry.jpg)](../Image/Speciesbathymetry.jpg "Image:Speciesbathymetry.jpg")
+[![Image:Speciesbathymetry.jpg](../images/7/7c/Speciesbathymetry.jpg)](../Image/Speciesbathymetry.jpg "Image:Speciesbathymetry.jpg")
 
 
 
@@ -67,7 +67,7 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __BathymetricRange__ 
  (owl:Class) This class contains the set of bathymetric ranges. Bathymetry is numeric depth information about the ranges in which an aquatic species is found.
  
@@ -76,47 +76,47 @@ __BathymetricRange__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[BathymetricRange](../Submissions/SpeciesBathymetry/BathymetricRange "Submissions:SpeciesBathymetry/BathymetricRange") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasBathymetricRange__ 
  (owl:ObjectProperty) has bathymetric range
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasBathymetricRange](../Submissions/SpeciesBathymetry/hasBathymetricRange "Submissions:SpeciesBathymetry/hasBathymetricRange") 
  page_ 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isBathymetricRangeOf__ 
  (owl:ObjectProperty) is bathymetric range of
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isBathymetricRangeOf](../Submissions/SpeciesBathymetry/isBathymetricRangeOf "Submissions:SpeciesBathymetry/isBathymetricRangeOf") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasRangeMin__ 
  (owl:DatatypeProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasRangeMin](../Submissions/SpeciesBathymetry/hasRangeMin "Submissions:SpeciesBathymetry/hasRangeMin") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasRangeMax__ 
  (owl:DatatypeProperty)
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasRangeMax](../Submissions/SpeciesBathymetry/hasRangeMax "Submissions:SpeciesBathymetry/hasRangeMax") 
  page_ 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Tree.png](public/images/a/ac/Tree.png)](../Image/Tree.png "Image:Tree.png")
+[![Image:Tree.png](../images/a/ac/Tree.png)](../Image/Tree.png "Image:Tree.png")
 
 
 

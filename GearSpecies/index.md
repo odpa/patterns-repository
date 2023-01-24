@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticSpecies.md](../AquaticResources/AquaticSpecies)  
-[catchesSpecies.md](../GearSpecies/catchesSpecies)  
-[GearType.md](../GearSpecies/GearType)  
-[incidentallyCatchesSpecies.md](../GearSpecies/incidentallyCatchesSpecies)  
-[isCaughtBy.md](../GearSpecies/isCaughtBy)  
-[isCaughtByGearType.md](../GearSpecies/isCaughtByGearType)  
-[targetsSpecies.md](../GearSpecies/targetsSpecies)  
+[../](../)  
+[AquaticSpecies.md](./AquaticSpecies.md)  
+[catchesSpecies.md](./catchesSpecies.md)  
+[GearType.md](./GearType.md)  
+[incidentallyCatchesSpecies.md](./incidentallyCatchesSpecies.md)  
+[isCaughtBy.md](./isCaughtBy.md)  
+[isCaughtByGearType.md](./isCaughtByGearType.md)  
+[targetsSpecies.md](./targetsSpecies.md)  

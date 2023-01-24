@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Fig_view_inheritance_structure.png](public/images/0/0a/Fig_view_inheritance_structure.png)](../Image/Fig_view_inheritance_structure.png "Image:Fig_view_inheritance_structure.png")
+[![Image:Fig_view_inheritance_structure.png](../images/0/0a/Fig_view_inheritance_structure.png)](../Image/Fig_view_inheritance_structure.png "Image:Fig_view_inheritance_structure.png")
 
 
 
@@ -105,7 +105,7 @@ __Diagram__
 
 
 
-[![Image:Fig_avizienis_fault_4.jpg](public/images/5/5b/Fig_avizienis_fault_4.jpg)](../Image/Fig_avizienis_fault_4.jpg "Image:Fig_avizienis_fault_4.jpg")
+[![Image:Fig_avizienis_fault_4.jpg](../images/5/5b/Fig_avizienis_fault_4.jpg)](../Image/Fig_avizienis_fault_4.jpg "Image:Fig_avizienis_fault_4.jpg")
 
 
 
@@ -118,7 +118,7 @@ __Diagram__
 
 
 
-[![Image:Fig_avizienis_fault_5a.jpg](public/images/4/45/Fig_avizienis_fault_5a.jpg)](../Image/Fig_avizienis_fault_5a.jpg "Image:Fig_avizienis_fault_5a.jpg")
+[![Image:Fig_avizienis_fault_5a.jpg](../images/4/45/Fig_avizienis_fault_5a.jpg)](../Image/Fig_avizienis_fault_5a.jpg "Image:Fig_avizienis_fault_5a.jpg")
 
 
 
@@ -131,7 +131,7 @@ __Diagram__
 
 
 
-[![Image:Fig_avizienis_fault_5b.jpg](public/images/d/d1/Fig_avizienis_fault_5b.jpg)](../Image/Fig_avizienis_fault_5b.jpg "Image:Fig_avizienis_fault_5b.jpg")
+[![Image:Fig_avizienis_fault_5b.jpg](../images/d/d1/Fig_avizienis_fault_5b.jpg)](../Image/Fig_avizienis_fault_5b.jpg "Image:Fig_avizienis_fault_5b.jpg")
 
 
 
@@ -144,7 +144,7 @@ __Diagram__
 
 
 
-[![Image:Fig_fault_f1_f2_asserted_prot4x.png](public/images/a/ac/Fig_fault_f1_f2_asserted_prot4x.png)](../Image/Fig_fault_f1_f2_asserted_prot4x.png "Image:Fig_fault_f1_f2_asserted_prot4x.png")
+[![Image:Fig_fault_f1_f2_asserted_prot4x.png](../images/a/ac/Fig_fault_f1_f2_asserted_prot4x.png)](../Image/Fig_fault_f1_f2_asserted_prot4x.png "Image:Fig_fault_f1_f2_asserted_prot4x.png")
 
 
 

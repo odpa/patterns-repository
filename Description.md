@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Description.jpg](public/images/6/61/Description.jpg)](../Image/Description.jpg "Image:Description.jpg")
+[![Image:Description.jpg](../images/6/61/Description.jpg)](../Image/Description.jpg "Image:Description.jpg")
 
 
 
@@ -68,7 +68,7 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Description__ 
  (owl:Class) A description represents a conceptualization. It can be thought also as a descriptive
 context that defines concepts in order to see a relational context out of a set of data or observations.
@@ -79,14 +79,14 @@ entities, etc.
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Description](../Submissions/Description/Description "Submissions:Description/Description") 
  page_ 
 
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Concept__ 
  (owl:Class) A
  __concept__ 
@@ -96,14 +96,14 @@ Once defined, a concept can be used in other descriptions.
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Concept](../Submissions/Description/Concept "Submissions:Description/Concept") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is defined in__ 
  (owl:ObjectProperty) A relation between a description and a concept, e.g. a workflow for a governmental
 organization defines the role officer, or the Italian Traffic Law defines the role Vehicle. In order to be
@@ -114,14 +114,14 @@ used, a concept must be previously defined in another description. The
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isDefinedIn](../Submissions/Description/isDefinedIn "Submissions:Description/isDefinedIn") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __is concept used in__ 
  (owl:ObjectProperty) a more generic relation holding between a description and a concept.
 The
@@ -131,14 +131,14 @@ The
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isConceptUsedIn](../Submissions/Description/isConceptUsedIn "Submissions:Description/isConceptUsedIn") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __defines__ 
  (owl:ObjectProperty) A relation between a
  [Description](../Submissions/Description/Description "Submissions:Description/Description") 
@@ -151,14 +151,14 @@ __defines__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[defines](../Submissions/Description/defines "Submissions:Description/defines") 
  page_ 
 
 
 
 
-[![ObjectProperty](public/images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __uses concept__ 
  (owl:ObjectProperty) A generic relation holding between a
  [Description](../Submissions/Description/Description "Submissions:Description/Description") 
@@ -171,7 +171,7 @@ __uses concept__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[usesConcept](../Submissions/Description/usesConcept "Submissions:Description/usesConcept") 
  page_ 
 

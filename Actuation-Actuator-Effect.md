@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Odp AAE.png](public/images/2/20/Odp_AAE.png)](../Image/Odp_AAE.png "Image:Odp AAE.png")
+[![Image:Odp AAE.png](../images/2/20/Odp_AAE.png)](../Image/Odp_AAE.png "Image:Odp AAE.png")
 
 
 

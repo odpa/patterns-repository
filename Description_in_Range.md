@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Dir.png](public/images/b/b4/Dir.png)](../Image/Dir.png "Image:Dir.png")
+[![Image:Dir.png](../images/b/b4/Dir.png)](../Image/Dir.png "Image:Dir.png")
 
 
 
@@ -69,7 +69,7 @@ _The
 
 [Submissions:Description in Range/DescriptionInRange](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/DescriptionInRange "Submissions:Description in Range/DescriptionInRange (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[DescriptionInRange](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/DescriptionInRange "Submissions:Description in Range/DescriptionInRange (not yet written)") 
  page_ 
 
@@ -77,7 +77,7 @@ _[DescriptionInRange](http://ontologydesignpatterns.org/wiki/Special:AddData/Ont
 
 [Submissions:Description in Range/Entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/Entity "Submissions:Description in Range/Entity (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/Entity "Submissions:Description in Range/Entity (not yet written)") 
  page_ 
 
@@ -85,7 +85,7 @@ _[Entity](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Elemen
 
 [Submissions:Description in Range/isRangedByValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/isRangedByValue "Submissions:Description in Range/isRangedByValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isRangedByValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/isRangedByValue "Submissions:Description in Range/isRangedByValue (not yet written)") 
  page_ 
 
@@ -93,7 +93,7 @@ _[isRangedByValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontolo
 
 [Submissions:Description in Range/hasInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasInclusiveLowerBoundValue "Submissions:Description in Range/hasInclusiveLowerBoundValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasInclusiveLowerBoundValue "Submissions:Description in Range/hasInclusiveLowerBoundValue (not yet written)") 
  page_ 
 
@@ -101,7 +101,7 @@ _[hasInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special:Ad
 
 [Submissions:Description in Range/hasNonInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasNonInclusiveLowerBoundValue "Submissions:Description in Range/hasNonInclusiveLowerBoundValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasNonInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasNonInclusiveLowerBoundValue "Submissions:Description in Range/hasNonInclusiveLowerBoundValue (not yet written)") 
  page_ 
 
@@ -109,7 +109,7 @@ _[hasNonInclusiveLowerBoundValue](http://ontologydesignpatterns.org/wiki/Special
 
 [Submissions:Description in Range/hasInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasInclusiveUpperBoundValue "Submissions:Description in Range/hasInclusiveUpperBoundValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasInclusiveUpperBoundValue "Submissions:Description in Range/hasInclusiveUpperBoundValue (not yet written)") 
  page_ 
 
@@ -117,7 +117,7 @@ _[hasInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special:Ad
 
 [Submissions:Description in Range/hasNonInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasNonInclusiveUpperBoundValue "Submissions:Description in Range/hasNonInclusiveUpperBoundValue (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasNonInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/hasNonInclusiveUpperBoundValue "Submissions:Description in Range/hasNonInclusiveUpperBoundValue (not yet written)") 
  page_ 
 
@@ -125,7 +125,7 @@ _[hasNonInclusiveUpperBoundValue](http://ontologydesignpatterns.org/wiki/Special
 
 [Submissions:Description in Range/isDescribedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/isDescribedBy "Submissions:Description in Range/isDescribedBy (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isDescribedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/isDescribedBy "Submissions:Description in Range/isDescribedBy (not yet written)") 
  page_ 
 
@@ -133,7 +133,7 @@ _[isDescribedBy](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology
 
 [Submissions:Description in Range/describes](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/describes "Submissions:Description in Range/describes (not yet written)") 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[describes](http://ontologydesignpatterns.org/wiki/Special:AddData/Ontology Element Form/Submissions:Description_in_Range/describes "Submissions:Description in Range/describes (not yet written)") 
  page_ 
 

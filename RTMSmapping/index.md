@@ -3,6 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasRTMS_Code.md](../RTMSmapping/hasRTMS_Code)  
-[RTMS_Code.md](../RTMSmapping/hasRTMS_Code)  
+[../](../)  
+[hasRTMS_Code.md](./hasRTMS_Code.md)  
+[RTMS_Code.md](./RTMS_Code.md)  

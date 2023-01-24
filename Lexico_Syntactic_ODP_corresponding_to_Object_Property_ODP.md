@@ -69,14 +69,14 @@ NP<class> VB NEG(be / have / CATV / PART) NP<class>
 
 __Reusable JAPE code__ 
  :
- [OP\_1.jape](public/images/9/99/OP_1.jape "OP 1.jape") 
+ [OP\_1.jape](../images/9/99/OP_1.jape "OP 1.jape") 
 
 
 
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Object_Property_ODP/1 "Submissions:Lexico Syntactic ODP corresponding to Object Property ODP/1") 
  page_ 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Speciesnames.jpg](public/images/3/32/Speciesnames.jpg)](../Image/Speciesnames.jpg "Image:Speciesnames.jpg")
+[![Image:Speciesnames.jpg](../images/3/32/Speciesnames.jpg)](../Image/Speciesnames.jpg "Image:Speciesnames.jpg")
 
 
 
@@ -67,7 +67,7 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __AquaticSpecies__ 
  (owl:Class) Aquatic species are conceptual entities that are characterized together with resources and water areas.
  
@@ -81,37 +81,37 @@ __AquaticSpecies__
 
 
 
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[AquaticSpecies](../Submissions/SpeciesNames/AquaticSpecies "Submissions:SpeciesNames/AquaticSpecies") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasLocalName__ 
  (owl:DatatypeProperty) Property to express a species' localname , where it is used , and any additional information like the name of the dialect or more detailed geographical information on where exactly the local-common name is used for the aquatic species in a given country.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasLocalName](../Submissions/SpeciesNames/hasLocalName "Submissions:SpeciesNames/hasLocalName") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __canBeConfusedWith__ 
  (owl:DatatypeProperty) A property for expressing a description of why a species may be confused with another. It may instead/also contain a list of other species with which a species may be confused.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[canBeConfusedWith](../Submissions/SpeciesNames/canBeConfusedWith "Submissions:SpeciesNames/canBeConfusedWith") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../../../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __hasSynonym__ 
  (owl:DatatypeProperty) Expresses the scientific names that exist for a species but are no longer valid.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasSynonym](../Submissions/SpeciesNames/hasSynonym "Submissions:SpeciesNames/hasSynonym") 
  page_ 
 

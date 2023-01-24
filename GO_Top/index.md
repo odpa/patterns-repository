@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[BiologicalProcess.md](../GO_Top/BiologicalProcess)  
-[CellularComponent.md](../GO_Top/CellularComponent)  
-[MolecularFunction.md](../GO_Top/MolecularFunction)  
-[partOf.md](../GO_Top/partOf)  
+[../](../)  
+[BiologicalProcess.md](./BiologicalProcess.md)  
+[CellularComponent.md](./CellularComponent.md)  
+[MolecularFunction.md](./MolecularFunction.md)  
+[partOf.md](./partOf.md)  

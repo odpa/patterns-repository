@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasFirstName.md](../Course/hasFirstName)  
-[hasLastName.md](../Course/hasLastName)  
-[hasNumber.md](../Course/hasNumber)  
-[taughtBy.md](../Course/taughtBy)  
+[../](../)  
+[hasFirstName.md](./hasFirstName.md)  
+[hasLastName.md](./hasLastName.md)  
+[hasNumber.md](./hasNumber.md)  
+[taughtBy.md](./taughtBy.md)  

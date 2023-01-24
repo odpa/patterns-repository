@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Set.jpg](public/images/1/15/Set.jpg)](../Image/Set.jpg "Image:Set.jpg")
+[![Image:Set.jpg](../images/1/15/Set.jpg)](../Image/Set.jpg "Image:Set.jpg")
 
 
 
@@ -67,21 +67,21 @@ _The
 
 
 
-[![Class](public/images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Set__ 
  (owl:Class) Set - A collection that cannot contain duplicate elements.
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Set](../Submissions/Set/Set "Submissions:Set/Set") 
  page_ 
 
 
 
-[![DatatypeProperty](public/images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../images/thumb/a/a5/DatatypeProperty.gif/20px-DatatypeProperty.gif)](../Image/DatatypeProperty.gif "DatatypeProperty")
 __size__ 
  (owl:DatatypeProperty) size - The number of items belonging to a collection
  
-[![](public/images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[size](../Submissions/Set/size "Submissions:Set/size") 
  page_ 
 

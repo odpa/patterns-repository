@@ -6,289 +6,289 @@ baseurl: /
 description: A Portal for ODPA
 markdown: GFM
 collections:
-  WOP2012TestPatterns:
-    output: true
-  Policy:
-    output: true
-  SpeciesBathymetry:
-    output: true
-  Objectrole:
-    output: true
-  WinstonPartWhole:
-    output: true
-  TaskExecution:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_and_Universal_Restriction_ODPs:
-    output: true
-  Biological_Entities:
-    output: true
-  EventCore:
-    output: true
-  Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP:
-    output: true
-  Situation:
-    output: true
-  SpeciesConditions:
-    output: true
-  Co-participation:
-    output: true
-  Vocabulary_Alignment_Pattern:
-    output: true
-  LCA_Pattern:
-    output: true
-  Trajectory:
-    output: true
-  Communities:
-    output: true
-  GearWaterArea:
-    output: true
-  Parameter:
-    output: true
-  SpeciesHabitat:
-    output: true
-  Nary_Participation:
-    output: true
-  Role_task:
-    output: true
-  BasicPlan:
-    output: true
-  TransportPattern:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Specified_Values_ODP:
-    output: true
-  Region:
-    output: true
-  SmartHome_Sensing:
-    output: true
-  AOS_AGROVOC_Concept_Server_fundation_ontology_model:
-    output: true
-  OOPMetrics:
-    output: true
-  RTMSmapping:
-    output: true
-  Computer_System:
-    output: true
-  Bag:
-    output: true
-  Pollution:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_%22or%22_Simple_Part-Whole_relation_ODPs:
-    output: true
-  Classification:
-    output: true
-  Material_Transformation:
-    output: true
-  Time_indexed_person_role:
-    output: true
-  SmartHome_Place:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs:
-    output: true
-  An_Ontology_Design_Pattern_for_Activity_Reasoning:
-    output: true
-  CollectionEntity:
-    output: true
-  SmartHome_Network:
-    output: true
-  Set:
-    output: true
-  BasicPlanExecution:
-    output: true
-  VesselSpecies:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Co-participation_ODP:
-    output: true
-  Place:
-    output: true
-  Types_of_entities:
-    output: true
-  Tagging:
-    output: true
-  EventProcessing:
-    output: true
-  TimeIndexedPartOf:
+  Componency:
     output: true
   HistoricalMap:
     output: true
-  CountingAs:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs:
-    output: true
-  Description:
-    output: true
-  Action:
-    output: true
-  Experience_&_Observation:
-    output: true
-  ? Lexico_Syntactic_ODPs_corresponding_to_Simple_Part-Whole_relation_%22or%22_Constituency_%22or%22_Componency_%22or%22_Collection-Entity_ODPs
-  : output: true
-  SimpleOrAggregated:
-    output: true
-  Sequence:
-    output: true
-  SpeciesNames:
-    output: true
-  Constituency:
-    output: true
-  Time_indexed_participation:
-    output: true
-  Observation:
-    output: true
-  Invoice:
-    output: true
-  NewsReportingEvent:
-    output: true
-  Scorepart:
-    output: true
-  Transition:
-    output: true
-  Born_Digital_Archives:
-    output: true
-  Reactor_pattern:
-    output: true
-  Airline:
-    output: true
-  ParticipantRole:
-    output: true
-  ResourceExploitationObservation:
-    output: true
-  Lexico_Syntactic_ODP_corresponding_to_Object_Property_ODP:
-    output: true
-  DescriptionAndSituation:
-    output: true
-  DataTransformationPattern:
-    output: true
-  Collection:
-    output: true
-  SpeciesEat:
-    output: true
-  Xsd:
-    output: true
-  GearSpecies:
-    output: true
-  Course:
-    output: true
-  Lexico_Syntactic_ODP_corresponding_to_Participation_ODP:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Multiple_Inheritance_ODP:
-    output: true
-  ActingFor:
-    output: true
-  TimeIndexedSituation:
-    output: true
-  ConceptTerms:
-    output: true
-  ResourceAbundanceObservation:
+  PeriodicInterval:
     output: true
   AquaticResources:
     output: true
-  Componency:
+  Controlflow:
     output: true
-  Participation:
+  Lexico_Syntactic_ODPs_corresponding_to_Multiple_Inheritance_ODP:
     output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Object-Role_ODP:
+  Course:
     output: true
-  PlanConditions:
-    output: true
-  ClimaticZone:
-    output: true
-  TimeIndexedClassification:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_or_Datatype_Property_or_Simple_Part-Whole_relation_ODPs:
-    output: true
-  SpatioTemporalExtent:
-    output: true
-  Notepattern:
-    output: true
-  COP:
-    output: true
-  AquaticResourceObservation:
-    output: true
-  Price:
+  Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP:
     output: true
   TimeInterval:
     output: true
-  InformationObjectsAndRepresentationLanguages:
-    output: true
-  CommunicationEvent:
-    output: true
-  Persons:
-    output: true
-  SmartHome_Geometry:
-    output: true
-  Lexico_Syntactic_ODPs_corresponding_to_LocationODP:
-    output: true
-  Topic:
-    output: true
-  PartOf:
-    output: true
-  List:
-    output: true
-  Affordance:
-    output: true
-  SmartHome_Object:
-    output: true
-  SpeciesConservation:
-    output: true
-  PeriodicInterval:
-    output: true
-  AffectedBy:
-    output: true
-  Controlflow:
-    output: true
-  SmartHome_Event:
-    output: true
-  Object_with_states:
-    output: true
-  Lexico_Syntactic_ODP_corresponding_to_Datatype_Property_ODP:
+  WinstonPartWhole:
     output: true
   GO_Top:
     output: true
-  VesselWaterArea:
+  TimeIndexedSituation:
     output: true
-  VerticalDistribution:
-    output: true
-  SmartHome_FeatureOfInterest:
-    output: true
-  Airline.owl:
-    output: true
-  SmartHome_Situation:
+  Biological_Entities:
     output: true
   Lexico_Syntactic_ODP_corresponding_to_Disjoint_Classes_ODP:
+    output: true
+  SpeciesEat:
+    output: true
+  Topic:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_or_Datatype_Property_or_Simple_Part-Whole_relation_ODPs:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_%22or%22_Simple_Part-Whole_relation_ODPs:
+    output: true
+  LCA_Pattern:
+    output: true
+  RTMSmapping:
+    output: true
+  Standard_Enforcer_Pattern:
+    output: true
+  Policy:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_SubclassOf_relation,_Disjoint_Classes,_and_Exhaustive_Classes_ODPs:
+    output: true
+  Observation:
+    output: true
+  Time_indexed_person_role:
+    output: true
+  Notepattern:
+    output: true
+  Reactor_pattern:
+    output: true
+  GearWaterArea:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Co-participation_ODP:
+    output: true
+  Participation:
+    output: true
+  TaskExecution:
+    output: true
+  AffectedBy:
+    output: true
+  Vocabulary_Alignment_Pattern:
     output: true
   LinnaeanTaxonomy:
     output: true
   RecurrentSituationSeries:
     output: true
-  Move:
+  Object_with_states:
+    output: true
+  SmartHome_Situation:
+    output: true
+  An_Ontology_Design_Pattern_for_Activity_Reasoning:
+    output: true
+  Types_of_entities:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs:
+    output: true
+  EventCore:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Specified_Values_ODP:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Object_Property_ODP:
+    output: true
+  TransportPattern:
+    output: true
+  Experience_&_Observation:
+    output: true
+  SpeciesConservation:
+    output: true
+  VesselSpecies:
+    output: true
+  Objectrole:
+    output: true
+  SmartHome_Event:
+    output: true
+  EventProcessing:
+    output: true
+  ? Lexico_Syntactic_ODPs_corresponding_to_Simple_Part-Whole_relation_%22or%22_Constituency_%22or%22_Componency_%22or%22_Collection-Entity_ODPs
+  : output: true
+  List:
     output: true
   SmartHome_Property:
     output: true
   ContextualizedWinstonPartWhole:
     output: true
-  Musicalobject:
+  Persons:
     output: true
-  Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP:
+  InformationObjectsAndRepresentationLanguages:
     output: true
-  GearVessel:
+  ConceptTerms:
     output: true
-  Literal_Reification:
+  Price:
     output: true
-  Standard_Enforcer_Pattern:
+  Invoice:
     output: true
-  AgentRole:
+  SmartHome_Geometry:
     output: true
-  EthnicGroup:
+  SmartHome_Object:
     output: true
-  DigitalVideo:
+  DescriptionAndSituation:
     output: true
-  SmartHome_TimeInterval:
+  NewsReportingEvent:
     output: true
-  PharmaInnova:
+  Sequence:
+    output: true
+  Move:
+    output: true
+  Computer_System:
+    output: true
+  ResourceExploitationObservation:
     output: true
   CatchRecord:
     output: true
+  Time_indexed_participation:
+    output: true
+  VerticalDistribution:
+    output: true
+  DataTransformationPattern:
+    output: true
+  CollectionEntity:
+    output: true
+  SmartHome_Sensing:
+    output: true
+  GearSpecies:
+    output: true
+  SpeciesNames:
+    output: true
+  EthnicGroup:
+    output: true
+  Nary_Participation:
+    output: true
+  TimeIndexedPartOf:
+    output: true
+  GearVessel:
+    output: true
+  DigitalVideo:
+    output: true
+  SmartHome_FeatureOfInterest:
+    output: true
+  Action:
+    output: true
+  Bag:
+    output: true
+  Xsd:
+    output: true
+  ParticipantRole:
+    output: true
+  PlanConditions:
+    output: true
+  Role_task:
+    output: true
+  BasicPlan:
+    output: true
   IntensionExtension:
+    output: true
+  Tagging:
+    output: true
+  Situation:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object-Role_ODP:
+    output: true
+  Literal_Reification:
+    output: true
+  Collection:
+    output: true
+  SmartHome_Network:
+    output: true
+  Musicalobject:
+    output: true
+  SpeciesConditions:
+    output: true
+  WOP2012TestPatterns:
+    output: true
+  Born_Digital_Archives:
+    output: true
+  Co-participation:
+    output: true
+  BasicPlanExecution:
+    output: true
+  AgentRole:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP:
+    output: true
+  CountingAs:
+    output: true
+  OOPMetrics:
+    output: true
+  SmartHome_TimeInterval:
+    output: true
+  Constituency:
+    output: true
+  Parameter:
+    output: true
+  Region:
+    output: true
+  Scorepart:
+    output: true
+  PartOf:
+    output: true
+  Description:
+    output: true
+  Airline.owl:
+    output: true
+  SmartHome_Place:
+    output: true
+  Set:
+    output: true
+  Pollution:
+    output: true
+  ResourceAbundanceObservation:
+    output: true
+  CommunicationEvent:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_LocationODP:
+    output: true
+  SpeciesBathymetry:
+    output: true
+  ActingFor:
+    output: true
+  SpatioTemporalExtent:
+    output: true
+  TimeIndexedClassification:
+    output: true
+  AOS_AGROVOC_Concept_Server_fundation_ontology_model:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Datatype_Property_ODP:
+    output: true
+  Place:
+    output: true
+  PharmaInnova:
+    output: true
+  Trajectory:
+    output: true
+  SimpleOrAggregated:
+    output: true
+  Communities:
+    output: true
+  Classification:
+    output: true
+  VesselWaterArea:
+    output: true
+  Material_Transformation:
+    output: true
+  COP:
+    output: true
+  SpeciesHabitat:
+    output: true
+  ClimaticZone:
+    output: true
+  Transition:
+    output: true
+  Lexico_Syntactic_ODPs_corresponding_to_Object_Property_and_Universal_Restriction_ODPs:
+    output: true
+  Lexico_Syntactic_ODP_corresponding_to_Participation_ODP:
+    output: true
+  AquaticResourceObservation:
+    output: true
+  Affordance:
+    output: true
+  Airline:
     output: true
 excludes:
 - public

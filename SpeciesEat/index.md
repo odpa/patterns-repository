@@ -3,9 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticSpecies.md](../AquaticResources/AquaticSpecies)  
-[feedsUpon.md](../SpeciesEat/feedsUpon)  
-[isFoodOf.md](../SpeciesEat/isFoodOf)  
-[isPreyedUponBy.md](../SpeciesEat/isPreyedUponBy)  
-[preyesUpon.md](../SpeciesEat/preyesUpon)  
+[../](../)  
+[AquaticSpecies.md](./AquaticSpecies.md)  
+[feedsUpon.md](./feedsUpon.md)  
+[isFoodOf.md](./isFoodOf.md)  
+[isPreyedUponBy.md](./isPreyedUponBy.md)  
+[preyesUpon.md](./preyesUpon.md)  

@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasLocation.md](../LCA_Pattern/hasLocation)  
-[isLocationOf.md](../Place/isLocationOf)  
-[Place.md](../Place)  
+[../](../)  
+[hasLocation.md](./hasLocation.md)  
+[isLocationOf.md](./isLocationOf.md)  
+[Place.md](./Place.md)  

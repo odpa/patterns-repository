@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Recurrent-event-series.jpg](public/images/d/d1/Recurrent-event-series.jpg)](../Image/Recurrent-event-series.jpg "Image:Recurrent-event-series.jpg")
+[![Image:Recurrent-event-series.jpg](../images/d/d1/Recurrent-event-series.jpg)](../Image/Recurrent-event-series.jpg "Image:Recurrent-event-series.jpg")
 
 
 
