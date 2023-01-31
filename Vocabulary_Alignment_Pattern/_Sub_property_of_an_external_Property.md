@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Alignment-odp.png](../../images/6/65/Alignment-odp.png)](../../Image/Alignment-odp.png "Image:Alignment-odp.png")
+[![Image:Alignment-odp.png](../images/6/65/Alignment-odp.png)](../../Image/Alignment-odp.png "Image:Alignment-odp.png")
 
 
 

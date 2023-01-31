@@ -69,14 +69,14 @@ NP<object> participate/take part in/be involved in (NP<event>,)* and] NP<event>
 
 __Reusable JAPE code__ 
  :
- [PA\_1.jape](../images/d/dc/PA_1.jape "PA 1.jape") 
+ [PA\_1.jape](images/d/dc/PA_1.jape "PA 1.jape") 
 
 
 
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Participation_ODP/1 "Submissions:Lexico Syntactic ODP corresponding to Participation ODP/1") 
  page_ 
 

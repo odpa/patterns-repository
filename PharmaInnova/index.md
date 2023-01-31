@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Body.md](./Body.md)  
-[has_body.md](./has_body.md)  
-[has_header.md](./has_header.md)  
-[has_summary.md](./has_summary.md)  
-[Header.md](./Header.md)  
-[Invoice.md](./Invoice.md)  
-[Summary.md](./Summary.md)  
+[../.git](../.git)  
+[Body.md](../.gitEventProcessing/EventObjectBody)  
+[has_body.md](../.gitPharmaInnova/has_body)  
+[has_header.md](../.gitPharmaInnova/has_header)  
+[has_summary.md](../.gitPharmaInnova/has_summary)  
+[Header.md](../.gitEventProcessing/EventObjectHeader)  
+[Invoice.md](../.gitInvoice)  
+[Summary.md](../.gitPharmaInnova/Summary)  

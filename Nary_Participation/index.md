@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[isIncludedInParticipation.md](./isIncludedInParticipation.md)  
-[NaryParticipation.md](./NaryParticipation.md)  
-[participationIncludes.md](./participationIncludes.md)  
+[../.git](../.git)  
+[isIncludedInParticipation.md](../Nary_Participation/isIncludedInParticipation)  
+[NaryParticipation.md](../.gitNary_Participation/NaryParticipation)  
+[participationIncludes.md](../.gitNary_Participation/participationIncludes)  

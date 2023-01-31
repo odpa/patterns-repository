@@ -3,13 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Engagement.md](./Engagement.md)  
-[hasEngagement.md](./hasEngagement.md)  
-[inActivity.md](./inActivity.md)  
-[includes.md](./includes.md)  
-[isEngagedIn.md](./isEngagedIn.md)  
-[isReflectedUponin.md](./isReflectedUponin.md)  
-[isReflectionOn.md](./isReflectionOn.md)  
-[Observation.md](./Observation.md)  
-[producedObservation.md](./producedObservation.md)  
+[../.git](../.git)  
+[Engagement.md](../.gitExperience_&_Observation/Engagement)  
+[hasEngagement.md](../.gitExperience_&_Observation/hasEngagement)  
+[inActivity.md](../Experience_&_Observation/inActivity)  
+[includes.md](../Experience_&_Observation/includes)  
+[isEngagedIn.md](../.gitExperience_&_Observation/isEngagedIn)  
+[isReflectedUponin.md](../Experience_&_Observation/isReflectedUponin)  
+[isReflectionOn.md](../.gitExperience_&_Observation/isReflectionOn)  
+[Observation.md](../AquaticResourceObservation)  
+[producedObservation.md](../Experience_&_Observation/producedObservation)  

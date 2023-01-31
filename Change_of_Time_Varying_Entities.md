@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Before-after.png](../images/9/97/Before-after.png)](../Image/Before-after.png "Image:Before-after.png")
+[![Image:Before-after.png](images/9/97/Before-after.png)](../Image/Before-after.png "Image:Before-after.png")
 
 
 

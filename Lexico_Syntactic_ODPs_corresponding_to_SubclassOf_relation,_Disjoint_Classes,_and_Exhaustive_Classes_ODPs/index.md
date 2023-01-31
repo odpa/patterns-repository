@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[1.md](./1.md)  
-[2.md](./2.md)  
-[3.md](./3.md)  
-[4.md](./4.md)  
+[../.git](../.git)  
+[1.md](../.gitNormalization@oldid=10071)  
+[2.md](../.gitAdrian_Walker_2)  
+[3.md](../.gitNegativePropertyAssertions@oldid=5903)  
+[4.md](../.gitConceptTerms@oldid=5714)  

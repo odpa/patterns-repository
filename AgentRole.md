@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:agentrole.jpg](../images/1/1d/Agentrole.jpg)](../Image/Agentrole.jpg "Image:agentrole.jpg")
+[![Image:agentrole.jpg](images/1/1d/Agentrole.jpg)](../Image/Agentrole.jpg "Image:agentrole.jpg")
 
 
 
@@ -67,13 +67,13 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Agent__ 
  (owl:Class) Any agentive
  [Object](../Submissions/Objectrole/Object "Submissions:Objectrole/Object") 
  , either physical, or social.
  
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Agent](../Submissions/AgentRole/Agent "Submissions:AgentRole/Agent") 
  page_ 
 

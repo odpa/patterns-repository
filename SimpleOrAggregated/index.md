@@ -3,13 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[AggregatedObject.md](./AggregatedObject.md)  
-[hasAggregatedMember.md](./hasAggregatedMember.md)  
-[isAggregatedMemberOf.md](./isAggregatedMemberOf.md)  
-[Object.md](./Object.md)  
-[ObjectByCardinality.md](./ObjectByCardinality.md)  
-[Scenario_1.md](./Scenario_1.md)  
-[Scenario_2.md](./Scenario_2.md)  
-[Scenario_3.md](./Scenario_3.md)  
-[SimpleObject.md](./SimpleObject.md)  
+[../.git](../.git)  
+[AggregatedObject.md](../SimpleOrAggregated/AggregatedObject)  
+[hasAggregatedMember.md](../.gitSimpleOrAggregated/hasAggregatedMember)  
+[isAggregatedMemberOf.md](../.gitSimpleOrAggregated/isAggregatedMemberOf)  
+[Object.md](../.gitObject)  
+[ObjectByCardinality.md](../.gitSimpleOrAggregated/ObjectByCardinality)  
+[Scenario_1.md](../.gitAgentRole/Scenario_1)  
+[Scenario_2.md](../.gitLiteral_Reification/Scenario_2)  
+[Scenario_3.md](../SimpleOrAggregated/Scenario_3)  
+[SimpleObject.md](../.gitSimpleOrAggregated/SimpleObject)  

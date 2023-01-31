@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[GearType.md](./GearType.md)  
-[isSuitableForGearType.md](./isSuitableForGearType.md)  
-[isUsedInWaterArea.md](./isUsedInWaterArea.md)  
-[WaterArea.md](./WaterArea.md)  
+[../.git](../.git)  
+[GearType.md](../GearSpecies/GearType)  
+[isSuitableForGearType.md](../.gitGearWaterArea/isSuitableForGearType)  
+[isUsedInWaterArea.md](../.gitGearWaterArea/isUsedInWaterArea)  
+[WaterArea.md](../.gitGearWaterArea)  

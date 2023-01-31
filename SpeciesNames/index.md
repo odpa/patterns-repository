@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[AquaticSpecies.md](./AquaticSpecies.md)  
-[canBeConfusedWith.md](./canBeConfusedWith.md)  
-[hasLocalName.md](./hasLocalName.md)  
-[hasSynonym.md](./hasSynonym.md)  
+[../.git](../.git)  
+[AquaticSpecies.md](../.gitAquaticResources/AquaticSpecies)  
+[canBeConfusedWith.md](../.gitSpeciesNames/canBeConfusedWith)  
+[hasLocalName.md](../.gitSpeciesNames/hasLocalName)  
+[hasSynonym.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasSynonym)  

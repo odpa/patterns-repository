@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Chess-game-core-withevent.png](../images/2/25/Chess-game-core-withevent.png)](../Image/Chess-game-core-withevent.png "Image:Chess-game-core-withevent.png")
+[![Image:Chess-game-core-withevent.png](images/2/25/Chess-game-core-withevent.png)](../Image/Chess-game-core-withevent.png "Image:Chess-game-core-withevent.png")
 
 
 

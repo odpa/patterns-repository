@@ -14,7 +14,7 @@ ___lineItem__
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](http://ontologydesignpatterns.org/wiki/Image%253AObjectProperty.gif.html "ObjectProperty")
+[![ObjectProperty](../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](http://ontologydesignpatterns.org/wiki/Image%253AObjectProperty.gif.html "ObjectProperty")
 
 
 __Name__ 

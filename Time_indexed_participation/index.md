@@ -3,9 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[includesEvent.md](./includesEvent.md)  
-[includesObject.md](./includesObject.md)  
-[isEventIncludedIn.md](./isEventIncludedIn.md)  
-[isObjectIncludedIn.md](./isObjectIncludedIn.md)  
-[TimeIndexedParticipation.md](./TimeIndexedParticipation.md)  
+[../.git](../.git)  
+[includesEvent.md](../Time_indexed_participation/includesEvent)  
+[includesObject.md](../.gitBasicPlanExecution/includesObject)  
+[isEventIncludedIn.md](../.gitTime_indexed_participation/isEventIncludedIn)  
+[isObjectIncludedIn.md](../.gitBasicPlanExecution/isObjectIncludedIn)  
+[TimeIndexedParticipation.md](../Time_indexed_participation/TimeIndexedParticipation)  

@@ -1,4 +1,4 @@
-[![Image:ConceptTermsPattern.jpg](../images/0/09/ConceptTermsPattern.jpg)](../Image/ConceptTermsPattern.jpg "Image:ConceptTermsPattern.jpg")
+[![Image:ConceptTermsPattern.jpg](images/0/09/ConceptTermsPattern.jpg)](../Image/ConceptTermsPattern.jpg "Image:ConceptTermsPattern.jpg")
 
 
 

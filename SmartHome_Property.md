@@ -61,11 +61,11 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeProperty__ 
  (owl:Class)
  
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeProperty](../Submissions/SmartHome_Property/SmartHomeProperty "Submissions:SmartHome Property/SmartHomeProperty") 
  page_ 
 

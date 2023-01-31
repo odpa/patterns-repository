@@ -3,7 +3,7 @@ ___defines__
  [Category:OntologyElement](../../Category/OntologyElement "Category:OntologyElement") 
  and is an
  [element of](../../Property/ElementOf "Property:ElementOf") 
-[Description](../../Submissions/Description "Submissions:Description")_
+[Description](../Submissions%253A../../Image/Description.jpg "Submissions:Description")_
 
 
 
@@ -14,7 +14,7 @@ ___defines__
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](../../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](../../Image/ObjectProperty.gif "ObjectProperty")
 
 
 __Name__ 

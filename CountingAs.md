@@ -61,7 +61,7 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __CountingAs__ 
  (owl:Class) A Situation that represents the classification of an entity 'as' something (a Concept).
  
@@ -70,7 +70,7 @@ __CountingAs__
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[CountingAs](../Submissions/CountingAs/CountingAs "Submissions:CountingAs/CountingAs") 
  page_ 
 

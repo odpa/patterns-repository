@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:BDA_ODP_Diagram.png](../images/b/bf/BDA_ODP_Diagram.png)](../Image/BDA_ODP_Diagram.png "Image:BDA_ODP_Diagram.png")
+[![Image:BDA_ODP_Diagram.png](images/b/bf/BDA_ODP_Diagram.png)](../Image/BDA_ODP_Diagram.png "Image:BDA_ODP_Diagram.png")
 
 
 
@@ -67,47 +67,47 @@ _The
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasCreator__ 
  (owl:ObjectProperty) Indicates the creator of a unit.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasCreator](../Submissions/Born_Digital_Archives/hasCreator "Submissions:Born Digital Archives/hasCreator") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasPart__ 
  (owl:ObjectProperty) Indicates that a unit includes another unit.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasPart](../Submissions/Born_Digital_Archives/hasPart "Submissions:Born Digital Archives/hasPart") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Creator__ 
  (owl:Class) The creator of a born digital archive unit
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Creator](../Submissions/Born_Digital_Archives/Creator "Submissions:Born Digital Archives/Creator") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __File__ 
  (owl:Class) An organized unit of documents grouped together either for current use by the creator or in the process of archival arrangement, because they relate to the same subject, activity, or transaction. A file is usually the basic unit within a record series.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[File](../Submissions/Born_Digital_Archives/File "Submissions:Born Digital Archives/File") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Fonds__ 
  (owl:Class)
  _Fonds_ 
@@ -121,37 +121,37 @@ _Sub-fonds_
 
 
 
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Fonds](../Submissions/Born_Digital_Archives/Fonds "Submissions:Born Digital Archives/Fonds") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Item__ 
  (owl:Class) The smallest intellectually indivisible archival unit, e.g., a letter, memorandum, report, photograph, sound recording.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Item](../Submissions/Born_Digital_Archives/Item "Submissions:Born Digital Archives/Item") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Series__ 
  (owl:Class) Documents arranged in accordance with a filing system or maintained as a unit because they result from the same accumulation or filing process, or the same activity; have a particular form; or because of some other relationship arising out of their creation, receipt, or use. A series is also known as a records series.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Series](../Submissions/Born_Digital_Archives/Series "Submissions:Born Digital Archives/Series") 
  page_ 
 
 
 
-[![Class](../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Unit__ 
  (owl:Class) An entity that participates in the assembly of a born digital archive.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Unit](../Submissions/Born_Digital_Archives/Unit "Submissions:Born Digital Archives/Unit") 
  page_ 
 

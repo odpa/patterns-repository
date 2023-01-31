@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasAircraft.md](./hasAircraft.md)  
+[../.git](../.git)  
+[hasAircraft.md](../.gitAirline/hasAircraft)  

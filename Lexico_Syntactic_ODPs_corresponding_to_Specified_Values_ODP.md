@@ -75,7 +75,7 @@ __Reusable JAPE code__
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Specified_Values_ODP/1 "Submissions:Lexico Syntactic ODPs corresponding to Specified Values ODP/1") 
  page_ 
 

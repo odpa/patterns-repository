@@ -3,6 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasSpace.md](./hasSpace.md)  
-[hasStampTime.md](./hasStampTime.md)  
+[../.git](../.git)  
+[hasSpace.md](../COP/hasSpace)  
+[hasStampTime.md](../.gitCOP/hasStampTime)  

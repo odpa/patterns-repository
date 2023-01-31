@@ -3,12 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[followsPrecondition.md](./followsPrecondition.md)  
-[hasPostcondition.md](./hasPostcondition.md)  
-[hasPrecondition.md](./hasPrecondition.md)  
-[isPostconditionOf.md](./isPostconditionOf.md)  
-[isPostconditionPrecededBy.md](./isPostconditionPrecededBy.md)  
-[isPreconditionFollowedBy.md](./isPreconditionFollowedBy.md)  
-[isPreconditionOf.md](./isPreconditionOf.md)  
-[precedesPostcondition.md](./precedesPostcondition.md)  
+[../.git](../.git)  
+[followsPrecondition.md](../.gitPlanConditions/followsPrecondition)  
+[hasPostcondition.md](../.gitPlanConditions/hasPostcondition)  
+[hasPrecondition.md](../PlanConditions/hasPrecondition)  
+[isPostconditionOf.md](../PlanConditions/isPostconditionOf)  
+[isPostconditionPrecededBy.md](../PlanConditions/isPostconditionPrecededBy)  
+[isPreconditionFollowedBy.md](../.gitPlanConditions/isPreconditionFollowedBy)  
+[isPreconditionOf.md](../.gitPlanConditions/isPreconditionOf)  
+[precedesPostcondition.md](../.gitPlanConditions/precedesPostcondition)  

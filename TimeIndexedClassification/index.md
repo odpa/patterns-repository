@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[TimeIndexedClassification.md](./TimeIndexedClassification.md)  
+[../.git](../.git)  
+[TimeIndexedClassification.md](../.gitTimeIndexedClassification)  

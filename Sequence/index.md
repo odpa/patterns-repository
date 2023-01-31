@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[directlyFollows.md](./directlyFollows.md)  
-[directlyPrecedes.md](./directlyPrecedes.md)  
-[follows.md](./follows.md)  
-[precedes.md](./precedes.md)  
+[../.git](../.git)  
+[directlyFollows.md](../Sequence/directlyFollows)  
+[directlyPrecedes.md](../.gitSequence/directlyPrecedes)  
+[follows.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/follows)  
+[precedes.md](../.gitAn_Ontology_Design_Pattern_for_Activity_Reasoning/precedes)  

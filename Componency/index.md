@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasComponent.md](./hasComponent.md)  
-[isComponentOf.md](./isComponentOf.md)  
-[Object.md](./Object.md)  
+[../.git](../.git)  
+[hasComponent.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasComponent)  
+[isComponentOf.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/isComponentOf)  
+[Object.md](../Object)  

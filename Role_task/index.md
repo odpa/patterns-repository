@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasTask.md](./hasTask.md)  
-[isTaskOf.md](./isTaskOf.md)  
-[Role.md](./Role.md)  
-[Task.md](./Task.md)  
+[../.git](../.git)  
+[hasTask.md](../.gitAffordance/hasTask)  
+[isTaskOf.md](../.gitRole_task/isTaskOf)  
+[Role.md](../.gitAgentRole)  
+[Task.md](../Affordance/hasTask)  

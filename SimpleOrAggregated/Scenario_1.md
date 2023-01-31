@@ -6,7 +6,7 @@ __Description:__
 
 
 
-[![Image:ServiceProviderSoA_v1.jpg](../../images/b/b7/ServiceProviderSoA_v1.jpg)](../../Image/ServiceProviderSoA_v1.jpg "Image:ServiceProviderSoA_v1.jpg")
+[![Image:ServiceProviderSoA_v1.jpg](../images/b/b7/ServiceProviderSoA_v1.jpg)](../../Image/ServiceProviderSoA_v1.jpg "Image:ServiceProviderSoA_v1.jpg")
 
 
 

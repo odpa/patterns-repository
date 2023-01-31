@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:MatlPropBasic resized.png](../images/5/5b/MatlPropBasic_resized.png)](../Image/MatlPropBasic_resized.png "Image:MatlPropBasic resized.png")
+[![Image:MatlPropBasic resized.png](images/5/5b/MatlPropBasic_resized.png)](../Image/MatlPropBasic_resized.png "Image:MatlPropBasic resized.png")
 
 
 

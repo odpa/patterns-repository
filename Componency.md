@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:componency.jpg](../images/f/fc/Componency.jpg)](../Image/Componency.jpg "Image:componency.jpg")
+[![Image:componency.jpg](images/f/fc/Componency.jpg)](../Image/Componency.jpg "Image:componency.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Object__ 
  (owl:Class) Any physical, social, or mental object, or a substance. Can be component only of other objects, and can be composed of only other objects.
  
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Object](../Submissions/Componency/Object "Submissions:Componency/Object") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasComponent__ 
  (owl:ObjectProperty) The
  [hasPart](../Submissions/PartOf/hasPart "Submissions:PartOf/hasPart") 
@@ -102,14 +102,14 @@ The componency Content OP uses the transitive reduction
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasComponent](../Submissions/Componency/hasComponent "Submissions:Componency/hasComponent") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isComponentOf__ 
  (owl:ObjectProperty) The inverse of the
  [hasComponent](../Submissions/Componency/hasComponent "Submissions:Componency/hasComponent") 
@@ -118,7 +118,7 @@ __isComponentOf__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isComponentOf](../Submissions/Componency/isComponentOf "Submissions:Componency/isComponentOf") 
  page_ 
 

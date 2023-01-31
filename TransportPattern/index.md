@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[partOf.md](./partOf.md)  
-[referenceFrame.md](./referenceFrame.md)  
-[transportEntity.md](./transportEntity.md)  
-[transportEvent.md](./transportEvent.md)  
+[../.git](../.git)  
+[partOf.md](../.gitGO_Top/partOf)  
+[referenceFrame.md](../TransportPattern/referenceFrame)  
+[transportEntity.md](../.gitTransportPattern/transportEntity)  
+[transportEvent.md](../.gitTransportPattern/transportEvent)  

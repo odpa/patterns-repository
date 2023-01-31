@@ -1,4 +1,4 @@
-[![Image:Speciesconditions.jpg](../images/8/85/Speciesconditions.jpg)](../Image/Speciesconditions.jpg "Image:Speciesconditions.jpg")
+[![Image:Speciesconditions.jpg](images/8/85/Speciesconditions.jpg)](../Image/Speciesconditions.jpg "Image:Speciesconditions.jpg")
 
 
 
@@ -55,27 +55,27 @@ _The
 
 
 
-[![Class](../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Habitat__ 
  (owl:Class) Habitat is the biological and ecological context of a species in the area of an aquatic resource.
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Habitat](../Submissions/SpeciesConditions/Habitat "Submissions:SpeciesConditions/Habitat") 
  page_ 
 
 
 
-[![Class](../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SpeciesConditions__ 
  (owl:Class) A class that allows to represent the typical physic conditions (bathymetry, habitat) of an aquatic species for a certain water area.
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SpeciesConditions](../Submissions/SpeciesConditions/SpeciesConditions "Submissions:SpeciesConditions/SpeciesConditions") 
  page_ 
 
 
 
-[![Class](../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __AquaticSpecies__ 
  (owl:Class) Aquatic species is characterized together with resources and water areas.
  
@@ -89,13 +89,13 @@ __AquaticSpecies__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[AquaticSpecies](../Submissions/SpeciesConditions/AquaticSpecies "Submissions:SpeciesConditions/AquaticSpecies") 
  page_ 
 
 
 
-[![Class](../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __BathymetricRange__ 
  (owl:Class) This class contains the set of bathymetric ranges. Bathymetry is numeric depth information about the ranges in which an aquatic species is found.
  
@@ -104,97 +104,97 @@ __BathymetricRange__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[BathymetricRange](../Submissions/SpeciesConditions/BathymetricRange "Submissions:SpeciesConditions/BathymetricRange") 
  page_ 
 
 
 
-[![Class](../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __WaterArea__ 
  (owl:Class)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[WaterArea](../Submissions/SpeciesConditions/WaterArea "Submissions:SpeciesConditions/WaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasHabitat__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasHabitat](../Submissions/SpeciesConditions/hasHabitat "Submissions:SpeciesConditions/hasHabitat") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __inWaterArea__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[inWaterArea](../Submissions/SpeciesConditions/inWaterArea "Submissions:SpeciesConditions/inWaterArea") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasBathymetricRange__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasBathymetricRange](../Submissions/SpeciesConditions/hasBathymetricRange "Submissions:SpeciesConditions/hasBathymetricRange") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __forSpecies__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[forSpecies](../Submissions/SpeciesConditions/forSpecies "Submissions:SpeciesConditions/forSpecies") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasConditions__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasConditions](../Submissions/SpeciesConditions/hasConditions "Submissions:SpeciesConditions/hasConditions") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isWaterAreaFor__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isWaterAreaFor](../Submissions/SpeciesConditions/isWaterAreaFor "Submissions:SpeciesConditions/isWaterAreaFor") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isHabitatFor__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isHabitatFor](../Submissions/SpeciesConditions/isHabitatFor "Submissions:SpeciesConditions/isHabitatFor") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isBathymetricRangeFor__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isBathymetricRangeFor](../Submissions/SpeciesConditions/isBathymetricRangeFor "Submissions:SpeciesConditions/isBathymetricRangeFor") 
  page_ 
 

@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:class-intersection.png](../images/f/f2/Class-intersection.png)](../Image/Class-intersection.png "Image:class-intersection.png")
+[![Image:class-intersection.png](images/f/f2/Class-intersection.png)](../Image/Class-intersection.png "Image:class-intersection.png")
 
 
 

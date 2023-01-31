@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[SensingProcess.md](./SensingProcess.md)  
-[SmartHomeSensor.md](./SmartHomeSensor.md)  
-[SmartHomeSensorOutput.md](./SmartHomeSensorOutput.md)  
+[../.git](../.git)  
+[SensingProcess.md](../.gitSmartHome_Sensing/SensingProcess)  
+[SmartHomeSensor.md](../.gitSmartHome_Sensing/SmartHomeSensor)  
+[SmartHomeSensorOutput.md](../SmartHome_Sensing/SmartHomeSensorOutput)  

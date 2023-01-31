@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:ParticipantRole.jpg](../images/3/34/ParticipantRole.jpg)](../Image/ParticipantRole.jpg "Image:ParticipantRole.jpg")
+[![Image:ParticipantRole.jpg](images/3/34/ParticipantRole.jpg)](../Image/ParticipantRole.jpg "Image:ParticipantRole.jpg")
 
 
 
@@ -67,81 +67,81 @@ _The
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Role__ 
  (owl:Class) A concept that classifies an object.
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Role](../Submissions/ParticipantRole/Role "Submissions:ParticipantRole/Role") 
  page_ 
 
 
 
-[![Class](../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __ParticipantRole__ 
  (owl:Class) A situation that represents the role(s) of a specific object (or objects) participating in and event (or events).
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[ParticipantRole](../Submissions/ParticipantRole/ParticipantRole "Submissions:ParticipantRole/ParticipantRole") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __participatingInEvent__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[participatingInEvent](../Submissions/ParticipantRole/participatingInEvent "Submissions:ParticipantRole/participatingInEvent") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __objectParticipating__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[objectParticipating](../Submissions/ParticipantRole/objectParticipating "Submissions:ParticipantRole/objectParticipating") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __roleOfParticipant__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[roleOfParticipant](../Submissions/ParticipantRole/roleOfParticipant "Submissions:ParticipantRole/roleOfParticipant") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __objectIncludedIn__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[objectIncludedIn](../Submissions/ParticipantRole/objectIncludedIn "Submissions:ParticipantRole/objectIncludedIn") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __roleIncludedIn__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[roleIncludedIn](../Submissions/ParticipantRole/roleIncludedIn "Submissions:ParticipantRole/roleIncludedIn") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __eventIncludedIn__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[eventIncludedIn](../Submissions/ParticipantRole/eventIncludedIn "Submissions:ParticipantRole/eventIncludedIn") 
  page_ 
 

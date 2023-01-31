@@ -3,6 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[AquaticSpecies.md](./AquaticSpecies.md)  
-[hasConservationStatus.md](./hasConservationStatus.md)  
+[../.git](../.git)  
+[AquaticSpecies.md](../.gitAquaticResources/AquaticSpecies)  
+[hasConservationStatus.md](../SpeciesConservation/hasConservationStatus)  

@@ -61,17 +61,17 @@ _The
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __conceptualizes__ 
  (owl:ObjectProperty) A relation stating that an Agent is internally representing a SocialObject . E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created the solar-system metaphor for the atomic theory'; 'Jacques assumes all swans are white'; 'the task force members share the attack plan'.
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[conceptualizes](../Submissions/InformationObjectsAndRepresentationLanguages/conceptualizes "Submissions:InformationObjectsAndRepresentationLanguages/conceptualizes") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __formallyRepresents__ 
  (owl:ObjectProperty) The relation between formal expressions, and anything that they are supposed to represent.
  
@@ -85,33 +85,33 @@ __formallyRepresents__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[formallyRepresents](../Submissions/InformationObjectsAndRepresentationLanguages/formallyRepresents "Submissions:InformationObjectsAndRepresentationLanguages/formallyRepresents") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasRepresentationLanguage__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasRepresentationLanguage](../Submissions/InformationObjectsAndRepresentationLanguages/hasRepresentationLanguage "Submissions:InformationObjectsAndRepresentationLanguages/hasRepresentationLanguage") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isConceptualizedBy__ 
  (owl:ObjectProperty) A relation stating that an Agent is internally representing a Description . E.g., 'John believes in the conspiracy theory'; 'Niels Bohr created a solar-system metaphor for his atomic theory'; 'Jacques assumes all swans are white'; 'the task force shares the attack plan'.
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isConceptualizedBy](../Submissions/InformationObjectsAndRepresentationLanguages/isConceptualizedBy "Submissions:InformationObjectsAndRepresentationLanguages/isConceptualizedBy") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isFormallyRepresentedIn__ 
  (owl:ObjectProperty) The relation between formal expressions, and anything that they are supposed to represent.
  
@@ -125,63 +125,63 @@ __isFormallyRepresentedIn__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isFormallyRepresentedIn](../Submissions/InformationObjectsAndRepresentationLanguages/isFormallyRepresentedIn "Submissions:InformationObjectsAndRepresentationLanguages/isFormallyRepresentedIn") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isRepresentationLanguageOf__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isRepresentationLanguageOf](../Submissions/InformationObjectsAndRepresentationLanguages/isRepresentationLanguageOf "Submissions:InformationObjectsAndRepresentationLanguages/isRepresentationLanguageOf") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __FormalExpression__ 
  (owl:Class) Any information object represented in a FormalLanguage, usually having a formal interpretation by a dul:FormalEntity, and used to formally represent any Entity
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[FormalExpression](../Submissions/InformationObjectsAndRepresentationLanguages/FormalExpression "Submissions:InformationObjectsAndRepresentationLanguages/FormalExpression") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __FormalLanguage__ 
  (owl:Class) A formal language, created by some human, with a fixed grammar, and usually with an explicit formal semantics (i.e. its elements have an interpretation wrt to formal entities such as sets, categories, etc.).
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[FormalLanguage](../Submissions/InformationObjectsAndRepresentationLanguages/FormalLanguage "Submissions:InformationObjectsAndRepresentationLanguages/FormalLanguage") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __IconicLanguage__ 
  (owl:Class) A language made up of graphical elements. It can be natural, artificial, and even formal.
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[IconicLanguage](../Submissions/InformationObjectsAndRepresentationLanguages/IconicLanguage "Submissions:InformationObjectsAndRepresentationLanguages/IconicLanguage") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __IconicObject__ 
  (owl:Class) An information object represented in an IconicLanguage
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[IconicObject](../Submissions/InformationObjectsAndRepresentationLanguages/IconicObject "Submissions:InformationObjectsAndRepresentationLanguages/IconicObject") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Language__ 
  (owl:Class) A natural or artificial language, provided with an alphabet (or vocabulary) and combinatorial rules. In the case of natural languages, their components are 'temporary' and 'reconstructed' out of actual usage. For example, a grammar for a natural language has the status of a theory for that language, and alternative ones can exist (e.g. generative vs. construction grammars).
  
@@ -195,23 +195,23 @@ __Language__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Language](../Submissions/InformationObjectsAndRepresentationLanguages/Language "Submissions:InformationObjectsAndRepresentationLanguages/Language") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __LinguisticObject__ 
  (owl:Class) An information object represented in a NaturalLanguage
  
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[LinguisticObject](../Submissions/InformationObjectsAndRepresentationLanguages/LinguisticObject "Submissions:InformationObjectsAndRepresentationLanguages/LinguisticObject") 
  page_ 
 
 
 
-[![Class](../../../../../../../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __NaturalLanguage__ 
  (owl:Class) A natural language, evolved and used in a community across time.
  
@@ -220,7 +220,7 @@ __NaturalLanguage__
 
 
 
-[![](../../../../../../../../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[NaturalLanguage](../Submissions/InformationObjectsAndRepresentationLanguages/NaturalLanguage "Submissions:InformationObjectsAndRepresentationLanguages/NaturalLanguage") 
  page_ 
 

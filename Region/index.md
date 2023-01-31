@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[hasRegion.md](./hasRegion.md)  
-[hasRegionDataValue.md](./hasRegionDataValue.md)  
-[isRegionFor.md](./isRegionFor.md)  
-[Region.md](./Region.md)  
+[../.git](../.git)  
+[hasRegion.md](../.gitRegion/hasRegion)  
+[hasRegionDataValue.md](../.gitRegion/hasRegionDataValue)  
+[isRegionFor.md](../.gitRegion/isRegionFor)  
+[Region.md](../.gitRegion)  

@@ -69,14 +69,14 @@ NP<place> be/has (locate/find/set/situate/place/(a site)) in [(NP<location >,)* 
 
 __Reusable JAPE code__ 
  :
- [LO\_1.jape](../images/b/b8/LO_1.jape "LO 1.jape") 
+ [LO\_1.jape](images/b/b8/LO_1.jape "LO 1.jape") 
 
 
 
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_LocationODP/1 "Submissions:Lexico Syntactic ODPs corresponding to LocationODP/1") 
  page_ 
 

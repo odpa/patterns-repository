@@ -3,6 +3,6 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Person.md](./Person.md)  
-[TimeIndexedPersonRole.md](./TimeIndexedPersonRole.md)  
+[../.git](../.git)  
+[Person.md](../.gitPersons/NaturalPerson)  
+[TimeIndexedPersonRole.md](../Time_indexed_person_role/TimeIndexedPersonRole)  

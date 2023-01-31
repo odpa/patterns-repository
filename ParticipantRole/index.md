@@ -3,12 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[eventIncludedIn.md](./eventIncludedIn.md)  
-[objectIncludedIn.md](./objectIncludedIn.md)  
-[objectParticipating.md](./objectParticipating.md)  
-[ParticipantRole.md](./ParticipantRole.md)  
-[participatingInEvent.md](./participatingInEvent.md)  
-[Role.md](./Role.md)  
-[roleIncludedIn.md](./roleIncludedIn.md)  
-[roleOfParticipant.md](./roleOfParticipant.md)  
+[../.git](../.git)  
+[eventIncludedIn.md](../.gitParticipantRole/eventIncludedIn)  
+[objectIncludedIn.md](../.gitParticipantRole/objectIncludedIn)  
+[objectParticipating.md](../.gitParticipantRole/objectParticipating)  
+[ParticipantRole.md](../.gitParticipantRole)  
+[participatingInEvent.md](../.gitParticipantRole/participatingInEvent)  
+[Role.md](../.gitAgentRole)  
+[roleIncludedIn.md](../.gitParticipantRole/roleIncludedIn)  
+[roleOfParticipant.md](../ParticipantRole/roleOfParticipant)  

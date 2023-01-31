@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[SmartHomeProperty.md](./SmartHomeProperty.md)  
+[../.git](../.git)  
+[SmartHomeProperty.md](../.gitSmartHome_Property/SmartHomeProperty)  

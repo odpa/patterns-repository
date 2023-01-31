@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:FoodSubstituteODP.png](../images/e/e7/FoodSubstituteODP.png)](../Image/FoodSubstituteODP.png "Image:FoodSubstituteODP.png")
+[![Image:FoodSubstituteODP.png](images/e/e7/FoodSubstituteODP.png)](../Image/FoodSubstituteODP.png "Image:FoodSubstituteODP.png")
 
 
 

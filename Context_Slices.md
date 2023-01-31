@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Context.-slices-example.jpg](../images/0/05/Context.-slices-example.jpg)](../Image/Context.-slices-example.jpg "Image:Context.-slices-example.jpg")
+[![Image:Context.-slices-example.jpg](images/0/05/Context.-slices-example.jpg)](../Image/Context.-slices-example.jpg "Image:Context.-slices-example.jpg")
 
 
 

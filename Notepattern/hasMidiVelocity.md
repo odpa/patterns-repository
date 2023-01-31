@@ -14,7 +14,7 @@ ___hasMidiVelocity__
 
 
 
-[![DatatypeProperty](../../images/thumb/a/a5/DatatypeProperty.gif/45px-DatatypeProperty.gif)](../../Image/DatatypeProperty.gif "DatatypeProperty")
+[![DatatypeProperty](../images/thumb/a/a5/DatatypeProperty.gif/45px-DatatypeProperty.gif)](../../Image/DatatypeProperty.gif "DatatypeProperty")
 
 
 __Name__ 

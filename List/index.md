@@ -3,12 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[firstItemOf.md](./firstItemOf.md)  
-[hasFirstItem.md](./hasFirstItem.md)  
-[hasLastItem.md](./hasLastItem.md)  
-[lastItemOf.md](./lastItemOf.md)  
-[List.md](./List.md)  
-[ListItem.md](./ListItem.md)  
-[nextItem.md](./nextItem.md)  
-[previousItem.md](./previousItem.md)  
+[../.git](../.git)  
+[firstItemOf.md](../.gitList/firstItemOf)  
+[hasFirstItem.md](../.gitList/hasFirstItem)  
+[hasLastItem.md](../.gitList/hasLastItem)  
+[lastItemOf.md](../List/lastItemOf)  
+[List.md](../List)  
+[ListItem.md](../.gitList/ListItem)  
+[nextItem.md](../.gitList/nextItem)  
+[previousItem.md](../List/previousItem)  

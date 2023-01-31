@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:FOI.png](../images/3/32/FOI.png)](../Image/FOI.png "Image:FOI.png")
+[![Image:FOI.png](images/3/32/FOI.png)](../Image/FOI.png "Image:FOI.png")
 
 
 
@@ -67,11 +67,11 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __SmartHomeFeatureOfInterest__ 
  (owl:Class)
  
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[SmartHomeFeatureOfInterest](../Submissions/SmartHome_FeatureOfInterest/SmartHomeFeatureOfInterest "Submissions:SmartHome FeatureOfInterest/SmartHomeFeatureOfInterest") 
  page_ 
 

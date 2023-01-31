@@ -61,7 +61,7 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __RTMS\_Code__ 
  (owl:Class) Any code RTMS relational database that is linked from the FIGIS XML.
  
@@ -70,17 +70,17 @@ __RTMS\_Code__
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[RTMS\_Code](../Submissions/RTMSmapping/RTMS_Code "Submissions:RTMSmapping/RTMS Code") 
  page_ 
 
 
 
-[![ObjectProperty](../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasRTMS\_Code__ 
  (owl:ObjectProperty)
  
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasRTMS\_Code](../Submissions/RTMSmapping/hasRTMS_Code "Submissions:RTMSmapping/hasRTMS Code") 
  page_ 
 

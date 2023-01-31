@@ -3,8 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[affectedBy.md](./affectedBy.md)  
-[belongsTo.md](./belongsTo.md)  
-[FeatureOfInterest.md](./FeatureOfInterest.md)  
-[Quality.md](./Quality.md)  
+[../.git](../.git)  
+[affectedBy.md](../.gitAffectedBy/affectedBy)  
+[belongsTo.md](../.gitAffectedBy/belongsTo)  
+[FeatureOfInterest.md](../SmartHome_FeatureOfInterest)  
+[Quality.md](../.gitAffectedBy/Quality)  

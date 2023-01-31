@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:class-subsumption.png](../images/6/60/Class-subsumption.png)](../Image/Class-subsumption.png "Image:class-subsumption.png")
+[![Image:class-subsumption.png](images/6/60/Class-subsumption.png)](../Image/Class-subsumption.png "Image:class-subsumption.png")
 
 
 

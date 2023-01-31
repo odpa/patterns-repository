@@ -6,7 +6,7 @@ __Description:__
 
 
 
-[![Image:STLab.png](../../images/1/11/STLab.png)](../../Image/STLab.png "Image:STLab.png")
+[![Image:STLab.png](../images/1/11/STLab.png)](../../Image/STLab.png "Image:STLab.png")
 
 
 

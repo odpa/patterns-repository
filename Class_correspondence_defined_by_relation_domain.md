@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Class-by-relation-domain.png](../images/b/b4/Class-by-relation-domain.png)](../Image/Class-by-relation-domain.png "Image:Class-by-relation-domain.png")
+[![Image:Class-by-relation-domain.png](images/b/b4/Class-by-relation-domain.png)](../Image/Class-by-relation-domain.png "Image:Class-by-relation-domain.png")
 
 
 

@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Community.md](./Community.md)  
+[../.git](../.git)  
+[Community.md](../.gitCommunities/Community)  

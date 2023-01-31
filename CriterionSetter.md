@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Criterion setter.png](../images/c/cf/Criterion_setter.png)](../Image/Criterion_setter.png "Image:Criterion setter.png")
+[![Image:Criterion setter.png](images/c/cf/Criterion_setter.png)](../Image/Criterion_setter.png "Image:Criterion setter.png")
 
 
 

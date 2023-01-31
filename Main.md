@@ -1,4 +1,4 @@
-[![](../images/thumb/7/7c/ListPatterns.png/70px-ListPatterns.png)](../Image/ListPatterns.png "ListPatterns.png")
+[![](images/thumb/7/7c/ListPatterns.png/70px-ListPatterns.png)](../Image/ListPatterns.png "ListPatterns.png")
 
 
 

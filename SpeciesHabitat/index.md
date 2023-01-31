@@ -3,7 +3,7 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Habitat.md](./Habitat.md)  
-[hasHabitat.md](./hasHabitat.md)  
-[isHabitatFor.md](./isHabitatFor.md)  
+[../.git](../.git)  
+[Habitat.md](../.gitSpeciesHabitat)  
+[hasHabitat.md](../.gitSpeciesConditions/hasHabitat)  
+[isHabitatFor.md](../.gitSpeciesConditions/isHabitatFor)  

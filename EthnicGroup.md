@@ -61,7 +61,7 @@ _The
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasIsland__ 
  (owl:ObjectProperty) Relation between Ethnic Group and Island
  
@@ -76,33 +76,33 @@ __hasIsland__
 
 
 
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasIsland](../Submissions/EthnicGroup/hasIsland "Submissions:EthnicGroup/hasIsland") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasTown__ 
  (owl:ObjectProperty)
  
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasTown](../Submissions/EthnicGroup/hasTown "Submissions:EthnicGroup/hasTown") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasCountry__ 
  (owl:ObjectProperty) Relation between Ethnic Group and Country
  
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasCountry](../Submissions/EthnicGroup/hasCountry "Submissions:EthnicGroup/hasCountry") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasEthnicGroup__ 
  (owl:ObjectProperty) Relation between Ethnic Group and Ethnic Group
  
@@ -117,23 +117,23 @@ __hasEthnicGroup__
 
 
 
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasEthnicGroup](../Submissions/EthnicGroup/hasEthnicGroup "Submissions:EthnicGroup/hasEthnicGroup") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasContinent__ 
  (owl:ObjectProperty) Relation between Ethnic Group and Continent
  
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasContinent](../Submissions/EthnicGroup/hasContinent "Submissions:EthnicGroup/hasContinent") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasOfficeHolder__ 
  (owl:ObjectProperty) Relation between Ethnic Group and Office Holder
  
@@ -148,7 +148,7 @@ __hasOfficeHolder__
 
 
 
-[![](../../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasOfficeHolder](../Submissions/EthnicGroup/hasOfficeHolder "Submissions:EthnicGroup/hasOfficeHolder") 
  page_ 
 

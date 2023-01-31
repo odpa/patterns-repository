@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:met1.jpg](../images/f/fc/Met1.jpg)](../Image/Met1.jpg "Image:met1.jpg")
+[![Image:met1.jpg](images/f/fc/Met1.jpg)](../Image/Met1.jpg "Image:met1.jpg")
 
 
 

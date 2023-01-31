@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:ConceptGroupPattern.jpg](../images/e/e8/ConceptGroupPattern.jpg)](../Image/ConceptGroupPattern.jpg "Image:ConceptGroupPattern.jpg")
+[![Image:ConceptGroupPattern.jpg](images/e/e8/ConceptGroupPattern.jpg)](../Image/ConceptGroupPattern.jpg "Image:ConceptGroupPattern.jpg")
 
 
 

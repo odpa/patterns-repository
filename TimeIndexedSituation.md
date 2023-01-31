@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:TimeIndexedSituation.png](../images/e/e7/TimeIndexedSituation.png)](../Image/TimeIndexedSituation.png "Image:TimeIndexedSituation.png")
+[![Image:TimeIndexedSituation.png](images/e/e7/TimeIndexedSituation.png)](../Image/TimeIndexedSituation.png "Image:TimeIndexedSituation.png")
 
 
 
@@ -67,51 +67,51 @@ _The
 
 
 
-[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __atTime__ 
  (owl:ObjectProperty)
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[atTime](../Submissions/TimeIndexedSituation/atTime "Submissions:TimeIndexedSituation/atTime") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __forEntity__ 
  (owl:ObjectProperty)
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[forEntity](../Submissions/TimeIndexedSituation/forEntity "Submissions:TimeIndexedSituation/forEntity") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasTimeIndexedSetting__ 
  (owl:ObjectProperty)
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasTimeIndexedSetting](../Submissions/TimeIndexedSituation/hasTimeIndexedSetting "Submissions:TimeIndexedSituation/hasTimeIndexedSetting") 
  page_ 
 
 
 
-[![ObjectProperty](../../../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isTimeIndexFor__ 
  (owl:ObjectProperty)
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isTimeIndexFor](../Submissions/TimeIndexedSituation/isTimeIndexFor "Submissions:TimeIndexedSituation/isTimeIndexFor") 
  page_ 
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __TimeIndexedSituation__ 
  (owl:Class) A Situation that is explicitly indexed at some time for at least one entity.
  
-[![](../../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[TimeIndexedSituation](../Submissions/TimeIndexedSituation/TimeIndexedSituation "Submissions:TimeIndexedSituation/TimeIndexedSituation") 
  page_ 
 

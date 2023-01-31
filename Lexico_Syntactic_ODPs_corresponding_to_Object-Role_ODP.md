@@ -69,14 +69,14 @@ NP<object> (be used)/work/act/serve as [(NP<role >,)* and] NP<role>
 
 __Reusable JAPE code__ 
  :
- [OR\_1.jape](../images/8/80/OR_1.jape "OR 1.jape") 
+ [OR\_1.jape](images/8/80/OR_1.jape "OR 1.jape") 
 
 
 
 
 
 
-[![](../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Object-Role_ODP/1 "Submissions:Lexico Syntactic ODPs corresponding to Object-Role ODP/1") 
  page_ 
 

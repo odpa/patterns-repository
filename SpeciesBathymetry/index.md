@@ -3,9 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[BathymetricRange.md](./BathymetricRange.md)  
-[hasBathymetricRange.md](./hasBathymetricRange.md)  
-[hasRangeMax.md](./hasRangeMax.md)  
-[hasRangeMin.md](./hasRangeMin.md)  
-[isBathymetricRangeOf.md](./isBathymetricRangeOf.md)  
+[../.git](../.git)  
+[BathymetricRange.md](../.gitSpeciesBathymetry/BathymetricRange)  
+[hasBathymetricRange.md](../SpeciesBathymetry/hasBathymetricRange)  
+[hasRangeMax.md](../.gitSpeciesBathymetry/hasRangeMax)  
+[hasRangeMin.md](../SpeciesBathymetry/hasRangeMin)  
+[isBathymetricRangeOf.md](../.gitSpeciesBathymetry/isBathymetricRangeOf)  

@@ -69,14 +69,14 @@ __LSP Formalization__
 
 __Reusable JAPE code__ 
  :
- [SC\_De\_1.jape](../images/8/8c/SC_De_1.jape "SC De 1.jape") 
+ [SC\_De\_1.jape](images/8/8c/SC_De_1.jape "SC De 1.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs/1 "Submissions:Lexico Syntactic ODPs corresponding to Defined Classes and SubclassOf relation ODPs/1") 
  page_ 
 
@@ -105,14 +105,14 @@ __LSP Formalization__
 
 __Reusable JAPE code__ 
  :
- [SC\_De\_2.jape](../images/b/ba/SC_De_2.jape "SC De 2.jape") 
+ [SC\_De\_2.jape](images/b/ba/SC_De_2.jape "SC De 2.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[2](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs/2 "Submissions:Lexico Syntactic ODPs corresponding to Defined Classes and SubclassOf relation ODPs/2") 
  page_ 
 
@@ -141,14 +141,14 @@ __LSP Formalization__
 
 __Reusable JAPE code__ 
  :
- [SC\_De\_3.jape](../images/2/2f/SC_De_3.jape "SC De 3.jape") 
+ [SC\_De\_3.jape](images/2/2f/SC_De_3.jape "SC De 3.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[3](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs/3 "Submissions:Lexico Syntactic ODPs corresponding to Defined Classes and SubclassOf relation ODPs/3") 
  page_ 
 
@@ -177,14 +177,14 @@ __LSP Formalization__
 
 __Reusable JAPE code__ 
  :
- [SC\_De\_4.jape](../images/b/b7/SC_De_4.jape "SC De 4.jape") 
+ [SC\_De\_4.jape](images/b/b7/SC_De_4.jape "SC De 4.jape") 
 
 
 
 
 
 
-[![](../../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[4](../Submissions/Lexico_Syntactic_ODPs_corresponding_to_Defined_Classes_and_SubclassOf_relation_ODPs/4 "Submissions:Lexico Syntactic ODPs corresponding to Defined Classes and SubclassOf relation ODPs/4") 
  page_ 
 

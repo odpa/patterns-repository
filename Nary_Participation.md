@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:naryparticipation.jpg](../images/e/e2/Naryparticipation.jpg)](../Image/Naryparticipation.jpg "Image:naryparticipation.jpg")
+[![Image:naryparticipation.jpg](images/e/e2/Naryparticipation.jpg)](../Image/Naryparticipation.jpg "Image:naryparticipation.jpg")
 
 
 
@@ -68,21 +68,21 @@ _The
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __NaryParticipation__ 
  (owl:Class) The reified class of n-ary participation relations, e.g. "prepare a coffee with coffee pot".
  
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[NaryParticipation](../Submissions/Nary_Participation/NaryParticipation "Submissions:Nary Participation/NaryParticipation") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __participationIncludes__ 
  (owl:ObjectProperty) The relation holding between an
  [NaryParticipation](../Submissions/Nary_Participation/NaryParticipation "Submissions:Nary Participation/NaryParticipation") 
@@ -93,14 +93,14 @@ __participationIncludes__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[participationIncludes](../Submissions/Nary_Participation/participationIncludes "Submissions:Nary Participation/participationIncludes") 
  page_ 
 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isIncludedInParticipation__ 
  (owl:ObjectProperty) The relation holding between any
  [Entity](../Submissions/Situation/Entity "Submissions:Situation/Entity") 
@@ -111,7 +111,7 @@ __isIncludedInParticipation__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isIncludedInParticipation](../Submissions/Nary_Participation/isIncludedInParticipation "Submissions:Nary Participation/isIncludedInParticipation") 
  page_ 
 

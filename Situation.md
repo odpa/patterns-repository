@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:Situation.jpg](../images/d/de/Situation.jpg)](../Image/Situation.jpg "Image:Situation.jpg")
+[![Image:Situation.jpg](images/d/de/Situation.jpg)](../Image/Situation.jpg "Image:Situation.jpg")
 
 
 
@@ -67,27 +67,27 @@ _The
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __hasSetting__ 
  (owl:ObjectProperty) A relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica' (i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning).
  
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[hasSetting](../Submissions/Situation/hasSetting "Submissions:Situation/hasSetting") 
  page_ 
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](images/thumb/c/c3/ObjectProperty.gif/20px-ObjectProperty.gif)](../Image/ObjectProperty.gif "ObjectProperty")
 __isSettingFor__ 
  (owl:ObjectProperty)
  
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[isSettingFor](../Submissions/Situation/isSettingFor "Submissions:Situation/isSettingFor") 
  page_ 
 
 
 
-[![Class](../images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
+[![Class](images/thumb/2/27/Class.gif/20px-Class.gif)](../Image/Class.gif "Class")
 __Situation__ 
  (owl:Class) A view on a set of entities. It can be seen as a 'relational context', reifying a relation.
  
@@ -111,7 +111,7 @@ __Situation__
 
 
 
-[![](../../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[Situation](../Submissions/Situation/Situation "Submissions:Situation/Situation") 
  page_ 
 

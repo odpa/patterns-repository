@@ -69,14 +69,14 @@ Property/characteristic/attribute/features of NP<class> be [PARA] [(NP<property>
 
 __Reusable JAPE code__ 
  :
- [DP\_1.jape](../images/e/ef/DP_1.jape "DP 1.jape") 
+ [DP\_1.jape](images/e/ef/DP_1.jape "DP 1.jape") 
 
 
 
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[1](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Datatype_Property_ODP/1 "Submissions:Lexico Syntactic ODP corresponding to Datatype Property ODP/1") 
  page_ 
 
@@ -105,14 +105,14 @@ NP<class> be [(AP<property>,)*] and AP<property>
 
 __Reusable JAPE code__ 
  :
- [DP\_2.jape](../images/c/c9/DP_2.jape "DP 2.jape") 
+ [DP\_2.jape](images/c/c9/DP_2.jape "DP 2.jape") 
 
 
 
 
 
 
-[![](../../images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
+[![](images/thumb/8/87/ArrowRight.gif/11px-ArrowRight.gif)](../Image/ArrowRight.gif "ArrowRight.gif")
 _[2](../Submissions/Lexico_Syntactic_ODP_corresponding_to_Datatype_Property_ODP/2 "Submissions:Lexico Syntactic ODP corresponding to Datatype Property ODP/2") 
  page_ 
 

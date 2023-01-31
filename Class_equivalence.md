@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:class-equivalence.png](../images/7/79/Class-equivalence.png)](../Image/Class-equivalence.png "Image:class-equivalence.png")
+[![Image:class-equivalence.png](images/7/79/Class-equivalence.png)](../Image/Class-equivalence.png "Image:class-equivalence.png")
 
 
 

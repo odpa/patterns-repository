@@ -3,9 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[Concept.md](./Concept.md)  
-[hasParameter.md](./hasParameter.md)  
-[hasParameterDataValue.md](./hasParameterDataValue.md)  
-[isParameterFor.md](./isParameterFor.md)  
-[Parameter.md](./Parameter.md)  
+[../.git](../.git)  
+[Concept.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasMappedDomainConcept)  
+[hasParameter.md](../.gitAffordance/hasParameter)  
+[hasParameterDataValue.md](../.gitParameter/hasParameterDataValue)  
+[isParameterFor.md](../.gitParameter/isParameterFor)  
+[Parameter.md](../.gitParameter)  

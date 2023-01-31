@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:informationrealization.jpg](../images/7/7b/Informationrealization.jpg)](../Image/Informationrealization.jpg "Image:informationrealization.jpg")
+[![Image:informationrealization.jpg](images/7/7b/Informationrealization.jpg)](../Image/Informationrealization.jpg "Image:informationrealization.jpg")
 
 
 

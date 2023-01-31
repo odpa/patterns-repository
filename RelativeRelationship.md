@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:RelativeRelationshipPattern.jpg](../images/2/27/RelativeRelationshipPattern.jpg)](../Image/RelativeRelationshipPattern.jpg "Image:RelativeRelationshipPattern.jpg")
+[![Image:RelativeRelationshipPattern.jpg](images/2/27/RelativeRelationshipPattern.jpg)](../Image/RelativeRelationshipPattern.jpg "Image:RelativeRelationshipPattern.jpg")
 
 
 

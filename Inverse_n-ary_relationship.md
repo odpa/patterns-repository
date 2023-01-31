@@ -10,7 +10,7 @@ __Diagram__
 
 
 
-[![Image:LP-IN-01v1_general.jpg](../images/d/d1/LP-IN-01v1_general.jpg)](../Image/LP-IN-01v1_general.jpg "Image:LP-IN-01v1_general.jpg")
+[![Image:LP-IN-01v1_general.jpg](images/d/d1/LP-IN-01v1_general.jpg)](../Image/LP-IN-01v1_general.jpg "Image:LP-IN-01v1_general.jpg")
 
 
 

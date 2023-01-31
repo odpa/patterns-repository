@@ -6,7 +6,7 @@ __Description:__
 
 
 
-[![Image:LiteralReificationExample1.png](../../images/c/c7/LiteralReificationExample1.png)](../../Image/LiteralReificationExample1.png "Image:LiteralReificationExample1.png")
+[![Image:LiteralReificationExample1.png](../images/c/c7/LiteralReificationExample1.png)](../../Image/LiteralReificationExample1.png "Image:LiteralReificationExample1.png")
 
 
 

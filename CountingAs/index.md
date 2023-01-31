@@ -3,5 +3,5 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../](../)  
-[CountingAs.md](./CountingAs.md)  
+[../.git](../.git)  
+[CountingAs.md](../CountingAs)  

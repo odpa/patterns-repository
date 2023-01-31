@@ -14,7 +14,7 @@ ___isTaskOf__
 
 
 
-[![ObjectProperty](../../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](../../Image/ObjectProperty.gif "ObjectProperty")
+[![ObjectProperty](../images/thumb/c/c3/ObjectProperty.gif/45px-ObjectProperty.gif)](../../Image/ObjectProperty.gif "ObjectProperty")
 
 
 __Name__ 
@@ -35,5 +35,5 @@ __Description__
  and
  [tasks](../../Category/DevelopmentTask "Submissions:Role task/Task") 
  , e.g. 'students have the duty of giving exams' (i.e. the Role 'student' hasTask the Task 'giving exams'). It is the inverse of
- [hasTask](has../../Category/DevelopmentTask "Submissions:Role task/hasTask") 
+ [hasTask](../../Submissions/Affordance/hasTask "Submissions:Role task/hasTask") 
  .
