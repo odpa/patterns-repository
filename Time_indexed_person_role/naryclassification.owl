@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY situation "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
+    <!ENTITY timeinterval "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#" >
+    <!ENTITY naryclassification "http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl"
+     xmlns:timeinterval="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+     xmlns:naryclassification="http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >Created with TopBraid Composer</owl:versionInfo>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#classificationIncludes -->
+
+    <owl:ObjectProperty rdf:about="#classificationIncludes">
+        <rdfs:label xml:lang="en"
+            >classification includes</rdfs:label>
+        <rdfs:domain rdf:resource="#Classification"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;hasSetting"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#classifies -->
+
+    <owl:ObjectProperty rdf:about="#classifies">
+        <rdfs:label xml:lang="en">classifies</rdfs:label>
+        <rdfs:label xml:lang="it">classifica</rdfs:label>
+        <rdfs:comment
+            >A relation between a concept and an entity, e.g. the role &#39;student&#39; classifies a person &#39;John&#39;.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="#isClassifiedBy">
+        <rdfs:label xml:lang="en"
+            >is classified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#isIncludedInClassification -->
+
+    <owl:ObjectProperty rdf:about="#isIncludedInClassification">
+        <rdfs:label xml:lang="en"
+            >is included in classification</rdfs:label>
+        <rdfs:range rdf:resource="#Classification"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;isSettingFor"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting -->
+
+    <owl:ObjectProperty rdf:about="&situation;hasSetting"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="&situation;isSettingFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#Classification -->
+
+    <owl:Class rdf:about="#Classification">
+        <rdfs:label xml:lang="en">Classification</rdfs:label>
+        <rdfs:label xml:lang="it">Classificazione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&situation;Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&situation;isSettingFor"/>
+                <owl:someValuesFrom rdf:resource="#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#classificationIncludes"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&situation;isSettingFor"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&situation;isSettingFor"/>
+                <owl:someValuesFrom rdf:resource="&timeinterval;TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment
+            >A special kind of Situation that allows to include time indexing for the classifies relation in situations. For example, if a Situation s &#39;my old cradle is used in these days as a flower pot&#39; isSettingFor the entity &#39;my old cradle&#39; and the TimeIntervals &#39;8June2007&#39; and &#39;10June2007&#39;, and we know that s satisfies a functional Description for aesthetic objects, which defines the Concepts &#39;flower pot&#39; and &#39;flower&#39;, then we also need to know what concept classifies &#39;my old cradle&#39; at what time.
+In order to solve this issue, we need to create a sub-situation s&#39; for the classification time: &#39;my old cradle is a flower pot in 8June2007&#39;. Such sub-situation s&#39; isPartOf s.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/naryclassification.owl#Concept -->
+
+    <owl:Class rdf:about="#Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="it">Concetto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&situation;Situation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A concept is a SocialObject, and isDefinedIn a Description . 
+Once defined, a Concept can be used in other descriptions. 
+The classifies relation relates concepts to entities at some time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="&situation;Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+    <owl:Class rdf:about="&timeinterval;TimeInterval"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1042) http://owlapi.sourceforge.net -->
+

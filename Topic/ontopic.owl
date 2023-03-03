@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY DUL "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#" >
+    <!ENTITY IOLite "http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#" >
+    <!ENTITY LMM_L1 "http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#" >
+    <!ENTITY ontopic "http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:IOLite="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:LMM_L1="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ontopic="http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#">
+    <owl:Ontology rdf:about="">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Ontopic ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.5</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >An ontology of topics as used in thesauri, subject directories, etc.
+Topic is classified as a subclass of Collection, since its extensional semantics can be intended as a set of social objects (e.g. texts, concepts, other collections, relational meanings, etc.). Its intensional semantics is intended as an area of knowledge (or culture).
+
+The ontology is partly based on Chris Welty&#39;s formal ontology of subjects (DKE, 1999). Subtopic, near, and far relations are pretty similar to the ones defined there. The main differences are:
+- topics are intended here as collections of social objects, not as regions; there is anyway a morphism to the mereo-topological notion of Welty&#39;s, since for each topic as a collection we can define a topic space (a subclass of dul:Region) that corresponds to Welty&#39;s topics;
+- subjects in Welty&#39;s ontology, which are points in a topic region, are intended here in two ways:
+(1) as a dul:SocialObject that hasTopic a Topic. A dul:SocialObject in this case contains references to any entity that (in Welty&#39;s terms) &#39;is about&#39; a topic
+(2) as a Subject, which is characterized here as a subclass of Topic, which isTopicOf exactly 1 dul:SocialObject
+
+For example, in Welty&#39;s theory, given a football event, there can be a subject for that event that is a point in the space of a topic, e.g. &#39;football&#39;. In this ontology, this is represented as a dul:Event (the actual football event) that dul:isReferenceOf some dul:InformationObject (e.g. a report or article about the football event); such information object hasTopic a Topic (e.g. football). 
+Therefore, this solution has specific counterparts to Welty&#39;s theory, although the intuition is very different: Welty&#39;s topics correspond here to Topic(s), Welty&#39;s subjects correspond here to parts of Topic(s), and Welty&#39;s individual entities in a domain ontology correspond here to any Entity that dul:isReferenceOf a dul:InformationObject that dul:expresses a dul:SocialObject that hasTopic a Topic.
+
+On the other hand, a geometrical conception of topics, for example the one assumed by LSA (Latent Semantic Analysis), might take advantage from the addition of topic spaces into the ontology, because one could use dimensional space operators, as well as take input and produce outputs into an ontology by reasoning over topic spaces.
+For this reason, in this version of the ontopic ontology, we also provide the classes TopicSpace and SubjectSpace, and link them to Topic(s) through the relation dul:isRegionFor; the advantage is that we have a dual encoding of topics, which get either a commonsensical semantics as collections of documents, notions, or any other dul:SocialObject, or a mereotopological semantics as dul:Region(s). The second semantics can be used jointly with LSA geometrical semantics.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >TODO: remove LMM imports from within the ontology.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="&xsd;string"
+            >Version 1.2
+Changes in 1.1: added a dimensional space to topics that follows Welty&#39;s theory: the new classes are TopicSpace and Subject.
+Changes in 1.2: added English labels. Added abstract topic spaces and subjects as from Welty&#39;s formal ontology of subject.
+Added in 1.3: difference between Subject and SubjectSpace, which reflects that between Topic and TopicSpace.
+Added in 1.4: the notion of TopicalSignature, which refers to the set of lmm1:Expression(s) that can populate a Topic. E.g. the entries from Roget&#39;s, Moby, SenseCorpus, etc. are signatures for a Topic.
+Changes in 1.5: changed domain of hasTopic property to dul:Entity, added subproperty axioms for topic-oriented properties</owl:versionInfo>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/lmm/LMM_L2.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#characterizes -->
+
+    <owl:ObjectProperty rdf:about="&DUL;characterizes"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#farFrom -->
+
+    <owl:ObjectProperty rdf:about="&DUL;farFrom"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="&DUL;hasComponent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&DUL;hasPart"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAgent -->
+
+    <owl:ObjectProperty rdf:about="&DUL;includesAgent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesObject -->
+
+    <owl:ObjectProperty rdf:about="&DUL;includesObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isCharacterizedBy -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isCharacterizedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isExpressedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isObjectIncludedIn"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isPartOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRegionFor -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isRegionFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="&DUL;isSettingFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#nearTo -->
+
+    <owl:ObjectProperty rdf:about="&DUL;nearTo"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#overlaps -->
+
+    <owl:ObjectProperty rdf:about="&DUL;overlaps"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#hasSchema -->
+
+    <owl:ObjectProperty rdf:about="&IOLite;hasSchema"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#farTopicFrom -->
+
+    <owl:ObjectProperty rdf:about="#farTopicFrom">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">far topic from</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >&#232; un argomento lontano da</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The opposite to vicinity relation between two topics, e.g. &#39;star system&#39; (as a Topic) is farTopicFrom &#39;geology&#39; (as a Topic).
+Distance is typically established with reference to a threshold on the number of dul:SocialObject(s) that are common to the two topics. Alternatively, it can be established with reference to the a geometrical semantics applied to the TopicSpace(s) that are regions for the Topic(s)</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&DUL;farFrom"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <owl:inverseOf rdf:resource="#farTopicFrom"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#hasCoreConcept -->
+
+    <owl:ObjectProperty rdf:about="#hasCoreConcept">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >ha concetto centrale {@it}</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >has core concept</rdfs:label>
+        <rdfs:range rdf:resource="&DUL;Concept"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;isCharacterizedBy"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <owl:inverseOf rdf:resource="#isCoreConceptFor"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#hasSubTopic -->
+
+    <owl:ObjectProperty rdf:about="#hasSubTopic">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string"
+            >ha argomento pi&#249; specifico {it}</rdfs:label>
+        <rdfs:label xml:lang="en">has subtopic</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The relation between two instances of a Topic, in terms of their cultural coverage. For example, Sport hasSubTopic Football. 
+It can be used widely to talk about document annotations, subject directories, etc.
+The counterpart of this relation for TopicSpace(s) is simply dul:hasPart</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&DUL;hasPart"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="#hasTopic">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >ha argomento {it}</rdfs:label>
+        <rdfs:label xml:lang="en">has topic</rdfs:label>
+        <rdfs:label xml:lang="it">ha argomento</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The relation between ay Entity - but usually any dul:SocialObject (usually a document) - and a Topic (subject, argument, domain, theme, subject area, etc.). It can be used widely to talk about document annotations, subject directories, etc.
+The range is here relaxed to any SocialObject, in order to allow alignment of deviant uses of topic or subject relations for &#39;concepts&#39; (e.g. in thesauri), and other things that are mixed up with the notion of Topic.
+This move makes the hasTopic relation very general, and introduces a particular semiotic relation, different from dul:expresses, lmm1:denotes, and lmm1:isInterpretationOf: this is a relation between any two social objects, in which the first is (or is related to) some lmm1:Meaning that dul:isMemberOf a dul:Collection (a Topic). The second social object can even be another member of that Topic. Hence, in the general case, we could expect a relation between two social objects that are associated because they are members of a common Topic.
+For example, consider the following cases:
+(1) A biography of Brigitte Bardot (dul:InformationObject) ontopic:hasTopic &#39;star system&#39; (Topic)
+(2) The concept of &#39;starlet&#39; (dul:Concept) hasTopic &#39;cinema&#39; (Topic)
+(3) A biography of Claude Chabrol (dul:InformationObject) ontopic:hasTopic &#39;Nouvelle Vague&#39; (Topic)</rdfs:comment>
+        <rdfs:domain rdf:resource="&DUL;Entity"/>
+        <rdfs:range rdf:resource="&DUL;SocialObject"/>
+        <owl:inverseOf rdf:resource="#isTopicOf"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;hasInterpretation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#hasTopicSignature -->
+
+    <owl:ObjectProperty rdf:about="#hasTopicSignature">
+        <rdfs:range rdf:resource="&DUL;InformationEntity"/>
+        <rdfs:domain rdf:resource="#TopicSignature"/>
+        <rdfs:subPropertyOf rdf:resource="#isTopicOf"/>
+        <owl:inverseOf rdf:resource="#isTopicSignatureOf"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;isInterpretantFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#includesTopic -->
+
+    <owl:ObjectProperty rdf:about="#includesTopic">
+        <rdfs:label xml:lang="en">includes topic</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >include l&#39;argomento</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A relation between topic assignments and topics.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&DUL;includesObject"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#TopicAssignment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#isCoreConceptFor -->
+
+    <owl:ObjectProperty rdf:about="#isCoreConceptFor">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >&#232; concetto centrale di {it}</rdfs:label>
+        <rdfs:label xml:lang="en"
+            >is core concept for</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A Concept is a core concept for a Topic when it classifies a set of entities that are references of some relevant information objects that have that Topic.
+For example, Saxophone (as a Concept) isCoreConceptFor Saxophones (as a Topic).</rdfs:comment>
+        <rdfs:domain rdf:resource="&DUL;Concept"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;characterizes"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#isSubTopicOf -->
+
+    <owl:ObjectProperty rdf:about="#isSubTopicOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string"
+            >&#232; argomento pi&#249; specifico di {it}</rdfs:label>
+        <rdfs:label xml:lang="en">is sub topic of</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The relation between two Topic(s), in terms of their cultural coverage. For example, Football isSubTopicOf Sport. 
+It can be used widely to talk about document annotations, subject directories, etc.
+The counterpart of this relation for TopicSpace(s) is simply dul:isPartOf</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&DUL;isPartOf"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <owl:inverseOf rdf:resource="#hasSubTopic"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#isTopicIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="#isTopicIncludedIn">
+        <rdfs:label xml:lang="en"
+            >is topic included in</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&DUL;isObjectIncludedIn"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <rdfs:range rdf:resource="#TopicAssignment"/>
+        <owl:inverseOf rdf:resource="#includesTopic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#isTopicOf -->
+
+    <owl:ObjectProperty rdf:about="#isTopicOf">
+        <rdfs:label xml:lang="en">is topic of</rdfs:label>
+        <rdfs:label xml:lang="it">&#232; argomento di</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The relation between any Entity, and a Topic (subject, argument, domain, theme, subject area, etc.). It can be used widely to talk about document annotations, subject directories, etc.
+The range is here relaxed to any SocialObject, in order to allow alignment of deviant uses of topic or subject relations for &#39;concepts&#39; (e.g. in thesauri), and other things that are mixed up with the notion of Topic.</rdfs:comment>
+        <rdfs:domain rdf:resource="&DUL;Entity"/>
+        <rdfs:range rdf:resource="&DUL;SocialObject"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;isInterpretationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#isTopicSignatureOf -->
+
+    <owl:ObjectProperty rdf:about="#isTopicSignatureOf">
+        <rdfs:domain rdf:resource="&DUL;InformationEntity"/>
+        <rdfs:range rdf:resource="#TopicSignature"/>
+        <rdfs:subPropertyOf rdf:resource="#hasTopic"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;hasInterpretant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#nearTopicTo -->
+
+    <owl:ObjectProperty rdf:about="#nearTopicTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">near topic to</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >&#232; un argomento vicino a</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The vicinity relation between two topics, e.g. &#39;star system&#39; (as a Topic) is nearTopicTo &#39;cinema&#39; (as a Topic).
+Vicinity is typically established with reference to a threshold on the number of dul:SocialObject(s) that are common to the two Topic(s), or based on a geometrical semantics applied to the TopicSpace(s) that are regions for the two Topic(s).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&DUL;nearTo"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <owl:inverseOf rdf:resource="#nearTopicTo"/>
+        <rdfs:subPropertyOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#overlappingTopic -->
+
+    <owl:ObjectProperty rdf:about="#overlappingTopic">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&DUL;overlaps"/>
+        <rdfs:range rdf:resource="#Topic"/>
+        <rdfs:domain rdf:resource="#Topic"/>
+        <owl:inverseOf rdf:resource="#overlappingTopic"/>
+        <owl:inverseOf rdf:resource="&LMM_L1;relatedMeaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretant -->
+
+    <owl:ObjectProperty rdf:about="&LMM_L1;hasInterpretant"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#hasInterpretation -->
+
+    <owl:ObjectProperty rdf:about="&LMM_L1;hasInterpretation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isInterpretantFor -->
+
+    <owl:ObjectProperty rdf:about="&LMM_L1;isInterpretantFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#isInterpretationOf -->
+
+    <owl:ObjectProperty rdf:about="&LMM_L1;isInterpretationOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#relatedMeaning -->
+
+    <owl:ObjectProperty rdf:about="&LMM_L1;relatedMeaning"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+    <owl:Class rdf:about="&DUL;Agent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount -->
+
+    <owl:Class rdf:about="&DUL;Amount">
+        <owl:disjointWith rdf:resource="#SubjectSpace"/>
+        <owl:disjointWith rdf:resource="#TopicSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection -->
+
+    <owl:Class rdf:about="&DUL;Collection"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
+
+    <owl:Class rdf:about="&DUL;Concept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity -->
+
+    <owl:Class rdf:about="&DUL;Entity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity -->
+
+    <owl:Class rdf:about="&DUL;InformationEntity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalAttribute -->
+
+    <owl:Class rdf:about="&DUL;PhysicalAttribute">
+        <owl:disjointWith rdf:resource="#SubjectSpace"/>
+        <owl:disjointWith rdf:resource="#TopicSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
+
+    <owl:Class rdf:about="&DUL;Region"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject -->
+
+    <owl:Class rdf:about="&DUL;SocialObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
+
+    <owl:Class rdf:about="&DUL;TimeInterval">
+        <owl:disjointWith rdf:resource="#SubjectSpace"/>
+        <owl:disjointWith rdf:resource="#TopicSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#KOS -->
+
+    <owl:Class rdf:about="&IOLite;KOS"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#LinguisticAct -->
+
+    <owl:Class rdf:about="&IOLite;LinguisticAct"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Term -->
+
+    <owl:Class rdf:about="&IOLite;Term"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#Subject -->
+
+    <owl:Class rdf:about="#Subject">
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Topic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTopicOf"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Specific Topic(s) for e.g. a conversation, an article, a document, etc. E.g. wikipedia article names can be considered Subject(s).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#SubjectDirectory -->
+
+    <owl:Class rdf:about="#SubjectDirectory">
+        <rdfs:label xml:lang="en"
+            >Subject directory</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >Catalogo di argomenti</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&IOLite;KOS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;hasComponent"/>
+                <owl:allValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A collection of tags or metadata that have no formal semantics, and are typically used sparsely to annotate texts, images, bookmarks, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#SubjectSpace -->
+
+    <owl:Class rdf:about="#SubjectSpace">
+        <rdfs:label xml:lang="en">Subject space</rdfs:label>
+        <rdfs:label xml:lang="it">Soggetto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DUL;Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isPartOf"/>
+                <owl:someValuesFrom rdf:resource="#TopicSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isRegionFor"/>
+                <owl:someValuesFrom rdf:resource="&DUL;SocialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Any atomic Region in a TopicSpace that is used to localize a dul:SocialObject that hasTopic a Topic that dul:hasRegion that TopicSpace.
+In Welty&#39;s formal ontology of subjects, it is assumed as a point. The reason why we do not assume subjects as points is the relativity of atomicity: although the intuition goes to atomicity, one cannot exclude that subjects can have other subjects as parts; for example, consider the subject of an article on a football match: we might conceive a subject of a paragraph within that article that is about a penalty occurred during the football match.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#Topic -->
+
+    <owl:Class rdf:about="#Topic">
+        <rdfs:label xml:lang="en">Topic</rdfs:label>
+        <rdfs:label xml:lang="it">Argomento</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTopicOf"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&DUL;Collection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&IOLite;hasSchema"/>
+                <owl:someValuesFrom rdf:resource="#SubjectDirectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;overlaps"/>
+                <owl:allValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasSubTopic"/>
+                <owl:allValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isSubTopicOf"/>
+                <owl:allValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isExpressedBy"/>
+                <owl:someValuesFrom rdf:resource="&IOLite;Term"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTopicOf"/>
+                <owl:allValuesFrom rdf:resource="&DUL;SocialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A topic, or subject, argument, domain, theme, subject area, etc.
+Topics have a controversial intuition across common sense, document management systems, knowledge organization systems, etc.
+Here we conceptualise a semiotic notion of iol:Topic as &#39;a (usually potential) dul:Collection of dul:SocialObject(s). 
+For example, &#39;music&#39; is a topic constituted by the set of social objects that are associated with music-related entities. Such social objects can be information objects (texts, documents, words, images) about music-related entities, concepts classifying music-related entities, descriptions of musical theories and systems, etc.
+The relation between social objects and topics is called here &#39;hasTopic&#39;, and is a rdfs:subPropertyOf dul:isMemberOf
+Specific topics for e.g. a conversation or an article (therefore, closer to the notion of &#39;title&#39; or &#39;entry&#39;) are called Subject(s).
+
+There is an interesting duality of topics: they are commonly interpreted as areas of shared knowledge within a Community (therefore as collections of social objects). On the other hand, existing directories and thesauri use &#39;topic&#39; (or &#39;subject&#39;) more restrictively, as a relation between a document and a concept. 
+There is a sense of &#39;meaning&#39; that can be reduced to the one given here to Topic (cf. the comment at the property dul:expresses), but in general there seems to be enough room to distinguish carefully between concepts and topics. 
+For example, thesauri do not usually distinguish when their &#39;concepts&#39; (cf. skos:Concept) are actually intended as concepts (in the sense of dul:Concept) and when they are intended as topics. The distinction is clear when you compare these two sample sentences: &#39;the football topic is part of the sport topic&#39; vs. &#39;the concept of football is part of the concept of sport&#39;. 
+While the first is perfectly acceptable, the second is counterintuitive and even possibly wrong. This effect is due to the fact that concepts are &#39;intensional&#39; notions and are not intended as areas of knowledge, document spaces, etc., which are &#39;extensional&#39; notions.
+Accordingly to these basic observations, in this ontology dul:Concept and Topic result to be disjoint, and an appropriate representation should be in place in order to model thesauri. E.g. skos:Concept should be mapped to the union of dul:Concept and Topic.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicAssignment -->
+
+    <owl:Class rdf:about="#TopicAssignment">
+        <rdfs:label xml:lang="en"
+            >Topic assignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&IOLite;LinguisticAct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isSettingFor"/>
+                <owl:someValuesFrom rdf:resource="&DUL;SocialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;includesObject"/>
+                <owl:someValuesFrom rdf:resource="#SubjectDirectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#includesTopic"/>
+                <owl:allValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#includesTopic"/>
+                <owl:someValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;includesAgent"/>
+                <owl:someValuesFrom rdf:resource="&DUL;Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A topic assignment is a iol:LinguisticAct in which an dul:Agent assigns a Topic to a document, or in general to any dul:SocialObject.
+What is the semiotic act involved in such an assignment? Differently from tagging, which &#39;selects&#39; one of the references of a document, a topic actually points to an &#39;area of knowledge&#39;, which can be represented as a dul:Collection of dul:SocialObject(s) (e.g. of documents, concepts, meanings, etc.). 
+A Topic is necessarily expressed by a iol:LinguisticObject.
+Topics have a typical topology, by which they can be distant, close, overlapping, etc., and a mereology, by which they can be part of others. This also means that &#39;areas of knowledge&#39; can be part of others, can overlap, etc., so originating clusters of areas and terms that denote them.
+The subcollection of terms populating a Topic is called here TopicSignature</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicSignature -->
+
+    <owl:Class rdf:about="#TopicSignature">
+        <rdfs:label xml:lang="en">Topic signature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Topic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTopicOf"/>
+                <owl:someValuesFrom rdf:resource="&LMM_L1;Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isPartOf"/>
+                <owl:someValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTopicOf"/>
+                <owl:allValuesFrom rdf:resource="&LMM_L1;Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The collection of lmm1:Expression(s) that are in a Topic; for example, the topic signatures from sensecorpus, the entries from Roget&#39;s, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/ontopic.owl#TopicSpace -->
+
+    <owl:Class rdf:about="#TopicSpace">
+        <rdfs:label xml:lang="en">Topic space</rdfs:label>
+        <rdfs:label xml:lang="it"
+            >Spazio di argomenti</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&DUL;Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DUL;isRegionFor"/>
+                <owl:someValuesFrom rdf:resource="#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Any Region in a dimensional space that is used to localize a Topic. Its atomic parts are called Subject(s). Mereotopological relations: dul:hasPart, dul:overlaps, can be simply reused within and between TopicSpace(s).
+This class is mostly similar to the Topic class in Welty&#39;s formal ontology of subjects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/lmm/LMM_L1.owl#Expression -->
+
+    <owl:Class rdf:about="&LMM_L1;Expression"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

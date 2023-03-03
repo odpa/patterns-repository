@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="https://w3id.org/smartenvironment/patterns/place.owl">
+        <imports rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl"/>
+        <imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To represent a SmartHome as a place (specialization of http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace) which contains a number of sections (other physical places) and is also seen as a platform (e.g. a platform for a sensor network).</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are the spatial/directional relations between sections or between sections and objects in an environment?</cpannotationschema:coversRequirements>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern represents the spatial structure of the smart environment in terms of its sections (e.g., rooms in case of a smart home). This pattern uses the Smart Environment Geometry pattern, DULCE and SSN ontologies.</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart Environment Place Ontology Pattern</terms:title>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How many and what sections are there in a smart environment?</cpannotationschema:coversRequirements>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern represents the spatial structure of the smart environment in terms of its sections (e.g., rooms in case of a smart home) and also the location of pgysical objects. This pattern uses the Smart Environment Geometry pattern, DULCE and SSN ontologies.</rdfs:isDefinedBy>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-22</terms:created>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where are the locations of objects in an environment?</cpannotationschema:coversRequirements>
+        <cpannotationschema:isSpecializationOf rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl"/>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#date">se-place</vann:preferredNamespacePrefix>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.w3.org/ns/ssn/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/place.owl#Section -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/place.owl#Section">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl#SpatialObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+                <allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Sections belonging to a smart environment (e.g., kitchen, livingroom, etc., in case of a smart home)</rdfs:comment>
+        <rdfs:label xml:lang="en">section</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/place.owl#Section"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represent a smart environment as a physical place which is also supposed to be a platform for a sensor network deployment.</rdfs:comment>
+        <rdfs:label xml:lang="en">smart environment</rdfs:label>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

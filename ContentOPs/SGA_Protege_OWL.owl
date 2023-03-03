@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#"
+     xml:base="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasAttribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasContextRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasContextRelation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#refersTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#refersTo">
+        <rdfs:comment xml:lang="en">The refersTo relation is an inverse of hasContextRelation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#represents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasAttribute"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Types and Values are needed for the semantics for the same types of spatial objects are labeled differently schema to schema. Attribute must have exactly one Value and exactly one Type. It must be attached to exactly one SpatialInformationObject. Note that it is possible for two different SpatialInformationObjects to have attributes of the same Type and Value.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Types and Values are needed for the semantics for the same types of spatial objects are labeled differently schema to schema. Attribute must have exactly one Value and exactly one Type. It must be attached to exactly one SpatialInformationObject. Note that it is possible for two different SpatialInformationObjects to have attributes of the same Type and Value. ContextualizedRelation must have exactly one Value and exactly one Type.  ContextualizedRelation refers to at least one SpatialInformationObject.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasAttribute"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasContextRelation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#represents"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#represents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A SpatialInformationObject may have Attribute and may have ContextualizedRelation. Since Attributes and ContextualizedRelations have different descriptions in different data schema, these model classes were also chosen to work for any of the schemas used by our domain tools.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject">
+        <rdfs:comment xml:lang="en">An InformationObject represents exactly one SpatialObject.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type">
+        <rdfs:comment xml:lang="en">Our use of hasType makes the model more amenable to resolving the large variation of schema differences that exist; instead of subclassing we consider types to be instances of individuals so that we are not burdened by the decision to say that something is a subtype or not. Doing so would cause more hierarchical confusion instead of help in terms of its application. Nevertheless, having typing through properties does not preclude us from adding in the function of such a hierarchy later on.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasAttribute"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasContextRelation"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasType"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#hasValue"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#represents"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+    </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Attribute"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#ContextualizedRelation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialInformationObject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#SpatialObject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Type"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/holly2012/ontologies/2016/SGA_Pattern#Value"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/informationrealization/IMeMine.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ir="http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/informationrealization/IMeMine.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Valentina Presutti</owl:versionInfo>
+    <rdfs:comment>It encodes: the limited copy edition book of "I me mine".</rdfs:comment>
+    <rdfs:comment>This ontology contains an example ABox for the Information Realization CP available at &lt;http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl&gt;</rdfs:comment>
+  </owl:Ontology>
+  <ir:InformationRealization rdf:ID="Limited_Copy_Edition_Book_I_Me_Mine">
+    <ir:realizes>
+      <ir:InformationObject rdf:ID="I_Me_Mine">
+        <ir:isRealizedBy rdf:resource="#Limited_Copy_Edition_Book_I_Me_Mine"/>
+      </ir:InformationObject>
+    </ir:realizes>
+  </ir:InformationRealization>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

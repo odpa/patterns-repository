@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:timeinterval="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/timeinterval/january2008.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cpschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/timeinterval/january2008.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment>The scenario encoded is the following:  The time interval “January 2008” starts at 2008−01−01 and ends at and ends at 2008−01−31.</rdfs:comment>
+    <rdfs:comment>This ontology shows example ABox for the &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl&gt; CP.</rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Valentina Presutti</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+  </owl:Ontology>
+  <timeinterval:TimeInterval rdf:ID="January_2008">
+    <timeinterval:hasIntervalStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-01-01</timeinterval:hasIntervalStartDate>
+    <timeinterval:hasIntervalEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-01-31</timeinterval:hasIntervalEndDate>
+  </timeinterval:TimeInterval>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

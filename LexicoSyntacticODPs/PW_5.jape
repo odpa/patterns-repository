@@ -1,0 +1,74 @@
+Phase: SCRules
+Input:  Lookup Split Token NounChunk
+Options: control = appelt
+
+Macro: LIST
+
+(
+({NounChunk}{Token.string == ","})[0,10]
+{NounChunk}
+({Token.string == ","})?
+{Token.category == CC}
+{NounChunk}
+)
+
+
+Macro: ADJLIST
+
+(
+({Token.category == JJ}{Token.string == ","})[0,10]
+{Token.category == JJ}
+({Token.string == ","})?
+{Token.category == CC}
+{Token.category == JJ}
+)
+
+// 16
+Rule:PW4
+// NP<class> be  divide | split | separate in|into CD PN PARA [(NP<class >,)* and] NP<class>
+// The cerebrum is divided into two major parts: the right cerebral hemisphere and left cerebral hemisphere.
+
+
+(
+({NounChunk}):whole
+{Lookup.minorType == be}
+{Lookup.minorType == include}
+{Lookup.majorType == numbers}
+{Lookup.majorType == PN}
+({Token.kind == punctuation})?
+(LIST):part
+)
+
+
+-->
+:whole.Whole = {rule=PW4},
+{
+// "subclass" matches LHS label
+  List annList = new ArrayList((AnnotationSet)bindings.get("part"));
+
+  //sort the list by offset
+  Collections.sort(annList, new OffsetComparator());
+
+  //iterate through the matched annotations
+  for(int i = 0; i < annList.size(); i++)
+   {
+    Annotation anAnn = (Annotation)annList.get(i);
+
+// check that the new annotation is a NounChunk 
+if ((anAnn.getType().equals("NounChunk")) )
+
+{ 
+    FeatureMap features = Factory.newFeatureMap();
+
+// change this for a different rule name"
+    features.put("rule", "PW4");
+  
+// change "Subclass" for a different annotation name
+ annotations.add(anAnn.getStartNode(), anAnn.getEndNode(), "Part",
+ features);
+
+}
+}
+}
+
+

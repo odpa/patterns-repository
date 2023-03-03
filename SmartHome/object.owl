@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="https://w3id.org/smartenvironment/patterns/object.owl">
+        <imports rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl"/>
+        <imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern relies on both the SSN ontology and DUL in order to represent an object in the context of a smart environment. Using this model we categorize the objects in to two groups of Smart Object and NodeHolder.
+
+Due to usual difficulties to install sensors in a smart environment it is common that some other objects (i.e. NodeHolder) are used to hosts sensors so as to observe the situation of other objects (i.e. SmartObject). Using this pattern we are able to diffrentiate between these two types of objects.</rdfs:comment>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are node holders, in other words, which objects are used as the holder of sensors in a smart environment?</cpannotationschema:coversRequirements>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#date">se-object</vann:preferredNamespacePrefix>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are smart objects, in other words, which objects are the interest of an observation process?</cpannotationschema:coversRequirements>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart Environment Object Ontology Pattern</terms:title>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-22</terms:created>
+        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern relies on both the SSN ontology and DUL in order to represent an object in the context of a smart environment. Using this model we categorize the objects in to two groups of Smart Object and NodeHolder.
+
+Due to usual difficulties to install sensors in a smart environment it is common that some other objects (i.e. NodeHolder) are used to hosts sensors so as to observe the situation of other objects (i.e. SmartObject). Using this pattern we are able to diffrentiate between these two types of objects.</skos:definition>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <cpannotationschema:isSpecializationOf rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl"/>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.w3.org/ns/ssn/"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObjectIncludedIn"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#Agent -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#MobileObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes any agent (e.g., human, pet, etc) in a smart environment that can participate in an event or activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <skos:definition xml:lang="en">Describes any agent (e.g., human, pet, etc) in a smart environment that can participate in an event or activity.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#Location -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/isPropertyOf"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#MobileObject"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#MobileObject -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#MobileObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Object"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Location"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes any type of physical object that has the possibility to move in a smart environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">mobile object</rdfs:label>
+        <skos:definition xml:lang="en">Describes any type of physical object that has the possibility to move in a smart environment.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#NodeHolder -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#NodeHolder">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Object"/>
+        <rdfs:comment xml:lang="en">Describes any object in a smart environment, which is used to host network modules such as nodes or node stations.</rdfs:comment>
+        <rdfs:label xml:lang="en">node holder</rdfs:label>
+        <skos:definition xml:lang="en">Describes any object in a smart environment, which is used to host network modules such as nodes or node stations.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#Object -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#Object">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl#SpatialObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+                <someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalPlace"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes any type of physical object in a smart environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+        <skos:definition xml:lang="en">Describes any type of physical object in a smart environment.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#SmartObject -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#SmartObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Object"/>
+        <rdfs:comment xml:lang="en">Describes any physical object in a smart environment which is a feature of interest for an observation process.</rdfs:comment>
+        <rdfs:label xml:lang="en">smart object</rdfs:label>
+        <skos:definition xml:lang="en">Describes any physical object in a smart environment which is a feature of interest for an observation process.</skos:definition>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

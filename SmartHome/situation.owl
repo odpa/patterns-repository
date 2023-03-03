@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/smartenvironment/patterns/situation.owl#"
+     xml:base="https://w3id.org/smartenvironment/patterns/situation.owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="https://w3id.org/smartenvironment/patterns/situation.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <vann:preferredNamespacePrefix xml:lang="en">se-situ</vann:preferredNamespacePrefix>
+        <cpannotationschema:isSpecializationOf xml:lang="en">http://www.w3.org/ns/ssn/</cpannotationschema:isSpecializationOf>
+        <cpannotationschema:coversRequirements xml:lang="en">Which property of an object (i.e, feature of interest) is used to conceptualize a situation?</cpannotationschema:coversRequirements>
+        <terms:description xml:lang="en">This pattern specializes the ontologies DULCE (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl) and SSN (http://www.w3.org/ns/ssn/).
+
+This ontology describes a situation in the context on smart environment (e.g., stove is on). In this ontology, a situation is expressed by a feature of interest (e.g., stove), its property (e.g., electriccurrent) and a specific state of this peroperty (e.g., on or off). This ontology relies on the two other ontologies DULCE (http://www.ontologydesignpatterns.org/ont/dul/DUL.owl) and SSN (http://www.w3.org/ns/ssn/).</terms:description>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-22</terms:created>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <cpannotationschema:coversRequirements xml:lang="en">What are the possible states of the feature of interests (objects under the observation process) in a smart environment?</cpannotationschema:coversRequirements>
+        <terms:title xml:lang="en">Smart Environment Situation Ontology Pattern</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/situation.owl#Situation -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/situation.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/situation.owl#State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/forProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes a specific situation in the context of smart environments in the form of a feature of interest, its property and a specific state that express it.</rdfs:comment>
+        <rdfs:label xml:lang="en">situation</rdfs:label>
+        <skos:definition xml:lang="en">Describes a specific situation in the context of smart environments in the form of a feature of interest, its property and a specific state that express it.</skos:definition>
+        <skos:example xml:lang="en">e.g., stove-on, tv-on, sofa-used (i.e., the pressure (as the property of the sofa) on the sofa is realized).</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/situation.owl#State -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/situation.owl#State">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/situation.owl#Situation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes a specific state of a feature of interest regardless of how it has been realized.</rdfs:comment>
+        <rdfs:label xml:lang="en">state</rdfs:label>
+        <skos:definition xml:lang="en">Describes a specific state of a feature of interest regardless of how it has been realized.</skos:definition>
+        <skos:example xml:lang="en">on, off, true, false, etc.</skos:example>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

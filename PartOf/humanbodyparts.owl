@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/partof/humanbodyparts.owl#"
+    xmlns:partof="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/partof/humanbodyparts.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment>it encodes: Brain and heart are parts of the human body, substantia nigra is part of brain.</rdfs:comment>
+    <rdfs:comment>This ontology contains an example ABox for the Part Of CP available at &lt;http://www.ontologydesignpatterns.org/cp/owl/partof.owl&gt;</rdfs:comment>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Valentina Presutti</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+  </owl:Ontology>
+  <partof:Entity rdf:ID="substantia_nigra">
+    <partof:isPartOf>
+      <partof:Entity rdf:ID="human_body">
+        <partof:hasPart>
+          <partof:Entity rdf:ID="brain">
+            <partof:isPartOf rdf:resource="#human_body"/>
+            <partof:hasPart rdf:resource="#substantia_nigra"/>
+          </partof:Entity>
+        </partof:hasPart>
+        <partof:hasPart>
+          <partof:Entity rdf:ID="heart">
+            <partof:isPartOf rdf:resource="#human_body"/>
+          </partof:Entity>
+        </partof:hasPart>
+        <partof:hasPart rdf:resource="#substantia_nigra"/>
+      </partof:Entity>
+    </partof:isPartOf>
+    <partof:isPartOf rdf:resource="#brain"/>
+  </partof:Entity>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="https://w3id.org/smartenvironment/patterns/network.owl">
+        <imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:comment xml:lang="en">This pattern relies on the SSN ontology  and represents sensors and the other modules needed  to deploy a network in a smart environment.</rdfs:comment>
+        <terms:title xml:lang="en">Smart Environment Network Ontology Pattern</terms:title>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which types of nodes are available in a network?</cpannotationschema:coversRequirements>
+        <cpannotationschema:hasIntent xml:lang="en">This pattern relies on the SSN ontology  and represents sensors and the other modules needed  to deploy a network in a smart environment.
+
+The concept of Network is modeled in this pattern as a System  with number of sub systems in the form of Networkmodules (i.e., NodeStations and Nodes). The class Node represents the details about the content of each node station. Depending on their roles, nodes of a network are devided into types of node senders (whcih observe a phenomenon) and receivers (which receive the observation data).</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements xml:lang="en">What is the confuguration (e.g.,, sampling rate) set for a given sensor?</cpannotationschema:coversRequirements>
+        <cpannotationschema:coversRequirements xml:lang="en">What is the node receiving the data from a giveb sensor?</cpannotationschema:coversRequirements>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <terms:created xml:lang="en">2017-10-22</terms:created>
+        <terms:description xml:lang="en">This pattern relies on the SSN ontology  and represents sensors and the other modules needed  to deploy a network in a smart environment.
+
+The concept of Network is modeled in this pattern as a System  with number of sub systems in the form of Networkmodules (i.e., NodeStations and Nodes). The class Node represents the details about the content of each node station. Depending on their roles, nodes of a network are devided into types of node senders (whcih observe a phenomenon) and receivers (which receive the observation data).</terms:description>
+        <vann:preferredNamespacePrefix xml:lang="en">se-network</vann:preferredNamespacePrefix>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#receivesDataFrom -->
+
+    <ObjectProperty rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#receivesDataFrom">
+        <inverseOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#sendsDataTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode"/>
+        <rdfs:range rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#sendsDataTo -->
+
+    <ObjectProperty rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#sendsDataTo">
+        <rdfs:domain rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode"/>
+        <rdfs:range rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Node"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#receivesDataFrom"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Decsribes a node in a network that receives data from sensors,</rdfs:comment>
+        <skos:definition xml:lang="en">Decsribes a node in a network that receives data from sensors,</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Node"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#sendsDataTo"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Decsribes a node as part of a nore station that contributes sending the data read by sensors.</rdfs:comment>
+        <skos:definition xml:lang="en">Decsribes a node as part of a nore station that contributes sending the data read by sensors.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#Deployment -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedSystem"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Network"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes the deployment of a network in a smart environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">deployment</rdfs:label>
+        <skos:definition xml:lang="en">Describes the deployment of a network in a smart environment.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#Network -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#Network">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasDeployment"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Deployment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A network which is a collection of Nodes</rdfs:comment>
+        <rdfs:label xml:lang="en">network</rdfs:label>
+        <skos:definition xml:lang="en">A network which is a collection of Nodes</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#NetworkModule -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#NetworkModule">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:comment xml:lang="en">Describes the network modules in the form of node stations and nodes contributing in sending and receiving data within a sensor network in the context of a smart environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">network module</rdfs:label>
+        <skos:definition xml:lang="en">Describes the network modules in the form of node stations and nodes contributing in sending and receiving data within a sensor network in the context of a smart environment.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#Node -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#Node">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NetworkModule"/>
+        <rdfs:comment xml:lang="en">Decsribes a node in a network that either sends or receives the data read by a sensor.</rdfs:comment>
+        <rdfs:label xml:lang="en">node</rdfs:label>
+        <skos:definition xml:lang="en">Decsribes a node in a network that either sends or receives the data read by a sensor.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#NodeStation -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NetworkModule"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <allValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Node"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Decsribes a module in a network that contains nodes, batteries, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">node station</rdfs:label>
+        <skos:definition xml:lang="en">Decsribes a module in a network that contains nodes, batteries, etc.</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#ReceiverNodeStation -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#ReceiverNodeStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <allValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataReceiverNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes a node station which holds a data receiver node as its part (sub-system)</rdfs:comment>
+        <skos:definition xml:lang="en">Describes a node station which holds a data receiver node as its part (sub-system)</skos:definition>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#SenderNodeStation -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#SenderNodeStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <allValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#DataSenderNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes a node station which is assumed to contain both a data sender node and also sensing devices (sensors)</rdfs:comment>
+        <skos:definition xml:lang="en">Describes a node station which is assumed to contain both a data sender node and also sensing devices (sensors)</skos:definition>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/timeindexedpartof/yarispneumatics.owl#"
+    xmlns:tipartof="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#"
+    xmlns:ti="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:sit="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/timeindexedpartof/yarispneumatics.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Valentina Presutti</owl:versionInfo>
+    <rdfs:comment>It encodes: My Toyota Yaris mounted Michelin pneumatics in 2007, but in 2008 it mounts Pirelli pneumatics.</rdfs:comment>
+    <rdfs:comment>This ontology contains an example ABox for the Time Indexed Part Of CP available at &lt;http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl&gt;</rdfs:comment>
+  </owl:Ontology>
+  <tipartof:TimeIndexedPartOf rdf:ID="ToyotaYarisParts2008">
+    <sit:isSettingFor>
+      <ti:TimeInterval rdf:ID="year_2008"/>
+    </sit:isSettingFor>
+    <sit:isSettingFor>
+      <tipartof:Object rdf:ID="Toyota_Yaris"/>
+    </sit:isSettingFor>
+    <sit:isSettingFor>
+      <tipartof:Object rdf:ID="Pirelli_Pneumatics"/>
+    </sit:isSettingFor>
+  </tipartof:TimeIndexedPartOf>
+  <tipartof:Object rdf:ID="Michelin_Pneumatics"/>
+  <tipartof:TimeIndexedPartOf rdf:ID="ToyotaYarisParts2007">
+    <sit:isSettingFor rdf:resource="#Toyota_Yaris"/>
+    <sit:isSettingFor rdf:resource="#Michelin_Pneumatics"/>
+    <sit:isSettingFor>
+      <ti:TimeInterval rdf:ID="year_2007"/>
+    </sit:isSettingFor>
+  </tipartof:TimeIndexedPartOf>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

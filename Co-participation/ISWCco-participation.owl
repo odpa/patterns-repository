@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/coparticpation/ISWCco-participation.owl#"
+    xmlns:coparticipation="http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:pcp="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/coparticpation/ISWCco-participation.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Valentina Presutti</owl:versionInfo>
+    <rdfs:comment>This ontology contains an example ABox for the Co-participation CP available at &lt;http://www.ontologydesignpatterns.org/cp/owl/coparticipation.owl&gt;</rdfs:comment>
+    <rdfs:comment>it encodes: Aldo Gangemi and Valentina Presutti co-participates at the ISWC 2007 conference.</rdfs:comment>
+  </owl:Ontology>
+  <pcp:Object rdf:ID="Valentina_Presutti">
+    <pcp:isParticipantIn>
+      <pcp:Event rdf:ID="ISWC2007_conference">
+        <pcp:hasParticipant rdf:resource="#Valentina_Presutti"/>
+        <pcp:hasParticipant>
+          <pcp:Object rdf:ID="Aldo_Gangemi">
+            <pcp:isParticipantIn rdf:resource="#ISWC2007_conference"/>
+            <coparticipation:coparticipatesWith rdf:resource="#Valentina_Presutti"/>
+          </pcp:Object>
+        </pcp:hasParticipant>
+      </pcp:Event>
+    </pcp:isParticipantIn>
+    <coparticipation:coparticipatesWith rdf:resource="#Aldo_Gangemi"/>
+  </pcp:Object>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

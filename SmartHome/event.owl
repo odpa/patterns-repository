@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:se-event="https://w3id.org/smartenvironment/patterns/SmartHome_Event.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="https://w3id.org/smartenvironment/patterns/event.owl">
+        <imports rdf:resource="https://www.w3.org/2006/time"/>
+        <imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <terms:title xml:lang="en">Smart Environment Event Ontology Pattern</terms:title>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Who has participated in a given event? (Dul:Agent)</cpannotationschema:coversRequirements>
+        <vann:preferredNamespacePrefix xml:lang="en">se-event</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">This pattern is used to represent events in the context of smart environments. An event in this pattern is represented in the form of either a Manifestation or a Complex Event, where a manifestation represents the occurance of a specific situation of an object which can be directly captured from sensor data (&quot;the tv is switched on&quot;), whereas a complex event is defined based on its precoditions that can involve different events (e.g., &quot;watching tv&quot; happens when &quot;the tv is switched on&quot; and &quot;someone is sitting on the couch&quot;). 
+
+The precondition of a complex event is represented in the form of a situation (DUL:Situation) which indicates proper temporal distances between a complex event and, the events involved in its definition.</rdfs:comment>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are the preconditions of a complex event? And what is the temporal distance between a complex event and its preconditions?</cpannotationschema:coversRequirements>
+        <vann:preferredNamespacePrefix xml:lang="en">https://w3id.org/smartenvironment/patterns/event.owl</vann:preferredNamespacePrefix>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which situation (including a feature of interest; its property and its state) has been captured in the form of a manifestation event?</cpannotationschema:coversRequirements>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When does an Event occur? (Dul:TimeInterval)</cpannotationschema:coversRequirements>
+        <cpannotationschema:isSpecializationOf rdf:resource="https://www.w3.org/2006/time"/>
+        <cpannotationschema:hasIntent xml:lang="en">This pattern is used to represent events in the context of smart environments. An event in this pattern is represented in the form of either a Manifestation or a Complex Event, where a manifestation represents the occurance of a specific situation of an object which can be directly captured from sensor data (&quot;the tv is switched on&quot;), whereas a complex event is defined based on its precoditions that can involve different events (e.g., &quot;watching tv&quot; happens when &quot;the tv is switched on&quot; and &quot;someone is sitting on the couch&quot;). 
+
+The precondition of a complex event is represented in the form of a situation (DUL:Situation) which indicates proper temporal distances between a complex event and, the events involved in its definition.</cpannotationschema:hasIntent>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#ComplexEvent -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#ComplexEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl#Event"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPrecondition"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl#EventCondition"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes an event  based on its precoditions that can per se involve different events (e.g., &quot;watching tv&quot; happens when &quot;the tv is switched on&quot; and &quot;someone is sitting on the couch&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">complex event</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#Event -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/time.owl#Interval"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                <allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Describes any type of event that can occur in a smart environment. This representation is able to also define an activity whose recognition is based on realization of its preconditions.</rdfs:label>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#EventCondition -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#EventCondition">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isObservableAt"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/time.owl#TemporalDistance"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPreconditionOf"/>
+                <someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl#ComplexEvent"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes a precondition for a complex event needed to be recognized within specific temporal distance from the timestamp at which the complex event is recognized.</rdfs:comment>
+        <rdfs:label xml:lang="en">event condition</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#Manifestation -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#Manifestation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl#Event"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn"/>
+                <someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Describes the occurance/realization of a specific situation of a feature of interest (for its specific property)  which can be directly captured from sensor data (&quot;the tv is switched on&quot;),</rdfs:comment>
+        <rdfs:label xml:lang="en">manifestation</rdfs:label>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/time.owl#Interval -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/time.owl#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval"/>
+    </Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/time.owl#TemporalDistance -->
+
+    <Class rdf:about="https://w3id.org/smartenvironment/patterns/time.owl#TemporalDistance"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

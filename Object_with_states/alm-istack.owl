@@ -1,0 +1,1581 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright (c) 2012-2013 the Center for Open Middleware.
+    This file is part of the ALM iStack Project,
+
+    	https://sites.google.com/a/centeropenmiddleware.com/alm-istack/
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    	http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY oslc_cm "http://open-services.net/ns/cm#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY oslc "http://open-services.net/ns/core#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY oslc_asset "http://open-services.net/ns/asset#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY alm_istack "http://delicias.dia.fi.upm.es/ontologies/alm-istack#" >
+]>
+
+
+<rdf:RDF xmlns="http://delicias.dia.fi.upm.es/ontologies/alm-istack#"
+     xml:base="http://delicias.dia.fi.upm.es/ontologies/alm-istack"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:oslc_cm="http://open-services.net/ns/cm#"
+     xmlns:oslc="http://open-services.net/ns/core#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:alm_istack="http://delicias.dia.fi.upm.es/ontologies/alm-istack#"
+     xmlns:oslc_asset="http://open-services.net/ns/asset#">
+    <owl:Ontology rdf:about="http://delicias.dia.fi.upm.es/ontologies/alm-istack">
+        <rdfs:label xml:lang="en">ALM iStack ontology</rdfs:label>
+        <rdfs:comment xml:lang="en">Ontology for describing the ALM entities used in the ALM iStack project.</rdfs:comment>
+        <dcterms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0" />
+    </owl:Ontology>
+  
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#attachedTo -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;attachedTo">
+        <rdfs:label xml:lang="en">attached to</rdfs:label>
+        <rdfs:comment xml:lang="en">The defect to which the attachment is related.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Attachment"/>
+        <rdfs:range rdf:resource="&alm_istack;Defect"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#belongsToWorkArea -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;belongsToWorkArea">
+        <rdfs:label xml:lang="en">belongs to work area</rdfs:label>
+        <rdfs:comment xml:lang="en">The work area to which the group belongs to.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;WorkArea"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:domain rdf:resource="&foaf;Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#definedForWorkArea -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;definedForWorkArea">
+        <rdfs:label xml:lang="en">defined for work area</rdfs:label>
+        <rdfs:comment xml:lang="en">The work area for which the role is defined.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Role"/>
+        <rdfs:range rdf:resource="&alm_istack;WorkArea"/>
+        <owl:inverseOf rdf:resource="&alm_istack;definesRole"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#definesRole -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;definesRole">
+        <rdfs:label xml:lang="en">defines role</rdfs:label>
+        <rdfs:comment xml:lang="en">The role that defines the work area.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;Role"/>
+        <rdfs:domain rdf:resource="&alm_istack;WorkArea"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasAttachment -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasAttachment">
+        <rdfs:label xml:lang="en">has attachment</rdfs:label>
+        <rdfs:comment xml:lang="en">The attachment of the defect.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;Attachment"/>
+        <rdfs:domain rdf:resource="&alm_istack;Defect"/>
+        <owl:inverseOf rdf:resource="&alm_istack;attachedTo"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasCredentials -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasCredentials">
+        <rdfs:label xml:lang="en">hasCredentials</rdfs:label>
+        <rdfs:comment xml:lang="en">The credentials of the person.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;Credentials"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasImpact -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasImpact">
+        <rdfs:label xml:lang="en">has impact</rdfs:label>
+        <rdfs:comment xml:lang="en">The impact of the defect.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Defect"/>
+        <rdfs:range rdf:resource="&alm_istack;DefectImpact"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasPriority -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasPriority">
+        <rdfs:label xml:lang="en">has priority</rdfs:label>
+        <rdfs:comment xml:lang="en">The priority of the defect.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Defect"/>
+        <rdfs:range rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasVersion -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasVersion">
+        <rdfs:label xml:lang="en">has version</rdfs:label>
+        <rdfs:comment xml:lang="en">The version of the product.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Product"/>
+        <rdfs:range rdf:resource="&alm_istack;Version"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasWorkingGroup -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;hasWorkingGroup">
+        <rdfs:label xml:lang="en">has working group</rdfs:label>
+        <rdfs:comment xml:lang="en">The working group of the product.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Product"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&foaf;Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#involves -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;involves">
+        <rdfs:label xml:lang="en">involves</rdfs:label>
+        <rdfs:comment xml:lang="en">The entity involved in a product role; it can be either a product, a role or a person.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;ProductRole"/>
+        <owl:inverseOf rdf:resource="&alm_istack;isInvolvedIn"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;Product"/>
+                    <rdf:Description rdf:about="&alm_istack;Role"/>
+                    <rdf:Description rdf:about="&foaf;Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;isInvolvedIn">
+        <rdfs:label xml:lang="en">is involved in</rdfs:label>
+        <rdfs:comment xml:lang="en">The product role in which the entity is involved.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;ProductRole"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;Product"/>
+                    <rdf:Description rdf:about="&alm_istack;Role"/>
+                    <rdf:Description rdf:about="&foaf;Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;isMemberOf">
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+        <rdfs:comment xml:lang="en">The group to which the person belongs to.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&foaf;Group"/>
+        <rdfs:domain rdf:resource="&foaf;Person"/>
+        <owl:inverseOf rdf:resource="&foaf;member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#isVersionOf -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;isVersionOf">
+        <rdfs:label xml:lang="en">is version of</rdfs:label>
+        <rdfs:comment xml:lang="en">The product of the version.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;Product"/>
+        <rdfs:domain rdf:resource="&alm_istack;Version"/>
+        <owl:inverseOf rdf:resource="&alm_istack;hasVersion"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-241"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#relatedIncident -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;relatedIncident">
+        <rdfs:label xml:lang="en">related incident</rdfs:label>
+        <rdfs:comment xml:lang="en">The incident to which the client defect is related to.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;ClientDefect"/>
+        <rdfs:range rdf:resource="&alm_istack;Incident"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#worksInProduct -->
+
+    <owl:ObjectProperty rdf:about="&alm_istack;worksInProduct">
+        <rdfs:label xml:lang="en">works in product</rdfs:label>
+        <rdfs:comment xml:lang="en">The product in which the group works.</rdfs:comment>
+        <rdfs:range rdf:resource="&alm_istack;Product"/>
+        <owl:inverseOf rdf:resource="&alm_istack;hasWorkingGroup"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:domain rdf:resource="&foaf;Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://open-services.net/ns/asset#relatedAsset -->
+
+    <owl:ObjectProperty rdf:about="&oslc_asset;relatedAsset"/>
+    
+
+
+    <!-- http://open-services.net/ns/asset#relatedChangeRequest -->
+
+    <owl:ObjectProperty rdf:about="&oslc_asset;relatedChangeRequest"/>
+    
+
+
+    <!-- http://open-services.net/ns/cm#relatedChangeRequest -->
+
+    <owl:ObjectProperty rdf:about="&oslc_cm;relatedChangeRequest"/>
+    
+
+
+    <!-- http://open-services.net/ns/cm#status -->
+
+    <owl:ObjectProperty rdf:about="&oslc_cm;status"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#comment -->
+
+    <owl:ObjectProperty rdf:about="&oslc;comment"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#discussedBy -->
+
+    <owl:ObjectProperty rdf:about="&oslc;discussedBy"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#discussionAbout -->
+
+    <owl:ObjectProperty rdf:about="&oslc;discussionAbout"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#inReplyTo -->
+
+    <owl:ObjectProperty rdf:about="&oslc;inReplyTo"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#partOfDiscussion -->
+
+    <owl:ObjectProperty rdf:about="&oslc;partOfDiscussion"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:ObjectProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:ObjectProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <owl:ObjectProperty rdf:about="&foaf;member"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="&alm_istack;hasContent">
+        <rdfs:label xml:lang="en">has content</rdfs:label>
+        <rdfs:comment xml:lang="en">The binary content of the attachment.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Attachment"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+        <rdfs:range rdf:resource="&xsd;base64Binary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasFixNumber -->
+
+    <owl:DatatypeProperty rdf:about="&alm_istack;hasFixNumber">
+        <rdfs:label xml:lang="en">has fix number</rdfs:label>
+        <rdfs:comment xml:lang="en">The fix number of the revision.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Revision"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasPassword -->
+
+    <owl:DatatypeProperty rdf:about="&alm_istack;hasPassword">
+        <rdfs:label xml:lang="en">has password</rdfs:label>
+        <rdfs:comment xml:lang="en">The password of the credentials.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Credentials"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasRevisionNumber -->
+
+    <owl:DatatypeProperty rdf:about="&alm_istack;hasRevisionNumber">
+        <rdfs:label xml:lang="en">has revision number</rdfs:label>
+        <rdfs:comment xml:lang="en">The number of the revision.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Revision"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#hasUsername -->
+
+    <owl:DatatypeProperty rdf:about="&alm_istack;hasUsername">
+        <rdfs:label xml:lang="en">has username</rdfs:label>
+        <rdfs:comment xml:lang="en">The username of the credentials.</rdfs:comment>
+        <rdfs:domain rdf:resource="&alm_istack;Credentials"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://open-services.net/ns/asset#version -->
+
+    <owl:DatatypeProperty rdf:about="&oslc_asset;version"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+    <owl:DatatypeProperty rdf:about="&dc;created"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:DatatypeProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:DatatypeProperty rdf:about="&foaf;mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="&foaf;name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Attachment -->
+
+    <owl:Class rdf:about="&alm_istack;Attachment">
+        <rdfs:label xml:lang="en">Attachment</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;attachedTo"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Defect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;creator"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;attachedTo"/>
+                <owl:onClass rdf:resource="&alm_istack;Defect"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An attachment is a binary file related to a certain bug.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#ClientDefect -->
+
+    <owl:Class rdf:about="&alm_istack;ClientDefect">
+        <rdfs:label xml:lang="en">Client Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;Defect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;relatedIncident"/>
+                <owl:onClass rdf:resource="&alm_istack;Incident"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;relatedIncident"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A client defect is a defect that is related to a helpdesk defect.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#ClosedDefect -->
+
+    <owl:Class rdf:about="&alm_istack;ClosedDefect">
+        <rdfs:label xml:lang="en">Closed Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;RegisteredDefect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;contributor"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:hasValue rdf:resource="&alm_istack;statusClosed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasPriority"/>
+                <owl:onClass rdf:resource="&alm_istack;DefectPriority"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A closed defect is a defect that has been closed.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Credentials -->
+
+    <owl:Class rdf:about="&alm_istack;Credentials">
+        <rdfs:label xml:lang="en">Credentials</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasPassword"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasUsername"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasUsername"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasPassword"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Credentials are the different information needed for user authentication.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Defect -->
+
+    <owl:Class rdf:about="&alm_istack;Defect">
+        <rdfs:label xml:lang="en">Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oslc_cm;ChangeRequest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;contributor"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;discussedBy"/>
+                <owl:allValuesFrom rdf:resource="&oslc;Discussion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasPriority"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;DefectPriority"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;creator"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_asset;relatedAsset"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Version"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;relatedChangeRequest"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Defect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;DefectStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasImpact"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;DefectImpact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_asset;relatedAsset"/>
+                <owl:onClass rdf:resource="&alm_istack;Version"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;description"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;creator"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasAttachment"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Attachment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A defect is an error in a software product that produces incorrect or unexpected results.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-241"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#DefectImpact -->
+
+    <owl:Class rdf:about="&alm_istack;DefectImpact">
+        <rdfs:label xml:lang="en">Defect Impact</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;impactMedium"/>
+                    <rdf:Description rdf:about="&alm_istack;impactLow"/>
+                    <rdf:Description rdf:about="&alm_istack;impactHigh"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A defect impact is the impact of a defect in a certain moment of the software development process.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-51"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#DefectPriority -->
+
+    <owl:Class rdf:about="&alm_istack;DefectPriority">
+        <rdfs:label xml:lang="en">Defect Priority</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;priorityCritical"/>
+                    <rdf:Description rdf:about="&alm_istack;priorityMinor"/>
+                    <rdf:Description rdf:about="&alm_istack;priorityMajor"/>
+                    <rdf:Description rdf:about="&alm_istack;priorityNormal"/>
+                    <rdf:Description rdf:about="&alm_istack;priorityTrivial"/>
+                    <rdf:Description rdf:about="&alm_istack;priorityBlocker"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A defect priority is the severity of a defect in a certain moment of the software development process.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#DefectStatus -->
+
+    <owl:Class rdf:about="&alm_istack;DefectStatus">
+        <rdfs:label xml:lang="en">Defect Status</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;statusInProgress"/>
+                    <rdf:Description rdf:about="&alm_istack;statusNew"/>
+                    <rdf:Description rdf:about="&alm_istack;statusWorksForMe"/>
+                    <rdf:Description rdf:about="&alm_istack;statusClosed"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">A defect status is the state of a defect in a certain moment of the software development process.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#InProgressDefect -->
+
+    <owl:Class rdf:about="&alm_istack;InProgressDefect">
+        <rdfs:label xml:lang="en">In-Progress Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;RegisteredDefect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:hasValue rdf:resource="&alm_istack;statusInProgress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasPriority"/>
+                <owl:onClass rdf:resource="&alm_istack;DefectPriority"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;contributor"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An in-progress defect is a defect that is reproducible and in progress.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Incident -->
+
+    <owl:Class rdf:about="&alm_istack;Incident">
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+        <rdfs:comment xml:lang="en">An incident is an issue reported by a customer.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#NewDefect -->
+
+    <owl:Class rdf:about="&alm_istack;NewDefect">
+        <rdfs:label xml:lang="en">New Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;RegisteredDefect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:hasValue rdf:resource="&alm_istack;statusNew"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;contributor"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A new defect is a defect that has just entered into the system.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Product -->
+
+    <owl:Class rdf:about="&alm_istack;Product">
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasVersion"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Version"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasWorkingGroup"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasWorkingGroup"/>
+                <owl:onClass rdf:resource="&foaf;Group"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A product is a concrete software development product in an organization.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#ProductRole -->
+
+    <owl:Class rdf:about="&alm_istack;ProductRole">
+        <rdfs:label xml:lang="en">Product Role</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;involves"/>
+                <owl:onClass rdf:resource="&alm_istack;Product"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;involves"/>
+                <owl:onClass rdf:resource="&alm_istack;Role"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;involves"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;involves"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The ProductRole class represents the terniary relation that happens when a user has a certain role in a certain product.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#RegisteredDefect -->
+
+    <owl:Class rdf:about="&alm_istack;RegisteredDefect">
+        <rdfs:label xml:lang="en">Registered Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;Defect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:onClass rdf:resource="&alm_istack;DefectStatus"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A registered defect is a defect that has been registered in the system and has a concrete status.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;ClosedDefect"/>
+            <rdf:Description rdf:about="&alm_istack;InProgressDefect"/>
+            <rdf:Description rdf:about="&alm_istack;NewDefect"/>
+            <rdf:Description rdf:about="&alm_istack;WorksForMeDefect"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Revision -->
+
+    <owl:Class rdf:about="&alm_istack;Revision">
+        <rdfs:label xml:lang="en">Revision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;Version"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasFixNumber"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasRevisionNumber"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A revision is a version of a product that may include revision and/or fix numbers.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Role -->
+
+    <owl:Class rdf:about="&alm_istack;Role">
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;roleProductManager"/>
+                    <rdf:Description rdf:about="&alm_istack;roleDeveloper"/>
+                    <rdf:Description rdf:about="&alm_istack;roleMaintainer"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isInvolvedIn"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;ProductRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;definedForWorkArea"/>
+                <owl:onClass rdf:resource="&alm_istack;WorkArea"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;definedForWorkArea"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;WorkArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A role is the expected behaviour of a person in a concrete work area.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#Version -->
+
+    <owl:Class rdf:about="&alm_istack;Version">
+        <rdfs:label xml:lang="en">Version</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&oslc_asset;Asset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isVersionOf"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_asset;relatedChangeRequest"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Defect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_asset;version"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isVersionOf"/>
+                <owl:onClass rdf:resource="&alm_istack;Product"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_asset;version"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A version is an asset that represents a concrete version of a product.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-105"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-241"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-251"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#WorkArea -->
+
+    <owl:Class rdf:about="&alm_istack;WorkArea">
+        <rdfs:label xml:lang="en">Work Area</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&alm_istack;workAreaSupport"/>
+                    <rdf:Description rdf:about="&alm_istack;workAreaQuality"/>
+                    <rdf:Description rdf:about="&alm_istack;workAreaDevelopment"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;definesRole"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;title"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A work area is an area of the company that includes working groups and defines the potential roles that persons can have in it.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#WorksForMeDefect -->
+
+    <owl:Class rdf:about="&alm_istack;WorksForMeDefect">
+        <rdfs:label xml:lang="en">Works-For-Me Defect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&alm_istack;RegisteredDefect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc_cm;status"/>
+                <owl:hasValue rdf:resource="&alm_istack;statusWorksForMe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;contributor"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A works-for-me defect is a defect that is not reproducible.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-317"/>
+    </owl:Class>
+    
+
+
+    <!-- http://open-services.net/ns/asset#Asset -->
+
+    <owl:Class rdf:about="&oslc_asset;Asset"/>
+    
+
+
+    <!-- http://open-services.net/ns/cm#ChangeRequest -->
+
+    <owl:Class rdf:about="&oslc_cm;ChangeRequest"/>
+    
+
+
+    <!-- http://open-services.net/ns/core#Comment -->
+
+    <owl:Class rdf:about="&oslc;Comment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;creator"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;inReplyTo"/>
+                <owl:allValuesFrom rdf:resource="&oslc;Comment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;description"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;created"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;creator"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;partOfDiscussion"/>
+                <owl:allValuesFrom rdf:resource="&oslc;Discussion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;partOfDiscussion"/>
+                <owl:onClass rdf:resource="&oslc;Discussion"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;description"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dc;created"/>
+                <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:Class>
+    
+
+
+    <!-- http://open-services.net/ns/core#Discussion -->
+
+    <owl:Class rdf:about="&oslc;Discussion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;discussionAbout"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Defect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oslc;comment"/>
+                <owl:allValuesFrom rdf:resource="&oslc;Comment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="&foaf;Group">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;belongsToWorkArea"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;WorkArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;member"/>
+                <owl:onClass rdf:resource="&foaf;Person"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;worksInProduct"/>
+                <owl:onClass rdf:resource="&alm_istack;Product"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;belongsToWorkArea"/>
+                <owl:onClass rdf:resource="&alm_istack;WorkArea"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;member"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;worksInProduct"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="&foaf;Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasCredentials"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;Credentials"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;mbox"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isMemberOf"/>
+                <owl:onClass rdf:resource="&foaf;Group"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isInvolvedIn"/>
+                <owl:allValuesFrom rdf:resource="&alm_istack;ProductRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;hasCredentials"/>
+                <owl:onClass rdf:resource="&alm_istack;Credentials"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&alm_istack;isMemberOf"/>
+                <owl:allValuesFrom rdf:resource="&foaf;Group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;name"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;mbox"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;name"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#impactHigh -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;impactHigh">
+        <rdf:type rdf:resource="&alm_istack;DefectImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#impactLow -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;impactLow">
+        <rdf:type rdf:resource="&alm_istack;DefectImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#impactMedium -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;impactMedium">
+        <rdf:type rdf:resource="&alm_istack;DefectImpact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityBlocker -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityBlocker">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Blocker</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityCritical -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityCritical">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Critical</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityMajor -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityMajor">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Major</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityMinor -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityMinor">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Minor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityNormal -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityNormal">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Normal</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#priorityTrivial -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;priorityTrivial">
+        <rdf:type rdf:resource="&alm_istack;DefectPriority"/>
+        <rdfs:label xml:lang="en">Trivial</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#roleDeveloper -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;roleDeveloper">
+        <rdf:type rdf:resource="&alm_istack;Role"/>
+        <rdfs:label xml:lang="en">Developer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#roleMaintainer -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;roleMaintainer">
+        <rdf:type rdf:resource="&alm_istack;Role"/>
+        <rdfs:label xml:lang="en">Maintainer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#roleProductManager -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;roleProductManager">
+        <rdf:type rdf:resource="&alm_istack;Role"/>
+        <rdfs:label xml:lang="en">Product Manager</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#statusClosed -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;statusClosed">
+        <rdf:type rdf:resource="&alm_istack;DefectStatus"/>
+        <rdfs:label xml:lang="en">Closed</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#statusInProgress -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;statusInProgress">
+        <rdf:type rdf:resource="&alm_istack;DefectStatus"/>
+        <rdfs:label xml:lang="en">Assigned</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-99"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#statusNew -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;statusNew">
+        <rdf:type rdf:resource="&alm_istack;DefectStatus"/>
+        <rdfs:label xml:lang="en">New</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#statusWorksForMe -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;statusWorksForMe">
+        <rdf:type rdf:resource="&alm_istack;DefectStatus"/>
+        <rdfs:label xml:lang="en">Works for me</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#workAreaDevelopment -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;workAreaDevelopment">
+        <rdf:type rdf:resource="&alm_istack;WorkArea"/>
+        <rdfs:label xml:lang="en">Development</rdfs:label>
+        <dc:title rdf:datatype="&xsd;string">Development</dc:title>
+        <definesRole rdf:resource="&alm_istack;roleDeveloper"/>
+        <definesRole rdf:resource="&alm_istack;roleMaintainer"/>
+        <definesRole rdf:resource="&alm_istack;roleProductManager"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#workAreaQuality -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;workAreaQuality">
+        <rdf:type rdf:resource="&alm_istack;WorkArea"/>
+        <rdfs:label xml:lang="en">Quality</rdfs:label>
+        <dc:title rdf:datatype="&xsd;string">Quality</dc:title>
+        <definesRole rdf:resource="&alm_istack;roleDeveloper"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/alm-istack#workAreaSupport -->
+
+    <owl:NamedIndividual rdf:about="&alm_istack;workAreaSupport">
+        <rdf:type rdf:resource="&alm_istack;WorkArea"/>
+        <rdfs:label xml:lang="en">Support</rdfs:label>
+        <dc:title rdf:datatype="&xsd;string">Support</dc:title>
+        <definesRole rdf:resource="&alm_istack;roleDeveloper"/>
+        <rdfs:seeAlso rdf:resource="http://jira.oeg-upm.net/browse/AI-50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;priorityBlocker"/>
+            <rdf:Description rdf:about="&alm_istack;priorityCritical"/>
+            <rdf:Description rdf:about="&alm_istack;priorityMajor"/>
+            <rdf:Description rdf:about="&alm_istack;priorityMinor"/>
+            <rdf:Description rdf:about="&alm_istack;priorityNormal"/>
+            <rdf:Description rdf:about="&alm_istack;priorityTrivial"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;roleDeveloper"/>
+            <rdf:Description rdf:about="&alm_istack;roleMaintainer"/>
+            <rdf:Description rdf:about="&alm_istack;roleProductManager"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;workAreaDevelopment"/>
+            <rdf:Description rdf:about="&alm_istack;workAreaQuality"/>
+            <rdf:Description rdf:about="&alm_istack;workAreaSupport"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;impactHigh"/>
+            <rdf:Description rdf:about="&alm_istack;impactLow"/>
+            <rdf:Description rdf:about="&alm_istack;impactMedium"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&alm_istack;statusClosed"/>
+            <rdf:Description rdf:about="&alm_istack;statusInProgress"/>
+            <rdf:Description rdf:about="&alm_istack;statusNew"/>
+            <rdf:Description rdf:about="&alm_istack;statusWorksForMe"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,1856 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://readit-project.eu/ont/datamodel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://readit-project.eu/ont/datamodel">
+    <Prefix name="" IRI="http://readit-project.eu/ont/datamodel#"/>
+    <Prefix name="crm" IRI="http://erlangen-crm.org/current/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="frbr" IRI="http://iflastandards.info/ns/fr/frbr/frbroo/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="readit" IRI="http://readit-project.eu/ont/term#"/>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#referringTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:preceds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#effectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E21_Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Achievment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:towardInteractingWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="frbr:F4_Manifestation_Singleton"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:involvingAContent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sentiment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belief"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E2_Temporal_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causeOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:causeOfAlteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Affection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:engagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_Group"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#focus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E5_Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:readingThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:coOccurringWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Politic_Stand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stateDuringEngagement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Reading"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="readit:engagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cognitive_Skill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stateOfMind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Habit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#about"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#orientation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:involvingAMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#listeningTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judgment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Ethics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commitment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="crm:E7_Activity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#descriptionOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sparql.cwrc.ca/ontologies/cwrc#Gender_Identity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="readit:age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language_Proficiency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="readit:transportation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:follows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:partOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:isPremiseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:providingAccessTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:relatedToContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedToMedium"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Scope"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F5_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:SelfReflection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stateOfMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="frbr:F3_Manifestation_Product_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Alteration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:SkillDisposition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Aim"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F2_Expression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:reading"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#referredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/originCountry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#F1_Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Experience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Emotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="readit:inApproaching"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Aesthetic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feeling"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Remembrance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:Session"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="readit:State"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="crm:E21_Person"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="crm:E5_Event"/>
+        <Class IRI="#Event"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="crm:E7_Activity"/>
+        <Class IRI="#Activity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#F1_Work"/>
+        <Class abbreviatedIRI="readit:Work"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#F2_Expression"/>
+        <Class abbreviatedIRI="readit:Expression"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#F5_Item"/>
+        <Class abbreviatedIRI="readit:Item"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="crm:E5_Event"/>
+        <Class abbreviatedIRI="crm:E2_Temporal_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="crm:E7_Activity"/>
+        <Class abbreviatedIRI="crm:E5_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Affection"/>
+        <Class IRI="#Feeling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Association"/>
+        <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belief"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cognitive_Skill"/>
+        <Class abbreviatedIRI="readit:SkillDisposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feeling"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Habit"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impression"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judgment"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language_Proficiency"/>
+        <Class IRI="#Cognitive_Skill"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language_Proficiency"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National_Group"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notion"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occupation"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Skill"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Skill"/>
+        <Class abbreviatedIRI="readit:SkillDisposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Politic_Stand"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religion"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Achievment"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Aesthetic"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Aim"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Alteration"/>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Content"/>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Disposition"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Emotion"/>
+        <Class IRI="#Feeling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Ethics"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Experience"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Group"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Medium"/>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Reader"/>
+        <Class abbreviatedIRI="readit:State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Reading"/>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Remembrance"/>
+        <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:SelfReflection"/>
+        <Class IRI="#Belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:Session"/>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:SkillDisposition"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:State"/>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+        <Class abbreviatedIRI="readit:State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+        <Class abbreviatedIRI="readit:State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sparql.cwrc.ca/ontologies/cwrc#Gender_Identity"/>
+        <Class abbreviatedIRI="readit:Group"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="readit:Alteration"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="readit:Content"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class abbreviatedIRI="readit:Content"/>
+        <Class abbreviatedIRI="readit:Expression"/>
+        <Class abbreviatedIRI="readit:Work"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class abbreviatedIRI="readit:Manifestation"/>
+        <Class abbreviatedIRI="frbr:F3_Manifestation_Product_Type"/>
+        <Class abbreviatedIRI="frbr:F4_Manifestation_Singleton"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class abbreviatedIRI="readit:Medium"/>
+        <Class abbreviatedIRI="readit:Item"/>
+        <Class abbreviatedIRI="readit:Manifestation"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+        <Class abbreviatedIRI="readit:Reading"/>
+        <Class abbreviatedIRI="readit:Session"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+        <Class abbreviatedIRI="readit:Content"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </DisjointUnion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#descriptionOf"/>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/originCountry"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#descriptionOf"/>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#listeningTo"/>
+        <ObjectProperty abbreviatedIRI="readit:engagedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#referredBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#referringTo"/>
+        <ObjectProperty IRI="#about"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#relatedToMedium"/>
+        <ObjectProperty IRI="#about"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stateOfMedium"/>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#stateOfMind"/>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:causeOfAlteration"/>
+        <ObjectProperty IRI="#causeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:inApproaching"/>
+        <ObjectProperty IRI="#about"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:involvingAContent"/>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:involvingAMedium"/>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+        <ObjectProperty abbreviatedIRI="readit:partOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+        <ObjectProperty IRI="#effectOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:isPremiseOf"/>
+        <ObjectProperty IRI="#causeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:relatedToContent"/>
+        <ObjectProperty IRI="#about"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+        <ObjectProperty IRI="#composedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:towardInteractingWith"/>
+        <ObjectProperty IRI="#about"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#causeOf"/>
+        <ObjectProperty IRI="#effectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#composedBy"/>
+        <ObjectProperty abbreviatedIRI="readit:partOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#referredBy"/>
+        <ObjectProperty IRI="#referringTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="readit:follows"/>
+        <ObjectProperty abbreviatedIRI="readit:preceds"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#descriptionOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#listeningTo"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#stateOfMedium"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#stateOfMind"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:partOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#composedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:coOccurringWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#about"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#causeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#composedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#descriptionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#effectOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#listeningTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#referredBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#referringTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#relatedToMedium"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#stateDuringEngagement"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#stateOfMedium"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#stateOfMind"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:causeOfAlteration"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:engagedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:inApproaching"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:involvingAContent"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:involvingAMedium"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:isPremiseOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:partOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:providingAccessTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:reading"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:readingThrough"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:relatedToContent"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:towardInteractingWith"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:follows"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:preceds"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/originCountry"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#descriptionOf"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#listeningTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#referredBy"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#referringTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatedToMedium"/>
+        <Class abbreviatedIRI="readit:Alteration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stateDuringEngagement"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stateOfMedium"/>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stateOfMind"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:causeOfAlteration"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:coOccurringWith"/>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:engagedIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:inApproaching"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:involvingAContent"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:involvingAMedium"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:isAStateOf"/>
+        <Class abbreviatedIRI="readit:State"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:isPremiseOf"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:providingAccessTo"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:reading"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:readingThrough"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:relatedToContent"/>
+        <Class abbreviatedIRI="readit:Alteration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:towardInteractingWith"/>
+        <Class abbreviatedIRI="readit:Disposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/occupation"/>
+        <Class IRI="#Occupation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://data.open.ac.uk/ontology/red/religion"/>
+        <Class IRI="#Religion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#descriptionOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inAStateOfMedium"/>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOutcomeOf"/>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#listeningTo"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#referredBy"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#referringTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatedToMedium"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stateDuringEngagement"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stateOfMedium"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stateOfMind"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:betterThan"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:causeOfAlteration"/>
+        <Class abbreviatedIRI="readit:StateOfMedium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:coOccurringWith"/>
+        <Class abbreviatedIRI="readit:Temporal_Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:comparableWith"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:engagedIn"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:genderIdentity"/>
+        <Class IRI="http://sparql.cwrc.ca/ontologies/cwrc#Gender_Identity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:habit"/>
+        <Class IRI="#Habit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:inAStateOfMind"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:inApproaching"/>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:involving"/>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:involvingAContent"/>
+        <Class abbreviatedIRI="readit:Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:involvingAMedium"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:isEffectOf"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:isPremiseOf"/>
+        <Class abbreviatedIRI="readit:ReadingFrame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:politicalStance"/>
+        <Class IRI="#Politic_Stand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:providingAccessTo"/>
+        <Class abbreviatedIRI="readit:Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:reading"/>
+        <Class abbreviatedIRI="readit:Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:readingThrough"/>
+        <Class abbreviatedIRI="readit:Medium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:relatedToContent"/>
+        <Class abbreviatedIRI="readit:Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:situationOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:stateOfReader"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:towardInteractingWith"/>
+        <Class abbreviatedIRI="readit:ReadingResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="readit:worseThan"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#commitment"/>
+        <DataProperty abbreviatedIRI="readit:engagement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dedication"/>
+        <DataProperty abbreviatedIRI="readit:engagement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#focus"/>
+        <DataProperty IRI="#commitment"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="readit:age"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="readit:transportation"/>
+        <DataProperty IRI="#commitment"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#description"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Scope"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commitment"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dedication"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#focus"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#orientation"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sentiment"/>
+        <Class abbreviatedIRI="readit:StateOfMind"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="readit:age"/>
+        <Class abbreviatedIRI="readit:Reader"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="readit:engagement"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="readit:transportation"/>
+        <Class abbreviatedIRI="readit:ReadingProcess"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Scope"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">General</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commitment"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dedication"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#focus"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#orientation"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">External</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Internal</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Unclear</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">effect</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">outcome</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">premise</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sentiment"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="readit:age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="readit:engagement"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="readit:transportation"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">medium</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Affection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Affection is a STATE OF MIND oriented to external entities resulting in a felling toward something. E.g. being agry at, happy for, cherishing a memory of something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Affection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Affection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Association</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A Memory Association is a Memory spontaneously recalled as effect of a READING PROCESS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Association</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Memory Association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Belief</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Belief is a STATE OF MIND about revising the readers understanding and ideas of the self and other entities, concepts, topics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Belief</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Belief</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cognitive_Skill</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cognitive Skill is a DISPOSITION concerning the reader&apos;s cognitive skills (e.g. memory, language, perception)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cognitive_Skill</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cognitive Skill Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event represents the personal, social or environmental situation directly or inderectly affecting a READING PROCESS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Feeling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Feeling is a STATE OF MIND about fellings emerging or perceived by the reader.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Feeling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Feeling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Habit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the intensive description of the reader’s reading processes, i.e. a synthesis of how a reader reads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Habit</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Habit Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Impression</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Impression is a STATE OF MIND co-occurring during a READING PROCESS concerning the evaluation of the reading activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Impression</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Impression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Judgment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Judgement is a STATE OF MIND oriented to external entities resulting in belief revision. E.g. a position toward an argument, evaluation of value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Judgment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Judgement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language_Proficiency</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Proficiency is a DISPOSITION concerning the reader&apos;s language abilities and other linguistic groups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Language_Proficiency</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Language Proficiency Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Memory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Memory is a STATE OF MIND concerning the recollection of facts, events, concepts or objects, directly or inderectly experienced by the person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Memory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#National_Group</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">National Group Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Notion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Notion is a STATE OF MIND co-occurring during a READING PROCESS concerning the understanding of content of the reading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Notion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Notion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Occupation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occupation is a DISPOSITION concerning the reader&apos;s employment or job.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Occupation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occupation Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the human agent engaged in the READING PROCESS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Physical_Skill</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical Skill is a DISPOSITION concerning the reader&apos;s physical skills (e.g. mobility)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Physical_Skill</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Pshycal Skill Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Politic_Stand</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Political Stand is a DISPOSITION concerning the reader&apos;s political ideas or belongin to a political group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Politic_Stand</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Political Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Religion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Religion is a DISPOSITION concerning the reader&apos;s religion and religious stands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Religion</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Religion Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scope</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scope of state of mind indicates the quality of the relation between state of mind and a reading resource: 1) specific, e.g. to a fragment or 2) general, e.g. to a topic.
+
+The scope of a Habit is always general.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Scope</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Scope of state of mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#commitment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Level of mental engagement of the reader in a reading process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dedication</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Level of physical and cognitive (perception) engagement of the reader in a reading process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#focus</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Level of mental engagement in the analytical processing of the reader in a reading process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#listeningTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property addresses the context of reading aloud: reader A is listening to a reading process of reader B (reading a content).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#orientation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">orientation is a property of STATE OF MIND qualifying its target being the self (the reader), e.g. feeling relieved, being happy, or an external entity, e.g. remembering traveling, being in company, being agry at something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#orientation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">orientation of state of mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#role</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State of Mind roles: premise, a STATE OF MIND preceding and directly related to a READING PROCESS. E.g. expectation toward a chapter, doubts concerning the author, emotions and life experiences leading to reading; effect, a State of Mind occurring during a reading session as effect of a READING EXPERIENCE; outcome, a STATE OF MIND that follows and is a direct effect of a READING PROCESS. E.g. lesson learned, judgment about a character, change of plans or results caused by reading.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#role</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">role of state of mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sentiment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sentiment is a property of STATE OF MIND qualifying the influence on the reader&apos;s feelings: positive, negative or neutral.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sentiment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Achievment</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Achivement is a State of Mind concerning the closure of an activitiy. An Achievement can be premise or outcome of a Reading or Reading Session.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Achievment</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Achievment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Aesthetic</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aesthetic is a DISPOSITION concerning the reader&apos;s aesthetic preferences (e.g. taste for art, literature, genre).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Aesthetic</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aesthetic Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Aim</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aim is a STATE OF MIND resulting in a resolution toward a future activity. An Aim can be a premise or outcome of a Reading or Reading Session.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Aim</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Aim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Alteration</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A type of STATE OF MEDIUM qualifying a material or immaterial change making the MEDIUM unique. E.g. being a present, personal annotations, missing a specific page.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Alteration</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium Alteration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Content</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Content is an intellectual product and linguistic manifestation. E.g. a sentence, topic or argument. Approximately, it generalises the FRBR concepts of Work and Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Content</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Disposition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disposition is a State of Mind about a person&apos;s identity, skills, knowledge, beliefs indirectly related to a reading process or reading resource. E.g. political beliefs that may affect the reception of content including political positions, language skills that may not be sufficient, being part of a social group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Disposition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Emotion</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emotion is a STATE OF MIND oriented to the self resulting in a feeling. E.g. feeling happy or sad.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Emotion</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emotion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Ethics</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ethics is a DISPOSITION concerning the reader&apos;s ethical beliefs and moral stands.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Ethics</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ethical Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Experience</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Group</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group is a DISPOSITION concerning the reader being part of or in relation to social groups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Group</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Medium</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Physical object carrier of the content. E.g. book, e-reader. Approximatelly, MEDIUM is a generalisation of the FRBR concepts of Item and Manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Medium</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Reader</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reader is a state of a PERSON, the collection of the values of its dynamic features when engaged in a specific READING PROCESS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Reader</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reader&apos;s State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Reading</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading is a READING PROCESS representing a whole reading, e.g. reading of a book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Reading</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:ReadingFrame</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Frame (ABSTRACT CLASS) is a READING PROCESS with a significant duration in which a reader can identify PREMISES leading to and OUTCOMES resulting of being engaged in the process, and in which they can have READING EXPERIENCES.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:ReadingFrame</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Frame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:ReadingProcess</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Process (Abstract class) represening the activity of reading, involving READER and READING RESOURCE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:ReadingProcess</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:ReadingResource</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Resource (ABSTRACT CLASS) represents the objet of reading.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:ReadingResource</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Remembrance</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Remembrance is a STATE OF MIND resulting in recollecting a fact, event, concept or object, directly or inderectly experienced by the person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Remembrance</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Remembrance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:SelfReflection</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Self-reflection is a STATE OF MIND oriented to the self resulting in belief revision. E.g. identification with a character, a change of perspective.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:SelfReflection</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Self-reflection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Session</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Session represent a continuos reading, a chain of Reading Experiences, an interaction between event and action delimited by the opening and closing of reading resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Session</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Reading Session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:SkillDisposition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cognitive or physical skills of relevance for performing a reading activity, e.g. language skills</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:SkillDisposition</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Skill Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:State</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State (abstract class) represent a phase of an entity, its properties in a given time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:State</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:StateOfMedium</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State of Medium is a collection of dynamic features of the MEDIUM involved in a specific READING PROCESS. E.g. open in the middle, had a bookmark, had a worn cover, borrowed from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:StateOfMedium</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State of Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:StateOfMind</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State of mind of the Person at the time of reading, part of Reader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:StateOfMind</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State of Mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:Temporal_Entity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">perdurant, entities which cannot change and extend in time, e.g. events or states</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>readit:Temporal_Entity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporal Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:comparableWith</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Source Driven: comparison between different readings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:engagement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Level of engagement of the reader in a reading process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>readit:transportation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Level of engagemetn in the situation (e.g. story) of the reader in a reading process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://sparql.cwrc.ca/ontologies/cwrc#Gender_Identity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gender Identity is a DISPOSITION concerning the reader&apos;s gender identity or other genders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://sparql.cwrc.ca/ontologies/cwrc#Gender_Identity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gender Identity Disposition</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:or="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/agentrole/ex1.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ar="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/agentrole/ex1.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment>It encodes the following: Aldo Gangemi</rdfs:comment>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"/>
+    <rdfs:label>Agent Role Examples</rdfs:label>
+    <rdfs:comment>This ontology contains an example ABox for the Agent Role CP available at &lt;http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl&gt;</rdfs:comment>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl"/>
+  </owl:Ontology>
+  <ar:Agent rdf:ID="Aldo_Gangemi">
+    <or:hasRole>
+      <or:Role rdf:ID="Father"/>
+    </or:hasRole>
+    <or:hasRole>
+      <or:Role rdf:ID="SeniorResearcher"/>
+    </or:hasRole>
+    <or:hasRole>
+      <or:Role rdf:ID="Saxophonist"/>
+    </or:hasRole>
+  </ar:Agent>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

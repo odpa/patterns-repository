@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY situation "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
+    <!ENTITY observation "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:observation="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">1.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&rdf;PlainLiteral">Created by Eva Blomqvist</owl:versionInfo>
+        <cpannotationschema:scenarios rdf:datatype="&rdf;PlainLiteral">The aquatic species &#39;Skipjack tuna&#39; was observed in 2004 having the exploitation state &#39;fully exploited&#39; in the climatic zone &#39;tropical&#39; at the vertical distance &#39;pelagic&#39;.</cpannotationschema:scenarios>
+        <cpannotationschema:hasIntent rdf:datatype="&rdf;PlainLiteral">The intent of this pattern is to represent observations of things, under as et of parameters. Common parameters may be the time and place of the observation, but may be any feature that is observed concerning the specific thing being observed.</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements rdf:datatype="&rdf;PlainLiteral">What objects have been observed? What are the observations of this object? What are the parameters under which this object was observed? What objects were observed under this parameter?</cpannotationschema:coversRequirements>
+        <cpannotationschema:isSpecializationOf rdf:datatype="&rdf;PlainLiteral">http://www.ontologydesignpatterns.org/cp/owl/situation.owl</cpannotationschema:isSpecializationOf>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;scenarios"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;coversRequirements"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasIntent"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;isSpecializationOf"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="&observation;hasObservation">
+        <rdfs:label xml:lang="en">has observation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:range rdf:resource="&observation;Observation"/>
+        <owl:inverseOf rdf:resource="&observation;isObservationOf"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;hasSetting"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="&observation;hasParameter">
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:domain rdf:resource="&observation;Observation"/>
+        <rdfs:range rdf:resource="&observation;Parameter"/>
+        <owl:inverseOf rdf:resource="&observation;isParameterOf"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;isSettingFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf -->
+
+    <owl:ObjectProperty rdf:about="&observation;isObservationOf">
+        <rdfs:label xml:lang="en">is observation of</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:domain rdf:resource="&observation;Observation"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;isSettingFor"/>
+        <rdfs:range rdf:resource="&owl;Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf -->
+
+    <owl:ObjectProperty rdf:about="&observation;isParameterOf">
+        <rdfs:label xml:lang="en">is parameter of</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:range rdf:resource="&observation;Observation"/>
+        <rdfs:domain rdf:resource="&observation;Parameter"/>
+        <rdfs:subPropertyOf rdf:resource="&situation;hasSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting -->
+
+    <owl:ObjectProperty rdf:about="&situation;hasSetting"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="&situation;isSettingFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate -->
+
+    <owl:DatatypeProperty rdf:about="&observation;inDate">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:domain rdf:resource="&observation;Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation -->
+
+    <owl:Class rdf:about="&observation;Observation">
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&situation;Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&observation;inDate"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&observation;isObservationOf"/>
+                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&observation;hasParameter"/>
+                <owl:someValuesFrom rdf:resource="&observation;Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specific situation where some thing is observed with respect ot a set of parameters.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter -->
+
+    <owl:Class rdf:about="&observation;Parameter">
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+        <owl:disjointWith rdf:resource="&situation;Situation"/>
+        <rdfs:comment>The parameters of an observation describe the context and content of the observation. For example in a medical context an observation of a patient may contain a set of symptoms, that are the parameters of that observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="&situation;Situation"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

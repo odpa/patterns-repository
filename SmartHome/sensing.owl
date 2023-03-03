@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/smartenvironment/patterns/sensing.owl#"
+     xml:base="https://w3id.org/smartenvironment/patterns/sensing.owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:se-sensing="https://w3id.org/smartenvironment/patterns/sensing.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="https://w3id.org/smartenvironment/patterns/sensing">
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <cpannotationschema:coversRequirements xml:lang="en">What sensors make a sensing (observation) process?</cpannotationschema:coversRequirements>
+        <vann:preferredNamespacePrefix xml:lang="en">se-sensing</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl"/>
+        <terms:description xml:lang="en">This ontology mainly relies on the SSN ontology (http://www.w3.org/ns/ssn/) and describes a sensing process in the context on smart environment. It provides information about the sensors, the observation process and the configuration of the sensors.</terms:description>
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <cpannotationschema:coversRequirements xml:lang="en">What are the feature of interests considered within an observation proces?</cpannotationschema:coversRequirements>
+        <cpannotationschema:isSpecializationOf rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <terms:created xml:lang="en">2017-10-22</terms:created>
+        <cpannotationschema:coversRequirements xml:lang="en">What is the output (result) of a sensing process?</cpannotationschema:coversRequirements>
+        <terms:title xml:lang="en">Smart Environment Sensing Ontology Pattern</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/sensing.owl#ConfigurationProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/sensing.owl#ConfigurationProcedure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implementedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Descibes a procedure required to configure a sensor to be used for an observation process in a smart environment context. This configuration can include both hardware ans software setup related to sensors such as the sampling rate, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">configuration procedure</rdfs:label>
+        <skos:example xml:lang="en">Descibes a procedure required to configure a sensor to be used for an observation process in a smart environment context. This configuration can include both hardware ans software setup related to sensors such as the sampling rate, etc.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/sensing.owl#Observation -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/sensing.owl#Observation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeBySensor"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Using a Sensor it describes the process of observing a property of a feature of interest.</rdfs:comment>
+        <rdfs:label xml:lang="en">observation</rdfs:label>
+        <skos:definition xml:lang="en">Using a Sensor it describes the process of observing a property of a feature of interest.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl#Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/implements"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl#ConfigurationProcedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Descibes a device that with a specific set of configuration is able to implements an observation process in order to monitor a property of a feature of interest in a smart environment.</rdfs:comment>
+        <rdfs:label xml:lang="en">sensor</rdfs:label>
+        <skos:definition xml:lang="en">Descibes a device that with a specific set of configuration is able to implements an observation process in order to monitor a property of a feature of interest in a smart environment.</skos:definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

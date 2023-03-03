@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:meteo="http://purl.org/ns/meteo#"
+    xmlns:DUL="http://www.loa-cnr.it/ontologies/DUL.owl#"
+    xmlns:flood="http://wsmls.googlecode.com/svn/trunk/local/water/0.6/flood.rdf#"
+    xmlns:ep="http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#"
+    xmlns:un="http://www.w3.org/2007/ont/unit#"
+    xmlns:floodex="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/flood.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/eventexample#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/eventexample">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2007/ont/unit"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl"/>
+    <owl:imports rdf:resource="http://wsmls.googlecode.com/svn/trunk/local/water/0.6/flood.rdf"/>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/flood.owl"/>
+    <owl:imports rdf:resource="http://inamidst.com/sw/ont/meteo"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is an example providing an example of the use of the eventprocessing ODP.</rdfs:comment>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </owl:Ontology>
+  <ep:EventObject rdf:ID="floodWarning0001">
+    <ep:hasEventObjectBody>
+      <ep:EventObjectBody>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Exemplifies a composite event.</rdfs:comment>
+      </ep:EventObjectBody>
+    </ep:hasEventObjectBody>
+    <ep:hasEventObjectHeader>
+      <ep:EventObjectHeader>
+        <ep:refersToEventObjectComponent>
+          <ep:EventObject rdf:ID="waterAlert0001">
+            <ep:hasEventObjectBody>
+              <ep:EventObjectBody>
+                <foaf:mbox rdf:resource="mailto:contactrelevanttoanothersystem@example.org"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Information external to our system.</rdfs:comment>
+              </ep:EventObjectBody>
+            </ep:hasEventObjectBody>
+            <ep:hasEventObjectHeader>
+              <ep:EventObjectHeader>
+                <floodex:waterLevelChangeRate rdf:resource="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/flood.owl#high"/>
+                <ep:refersToEventObjectComponent>
+                  <ep:EventObject rdf:ID="waterLevel2341">
+                    <ssn:hasValue>
+                      <DUL:Amount>
+                        <DUL:hasRegionDataValue rdf:datatype=
+                        "http://www.w3.org/2001/XMLSchema#int"
+                        >22</DUL:hasRegionDataValue>
+                      </DUL:Amount>
+                    </ssn:hasValue>
+                    <ep:hasEventObjectHeader>
+                      <ep:EventObjectHeader>
+                        <ssn:isProducedBy>
+                          <ssn:SensingDevice>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                            >Water level measurement sensing device</rdfs:label>
+                          </ssn:SensingDevice>
+                        </ssn:isProducedBy>
+                        <ssn:hasValue>
+                          <DUL:Amount>
+                            <DUL:hasRegionDataValue rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#int"
+                            >22</DUL:hasRegionDataValue>
+                          </DUL:Amount>
+                        </ssn:hasValue>
+                        <ep:hasEventObjectTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                        >2013-07-03T08:17:15</ep:hasEventObjectTime>
+                      </ep:EventObjectHeader>
+                    </ep:hasEventObjectHeader>
+                    <ssn:isProducedBy>
+                      <ssn:SensingDevice>
+                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >Water level measurement sensing device</rdfs:label>
+                      </ssn:SensingDevice>
+                    </ssn:isProducedBy>
+                    <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+                  </ep:EventObject>
+                </ep:refersToEventObjectComponent>
+                <ep:hasEventObjectTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                >2013-07-03T08:17:21</ep:hasEventObjectTime>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Water-related alert composite</rdfs:label>
+              </ep:EventObjectHeader>
+            </ep:hasEventObjectHeader>
+          </ep:EventObject>
+        </ep:refersToEventObjectComponent>
+        <ep:refersToEventObjectConstituent>
+          <ep:EventObject rdf:ID="weather0001">
+            <ep:hasEventObjectBody>
+              <ep:EventObjectBody>
+                <meteo:forecast>
+                  <meteo:Forecast>
+                    <meteo:cloudCover>
+                      <un:Quantity>
+                        <meteo:percent>
+                          <un:Quantity>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                            >100</rdfs:label>
+                          </un:Quantity>
+                        </meteo:percent>
+                      </un:Quantity>
+                    </meteo:cloudCover>
+                    <meteo:precipitation>
+                      <un:Quantity>
+                        <meteo:inches>
+                          <un:Quantity>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                            >0.114</rdfs:label>
+                          </un:Quantity>
+                        </meteo:inches>
+                      </un:Quantity>
+                    </meteo:precipitation>
+                    <meteo:time rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                    >2013-07-03T08:17:21</meteo:time>
+                    <meteo:predicted rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                    >2013-07-04T09:00:00</meteo:predicted>
+                  </meteo:Forecast>
+                </meteo:forecast>
+                <ep:hasEventLocation>
+                  <DUL:SpaceRegion>
+                    <meteo:location>
+                      <geo:Point>
+                        <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                        >-0.116</geo:long>
+                        <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+                        >51.5</geo:lat>
+                      </geo:Point>
+                    </meteo:location>
+                    <meteo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >London</meteo:name>
+                  </DUL:SpaceRegion>
+                </ep:hasEventLocation>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Automatically generated.</rdfs:comment>
+              </ep:EventObjectBody>
+            </ep:hasEventObjectBody>
+            <ep:hasEventObjectHeader>
+              <ep:EventObjectHeader>
+                <ep:hasEventObjectAttributeValue rdf:resource="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/flood.owl#rain"/>
+                <ep:hasEventObjectTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+                >2013-07-03T08:17:21</ep:hasEventObjectTime>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Weather forecast for London</rdfs:label>
+              </ep:EventObjectHeader>
+            </ep:hasEventObjectHeader>
+          </ep:EventObject>
+        </ep:refersToEventObjectConstituent>
+        <floodex:forecast rdf:resource="http://www.ontologydesignpatterns.org/cp/examples/eventprocessing/flood.owl#ImminentDanger"/>
+        <ep:hasEventObjectTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2013-07-03T08:18:21</ep:hasEventObjectTime>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Flood Warning composite event</rdfs:label>
+      </ep:EventObjectHeader>
+    </ep:hasEventObjectHeader>
+  </ep:EventObject>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
