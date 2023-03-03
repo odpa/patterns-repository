@@ -3,7 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[ComplexEvent.md](../.gitSmartHome_Event/ComplexEvent)  
-[EventCondition.md](../.gitSmartHome_Event/EventCondition)  
-[Manifestation.md](../.gitSmartHome_Event/Manifestation)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[index.md](./index.md)  
+[SHEvent.png](./SHEvent.png)  
+[SmartHome_Event.md](./SmartHome_Event.md)  

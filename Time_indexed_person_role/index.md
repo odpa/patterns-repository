@@ -3,6 +3,14 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Person.md](../.gitPersons/NaturalPerson)  
-[TimeIndexedPersonRole.md](../Time_indexed_person_role/TimeIndexedPersonRole)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[agentrole.owl](./agentrole.owl)  
+[classification.owl](./classification.owl)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[naryclassification.owl](./naryclassification.owl)  
+[objectrole.owl](./objectrole.owl)  
+[Timeindexedpersonrole.jpg](./Timeindexedpersonrole.jpg)  
+[Time_indexed_person_role.md](./Time_indexed_person_role.md)  

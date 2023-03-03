@@ -3,6 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[SmartObjectSituation.md](../SmartHome_Situation/SmartObjectSituation)  
-[State.md](../.gitDetectorFinalState)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[index.md](./index.md)  
+[SmartHome_Situation.md](./SmartHome_Situation.md)  

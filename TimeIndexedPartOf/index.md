@@ -3,12 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[atTime.md](../Pollution/atTime)  
-[includesPartObject.md](../.gitTimeIndexedPartOf/includesPartObject)  
-[includesWholeObject.md](../.gitTimeIndexedPartOf/includesWholeObject)  
-[isPartObjectOf.md](../.gitTimeIndexedPartOf/isPartObjectOf)  
-[isTimeOf.md](../.gitTimeIndexedPartOf/isTimeOf)  
-[isWholeObjectOf.md](../.gitTimeIndexedPartOf/isWholeObjectOf)  
-[Object.md](../.gitObject)  
-[TimeIndexedPartOf.md](../TimeIndexedPartOf)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20080507173141!Timeindexedpartof.jpg](./20080507173141!Timeindexedpartof.jpg)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[TimeIndexedPartOf.md](./TimeIndexedPartOf.md)  
+[yarispneumatics.owl](./yarispneumatics.owl)  

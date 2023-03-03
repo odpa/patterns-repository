@@ -3,8 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticSpecies.md](../.gitAquaticResources/AquaticSpecies)  
-[canBeConfusedWith.md](../.gitSpeciesNames/canBeConfusedWith)  
-[hasLocalName.md](../.gitSpeciesNames/hasLocalName)  
-[hasSynonym.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasSynonym)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[Speciesnames.jpg](./Speciesnames.jpg)  
+[SpeciesNames.md](./SpeciesNames.md)  

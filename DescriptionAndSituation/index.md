@@ -3,8 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[describes.md](../.gitDescriptionAndSituation/describes)  
-[isDescribedBy.md](../.gitDescriptionAndSituation/isDescribedBy)  
-[isSatisfiedBy.md](../BasicPlan/isSatisfiedBy)  
-[satisfies.md](../.gitBasicPlan/satisfies)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[DescriptionAndSituation.md](./DescriptionAndSituation.md)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  

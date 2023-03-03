@@ -3,8 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[GearType.md](../GearSpecies/GearType)  
-[isSuitableForGearType.md](../.gitGearWaterArea/isSuitableForGearType)  
-[isUsedInWaterArea.md](../.gitGearWaterArea/isUsedInWaterArea)  
-[WaterArea.md](../.gitGearWaterArea)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Gearwaterarea.jpg](./Gearwaterarea.jpg)  
+[GearWaterArea.md](./GearWaterArea.md)  
+[index.md](./index.md)  

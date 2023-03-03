@@ -3,9 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[atTime.md](../Pollution/atTime)  
-[forEntity.md](../.gitTimeIndexedSituation/forEntity)  
-[hasTimeIndexedSetting.md](../TimeIndexedSituation/hasTimeIndexedSetting)  
-[isTimeIndexFor.md](../.gitTimeIndexedSituation/isTimeIndexFor)  
-[TimeIndexedSituation.md](../.gitTimeIndexedSituation)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[TimeIndexedSituation.md](./TimeIndexedSituation.md)  
+[TimeIndexedSituation.png](./TimeIndexedSituation.png)  

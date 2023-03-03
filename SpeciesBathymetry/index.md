@@ -3,9 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[BathymetricRange.md](../.gitSpeciesBathymetry/BathymetricRange)  
-[hasBathymetricRange.md](../SpeciesBathymetry/hasBathymetricRange)  
-[hasRangeMax.md](../.gitSpeciesBathymetry/hasRangeMax)  
-[hasRangeMin.md](../SpeciesBathymetry/hasRangeMin)  
-[isBathymetricRangeOf.md](../.gitSpeciesBathymetry/isBathymetricRangeOf)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[aquaticresources.owl](./aquaticresources.owl)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[Speciesbathymetry.jpg](./Speciesbathymetry.jpg)  
+[SpeciesBathymetry.md](./SpeciesBathymetry.md)  

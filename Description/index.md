@@ -3,10 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Concept.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasMappedDomainConcept)  
-[defines.md](../.gitDescription/defines)  
-[Description.md](../.gitDescription)  
-[isConceptUsedIn.md](../.gitDescription/isConceptUsedIn)  
-[isDefinedIn.md](../.gitDescription/isDefinedIn)  
-[usesConcept.md](../.gitDescription/usesConcept)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Description.jpg](./Description.jpg)  
+[Description.md](./Description.md)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  

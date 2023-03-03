@@ -3,8 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasLowerTimestampValue.md](../.gitSmartHome_TimeInterval/hasLowerTimestampValue)  
-[hasUpperTimestampValue.md](../.gitSmartHome_TimeInterval/hasUpperTimestampValue)  
-[SmartHomeTemporalDistance.md](../.gitSmartHome_TimeInterval/SmartHomeTemporalDistance)  
-[SmartHomeTimeInterval.md](../SmartHome_TimeInterval/SmartHomeTimeInterval)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[index.md](./index.md)  
+[SmartHome_TimeInterval.md](./SmartHome_TimeInterval.md)  

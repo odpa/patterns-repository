@@ -3,8 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasIntervalDate.md](../TimeInterval/hasIntervalDate)  
-[hasIntervalEndDate.md](../.gitTimeInterval/hasIntervalEndDate)  
-[hasIntervalStartDate.md](../TimeInterval/hasIntervalStartDate)  
-[TimeInterval.md](../.gitSmartHome_TimeInterval)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[index.md](./index.md)  
+[january2008.owl](./january2008.owl)  
+[Timeinterval.jpg](./Timeinterval.jpg)  
+[TimeInterval.md](./TimeInterval.md)  

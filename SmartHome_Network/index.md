@@ -3,14 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[DataReceiverNode.md](../SmartHome_Network/DataReceiverNode)  
-[DataSenderNode.md](../SmartHome_Network/DataSenderNode)  
-[Network.md](../SmartHome_Network)  
-[Node.md](../.gitSmartHome_Network/DataReceiverNode)  
-[NodeStation.md](../.gitSmartHome_Network/NodeStation)  
-[ReceiverNodeStation.md](../SmartHome_Network/ReceiverNodeStation)  
-[receivesDataFrom.md](../.gitSmartHome_Network/receivesDataFrom)  
-[SenderNodeStation.md](../SmartHome_Network/SenderNodeStation)  
-[sendsDataTo.md](../.gitSmartHome_Network/sendsDataTo)  
-[SmartHomeDeployment.md](../.gitSmartHome_Network/SmartHomeDeployment)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20170124090513!Network.png](./20170124090513!Network.png)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[SmartHome_Network.md](./SmartHome_Network.md)  

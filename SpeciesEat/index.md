@@ -3,9 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticSpecies.md](../.gitAquaticResources/AquaticSpecies)  
-[feedsUpon.md](../SpeciesEat/feedsUpon)  
-[isFoodOf.md](../SpeciesEat/isFoodOf)  
-[isPreyedUponBy.md](../.gitSpeciesEat/isPreyedUponBy)  
-[preyesUpon.md](../.gitSpeciesEat/preyesUpon)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[Specieseat.jpg](./Specieseat.jpg)  
+[SpeciesEat.md](./SpeciesEat.md)  

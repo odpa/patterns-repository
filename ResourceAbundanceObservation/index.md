@@ -3,11 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AbundanceLevel.md](../.gitAquaticResourceObservation/AbundanceLevel)  
-[hasAbundanceLevel.md](../AquaticResourceObservation/hasAbundanceLevel)  
-[hasReferenceYear.md](../.gitAquaticResourceObservation/hasReferenceYear)  
-[hasResource.md](../AquaticResourceObservation/hasResource)  
-[isAbundanceLevelOf.md](../.gitAquaticResourceObservation/isAbundanceLevelOf)  
-[isResourceOf.md](../.gitAquaticResourceObservation/isResourceOf)  
-[ResourceAbundanceObservation.md](../.gitResourceAbundanceObservation)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[Resourceabundanceobservation.jpg](./Resourceabundanceobservation.jpg)  
+[ResourceAbundanceObservation.md](./ResourceAbundanceObservation.md)  

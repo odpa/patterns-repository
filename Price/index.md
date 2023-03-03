@@ -3,10 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Currency.md](../.gitPrice/Currency)  
-[hasCurrency.md](../.gitPrice/hasCurrency)  
-[hasPrice.md](../Price/hasPrice)  
-[hasValue.md](../Price/hasValue)  
-[isPriceOf.md](../Price/isPriceOf)  
-[Price.md](../Price)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[Price.md](./Price.md)  

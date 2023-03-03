@@ -3,10 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[expresses.md](../.gitIntensionExtension/expresses)  
-[InformationObject.md](../.gitEventCore/hasInformationObject)  
-[isAbout.md](../IntensionExtension/isAbout)  
-[isExpressedBy.md](../.gitIntensionExtension/isExpressedBy)  
-[isReferenceOf.md](../.gitIntensionExtension/isReferenceOf)  
-[SocialObject.md](../IntensionExtension/SocialObject)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[Intensionextension.jpg](./Intensionextension.jpg)  
+[IntensionExtension.md](./IntensionExtension.md)  

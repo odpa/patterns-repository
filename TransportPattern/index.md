@@ -3,8 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[partOf.md](../.gitGO_Top/partOf)  
-[referenceFrame.md](../TransportPattern/referenceFrame)  
-[transportEntity.md](../.gitTransportPattern/transportEntity)  
-[transportEvent.md](../.gitTransportPattern/transportEvent)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[TransportPattern.md](./TransportPattern.md)  

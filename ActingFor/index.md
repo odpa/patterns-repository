@@ -3,8 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[actsFor.md](../ActingFor/actsFor)  
-[actsThrough.md](../.gitActingFor/actsThrough)  
-[Agent.md](../ActingFor/Agent)  
-[SocialAgent.md](../ActingFor/SocialAgent)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[ActingFor.md](./ActingFor.md)  
+[COS.owl](./COS.owl)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[KCO.owl](./KCO.owl)  

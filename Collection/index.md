@@ -3,7 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Collection.md](../Collection)  
-[hasMember.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasMember)  
-[isMemberOf.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/isMemberOf)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Collection.md](./Collection.md)  
+[Collectionentity.jpg](./Collectionentity.jpg)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  

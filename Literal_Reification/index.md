@@ -3,6 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Scenario_1.md](../.gitAgentRole/Scenario_1)  
-[Scenario_2.md](../.gitLiteral_Reification/Scenario_2)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[index.md](./index.md)  
+[Literalreification_new.png](./Literalreification_new.png)  
+[Literal_Reification.md](./Literal_Reification.md)  

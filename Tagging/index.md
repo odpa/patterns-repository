@@ -3,8 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[byAgent.md](../.gitTagging/byAgent)  
-[isTaggingAgentIn.md](../.gitTagging/isTaggingAgentIn)  
-[isTagUsedIn.md](../.gitTagging/isTagUsedIn)  
-[usingTag.md](../.gitTagging/usingTag)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[Tagging.md](./Tagging.md)  
+[Tagging.png](./Tagging.png)  

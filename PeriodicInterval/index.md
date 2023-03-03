@@ -3,7 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasIntervalDurationPerPeriod.md](../.gitPeriodicInterval/hasIntervalDurationPerPeriod)  
-[hasPeriod.md](../.gitPeriodicInterval/hasPeriod)  
-[PeriodicInterval.md](../PeriodicInterval)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[PeriodicInterval.md](./PeriodicInterval.md)  
+[PeriodicIntervalv0.jpg](./PeriodicIntervalv0.jpg)  

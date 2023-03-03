@@ -3,7 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasLocation.md](../.gitLCA_Pattern/hasLocation)  
-[isLocationOf.md](../Place/isLocationOf)  
-[Place.md](../.gitPlace)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[Place.md](./Place.md)  
+[Place.png](./Place.png)  

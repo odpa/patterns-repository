@@ -3,7 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Entity.md](../.gitCollectionEntity)  
-[hasConstituent.md](../.gitConstituency/hasConstituent)  
-[isConstituentOf.md](../.gitConstituency/isConstituentOf)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Constituency.jpg](./Constituency.jpg)  
+[Constituency.md](./Constituency.md)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  

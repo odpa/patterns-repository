@@ -3,8 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasRole.md](../Objectrole/hasRole)  
-[isRoleOf.md](../Objectrole/isRoleOf)  
-[Object.md](../.gitObject)  
-[Role.md](../.gitAgentRole)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[Objectrole.jpg](./Objectrole.jpg)  
+[Objectrole.md](./Objectrole.md)  

@@ -3,5 +3,8 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasAircraft.md](../.gitAirline/hasAircraft)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Airline.owl.md](./Airline.owl.md)  
+[index.md](./index.md)  

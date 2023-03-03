@@ -3,12 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Creator.md](../.gitBorn_Digital_Archives/Creator)  
-[File.md](../Born_Digital_Archives/File)  
-[Fonds.md](../.gitBorn_Digital_Archives/Fonds)  
-[hasCreator.md](../.gitBorn_Digital_Archives/hasCreator)  
-[hasPart.md](../An_Ontology_Design_Pattern_for_Activity_Reasoning/hasPart)  
-[Item.md](../.gitBag/hasItem)  
-[Series.md](../.gitRecurrentEventSeries)  
-[Unit.md](../.gitBorn_Digital_Archives/Unit)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[BDA_ODP_Diagram.png](./BDA_ODP_Diagram.png)  
+[Born_Digital_Archives.md](./Born_Digital_Archives.md)  
+[index.md](./index.md)  

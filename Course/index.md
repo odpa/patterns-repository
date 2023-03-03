@@ -3,8 +3,9 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasFirstName.md](../.gitCourse/hasFirstName)  
-[hasLastName.md](../.gitCourse/hasLastName)  
-[hasNumber.md](../Course/hasNumber)  
-[taughtBy.md](../.gitCourse/taughtBy)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20150126214423!Course_diagram.png](./20150126214423!Course_diagram.png)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[Course.md](./Course.md)  
+[index.md](./index.md)  

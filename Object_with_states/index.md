@@ -3,9 +3,14 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasState.md](../Object_with_states/hasState)  
-[isStateOf.md](../.gitObject_with_states/isStateOf)  
-[Object.md](../.gitObject)  
-[State.md](../.gitDetectorFinalState)  
-[StateSet.md](../Object_with_states/StateSet)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[alm-istack.owl](./alm-istack.owl)  
+[collectionentity.owl](./collectionentity.owl)  
+[index.md](./index.md)  
+[ObjectWithStatesODP.png](./ObjectWithStatesODP.png)  
+[Object_with_states.md](./Object_with_states.md)  
+[set.owl](./set.owl)  
+[situation.owl](./situation.owl)  

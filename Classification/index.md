@@ -3,8 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[classifies.md](../.gitClassification/classifies)  
-[Concept.md](../.gitAOS_AGROVOC_Concept_Server_fundation_ontology_model/hasMappedDomainConcept)  
-[Entity.md](../CollectionEntity)  
-[isClassifiedBy.md](../.gitClassification/isClassifiedBy)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Classification.jpg](./Classification.jpg)  
+[Classification.md](./Classification.md)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  

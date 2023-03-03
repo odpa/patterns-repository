@@ -3,8 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[canBeCrossedByVesselType.md](../VesselWaterArea/canBeCrossedByVesselType)  
-[canCrossWaterArea.md](../.gitVesselWaterArea/canCrossWaterArea)  
-[VesselType.md](../GearVessel/usedByVesselType)  
-[WaterArea.md](../.gitGearWaterArea)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[Vesselwaterarea.jpg](./Vesselwaterarea.jpg)  
+[VesselWaterArea.md](./VesselWaterArea.md)  

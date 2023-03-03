@@ -3,12 +3,13 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[AquaticResource.md](../.gitAquaticResourceObservation/AquaticResource)  
-[AquaticResourceObservation.md](../AquaticResourceObservation)  
-[hasReferenceYear.md](../.gitAquaticResourceObservation/hasReferenceYear)  
-[hasResource.md](../AquaticResourceObservation/hasResource)  
-[hasVerticalDistribution.md](../.gitAquaticResourceObservation/hasVerticalDistribution)  
-[isResourceOf.md](../.gitAquaticResourceObservation/isResourceOf)  
-[isVerticalDistributionOf.md](../AquaticResourceObservation/isVerticalDistributionOf)  
-[VerticalDistribution.md](../.gitVerticalDistribution)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[aquaticresources.owl](./aquaticresources.owl)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[index.md](./index.md)  
+[observation.owl](./observation.owl)  
+[VerticalDistribution.md](./VerticalDistribution.md)  

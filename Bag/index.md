@@ -3,10 +3,11 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Bag.md](../.gitBag)  
-[hasItem.md](../.gitBag/hasItem)  
-[Item.md](../.gitBag/hasItem)  
-[itemContent.md](../.gitBag/itemContent)  
-[itemOf.md](../.gitBag/itemOf)  
-[size.md](../Bag/size)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[Bag.jpg](./Bag.jpg)  
+[Bag.md](./Bag.md)  
+[index.md](./index.md)  

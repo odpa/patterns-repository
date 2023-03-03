@@ -3,5 +3,10 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[TimeIndexedClassification.md](../.gitTimeIndexedClassification)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[countingAs.owl](./countingAs.owl)  
+[index.md](./index.md)  
+[TimeIndexedClassification.md](./TimeIndexedClassification.md)  
+[timeindexedsituation.owl](./timeindexedsituation.owl)  

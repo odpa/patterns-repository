@@ -3,9 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[Entity.md](../CollectionEntity)  
-[hasSetting.md](../.gitSituation/hasSetting)  
-[isSettingFor.md](../Situation/isSettingFor)  
-[Scenario_1.md](../.gitAgentRole/Scenario_1)  
-[Situation.md](../.gitDescriptionAndSituation)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20090611002949!Situation.jpg](./20090611002949!Situation.jpg)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[cpannotationschema.owl](./cpannotationschema.owl)  
+[DUL.owl](./DUL.owl)  
+[index.md](./index.md)  
+[Situation.md](./Situation.md)  

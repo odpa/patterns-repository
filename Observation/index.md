@@ -3,11 +3,12 @@ layout: default
 title: ODPA Patterns
 ---
   
-[../.git](../.git)  
-[hasObservation.md](../Observation/hasObservation)  
-[hasParameter.md](../.gitAffordance/hasParameter)  
-[inDate.md](../.gitObservation/inDate)  
-[isObservationOf.md](../Observation/isObservationOf)  
-[isParameterOf.md](../Observation/isParameterOf)  
-[Observation.md](../AquaticResourceObservation)  
-[Parameter.md](../.gitParameter)  
+[../](../)  
+[11px-ArrowRight.gif](./11px-ArrowRight.gif)  
+[20px-Class.gif](./20px-Class.gif)  
+[20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
+[20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
+[index.md](./index.md)  
+[Observation.jpg](./Observation.jpg)  
+[Observation.md](./Observation.md)  
+[situation.owl](./situation.owl)  
