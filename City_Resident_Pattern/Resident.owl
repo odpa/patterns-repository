@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://ontology.eil.utoronto.ca/cdm/Resident#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://ontology.eil.utoronto.ca/cdm/Resident#">
+    <Prefix name="" IRI="http://ontology.eil.utoronto.ca/cdm/Resident#"/>
+    <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="gs" IRI="http://ontology.eil.utoronto.ca/govstat.owl#"/>
+    <Prefix name="ic" IRI="http://ontology.eil.utoronto.ca/tove/icontact#"/>
+    <Prefix name="kp" IRI="http://ontology.eil.utoronto.ca/tove/trust#"/>
+    <Prefix name="ot" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="pr" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="sc" IRI="http://schema.org/"/>
+    <Prefix name="org" IRI="http://ontology.eil.utoronto.ca/tove/organization#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="adms" IRI="http://schema.org/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="wgs84" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Import>http://ontology.eil.utoronto.ca/tove/icontact</Import>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Import>http://www.w3.org/2006/time</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal xml:lang="en">Mark S. Fox and Andrew Forde</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal xml:lang="en">Mark S. Fox, http://eil.utoronto.ca/profiles/foxpro.html
+Enterprise Integration Laboratory, http://eil.utoronto.ca
+University of Toronto, 
+msf@eil.utoronto.ca</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>This Ontology is a Design Pattern for the concept of a city Resident. Residency is often a prerequisite for receiving city services. The challenge of developing patterns for city data concepts is to identify components of the pattern that are sufficiently general that they apply across multiple cities and are shared across multiple services within a city.  The latter requirement simplifies the task as it removes the need to specify details that are not relevant to the operation of other city services. The pattern satisfies competency questions derived from the definition of city resident from three cities plus a country. Key concepts in the pattern include: Resident, Residence, ControlledEntity and Citizenship.  Key properties include: hasResidence, owns, operates, and citizentOf. The pattern is evaluated by representing the definitions of the three cities plus country. DL is insufficient to represent the complete semantics of each definition. Additional constraints had to specified, using a language such as SPARQL.  The Resident pattern is part of a larger effort to create a city data standard as ISO/IEC 5087 Information technology – City data model.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:modified"/>
+        <Literal> </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">A Design Pattern for City Resident</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>res</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>http://ontology.eil.utoronto.ca/cdm/Resident#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"/>
+        <Literal xml:lang="en">1.	Does the person reside in the city/country?
+2.	How long has the person resided in the city?
+3.	Is the person a citizen of the country which contains the city?
+4.	Does the person have a residence/home/domicile in the city?
+5.	If the person has more than one residence, where does the person spend the most time?
+6.	Does the person own property or business in the city?
+7.	Does the person operate a business in the city?
+8.	Is the person an official resident of the city?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"/>
+        <Literal xml:lang="en">This file defines an ontology design pattern for City &quot;Resident.” Why is the development a Resident pattern important for the development of a city data on-tology? In the PolisGnosis project (Fox, 2017), where ontologies have been developed for measuring city performance across the 17 themes  defined in ISO37120:2104 (e.g., Education, Public Safety, Health, Water &amp; Sanitation), one of the concepts that recurs across themes is “(city) Resident”.  The provisioning of city services is often contingent upon whether the person is a resident of the city.  Whether it is access to swimming lessons provided by Parks and Recreation, or affordable housing provided by Shelters and Housing, many are contingent upon satisfying the residency requirement. This ontology pattern make it possible to define the semantics of residency for a city, and use the definition to automate the classification of a person as a resident or not of a city.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#reengineeredFrom"/>
+        <Literal xml:lang="en">http://ontology.eil.utoronto.ca/GCI/Innovation/GCI-Innovation.owl</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs"/>
+        <Literal xml:lang="en">OWL-Time: http://www.we.org/2006/time
+
+icontact: http://ontology.eil.utoronto.ca/tove/icontact.owl</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+        <Literal xml:lang="en">The definition of Resident varies from city to city and country to country.  We use as our use cases definitions of Resident as provided by four cities:
+
+Toronto Canada: “you are identified as a resident if you reside in, own property, or own or operate a business in Toronto” (311 Toronto). 
+
+Beijing China: Beijing uses the Hukou system which is a household registration program that results in a government issued permit. Beijing residents are “all indi-viduals holding the nationality of the People’s Republic of China who [have]a domicile in Beijing and nowhere else. If the individual maintains a regular dwell-ing somewhere else, the more regular dwelling is considered their place of resi-dence” (Li, 1991). 
+
+New York USA: a resident is defined by “Regulation 105.20 (d)(1)” which stipu-lates, “the place which an individual intends to be his permanent home –the place to which he intends to return. It is the home with range of sentiment, feeling and permanent association. One must be domiciled in New York and maintain a home in New York, the time spent in the State is irrelevant” (McGladrey, 2009). 
+
+Germany: “a resident of Germany generally refers to an individual who has a dom-icile in Germany or spends more than six consecutive months in Germany (habitu-al place of abode)” (Seidel, 2011). 
+
+As different cities have different definitions of Resident the design pattern must con-tain the properties required by each.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/ns/adms#relatedDocumentation"/>
+        <Literal xml:lang="en">Towards a City Data Ontology: A Design Pattern for City Resident
+Submitted to WOP 2020.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/ns/adms#relatedDocumentation"/>
+        <Literal>http://ontology.eil.utoronto.ca/cdm/Figures/ResidentPattern.png</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Citizenship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ControlledEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HomeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LandArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Resident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResidentThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResidentialRelationship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="citizenOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="forCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="forCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHomeType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResidentialRelationship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="operates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="owns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="apartment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="condominium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="freeload"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="house"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="lease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="openLand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="own"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rent-to-own"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="shelter"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/ns/adms#relatedDocumentation"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Address"/>
+        <Class abbreviatedIRI="ic:Address"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="HomeType"/>
+        <ObjectUnionOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="apartment"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="condominium"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="hotel"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="house"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="openLand"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="shelter"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ResidentialRelationship"/>
+        <ObjectUnionOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="freeload"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="lease"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="own"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="rent"/>
+            </ObjectOneOf>
+            <ObjectOneOf>
+                <NamedIndividual IRI="rent-to-own"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Address"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Building"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Citizenship"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Citizenship"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="forCountry"/>
+            <Class IRI="Country"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Citizenship"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="ot:hasTime"/>
+            <Class abbreviatedIRI="ot:ProperInterval"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="City"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlledEntity"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlledEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="entity"/>
+            <ObjectUnionOf>
+                <Class IRI="Building"/>
+                <Class IRI="LandArea"/>
+                <Class IRI="Organization"/>
+            </ObjectUnionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlledEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="ot:hasTime"/>
+            <Class abbreviatedIRI="ot:ProperInterval"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Country"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HomeType"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LandArea"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasResidence"/>
+            <Class IRI="Residence"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasResidence"/>
+            <Class IRI="Residence"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="forCity"/>
+            <Class IRI="City"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasAddress"/>
+            <Class IRI="Address"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasHomeType"/>
+            <Class IRI="HomeType"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasResidentialRelationship"/>
+            <Class IRI="ResidentialRelationship"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="ot:hasTime"/>
+            <Class abbreviatedIRI="ot:ProperInterval"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="citizenOf"/>
+            <Class IRI="Citizenship"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasResidence"/>
+            <Class IRI="Residence"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="operates"/>
+            <Class IRI="ControlledEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="owns"/>
+            <Class IRI="ControlledEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasResidence"/>
+            <Class IRI="Residence"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="operates"/>
+            <ObjectIntersectionOf>
+                <Class IRI="ControlledEntity"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="entity"/>
+                    <Class IRI="Organization"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Resident"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="owns"/>
+            <Class IRI="ControlledEntity"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResidentialRelationship"/>
+        <Class IRI="ResidentThing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="apartment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="condominium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResidentialRelationship"/>
+        <NamedIndividual IRI="freeload"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="hotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResidentialRelationship"/>
+        <NamedIndividual IRI="lease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="openLand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResidentialRelationship"/>
+        <NamedIndividual IRI="own"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResidentialRelationship"/>
+        <NamedIndividual IRI="rent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResidentialRelationship"/>
+        <NamedIndividual IRI="rent-to-own"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="HomeType"/>
+        <NamedIndividual IRI="shelter"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="citizenOf"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="entity"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="forCity"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="forCountry"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAddress"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasHomeType"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResidence"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResidentialRelationship"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="operates"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="owns"/>
+        <ObjectProperty IRI="ResidentObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Citizenship</IRI>
+        <Literal xml:lang="en">Citizenship captures the time interval during which aperson is a citizen of a country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ControlledEntity</IRI>
+        <Literal xml:lang="en">The ControlledEntity class captures the time interval during which an entity is owned or operated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Residence</IRI>
+        <Literal xml:lang="en">The Residence class specifies
+•	a location property forCity whose range is a single city (City), 
+•	a time interval property time:hasTime whose range is a single time interval,
+•	the home type property hasHomeType whose range is a single type of home, such house, apartment, etc.,
+•	an address property hasAddress whose range is a single address, and  
+•	a property hasResidentialRelationship whose range specifies whether the resident rents, owns, etc. the home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Resident</IRI>
+        <Literal xml:lang="en">The Resident class is a subclass of Person. The properties of the Resident class are used to construct the definition of a resident for a particular city.  These properties are:
+•	a residence property hasResidence that specifies one or more individuals of Residence, where each individual specifies a residence distinguished by city, address and/or time interval. A resident can have more than one residence;
+•	a citizenship property citizenOf that specifies one or more Citizenship’s, each specifying the country (Country) and time interval (time:ProperInterval) the resident is a citizen. A person can be a citizen of more than country and for dif-ferent time intervals;
+•	an ownership property owns, that specifies zero or more ControlledEntity’s where entity’s are buildings (Building) and/or land areas (LandArea) that the resident owns; and
+•	a business operate property operate, that specifies zero or more Con-trolledEntity where the entity is an Organization that the resident operates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>citizenOf</IRI>
+        <Literal xml:lang="en">citizenOf  specifies one or more Citizenship’s, each specifying the country (Country) and time interval (time:ProperInterval) the resident is a citizen. A person can be a citizen of more than country and for dif-ferent time intervals;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>entity</IRI>
+        <Literal xml:lang="en">entity specifies the type of thing controlled.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasHomeType</IRI>
+        <Literal xml:lang="en">hasHomeType specifies the type of residence with a range of a single type of home, such house, apartment, etc.,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasResidence</IRI>
+        <Literal xml:lang="en">hasResidence specifies one or more individuals of Residence, where each individual specifies a residence distinguished by city, address and/or time interval. A resident can have more than one residence;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasResidentialRelationship</IRI>
+        <Literal xml:lang="en">hasResidentialRelationship specifies whether the resident rents, owns, etc. the home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>operates</IRI>
+        <Literal xml:lang="en">operate specifies zero or more ControlledEntity where the entity is an Organization that the resident operates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>owns</IRI>
+        <Literal xml:lang="en">owns specifies zero or more ControlledEntity’s where entity’s are build-ings (Building) and/or land areas (LandArea) that the resident owns</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

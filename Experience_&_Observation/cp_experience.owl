@@ -1,0 +1,425 @@
+﻿<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://modellingdh.github.io/ont/odp/experience"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://modellingdh.github.io/ont/odp/experience"
+     versionIRI="https://raw.githubusercontent.com/modellingDH/odp_experience/master/owl/cp_experience.owl.ttl">
+    <Prefix name="" IRI="http://modellingdh.github.io/ont/odp/term/"/>
+    <Prefix name="cp" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="activ" IRI="http://ontology.eil.utoronto.ca/icity/ActivitySpecification/"/>
+    <Prefix name="provo" IRI="http://www.w3.org/ns/prov#"/>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This content pattern (E&amp;O)  models the observation of experience as resulting from a direct engagement in an activity and reflected in an observation prompted from the person engaged in the activity. 
+E&amp;O represents an experience through its factual, cognitive, phenomenological and critical coordinates, which all lend themselves to further specialisation in the ontologies where the CP will be instantiated.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:coversRequirements"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Which activities performed by someone have prompted an observation from that person and which haven&apos;t?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://ontologydesignpatterns.org/wiki/Submissions:Experience_%26_Observation</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:relatedCPs"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/observation.owl</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasIntent"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">to represent the epistemological &quot;missing link&quot; between a cognitive activity, e.g. the interaction with a cultural object, and any evidence of the effects this activity has on the individuals that are engaged with it; what can collectively be considered as an experience.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:relatedCPs"/>
+        <IRI>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Experience &amp; Observation (E&amp;O) Pattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:relatedCPs"/>
+        <IRI>http://ontologydesignpatterns.org/cp/owl/transition.owl</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:scenarios"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Charles Dickens wrote in his report on visiting a village near Carrara, Italy: &quot;It contains a beautiful little Theatre, newly built; and it is an interesting custom there, to form the chorus of labourers in the marble quarries, who are self-taught and sing by ear. I heard them in a comic opera, and in an act of “Norma;” and they acquitted themselves very well; unlike the common people of Italy generally, who (with some exceptions among the Neapolitans) sing vilely out of tune, and have very disagreeable singing voices.&quot;
+
+https://led.kmi.open.ac.uk/entity/lexp/1382364120
+
+This passage describes:
+- the setting of an activity (description of the Theatre, interest in the village custom)
+- the activity (Dickens listening to the marble quarry labourers sing Norma)
+- observation on the activities themselves (critique on the chorus&apos; singing performance)
+- observation on his engagement in that and prior activities (it was unlike what most Italians he had heard sing)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:coversRequirements"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">What personal observations were produced by reflecting upon an activity being carried out?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>https://orcid.org/0000-0002-9272-908X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>https://orcid.org/0000-0003-3807-5019</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The E&amp;O pattern focuses on the engagement in an activity, and on the creation of an observation as result of a prompting.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:extractedFrom"/>
+        <IRI>https://raw.githubusercontent.com/eureadit/reading-experience-ontology/master/data-model-v2.owl</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasUnitTest"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://modellingdh.github.io/ont/odp/term/&gt;
+PREFIX activ: &lt;http://ontology.eil.utoronto.ca/icity/ActivitySpecification/&gt;
+SELECT DISTINCT ?observation WHERE {
+   ?activity a activ:Activity
+      ; :includes ?observation 
+   . ?observation a :Observation
+}</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasComponent"/>
+        <IRI>http://ontology.eil.utoronto.ca/icity/ActivitySpecification</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:relatedCPs"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/persons.owl</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:coversRequirements"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">In what ways can one person be engaged in a single activity?</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasUnitTest"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://modellingdh.github.io/ont/odp/term/&gt;
+SELECT DISTINCT ?engagement ?activity WHERE {
+   ?engagement :onActivity ?activity
+}</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasConsequences"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">It decomposes the lax notion of experience (e.g. through engaging in reading a book or incidentally hearing some music) into distinguishable elements that can be used in e.g. text annotation with greater precision than with a single named entity representing the experience.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cp:hasUnitTest"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PREFIX : &lt;http://modellingdh.github.io/ont/odp/term/&gt;
+PREFIX activ: &lt;http://ontology.eil.utoronto.ca/icity/ActivitySpecification/&gt;
+SELECT DISTINCT ?activity WHERE {
+   { ?activity a :Prompt } 
+   UNION
+   { ?activity a activ:Activity ; :produced [ ] }
+}</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>https://orcid.org/0000-0002-3639-3622</IRI>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI=":Engagement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Prompting"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="activ:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasEngagement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":inActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":isEngagedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":isReflectedUponIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":isReflectionOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":producedObservation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#exampleOfUse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI=":Prompting"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="activ:Activity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI=":producedObservation"/>
+                <Class abbreviatedIRI=":Observation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Prompting"/>
+        <Class abbreviatedIRI=":Engagement"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Engagement"/>
+        <Class abbreviatedIRI=":Observation"/>
+        <Class abbreviatedIRI="activ:Activity"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":hasEngagement"/>
+        <ObjectProperty abbreviatedIRI=":inActivity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI=":isReflectedUponIn"/>
+        <ObjectProperty abbreviatedIRI=":isReflectionOn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":inActivity"/>
+        <Class abbreviatedIRI=":Engagement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":includes"/>
+        <Class abbreviatedIRI="activ:Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":isEngagedIn"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":isReflectionOn"/>
+        <Class abbreviatedIRI=":Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasEngagement"/>
+        <Class abbreviatedIRI=":Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":inActivity"/>
+        <Class abbreviatedIRI="activ:Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":includes"/>
+        <Class abbreviatedIRI=":Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":isEngagedIn"/>
+        <Class abbreviatedIRI=":Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":isReflectionOn"/>
+        <Class abbreviatedIRI=":Engagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":producedObservation"/>
+        <Class abbreviatedIRI=":Observation"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty abbreviatedIRI=":hasEngagement"/>
+            <ObjectProperty abbreviatedIRI=":isReflectedUponIn"/>
+        </ObjectPropertyChain>
+        <ObjectProperty abbreviatedIRI=":producedObservation"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:Engagement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The product of a reflection upon an observation, which embodies subjective traits of an experience (Example: &quot;After reading this passage of &apos;To Kill a Mockingbird&apos;, I came to a clearer understanding of the many facets of social intolerance&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Engagement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This class is the core type of entities that represent a reification of one’s involvement in an activity. If, for example, the participant’s reason for their interaction was to write a review for a magazine, this will be encoded in instances of this class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Engagement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:Observation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The product of an act of scrutiny which may or may not have been performed with a critical disposition (Example: &quot;My thoughts from reading this passage of &apos;To Kill a Mockingbird&apos;&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Observation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A disjointness or alignment between this class and &lt;http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation&gt; in the Observation content pattern is plausible but subject to debate, hence will not be formalised herein.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Observation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An engagement, depending on whether it is emotional, critical or of another nature, is a cognitive process which may or may not generate
+conscious output, which is represented by this type.
+
+Note that different engagements give rise to potentially different observations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Observation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#exampleOfUse"/>
+        <AbbreviatedIRI>:Prompting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Active readers engaged in the discussion through forum treads and comments. Tthe social engagement is part of the experience, e.g. engaging in discussions with other readers after each issue. Thus, the prompting activity leading to the observation must be considered part of the reading activity.
+In this case,  the observation is created within the frame of the activity, through a sub-activity prompting. Their structural similarity in clearly
+expressed by the mereological relation between the activity and the prompt within it.
+
+Example: An active reader r1 is engaged in an activity a1 which includes an observation o1 created through a prompting p1, sub activity of a1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#exampleOfUse"/>
+        <AbbreviatedIRI>:Prompting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Passive readers exposed to comments from other readers. Tthe reading activity includes being exposed to other readers&apos; observations and, therefore, an experience mediated by comments, votes, sponsorship and other types of social media feedback surrounding the content.
+In this case, the observation included in the activity is not the result of the activity itself.
+
+Example: A passive reader r1 is engaged in an activity a1 which includes an observation o1, the activity a1 and included observation o1 are reected in the observation o2 created through a prompting p1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:Prompting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Prompting is an ‘Activity’ leading to the generation of an Observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Prompting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The stimulus within an activity that causes an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Prompting</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Prompting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasEngagement</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:inActivity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">what activity/ies are affecting or affected by a certain engagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:inActivity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Connects an activity with the many possible ways to engage in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:inActivity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">in activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:includes</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relation of mereological nature that connects a given observation with the activity that originates them: it strengthens the argument that observations are always active processes from a cognitive standpoint, regardless of how conscious they may be.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:includes</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A standard mereological property from another content pattern may be used in lieu of this one and therefore aligned with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:includes</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">includes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:isEngagedIn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Because an activity may engage other participants than the one performing it, engagements are in general considered individual rather than collective, therefore each participants has their own engagement and only some of them will be conscious and/or documented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:isEngagedIn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">engaged in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:isReflectedUponIn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is reflected upon in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:isReflectionOn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Used to connect the subjective elements of an experience with the corresponding observation, which is extrapolated from the content being interacted with and in itself may not be including a critique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:isReflectionOn</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is reflection on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>:producedObservation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This property can be used to denote that something is (even indirectly, not necessary through direct reflection) responsible for the existence of an observation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:producedObservation</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">produced observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>activ:Activity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An occurrence being led by an active - though not necessarily conscious - agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>activ:Activity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/persons.owl#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY situation "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
+    <!ENTITY timeinterval "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#" >
+    <!ENTITY timeindexedpartof "http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#" >
+    <!ENTITY timeindexedsituation "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"
+     xmlns:timeindexedsituation="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+     xmlns:timeinterval="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:timeindexedpartof="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">0.1: Created by Aldo Gangemi
+0.2: Revised as a specialization of timeindexedsituation.owl</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">The time indexed part of pattern. 
+This pattern re-uses part of and time-indexed situation patterns. It is extracted from DOLCE-UltraLite by partial clone of elements.</rdfs:comment>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="&situation;isSettingFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#includesPartObject -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedpartof;includesPartObject">
+        <rdfs:label xml:lang="en">includes part object</rdfs:label>
+        <rdfs:comment>A relation between a temporary part-of situation and the part(s) involved.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+        <rdfs:domain rdf:resource="&timeindexedpartof;Object"/>
+        <rdfs:range rdf:resource="&timeindexedpartof;TimeIndexedPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;forEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#includesWholeObject -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedpartof;includesWholeObject">
+        <rdfs:label xml:lang="en">includes whole object</rdfs:label>
+        <rdfs:comment>A relation between a temporary part-of situation and the whole object involved.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+        <rdfs:domain rdf:resource="&timeindexedpartof;Object"/>
+        <rdfs:range rdf:resource="&timeindexedpartof;TimeIndexedPartOf"/>
+        <owl:inverseOf rdf:resource="&timeindexedpartof;isWholeObjectOf"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;forEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#isPartObjectOf -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedpartof;isPartObjectOf">
+        <rdfs:label xml:lang="en">is part object of</rdfs:label>
+        <rdfs:comment>A relation between object part(s) and the temporary part-of situation they are involved in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+        <rdfs:range rdf:resource="&timeindexedpartof;Object"/>
+        <rdfs:domain rdf:resource="&timeindexedpartof;TimeIndexedPartOf"/>
+        <owl:inverseOf rdf:resource="&timeindexedpartof;includesPartObject"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;hasTimeIndexedSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#isWholeObjectOf -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedpartof;isWholeObjectOf">
+        <rdfs:label xml:lang="en">is whole object of</rdfs:label>
+        <rdfs:comment>A relation between a whole object and the temporary part-of situation it is involved in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+        <rdfs:range rdf:resource="&timeindexedpartof;Object"/>
+        <rdfs:domain rdf:resource="&timeindexedpartof;TimeIndexedPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;hasTimeIndexedSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;atTime"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;forEntity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;hasTimeIndexedSetting"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="&situation;Situation">
+        <owl:disjointWith rdf:resource="&timeinterval;TimeInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#Object -->
+
+    <owl:Class rdf:about="&timeindexedpartof;Object">
+        <rdfs:label xml:lang="en">Object</rdfs:label>
+        <rdfs:label xml:lang="it">Oggetto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:comment>Any physical, social, or mental object, or a substance</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl#TimeIndexedPartOf -->
+
+    <owl:Class rdf:about="&timeindexedpartof;TimeIndexedPartOf">
+        <rdfs:label xml:lang="en">Time indexed part of</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&situation;Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedpartof;isPartObjectOf"/>
+                <owl:someValuesFrom rdf:resource="&timeindexedpartof;Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedsituation;atTime"/>
+                <owl:someValuesFrom rdf:resource="&timeinterval;TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedpartof;isWholeObjectOf"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&situation;isSettingFor"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedpartof;isWholeObjectOf"/>
+                <owl:someValuesFrom rdf:resource="&timeindexedpartof;Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A situation that includes at least two Objects, one having the role of whole object, the other(s) being a part(s) of it, and one TimeInterval.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedpartof.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+    <owl:Class rdf:about="&timeinterval;TimeInterval"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

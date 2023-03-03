@@ -9,4 +9,5 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [TimeIndexedSituation.md](./TimeIndexedSituation.md)  
+[timeindexedsituation.owl](./timeindexedsituation.owl)  
 [TimeIndexedSituation.png](./TimeIndexedSituation.png)  

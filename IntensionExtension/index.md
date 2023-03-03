@@ -11,3 +11,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Intensionextension.jpg](./Intensionextension.jpg)  
 [IntensionExtension.md](./IntensionExtension.md)  
+[intensionextension.owl](./intensionextension.owl)  

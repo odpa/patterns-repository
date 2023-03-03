@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:collectionentity="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/bag.owl">
+  <owl:Ontology rdf:about="">
+    <cpannotationschema:reengineeredFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://swan.mindinformatics.org/ontologies/1.2/collections.owl</cpannotationschema:reengineeredFrom>
+    <cpannotationschema:hasComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl</cpannotationschema:hasComponent>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What bag is this item an element of?</cpannotationschema:coversRequirements>
+    <cpannotationschema:extractedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://swan.mindinformatics.org/ontologies/1.2/collections.owl</cpannotationschema:extractedFrom>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What is the size of this bag?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PaoloCiccarese</cpannotationschema:hasAuthor>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Bag is characterized by a collection that can have multiple copies of each object. This is performed through the Item entity. The Item is linking exaclty one resource through the relationship itemContent.</rdfs:comment>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What resource does this item refer to?</cpannotationschema:coversRequirements>
+    <cpannotationschema:relatedCPs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/set.owl</cpannotationschema:relatedCPs>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >To model bags of items (elements). The Bag is characterized by a collection that can have multiple copies of each object. </cpannotationschema:hasIntent>
+    <cpannotationschema:relatedCPs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/list.owl</cpannotationschema:relatedCPs>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What are the items contained in this bag? </cpannotationschema:coversRequirements>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Item">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="itemContent"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Item - Element belonging to a Bag</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >item</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Bag">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bag - Collection that can have a number of copies of each object</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(collections) Bag</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#itemContent">
+    <rdfs:range>
+      <owl:Class>
+        <owl:complementOf rdf:resource="#Item"/>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Item"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >itemContent - The link to the actual resource to which the item refers.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >item content</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="itemOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >item of - The link from an item to the Bag where it is contained</rdfs:comment>
+    <rdfs:range rdf:resource="#Bag"/>
+    <rdfs:domain rdf:resource="#Item"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasItem"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#isMemberOf"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >item of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasItem">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has item - The link to every item of the Bag</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has item</rdfs:label>
+    <rdfs:range rdf:resource="#Item"/>
+    <rdfs:domain rdf:resource="#Bag"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="size">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >size - The number of items belonging to a collection</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >size</rdfs:label>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

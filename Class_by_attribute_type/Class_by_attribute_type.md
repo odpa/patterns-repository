@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class by attribute type  |
-|  Also known as  |  |
-|  Author(s)  |  Francois Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class by attribute type |
+|  Also known as |  |
+|  Author(s) |  Francois Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  |  |
-|  Alignment problem addressed  |  A class in one ontology is aligned to a class in the other ontology. However, only those instances for which an attribute value corresponding to a certain type (subclass of the attribute range) is given are aligned.  |
-|  Alignment solution  |  This pattern establishes a mapping between a class/attribute combination in one  ontology and a class in another. In many cases this pattern will be used many times to fully cover the range of the attribute over various classes of the other ontology.  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) |  |
+|  Alignment problem addressed |  A class in one ontology is aligned to a class in the other ontology. However, only those instances for which an attribute value corresponding to a certain type (subclass of the attribute range) is given are aligned. |
+|  Alignment solution |  This pattern establishes a mapping between a class/attribute combination in oneontology and a class in another. In many cases this pattern will be used many times to fully cover the range of the attribute over various classes of the other ontology. |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  <Cell> ``` <entity1>  <Class>   <and>    <Class rdf:about="o1:Human"/>   </and>   <and>    <AttributeTypeCondition>     <onAttribute>      <Relation rdf:about="o1:culturalGroup"/>     </onAttribute>     <value><Instance rdf:about="o1:WesternEurope"></value>    </AttributeTypeCondition>   </and>  </Class> </entity1> <entity2>  <Class rdf:about="o2:WesternEuropean"/> </entity2></Cell>``` |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Solution example |  <Cell>``` <entity1>  <Class>   <and>    <Class rdf:about="o1:Human"/>   </and>   <and>    <AttributeTypeCondition>     <onAttribute>      <Relation rdf:about="o1:culturalGroup"/>     </onAttribute>     <value><Instance rdf:about="o1:WesternEurope"></value>    </AttributeTypeCondition>   </and>  </Class> </entity1> <entity2>  <Class rdf:about="o2:WesternEuropean"/> </entity2></Cell>``` |
+|  Consequences |  |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  |  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to |  |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class by attribute type__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class by attribute type__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class by attribute type__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8655__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class by attribute type__
+There is no review about this proposal.
+This revision (revision ID __8655__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_type&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_type&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_type&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_type&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class by attribute type__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class by attribute type__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class by attribute type__
 
 
 
-
-# 
-
- References
+#  References

@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY time "http://www.w3.org/2006/time#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cpa "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+    <!ENTITY mtp "http://www.descartes-core.org/patterns/owl/MaterialTransformationPattern#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.descartes-core.org/patterns/owl/MaterialTransformationPattern#"
+     xml:base="http://www.descartes-core.org/patterns/owl/MaterialTransformationPattern"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpa="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:mtp="http://www.descartes-core.org/patterns/owl/MaterialTransformationPattern#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern">
+        <rdfs:label>Material Transformation Pattern</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1</owl:versionInfo>
+        <cpa:relatedCPs rdf:datatype="&xsd;string">This pattern can be chained with the Semantic Trajectory ODP to  facilitate understanding of a complete manufacturing process from raw material extraction to assembly of all components needed for that product. More info about Semantic Trajectory ODP can be obtained from the following reference: Hu, Y., Janowicz, K., Carral, D., Scheider, S., Kuhn, W., Berg-Cross, G., Hitzler, P., Dean, M., Kolas, D.: A geo-ontology design pattern for semantic trajectories. In:Spatial Information Theory, pp. 438-456. Springer (2013)</cpa:relatedCPs>
+        <owl:versionInfo>Contributions are also provided by Michelle Cheatham, Krzysztof Janowicz, Holly Ferguson, Pascal Hitzler, Aimee Bucellato, Krishnaprasad Thirunarayan, Gary Berg-Cross</owl:versionInfo>
+        <cpa:hasConsequences>This is not a very generic pattern describing a change of states. It may not be applicable to broader types of transformation, like change of money, or change of political affiliations, etc.</cpa:hasConsequences>
+        <cpa:scenarios>A pile of wood is transformed into ash by burning. 
+Emboddied energy involved in the process of mixing aggregate, water, cement and other binders to create concrete. 
+Materials required to construct a manufactured artifact such as a window (glass, wood, aluminum).</cpa:scenarios>
+        <rdfs:comment>There are two axioms that we need in this pattern but not expressible in OWL. 
+The first says that there is at least one of the input that is not in the output of the transformation, which cannot be expressed in FOL as the formula:
+ALL x.( MaterialTransformation(x) IMPLIES Exists y.(hasInput(x,y) AND NOT hasOutput(x,y) ) )
+The second states that there is at least one of the output that is not part of the input of the transformation:
+ALL x.( MaterialTransformation(x) IMPLIES Exists y.(hasOutput(x,y) AND NOT hasInput(x,y) ) )
+Thus, this OWL encoding does not contain any axiom expressing the above two.</rdfs:comment>
+        <cpa:hasIntent>To contextualize the transformation process from raw components and the required equipment to a final manufactured artifact.</cpa:hasIntent>
+        <owl:versionInfo>Created by Adila Krisnadhi and Charles Vardeman</owl:versionInfo>
+        <cpa:coversRequirements>What material resources were required to produce a product?
+Where did the transformation take place?
+What was the time necessary for the transformation?
+What other materials or conditions were necessary for the transformation process to occur?
+What materials change during the transformation?
+How much energy is required for the transformation to take place?</cpa:coversRequirements>
+        <owl:priorVersion rdf:resource="http://descartes-core.org/ontologies/mt/1.0/MaterialTransformationPattern"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasCatalyst -->
+
+    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasCatalyst">
+        <rdfs:label>hasCatalyst</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput">
+        <rdfs:label>hasInput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput">
+        <rdfs:label>hasOutput</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring -->
+
+    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring">
+        <rdfs:label>occursDuring</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood -->
+
+    <owl:ObjectProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood">
+        <rdfs:label>occursInNeighborhood</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asLiteral -->
+
+    <owl:DatatypeProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asLiteral"/>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asNumeric -->
+
+    <owl:DatatypeProperty rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#asNumeric"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Catalyst -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Catalyst">
+        <rdfs:label>Catalyst</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input"/>
+                    <rdf:Description rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input">
+        <rdfs:label>Input</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialObject -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialObject">
+        <rdfs:label>MaterialObject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation">
+        <rdfs:label>MaterialTransformation</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood"/>
+                <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput"/>
+                <owl:allValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring"/>
+                <owl:someValuesFrom rdf:resource="&time;Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasCatalyst"/>
+                <owl:allValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Catalyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput"/>
+                <owl:allValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring"/>
+                <owl:allValuesFrom rdf:resource="&time;Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput"/>
+                <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood"/>
+                <owl:allValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood">
+        <rdfs:label>Neighborhood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output -->
+
+    <owl:Class rdf:about="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output">
+        <rdfs:label>Output</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation"/>
+        <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursInNeighborhood"/>
+        <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Neighborhood"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation"/>
+        <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasCatalyst"/>
+        <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Catalyst"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation"/>
+        <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasInput"/>
+        <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Input"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation"/>
+        <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#hasOutput"/>
+        <owl:someValuesFrom rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#Output"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#MaterialTransformation"/>
+        <owl:onProperty rdf:resource="http://descartes-core.org/ontologies/mt/1.1/MaterialTransformationPattern#occursDuring"/>
+        <owl:someValuesFrom rdf:resource="&time;Interval"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

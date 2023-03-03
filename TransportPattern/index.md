@@ -9,3 +9,4 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [TransportPattern.md](./TransportPattern.md)  
+[TransportPattern.owl](./TransportPattern.owl)  

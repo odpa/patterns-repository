@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY observation "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+    <!ENTITY verticaldistribution "http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:observation="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#"
+     xmlns:verticaldistribution="http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <owl:versionInfo
+            >Created by Eva Blomqvist</owl:versionInfo>
+        <cpannotationschema:scenarios
+            >Give me the resource observations where the vertical distribution is &#39;Pelagic&#39;</cpannotationschema:scenarios>
+        <cpannotationschema:coversRequirements
+            >What resource has what vertical distribution?</cpannotationschema:coversRequirements>
+        <cpannotationschema:hasConsequences
+            >This pattern only allows to query what vertical distribution is typical of an aquatic resource. Whereas such values can be subject to observation, another pattern based on the generic &#39;observation&#39; pattern should be used.
+The vertical distribution is intended to have a fixed set of values (to be defined as nominals) but this is not explicit in the pattern.</cpannotationschema:hasConsequences>
+        <cpannotationschema:hasIntent
+            >The intent of the pattern is to be able to represent vertical distribution for aquatic resources.</cpannotationschema:hasIntent>
+        <cpannotationschema:hasUnitTest
+            >SELECT ?x WHERE {?x a :AquaticResourceObservation.  ?x :hasVerticalDistribution :Pelagic}</cpannotationschema:hasUnitTest>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/fsdas/aquaticresources.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasIntent"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;coversRequirements"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;scenarios"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasConsequences"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasUnitTest"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#hasResource -->
+
+    <owl:ObjectProperty rdf:about="&verticaldistribution;hasResource">
+        <rdfs:label xml:lang="en">has resource</rdfs:label>
+        <rdfs:range rdf:resource="&verticaldistribution;AquaticResource"/>
+        <rdfs:domain rdf:resource="&verticaldistribution;AquaticResourceObservation"/>
+        <owl:inverseOf rdf:resource="&verticaldistribution;isResourceOf"/>
+        <rdfs:subPropertyOf rdf:resource="&observation;isObservationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#hasVerticalDistribution -->
+
+    <owl:ObjectProperty rdf:about="&verticaldistribution;hasVerticalDistribution">
+        <rdfs:label xml:lang="en"
+            >has vertical distribution</rdfs:label>
+        <rdfs:domain rdf:resource="&verticaldistribution;AquaticResourceObservation"/>
+        <rdfs:range rdf:resource="&verticaldistribution;VerticalDistribution"/>
+        <rdfs:subPropertyOf rdf:resource="&observation;hasParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#isResourceOf -->
+
+    <owl:ObjectProperty rdf:about="&verticaldistribution;isResourceOf">
+        <rdfs:label xml:lang="en">is resource of</rdfs:label>
+        <rdfs:domain rdf:resource="&verticaldistribution;AquaticResource"/>
+        <rdfs:range rdf:resource="&verticaldistribution;AquaticResourceObservation"/>
+        <rdfs:subPropertyOf rdf:resource="&observation;hasObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#isVerticalDistributionOf -->
+
+    <owl:ObjectProperty rdf:about="&verticaldistribution;isVerticalDistributionOf">
+        <rdfs:label xml:lang="en"
+            >is vertical distribution of</rdfs:label>
+        <rdfs:range rdf:resource="&verticaldistribution;AquaticResourceObservation"/>
+        <rdfs:domain rdf:resource="&verticaldistribution;VerticalDistribution"/>
+        <owl:inverseOf rdf:resource="&verticaldistribution;hasVerticalDistribution"/>
+        <rdfs:subPropertyOf rdf:resource="&observation;isParameterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="&observation;hasObservation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="&observation;hasParameter"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf -->
+
+    <owl:ObjectProperty rdf:about="&observation;isObservationOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf -->
+
+    <owl:ObjectProperty rdf:about="&observation;isParameterOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#hasReferenceYear -->
+
+    <owl:DatatypeProperty rdf:about="&verticaldistribution;hasReferenceYear">
+        <rdfs:label xml:lang="en"
+            >has reference year</rdfs:label>
+        <rdfs:domain rdf:resource="&verticaldistribution;AquaticResourceObservation"/>
+        <rdfs:range rdf:resource="&xsd;gYear"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#AquaticResource -->
+
+    <owl:Class rdf:about="&verticaldistribution;AquaticResource">
+        <rdfs:label xml:lang="en"
+            >Aquatic resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&observation;Observation"/>
+        <owl:disjointWith rdf:resource="&observation;Parameter"/>
+        <rdfs:comment
+            >A fishery resource (a collection of actual aquatic organisms) that can include aquatic organisms from different AquaticSpecies, and is localized in some WaterArea.
+It can be mapped to fi:AqResRef</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#AquaticResourceObservation -->
+
+    <owl:Class rdf:about="&verticaldistribution;AquaticResourceObservation">
+        <rdfs:label xml:lang="en"
+            >Aquatic resource observation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&observation;Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&verticaldistribution;hasResource"/>
+                <owl:someValuesFrom rdf:resource="&verticaldistribution;AquaticResource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&verticaldistribution;hasVerticalDistribution"/>
+                <owl:someValuesFrom rdf:resource="&verticaldistribution;VerticalDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment
+            >An observation of a resource characterised by different parameters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/fsdas/verticaldistribution.owl#VerticalDistribution -->
+
+    <owl:Class rdf:about="&verticaldistribution;VerticalDistribution">
+        <rdfs:label xml:lang="en"
+            >Vertical distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&observation;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation -->
+
+    <owl:Class rdf:about="&observation;Observation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter -->
+
+    <owl:Class rdf:about="&observation;Parameter"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

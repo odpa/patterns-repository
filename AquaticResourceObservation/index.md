@@ -9,5 +9,6 @@ title: ODPA Patterns
 [20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [AquaticResourceObservation.md](./AquaticResourceObservation.md)  
+[aquaticresourceobservation.owl](./aquaticresourceobservation.owl)  
 [AquaticResourceObservation.png](./AquaticResourceObservation.png)  
 [index.md](./index.md)  

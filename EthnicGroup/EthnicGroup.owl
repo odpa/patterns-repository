@@ -1,0 +1,511 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.ontologydesignpatterns.org/ekp/owl/EthnicGroup.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ekp="http://www.ontologydesignpatterns.org/cp/ekp#"
+    xmlns:mq="http://www.ontologydesignpatterns.org/schemas/dbpediainfoboxmatchingweight.owl#"
+    xmlns:cpa="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:base="http://www.ontologydesignpatterns.org/ekp/owl/EthnicGroup.owl" > 
+  <rdf:Description rdf:nodeID="A0">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.67</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedSource rdf:resource="#linksToCountry"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/text"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToWriter">
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdfs:label xml:lang="en">links to Writer</rdfs:label>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Writer</rdfs:comment>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/caption"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Writer"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/imageCaption"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Writer</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Continent">
+    <rdfs:label xml:lang="fr">continent</rdfs:label>
+    <rdfs:label xml:lang="el">ήπειρος</rdfs:label>
+    <rdfs:label xml:lang="en">continent</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/EthnicGroup">
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:label xml:lang="fr">groupe ethnique</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">ethnic group</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToCity">
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/text"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/popplace"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/regions"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e City</rdfs:comment>
+    <rdfs:label xml:lang="en">links to City</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and City</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.26</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToCity"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/regions"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/President">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">président</rdfs:label>
+    <rdfs:label xml:lang="en">president</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Person">
+    <rdfs:label xml:lang="de">Person</rdfs:label>
+    <rdfs:label xml:lang="en">person</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="pt">pessoa</rdfs:label>
+    <rdfs:label xml:lang="fr">personne</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToPresident">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/caption"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e President</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and President</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/President"/>
+    <rdfs:label xml:lang="en">links to President</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToRiver">
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e River</rdfs:comment>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/River"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and River</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">links to River</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/relatedC"/>
+    <owl:annotatedSource rdf:resource="#linksToEthnicGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToContinent">
+    <rdfs:label xml:lang="en">links to Continent</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Continent</rdfs:comment>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Continent</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Continent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.0</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/popplace"/>
+    <owl:annotatedSource rdf:resource="#linksToCountry"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Language"/>
+    <owl:onProperty rdf:resource="#linksToLanguage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Place">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="el">περιοχή</rdfs:label>
+    <rdfs:label xml:lang="fr">lieu</rdfs:label>
+    <rdfs:label xml:lang="en">place</rdfs:label>
+    <rdfs:label xml:lang="pt">lugar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/imageCaption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/col">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Writer">
+    <rdfs:label xml:lang="fr">écrivain</rdfs:label>
+    <rdfs:label xml:lang="en">writer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/before">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.67</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedSource rdf:resource="#linksToCountry"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/regions"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToMusicalArtist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/caption"/>
+    <rdfs:label xml:lang="en">links to Musical Artist</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/imageCaption"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Musical Artist</rdfs:comment>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Musical Artist</rdfs:comment>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/MusicalArtist"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/OfficeHolder">
+    <rdfs:label xml:lang="en">office holder</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="de">Amtsinhaber</rdfs:label>
+    <rdfs:label xml:lang="fr">titulaire</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/MilitaryConflict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">military conflict</rdfs:label>
+    <rdfs:label xml:lang="fr">conflit militaire</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.43</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/caption"/>
+    <owl:annotatedSource rdf:resource="#linksToWriter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/City">
+    <rdfs:comment>a relatively large and permanent settlement, particularly a large urban settlement</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">city</rdfs:label>
+    <rdfs:label xml:lang="fr">cité</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/relatedC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToMilitaryConflict">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">links to Military Conflict</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Military Conflict</rdfs:comment>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/MilitaryConflict"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Military Conflict</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToLanguage">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Language"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/languages"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Language</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Language</rdfs:comment>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/langs"/>
+    <rdfs:label xml:lang="en">links to Language</rdfs:label>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.05</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedSource rdf:resource="#linksToEthnicGroup"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/col"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+    <owl:onProperty rdf:resource="#linksToCity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.33</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/before"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToCountry"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToEthnicGroup">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Ethnic Group</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">links to Ethnic Group</rdfs:label>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/rels"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/col"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Ethnic Group</rdfs:comment>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/related"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/caption"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/relatedC"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToIsland">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Island</rdfs:comment>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Island"/>
+    <rdfs:label xml:lang="en">links to Island</rdfs:label>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Island</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedSource rdf:resource="#linksToOfficeHolder"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/imageCaption"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.68</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToLanguage"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/langs"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <cpa:hasAuthor>Valentina Presutti</cpa:hasAuthor>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <cpa:hasIntent>To model the core knowledge needed to describe a EthnicGroup</cpa:hasIntent>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/dbpediainfoboxmatchingweight.owl"/>
+    <cpa:extractedFrom rdf:resource="http://en.wikipedia.org/"/>
+    <cpa:extractedFrom rdf:resource="http://dbpedia.org/"/>
+    <cpa:hasAuthor>Aldo Gangemi</cpa:hasAuthor>
+    <rdfs:comment>An encyclopedic knowledge pattern (EKP) identifying the core knowledge that describes a EthnicGroup</rdfs:comment>
+    <cpa:hasAuthor>Andrea Giovanni Nuzzolese</cpa:hasAuthor>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    <owl:onProperty rdf:resource="#linksToAdministrativeRegion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.33</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/relatedC"/>
+    <owl:annotatedSource rdf:resource="#linksToCountry"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="fr">langage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">language</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91.67</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToMusicalArtist"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/caption"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/languages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.53</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/rels"/>
+    <owl:annotatedSource rdf:resource="#linksToEthnicGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToOfficeHolder">
+    <rdfs:label xml:lang="en">links to Office Holder</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Office Holder</rdfs:comment>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Office Holder</rdfs:comment>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/caption"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/OfficeHolder"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/imageCaption"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/caption"/>
+    <owl:annotatedSource rdf:resource="#linksToPresident"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToCountry">
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/relatedC"/>
+    <rdfs:label xml:lang="en">links to Country</rdfs:label>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/regions"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Country</rdfs:comment>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/text"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Country</rdfs:comment>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/popplace"/>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/before"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57.89</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedSource rdf:resource="#linksToCity"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/text"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.89</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/related"/>
+    <owl:annotatedSource rdf:resource="#linksToEthnicGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/langs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Country"/>
+    <owl:onProperty rdf:resource="#linksToCountry"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/related">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/AdministrativeRegion">
+    <rdfs:label xml:lang="fr">région administrative</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">administrative region</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToTown">
+    <rdfs:label xml:lang="en">links to Town</rdfs:label>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Town"/>
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Town</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Town</rdfs:comment>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.33</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/imageCaption"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToMusicalArtist"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/River">
+    <rdfs:comment>a large natural stream</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">river</rdfs:label>
+    <rdfs:label xml:lang="fr">rivière</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/text">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.84</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/popplace"/>
+    <owl:annotatedSource rdf:resource="#linksToCity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Country">
+    <rdfs:label xml:lang="fr">pays</rdfs:label>
+    <rdfs:label xml:lang="en">country</rdfs:label>
+    <rdfs:label xml:lang="de">Staat</rdfs:label>
+    <rdfs:label xml:lang="el">χώρα</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.32</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToLanguage"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/languages"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90.0</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToOfficeHolder"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/caption"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.53</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/caption"/>
+    <owl:annotatedSource rdf:resource="#linksToEthnicGroup"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Island">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="el">νησί</rdfs:label>
+    <rdfs:label xml:lang="en">island</rdfs:label>
+    <rdfs:label xml:lang="fr">île</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/regions">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Event">
+    <rdfs:label xml:lang="fr">évènement</rdfs:label>
+    <rdfs:label xml:lang="en">event</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.57</mq:dbpediaInfoboxMatchingWeight>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/imageCaption"/>
+    <owl:annotatedSource rdf:resource="#linksToWriter"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#linksToAdministrativeRegion">
+    <rdfs:comment xml:lang="it">Relazione tra Ethnic Group e Administrative Region</rdfs:comment>
+    <rdfs:label xml:lang="en">links to Administrative Region</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Ethnic Group and Administrative Region</rdfs:comment>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:relatedMatch rdf:resource="http://dbpedia.org/property/popplace"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/EthnicGroup"/>
+    <owl:onProperty rdf:resource="#linksToEthnicGroup"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/popplace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/caption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/MusicalArtist">
+    <rdfs:label xml:lang="fr">musicien</rdfs:label>
+    <rdfs:label xml:lang="en">musical artist</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">artista musical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Town">
+    <rdfs:comment>a settlement ranging from a few hundred to several thousand (occasionally hundreds of thousands). The precise meaning varies between countries and is not always a matter of legal definition. Usually, a town is thought of as larger than a village but smaller than a city, though there are exceptions to this rule.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">town</rdfs:label>
+    <rdfs:label xml:lang="fr">ville</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <mq:dbpediaInfoboxMatchingWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</mq:dbpediaInfoboxMatchingWeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="#linksToAdministrativeRegion"/>
+    <owl:annotatedTarget rdf:resource="http://dbpedia.org/property/popplace"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/property/rels">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

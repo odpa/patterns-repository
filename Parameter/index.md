@@ -12,3 +12,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Parameter.jpg](./Parameter.jpg)  
 [Parameter.md](./Parameter.md)  
+[parameter.owl](./parameter.owl)  

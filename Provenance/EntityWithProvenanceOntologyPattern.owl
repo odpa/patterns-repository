@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hirtq/ontologies/2018/4/EntityWithProvenanceOntologyPattern"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hirtq/ontologies/2018/4/EntityWithProvenanceOntologyPattern">
+    <Prefix name="" IRI="http://www.semanticweb.org/hirtq/ontologies/2018/4/EntityWithProvenanceOntologyPattern"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="opla" IRI="http://ontologydesignpatterns.org/opla#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#attributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#used"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityWithProvenance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProvenanceActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatedBy"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#EntityWithProvenance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#attributedTo"/>
+            <Class IRI="#Agent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityWithProvenance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generatedBy"/>
+            <Class IRI="#ProvenanceActivity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityWithProvenance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#wasDerivedFrom"/>
+            <Class IRI="#EntityWithProvenance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProvenanceActivity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Agent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProvenanceActivity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#used"/>
+            <Class IRI="#EntityWithProvenance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#attributedTo"/>
+            <Class IRI="#Agent"/>
+        </ObjectAllValuesFrom>
+        <Class IRI="#EntityWithProvenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generatedBy"/>
+            <Class IRI="#ProvenanceActivity"/>
+        </ObjectAllValuesFrom>
+        <Class IRI="#EntityWithProvenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#performedBy"/>
+            <Class IRI="#Agent"/>
+        </ObjectAllValuesFrom>
+        <Class IRI="#ProvenanceActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#used"/>
+            <Class IRI="#EntityWithProvenance"/>
+        </ObjectAllValuesFrom>
+        <Class IRI="#ProvenanceActivity"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#attributedTo"/>
+        <Class IRI="#EntityWithProvenance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#EntityWithProvenance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performedBy"/>
+        <Class IRI="#ProvenanceActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#used"/>
+        <Class IRI="#ProvenanceActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <Class IRI="#EntityWithProvenance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#attributedTo"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#ProvenanceActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performedBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#used"/>
+        <Class IRI="#EntityWithProvenance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasDerivedFrom"/>
+        <Class IRI="#EntityWithProvenance"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

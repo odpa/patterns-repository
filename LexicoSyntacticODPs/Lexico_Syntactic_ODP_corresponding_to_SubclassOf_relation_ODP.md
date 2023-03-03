@@ -1,23 +1,20 @@
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Lexico Syntactic ODPs corresponding to SubclassOf relation ODP  |
-|  Language  |  English  |
-|  Also known as  |  LSP-SC-EN  |
-|  Intent  |  Recurrent expressions in English to state the relation holding between a class and its sublclasses  |
-|  Solution description  |  The set of Lexico-Syntactic ODPs included here have a direct correspondence to the Logical ODP for modelling "SubclassOf relation", described in the Technical report D5.1.1, NeOn project Deliverable (see Web Reference below).  |
-|  Description of the correspondence relation between the LSPs and the ODPs  |  one LSP to one ODP  |
-|  Related ODP(s)  |  |
-|  Web reference  | [http://www.neon-project.org/nw/Deliverables](http://www.neon-project.org/nw/Deliverables "http://www.neon-project.org/nw/Deliverables")  |
-|  Author(s)  |  Elena Montiel-Ponsoda, Guadalupe Aguado de Cea, Mari Carmen Suárez-Figueroa, Asunción Gómez-Pérez  |
-|  Submitted by  | [Elena Montiel-Ponsoda](http://ontologydesignpatterns.org/wiki/index.php?title=User:Elena_Montiel-Ponsoda&action=edit&redlink=1 "User:Elena Montiel-Ponsoda (not yet written)")  |
-
+|  Name |  Lexico Syntactic ODPs corresponding to SubclassOf relation ODP |
+|  Language |  English |
+|  Also known as |  LSP-SC-EN |
+|  Intent |  Recurrent expressions in English to state the relation holding between a class and its sublclasses |
+|  Solution description |  The set of Lexico-Syntactic ODPs included here have a direct correspondence to the Logical ODP for modelling "SubclassOf relation", described in the Technical report D5.1.1, NeOn project Deliverable (see Web Reference below). |
+|  Description of the correspondence relation between the LSPs and the ODPs |  one LSP to one ODP |
+|  Related ODP(s) |  |
+|  Web reference | [http://www.neon-project.org/nw/Deliverables](http://www.neon-project.org/nw/Deliverables "http://www.neon-project.org/nw/Deliverables") |
+|  Author(s) |  Elena Montiel-Ponsoda, Guadalupe Aguado de Cea, Mari Carmen Suárez-Figueroa, Asunción Gómez-Pérez |
+|  Submitted by | [Elena Montiel-Ponsoda](http://ontologydesignpatterns.org/wiki/index.php?title=User:Elena_Montiel-Ponsoda&action=edit&redlink=1 "User:Elena Montiel-Ponsoda (not yet written)") |
 
 
   
@@ -25,20 +22,10 @@
 
 
 
-
-# 
-
- Cases
+#  Cases
 
 
-
-_The
- __Lexico Syntactic ODP corresponding to SubclassOf relation ODP__ 
- Lexico-Syntactic ODP includes the following cases (see also
- [abbreviations and symbols used in LSP Formalization](../Community/LSPSymbols.md "Community:LSPSymbols") 
- ):_ 
-
-
+_The __Lexico Syntactic ODP corresponding to SubclassOf relation ODP__ Lexico-Syntactic ODP includes the following cases (see also [abbreviations and symbols used in LSP Formalization](../Community/LSPSymbols.md "Community:LSPSymbols")):_
 
 
   
@@ -48,15 +35,13 @@ _The
 
 
 
-
-__NL Formulation__ 
+__NL Formulation__
 
 
 
 * An orphan drug is a type of drug.* Odometry, speedometry and GPS are types of sensors.
 
-
-__LSP Formalization__ 
+__LSP Formalization__
 
 
 
@@ -66,33 +51,25 @@ __LSP Formalization__
 
 ```
 
-
-__Reusable JAPE code__ 
- :
- [SC\_1\_2.jape](./SC_1_2.jape "SC 1 2.jape") 
+__Reusable JAPE code__: [SC\_1\_2.jape](./SC_1_2.jape "SC 1 2.jape")
 
 
 
 
 
-
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[1](./Normalization@oldid=10071.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/1") 
- page_ 
+[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[1](./Normalization@oldid=10071.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/1") page_
 
 
 
 
 
-
-__NL Formulation__ 
+__NL Formulation__
 
 
 
 * Prefixes and suffixes are classified as affixes.
 
-
-__LSP Formalization__ 
+__LSP Formalization__
 
 
 
@@ -102,33 +79,25 @@ __LSP Formalization__
 
 ```
 
-
-__Reusable JAPE code__ 
- :
- [SC\_3.jape](./SC_3.jape "SC 3.jape") 
+__Reusable JAPE code__: [SC\_3.jape](./SC_3.jape "SC 3.jape")
 
 
 
 
 
-
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[2](../Adrian_Walker_2/Adrian_Walker_2.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/2") 
- page_ 
+[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[2](../Adrian_Walker_2/Adrian_Walker_2.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/2") page_
 
 
 
 
 
-
-__NL Formulation__ 
+__NL Formulation__
 
 
 
 * Thyroid medicines belong to the general group of hormone medicines.* Starfish fall into the class Asteroidea.
 
-
-__LSP Formalization__ 
+__LSP Formalization__
 
 
 
@@ -138,33 +107,25 @@ __LSP Formalization__
 
 ```
 
-
-__Reusable JAPE code__ 
- :
- [SC\_3.jape](./SC_3.jape "SC 3.jape") 
+__Reusable JAPE code__: [SC\_3.jape](./SC_3.jape "SC 3.jape")
 
 
 
 
 
-
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[3](./NegativePropertyAssertions@oldid=5903.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/3") 
- page_ 
+[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[3](./NegativePropertyAssertions@oldid=5903.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/3") page_
 
 
 
 
 
-
-__NL Formulation__ 
+__NL Formulation__
 
 
 
 * There are several kinds of memory: fast, expensive, short term memory, and long-term memory.
 
-
-__LSP Formalization__ 
+__LSP Formalization__
 
 
 
@@ -174,33 +135,25 @@ There are QUAN CN-CATV NP<superclass> PARA [(NP<subclass>,)* and] NP<subclass>
 
 ```
 
-
-__Reusable JAPE code__ 
- :
- [SC\_4.jape](./SC_4.jape "SC 4.jape") 
+__Reusable JAPE code__: [SC\_4.jape](./SC_4.jape "SC 4.jape")
 
 
 
 
 
-
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[4](./ConceptTerms@oldid=5714.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/4") 
- page_ 
+[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[4](./ConceptTerms@oldid=5714.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/4") page_
 
 
 
 
 
-
-__NL Formulation__ 
+__NL Formulation__
 
 
 
 * Some examples of peripherals are keyboards, mice, monitors, printers, scanners, disk and tape drives, microphones, speakers, joysticks, plotters and cameras.* Types of criteria for assessing applications are: quality, safety and efficacy.
 
-
-__LSP Formalization__ 
+__LSP Formalization__
 
 
 
@@ -210,50 +163,29 @@ __LSP Formalization__
 
 ```
 
-
-__Reusable JAPE code__ 
- :
- [SC\_5.jape](./SC_5.jape "SC 5.jape") 
+__Reusable JAPE code__: [SC\_5.jape](./SC_5.jape "SC 5.jape")
 
 
 
 
 
-
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[5](./Classification@oldid=2375.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/5") 
- page_ 
+[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[5](./Classification@oldid=2375.md "Submissions:Lexico Syntactic ODP corresponding to SubclassOf relation ODP/5") page_
 
 
 
-
-# 
-
- Additional information
+#  Additional information
 
 
-
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Lexico Syntactic ODP corresponding to SubclassOf relation ODP__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8973__ 
- ) takes in account the reviews: none
- 
+__Reviews about Lexico Syntactic ODP corresponding to SubclassOf relation ODP__
+There is no review about this proposal.
+This revision (revision ID __8973__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Lexico_Syntactic_ODP_corresponding_to_SubclassOf_relation_ODP&action=evaluation")
 
 
 
@@ -263,19 +195,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Lexico Syntactic ODP corresponding to SubclassOf relation ODP__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Lexico Syntactic ODP corresponding to SubclassOf relation ODP__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -285,7 +210,4 @@ __Modeling issues about Lexico Syntactic ODP corresponding to SubclassOf relatio
 
 
 
-
-# 
-
- References
+#  References

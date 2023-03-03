@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/rtmsmapping.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/rtmsmapping.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:hasIntent>to represent mappings between FSDAS application ontology network, and RTMS ontologies</cpannotationschema:hasIntent>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Aldo Gangemi</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:ID="RTMS_Code">
+    <rdfs:label xml:lang="en">RTMS_Code</rdfs:label>
+    <rdfs:comment>Any code RTMS relational database that is linked from the FIGIS XML.
+For species, it can be possibly mapped to fi:FAO3AlphaCode, fi:FAOTaxonomicCode, or fi:ISSCAAPCode</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasRTMS_Code">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="#RTMS_Code"/>
+    <rdfs:label xml:lang="en">has RTMS_Code</rdfs:label>
+  </owl:ObjectProperty>
+</rdf:RDF>

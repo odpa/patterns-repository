@@ -9,6 +9,7 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [Collection.md](./Collection.md)  
 [Collectionentity.jpg](./Collectionentity.jpg)  
+[collectionentity.owl](./collectionentity.owl)  
 [cpannotationschema.owl](./cpannotationschema.owl)  
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  

@@ -10,6 +10,7 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [aquaticresources.owl](./aquaticresources.owl)  
 [ClimaticZone.md](./ClimaticZone.md)  
+[climaticzone.owl](./climaticzone.owl)  
 [cpannotationschema.owl](./cpannotationschema.owl)  
 [index.md](./index.md)  
 [observation.owl](./observation.owl)  

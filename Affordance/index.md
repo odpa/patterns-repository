@@ -10,5 +10,6 @@ title: ODPA Patterns
 [20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [Affordance.md](./Affordance.md)  
+[affordance.owl](./affordance.owl)  
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  

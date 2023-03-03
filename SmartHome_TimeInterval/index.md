@@ -9,3 +9,4 @@ title: ODPA Patterns
 [20px-DatatypeProperty.gif](./20px-DatatypeProperty.gif)  
 [index.md](./index.md)  
 [SmartHome_TimeInterval.md](./SmartHome_TimeInterval.md)  
+[time.owl](./time.owl)  

@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class by attribute value  |
-|  Also known as  |  |
-|  Author(s)  |  Francois Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class by attribute value |
+|  Also known as |  |
+|  Author(s) |  Francois Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  |  |
-|  Alignment problem addressed  |  A class in one ontology is equivalent to the subclass of an ontology in a second  ontology of exactly those instances which have a specified property value.  |
-|  Alignment solution  |  This pattern establishes a mapping between a class/property/property-value combination in one ontology and a class in another. This pattern is agnostic as to whether the mapping is unidirectional or bidirectional direction of the mapping can be achieved through combination of the pattern with the equivalent classes or class subsumption correspondence patterns.  |
-|  Alignment workflow  |  The scope of a class in one ontology is narrower than the scope of a class  in the other ontology. Both scopes can be matched by restricting one class to those instances having a particular value for a certain property.  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) |  |
+|  Alignment problem addressed |  A class in one ontology is equivalent to the subclass of an ontology in a secondontology of exactly those instances which have a specified property value. |
+|  Alignment solution |  This pattern establishes a mapping between a class/property/property-value combination in one ontology and a class in another. This pattern is agnostic as to whether the mapping is unidirectional or bidirectional direction of the mapping can be achieved through combination of the pattern with the equivalent classes or class subsumption correspondence patterns. |
+|  Alignment workflow |  The scope of a class in one ontology is narrower than the scope of a classin the other ontology. Both scopes can be matched by restricting one class to those instances having a particular value for a certain property. |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  Example in EDOAL: ```<Cell> <entity1>  <Class>   <and>    <Class rdf:about="vin:Vin">   </and>   <and>    <AttributeValueCondition>     <onAttribute>      <Property rdf:about="vin:terroir"/>     </onAttribute>     <comparator>xsd:Equal</comparator>     <value>geo:Bordelais</value>    </AttributeValueCondition>   </and>  </Class> </entity1> <entity2>  <Class rdf:about="wine:BordeauxWine"/> </entity2></Cell>``` |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Solution example |  Example in EDOAL:```<Cell> <entity1>  <Class>   <and>    <Class rdf:about="vin:Vin">   </and>   <and>    <AttributeValueCondition>     <onAttribute>      <Property rdf:about="vin:terroir"/>     </onAttribute>     <comparator>xsd:Equal</comparator>     <value>geo:Bordelais</value>    </AttributeValueCondition>   </and>  </Class> </entity1> <entity2>  <Class rdf:about="wine:BordeauxWine"/> </entity2></Cell>``` |
+|  Consequences |  |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence")  , [Submissions:Class subsumption](../Class_subsumption/Class_subsumption.md "Submissions:Class subsumption")  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence"), [Submissions:Class subsumption](../Class_subsumption/Class_subsumption.md "Submissions:Class subsumption") |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class by attribute value__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class by attribute value__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class by attribute value__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8958__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class by attribute value__
+There is no review about this proposal.
+This revision (revision ID __8958__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_value&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_value&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_value&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_attribute_value&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class by attribute value__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class by attribute value__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class by attribute value__
 
 
 
-
-# 
-
- References
+#  References

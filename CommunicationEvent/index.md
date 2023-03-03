@@ -10,4 +10,5 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [CommunicationEvent.jpg](./CommunicationEvent.jpg)  
 [CommunicationEvent.md](./CommunicationEvent.md)  
+[CommunicationEvent.owl](./CommunicationEvent.owl)  
 [index.md](./index.md)  

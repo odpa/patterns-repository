@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#"
+     xml:base="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP">
+        <cpannotationschema:scenarios>Some examples of instantiation of the BornDigitalArchives ODP are:
+  1. “Series A has part file B.”
+  2. “Fonds C has part Series A”
+  3. “File D has creator John Smith”</cpannotationschema:scenarios>
+        <cpannotationschema:coversRequirements>What are the main entities (units) that compose born digital archives? These are fonds, series, files and items.
+What is the hierarchy of units within a born digital archive? Fonds composed from series or files, series composed from files and files composed from items.
+Who is the creator of an archive? The creator is entity of type foaf:Agent.</cpannotationschema:coversRequirements>
+        <cpannotationschema:hasConsequences>The design pattern is expected to facilitate the creation of domain ontologies related to Born Digital Archives that can be exploited in numerous fields. A well-established, comprehensible pattern will prove to be advantageous.</cpannotationschema:hasConsequences>
+        <cpannotationschema:hasIntent>The pattern intends to model the domain of born digital archives.</cpannotationschema:hasIntent>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#hasCreator">
+        <rdfs:label>has creator</rdfs:label>
+        <rdfs:comment>Indicates the creator of a unit.</rdfs:comment>
+        <rdfs:range rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Creator"/>
+        <rdfs:domain rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#hasPart">
+        <rdfs:label>has part</rdfs:label>
+        <rdfs:comment>Indicates that a unit includes another unit.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+        <rdfs:range rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Creator -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Creator">
+        <rdfs:label>Creator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>The creator of a born digital archive unit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#File -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#File">
+        <rdfs:label>File</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+        <rdfs:comment>An organized unit of documents grouped together either for current use by the creator or in the process of archival arrangement, because they relate to the same subject, activity, or transaction. A file is usually the basic unit within a record series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Fonds -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Fonds">
+        <rdfs:label>Fonds</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+        <rdfs:comment>Fonds:
+The whole of the records, regardless of form or medium, organically created and/or accumulated and used by a particular person, family, or corporate body in the course of that creator&apos;s activities and functions.</rdfs:comment>
+        <rdfs:comment>Sub-fonds:
+A subdivision of a fonds containing a body of related records corresponding to administrative subdivisions in the originating agency or organization or, when that is not possible, to geographical, chronological, functional, or similar groupings of the material itself. When the creating body has a complex hierarchical structure, each sub-fonds has as many subordinate sub-fonds as are necessary to reflect the levels of the hierarchical structure of the primary subordinate administrative unit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Item -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Item">
+        <rdfs:label>Item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+        <rdfs:comment>The smallest intellectually indivisible archival unit, e.g., a letter, memorandum, report, photograph, sound recording.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Series -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Series">
+        <rdfs:label>Series</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit"/>
+        <rdfs:comment>Documents arranged in accordance with a filing system or maintained as a unit because they result from the same accumulation or filing process, or the same activity; have a particular form; or because of some other relationship arising out of their creation, receipt, or use. A series is also known as a records series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit -->
+
+    <owl:Class rdf:about="http://mklab.iti.gr/pericles/BornDigitalArchives_ODP#Unit">
+        <rdfs:label>Unit</rdfs:label>
+        <rdfs:comment>An entity that participates in the assembly of a born digital archive.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

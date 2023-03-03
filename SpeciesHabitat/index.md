@@ -12,3 +12,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Specieshabitat.jpg](./Specieshabitat.jpg)  
 [SpeciesHabitat.md](./SpeciesHabitat.md)  
+[specieshabitat.owl](./specieshabitat.owl)  

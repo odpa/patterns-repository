@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="MediaWiki 1.13.2" />
+		<meta name="robots" content="noindex,nofollow" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/wiki/extensions/SemanticFormsAddons/skins/SFA_main.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/wiki/extensions/SemanticMediaWiki/skins/SMW_custom.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/wiki/extensions/EvaluationWikiflow/skins/main.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="https://raw.githubusercontent.com/yui/yui2/master/build/fonts/fonts-min.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="https://raw.githubusercontent.com/yui/yui2/master/build/tabview/assets/skins/sam/tabview.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="/wiki/extensions/HeaderTabs/skins/headertabs.css" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="Odp (en)" />
+		<link rel="alternate" type="application/rss+xml" title="Odp RSS Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="Odp Atom Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Database error - Odp</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wiki/skins/common/shared.css?164";
+			@import "/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css?164" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/wiki/skins";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/wiki";
+var wgScript = "/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://ontologydesignpatterns.org";
+var wgCanonicalNamespace = "Special";
+var wgCanonicalSpecialPageName = "ClickHandler";
+var wgNamespaceNumber = -1;
+var wgPageName = "Special:ClickHandler";
+var wgTitle = "ClickHandler";
+var wgAction = "view";
+var wgArticleId = 0;
+var wgIsArticle = false;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = 0;
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/wiki/skins/common/wikibits.js?164"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+<script type="text/javascript">/*<![CDATA[*/
+		
+		sfaCreateRedAsterisk=function(){
+			var redAsterisk=document.createElement('SPAN');
+			redAsterisk.setAttribute('class','sfaRedAsterisk');
+			redAsterisk.setAttribute('className','sfaRedAsterisk');
+			redAsterisk.setAttribute('title','This is a mandatory field');
+			redAsterisk.innerHTML='&#x2a;';
+			return redAsterisk;	
+		}
+		sfaCreateAdvise=function(){
+			var advise = document.createElement('DIV');
+			advise.setAttribute('class','sfaMandatoryAdvise');
+			advise.setAttribute('className','sfaMandatoryAdvise');
+			advise.innerHTML='Mandatory fields are marked by: &#x2a;';
+			return advise;	
+		}
+		sfaSetRedAsteriskForMandatoryFields = function () {
+			
+			applyRedAsterisk = function ( fields ) {
+				var hasIt=false;
+				for ( var ix in fields ) {
+					if( ! fields[ix].getAttribute ) continue;
+					
+					var type = fields[ix].getAttribute('type');
+					if( type && type.toLowerCase() == 'checkbox' ) continue;
+					var cls = fields[ix].getAttribute('class');
+					cls = cls ? cls : fields[ix].getAttribute('className');
+					
+					if( cls && cls.indexOf('mandatoryField') != -1 ){
+						hasIt=true;
+						fields[ix].parentNode.insertBefore(sfaCreateRedAsterisk(),fields[ix].nextSibling);
+					}
+				}
+				return hasIt;			
+			}
+			
+			var frms = document.getElementsByTagName( 'FORM' );
+			for(var ix in frms){
+				
+				if( ! frms[ix].getElementsByTagName ) continue;
+				frms[ix].hasAsterisk = false;
+				hasIt=new Array();
+				hasIt[0] = applyRedAsterisk( frms[ix].getElementsByTagName('SELECT') );
+				hasIt[1] = applyRedAsterisk( frms[ix].getElementsByTagName('INPUT') );
+				hasIt[2] = applyRedAsterisk( frms[ix].getElementsByTagName('TEXTAREA') );
+				hasIt[3] = applyRedAsterisk( frms[ix].getElementsByTagName('SPAN') );
+				frms[ix].hasAsterisk = (hasIt[0]||hasIt[1]||hasIt[2]||hasIt[3]) ?true:false;
+				
+				if(frms[ix].hasAsterisk && frms[ix].insertBefore) 
+					frms[ix].insertBefore(sfaCreateAdvise(), frms[ix].firstChild);
+			}
+		}
+		window.onloadFuncts.push(sfaSetRedAsteriskForMandatoryFields);
+/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/
+
+	sfaRenderListboxBag=function(_e){
+		var bag = document.createElement('span');
+		bag.setAttribute('class','sfaListboxBag');
+		bag.setAttribute('className','sfaListboxBag');
+		bag.setAttribute('id','sfaListboxBag'+_e.getAttribute('id'));
+		bag.innerHTML=sfaGetListboxValues(_e);
+		document.getElementById(_e.getAttribute('id')).parentNode.insertBefore(bag,_e);
+	}
+	sfaUpdateListboxBag=function(_e){
+		if(_e == null) _e = this;
+		document.getElementById('sfaListboxBag'+_e.getAttribute('id')).innerHTML=sfaGetListboxValues(_e);
+	}
+	sfaGetListboxValues=function(elem){
+		var svalues = "";
+		for(var opt in elem.options){
+			if(elem.options[opt] && elem.options[opt].selected == true) {
+				if(svalues!="") svalues +=", "
+				svalues +='<span id="sfaListboxBag'+ elem.options[opt].value +'">' + elem.options[opt].innerHTML + '</span>';
+			}
+		}
+		var msg = '<br><span class="sfaInlineMsg">CTRL+CLICK to add/remove elements:</span>';
+		return ( (svalues=='')? 'Nothing selected' : svalues ) + msg;
+	}
+ 	sfaInitListbox=function(){
+	 	var listboxes=document.getElementsByTagName('SELECT');
+	 	for(var ix in listboxes){
+	 		if(listboxes[ix] && listboxes[ix].getAttribute && (listboxes[ix].getAttribute('multiple')!=null)  && (listboxes[ix].multiple && listboxes[ix].multiple==true)){
+	 			sfaRenderListboxBag(listboxes[ix]);
+				listboxes[ix].setAttribute('onchange','sfaUpdateListboxBag(this)');
+				if( listboxes[ix].attachEvent )
+					listboxes[ix].onchange=sfaUpdateListboxBag;
+	 		}
+	 	}
+ 	}
+ 	window.onloadFuncts.push(sfaInitListbox);
+/*]]>*/</script>		<script type="text/javascript" src="/wiki/extensions/SemanticMediaWiki/skins/SMW_tooltip.js"></script>
+		<script type="text/javascript" src="/wiki/skins/common/ajax.js?164"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/yui/yui2/master/build/utilities/utilities.js"></script>		<script type="text/javascript" src="https://raw.githubusercontent.com/yui/yui2/master/build/tabview/tabview-min.js"></script>		<script type="text/javascript" src="https://raw.githubusercontent.com/yui/yui2/master/build/event/event-min.js"></script>		<script type="text/javascript" src="https://raw.githubusercontent.com/yui/yui2/master/build/history/history-min.js"></script>		<script type="text/javascript" src="/wiki/extensions/HeaderTabs/skins/headertabs.js"></script>		<script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns--1 ltr page-Special_ClickHandler">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Database error</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Odp</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			A database query syntax error has occurred.
+This may indicate a bug in the software.
+The last attempted database query was:
+<blockquote><tt>INSERT  INTO `cc_logs` (ccl_ip,ccl_username,ccl_link,ccl_internal,ccl_from_page_id,ccl_log_message,ccl_timestamp) VALUES ('173.224.199.127','173.224.199.127','http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl','',NULL,NULL,'20230303174136')</tt></blockquote>
+from within function "<tt>CCClickHandler::saveInDB</tt>".
+MySQL returned error "<tt>1048: Column 'ccl_from_page_id' cannot be null (localhost)</tt>".<div class="printfooter">
+Retrieved from "<a href="http://ontologydesignpatterns.org/wiki/Special:ClickHandler">http://ontologydesignpatterns.org/wiki/Special:ClickHandler</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-special" class="selected"><a href="/wiki/index.php?title=Special:ClickHandler&amp;link=http://descartes-core.org/ontologies/activities/1.0/ActivityPattern.owl" title="This is a special page, you cannot edit the page itself">Special:ClickHandler</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Special:ClickHandler" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wiki/images/ODP_Logo_LEGO_Bricks_155.png);" href="/wiki/Main_Page" title="Visit the Main Page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Main-page"><a href="/wiki/Ontology_Design_Patterns_._org_%28ODP%29">Main page</a></li>
+				<li id="n-ODPA"><a href="/wiki/ODPA">ODPA</a></li>
+				<li id="n-List-patterns"><a href="/wiki/Community:ListPatterns">List patterns</a></li>
+				<li id="n-Pattern-types"><a href="/wiki/OPTypes">Pattern types</a></li>
+				<li id="n-Modeling-Issues"><a href="/wiki/Community:Main">Modeling Issues</a></li>
+				<li id="n-Domains"><a href="/wiki/Community:Domain">Domains</a></li>
+				<li id="n-Training"><a href="/wiki/Training:Main">Training</a></li>
+				<li id="n-Events"><a href="/wiki/Odp:Events">Events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Contribute'>
+		<h5>Contribute</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Submit-a-pattern"><a href="/wiki/Submissions:SubmitAPattern">Submit a pattern</a></li>
+				<li id="n-Submit-an-exemplary-ontology"><a href="/wiki/Ontology:Main">Submit an exemplary ontology</a></li>
+				<li id="n-Post-a-modeling-issue"><a href="/wiki/Community:PostModelingIssue">Post a modeling issue</a></li>
+				<li id="n-Review-a-pattern"><a href="/wiki/Reviews:PostReview">Review a pattern</a></li>
+				<li id="n-Feedback-about-the-portal"><a href="/wiki/Feedback:Main">Feedback about the portal</a></li>
+				<li id="n-Request-an-ODP-account"><a href="/wiki/Special:RequestAccount">Request an ODP account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Help'>
+		<h5>Help</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-About-ODP"><a href="/wiki/Odp:About">About ODP</a></li>
+				<li id="n-What-is-a-pattern.3F"><a href="/wiki/Odp:WhatIsAPattern">What is a pattern?</a></li>
+				<li id="n-What-is-an-exemplary-ontology.3F"><a href="/wiki/Odp:Exemplary_ontology">What is an exemplary ontology?</a></li>
+				<li id="n-How-to-post-a-pattern"><a href="/wiki/Submissions:HowToPostAPattern">How to post a pattern</a></li>
+				<li id="n-Training"><a href="/wiki/Training:Main">Training</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Catalogues'>
+		<h5>Catalogues</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Content-ODPs"><a href="/wiki/Submissions:ContentOPs">Content ODPs</a></li>
+				<li id="n-Reengineering-ODPs"><a href="/wiki/Submissions:ReengineeringODPs">Reengineering ODPs</a></li>
+				<li id="n-Alignment-ODPs"><a href="/wiki/Submissions:AlignmentODPs">Alignment ODPs</a></li>
+				<li id="n-Logical-ODPs"><a href="/wiki/Submissions:LogicalODPs">Logical ODPs</a></li>
+				<li id="n-Architectural-ODPs"><a href="/wiki/Submissions:ArchitecturalODPs">Architectural ODPs</a></li>
+				<li id="n-Lexico-Syntactic-ODPs"><a href="/wiki/Submissions:LexicoSyntacticODPs">Lexico Syntactic ODPs</a></li>
+				<li id="n-Exemplary-Ontologies"><a href="/wiki/Ontology:Main">Exemplary Ontologies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Quality_Committee'>
+		<h5>Quality Committee</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Post-a-Review"><a href="/wiki/Reviews:PostReview">Post a Review</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Content_OP_publishers'>
+		<h5>Content OP publishers</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Create-a-catalogue-entry"><a href="/wiki/Catalogue:CreateEntry">Create a catalogue entry</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Editorial_Board'>
+		<h5>Editorial Board</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Assign-review"><a href="/wiki/Special:AssignReview">Assign review</a></li>
+				<li id="n-Waiting-for-review"><a href="/wiki/Special:WaitingForReview">Waiting for review</a></li>
+				<li id="n-Assigned-reviews"><a href="/wiki/Special:AssignedReviews">Assigned reviews</a></li>
+				<li id="n-Development"><a href="/wiki/Odp:Development">Development</a></li>
+				<li id="n-Post-news"><a href="/wiki/Odp:News">Post news</a></li>
+				<li id="n-Private-area"><a href="/wiki/Private:Main">Private area</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-Administrator'>
+		<h5>Administrator</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Template-List"><a href="/wiki/Special:Templates">Template List</a></li>
+				<li id="n-Form-list"><a href="/wiki/Special:Forms">Form list</a></li>
+				<li id="n-Create-a-category"><a href="/wiki/Special:CreateCategory">Create a category</a></li>
+				<li id="n-Create-a-property"><a href="/wiki/Special:CreateProperty">Create a property</a></li>
+				<li id="n-Create-a-template"><a href="/wiki/Special:CreateTemplate">Create a template</a></li>
+				<li id="n-Create-a-form"><a href="/wiki/Special:CreateForm">Create a form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-WOP'>
+		<h5>WOP</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-ODPA"><a href="/wiki/ODPA">ODPA</a></li>
+				<li id="n-WOP-main-page"><a href="/wiki/WOP:Main">WOP main page</a></li>
+				<li id="n-WOP-2021"><a href="/wiki/WOP:2021">WOP 2021</a></li>
+				<li id="n-WOP-2020"><a href="/wiki/WOP:2020">WOP 2020</a></li>
+				<li id="n-WOP-2019"><a href="/wiki/WOP:2019">WOP 2019</a></li>
+				<li id="n-WOP-2018"><a href="/wiki/WOP:2018">WOP 2018</a></li>
+				<li id="n-WOP-2017"><a href="/wiki/WOP:2017">WOP 2017</a></li>
+				<li id="n-WOP-2016"><a href="/wiki/WOP:2016">WOP 2016</a></li>
+				<li id="n-WOP-2015"><a href="/wiki/WOP:2015">WOP 2015</a></li>
+				<li id="n-WOP-2014"><a href="/wiki/WOP:2014">WOP 2014</a></li>
+				<li id="n-WOP-2013"><a href="/wiki/WOP:2013">WOP 2013</a></li>
+				<li id="n-WOP-2012"><a href="/wiki/WOP:2012">WOP 2012</a></li>
+				<li id="n-WOP-2010"><a href="/wiki/WOP:2010">WOP 2010</a></li>
+				<li id="n-WOP-2009"><a href="/wiki/WOP:2009">WOP 2009</a></li>
+				<li id="n-ODP-portal"><a href="/wiki/Ontology_Design_Patterns_._org_%28ODP%29">ODP portal</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Odp [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+<li id="t-upload"><a href="/wiki/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+<li><a href="/wiki/index.php?title=Special:EmailArticle&ea-title=Special:ClickHandler">Send by email</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+				<li id="privacy"><a href="/wiki/Odp:Privacy_policy" title="Odp:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/wiki/Odp:About" title="Odp:About">About Odp</a></li>
+				<li id="disclaimer"><a href="/wiki/Odp:General_disclaimer" title="Odp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.214 secs. --></body></html>

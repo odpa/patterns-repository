@@ -1,0 +1,118 @@
+@prefix : <http://daselab.org/WinstonPartWhole#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://daselab.org/WinstonPartWhole> .
+
+<http://daselab.org/WinstonPartWhole> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://daselab.org/WinstonPartWhole#part-of
+:part-of rdf:type owl:ObjectProperty .
+
+
+###  http://daselab.org/WinstonPartWhole#po-component
+:po-component rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :part-of ;
+              rdf:type owl:AsymmetricProperty ;
+              owl:propertyChainAxiom ( :po-component
+                                       :po-component
+                                     ) .
+
+
+###  http://daselab.org/WinstonPartWhole#po-feature
+:po-feature rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :part-of ;
+            rdf:type owl:AsymmetricProperty ;
+            owl:propertyChainAxiom ( :po-feature
+                                     :po-feature
+                                   ) .
+
+
+###  http://daselab.org/WinstonPartWhole#po-member
+:po-member rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :part-of ;
+           rdf:type owl:AsymmetricProperty ;
+           owl:propertyChainAxiom ( :po-member
+                                    :po-member
+                                  ) .
+
+
+###  http://daselab.org/WinstonPartWhole#po-place
+:po-place rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :part-of ;
+          rdf:type owl:AsymmetricProperty ;
+          owl:propertyChainAxiom ( :po-place
+                                   :po-place
+                                 ) .
+
+
+###  http://daselab.org/WinstonPartWhole#po-portion
+:po-portion rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :part-of ;
+            rdf:type owl:AsymmetricProperty ;
+            owl:propertyChainAxiom ( :po-portion
+                                     :po-portion
+                                   ) .
+
+
+###  http://daselab.org/WinstonPartWhole#po-stuff
+:po-stuff rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :part-of ;
+          rdf:type owl:AsymmetricProperty ;
+          owl:propertyChainAxiom ( :po-stuff
+                                   :po-stuff
+                                 ) .
+
+
+###  http://daselab.org/WinstonPartWhole#spatially-located-in
+:spatially-located-in rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdf:type owl:ReflexiveProperty ;
+                      owl:propertyChainAxiom ( :po-component
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :po-feature
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :po-member
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :po-place
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :po-portion
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :po-stuff
+                                               :spatially-located-in
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-component
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-feature
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-member
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-place
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-portion
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :po-stuff
+                                             ) ,
+                                             ( :spatially-located-in
+                                               :spatially-located-in
+                                             ) .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

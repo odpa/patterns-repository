@@ -12,5 +12,6 @@ title: ODPA Patterns
 [place.owl](./place.owl)  
 [sensing.owl](./sensing.owl)  
 [situation.owl](./situation.owl)  
+[smartenv.owl](./smartenv.owl)  
 [SmartHome.md](./SmartHome.md)  
 [time.owl](./time.owl)  

@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class Union  |
-|  Also known as  |  |
-|  Author(s)  |  François Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class Union |
+|  Also known as |  |
+|  Author(s) |  François Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  |  |
-|  Alignment problem addressed  |  A class denoted in one ontology is the union of two classes in the second ontology  |
-|  Alignment solution  |  This pattern establishes a correspondence between a pair of classes in the first ontology and a single class in the other. This pattern is agnostic as to whether the correspondence is unidirectional or bidirectional. Direction of the correspondence can be achieved through combination of the pattern with the Class equivalence or Class Subsumption pattern.  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) |  |
+|  Alignment problem addressed |  A class denoted in one ontology is the union of two classes in the second ontology |
+|  Alignment solution |  This pattern establishes a correspondence between a pair of classes in the first ontology and a single class in the other. This pattern is agnostic as to whether the correspondence is unidirectional or bidirectional. Direction of the correspondence can be achieved through combination of the pattern with the Class equivalence or Class Subsumption pattern. |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  Exemple in the alignment language RDF/XML syntax: ```<Cell> <entity1>  <Class>   <or rdf:ParseType="Collection">    <Class rdf:about="O1:PersonBornInCanada"/>    <Class rdf:about="O1:PersonWithCanadianParent"/>   </or>  </Class> </entity1> <entity2>  <Class rdf:about="O2:CanadianCitizenByBirth"/> </entity2> <relation>equivalence</relation></Cell>``` |
-|  Consequences  |  A correspondence is established between the two classes  |
-
+|  Problem example |  |
+|  Solution example |  Exemple in the alignment language RDF/XML syntax:```<Cell> <entity1>  <Class>   <or rdf:ParseType="Collection">    <Class rdf:about="O1:PersonBornInCanada"/>    <Class rdf:about="O1:PersonWithCanadianParent"/>   </or>  </Class> </entity1> <entity2>  <Class rdf:about="O2:CanadianCitizenByBirth"/> </entity2> <relation>equivalence</relation></Cell>``` |
+|  Consequences |  A correspondence is established between the two classes |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence")  , [Submissions:Class subsumption](../Class_subsumption/Class_subsumption.md "Submissions:Class subsumption")  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence"), [Submissions:Class subsumption](../Class_subsumption/Class_subsumption.md "Submissions:Class subsumption") |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class Union__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class Union__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class Union__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8503__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class Union__
+There is no review about this proposal.
+This revision (revision ID __8503__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_Union&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_Union&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_Union&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_Union&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class Union__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class Union__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class Union__
 
 
 
-
-# 
-
- References
+#  References

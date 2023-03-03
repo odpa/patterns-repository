@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl">
+        <imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:isSpecializationOf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pattern extends both the SSN ontology and DUL. The extension is in the form of specialization of the following classes: http://purl.oclc.org/NET/ssnx/ssn#Deployment
+http://purl.oclc.org/NET/ssnx/ssn#SensingDevice
+http://purl.oclc.org/NET/ssnx/ssn#Device
+http://purl.oclc.org/NET/ssnx/ssn#System</cpannotationschema:isSpecializationOf>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are the nodes that are sending data to a given receiver?</cpannotationschema:coversRequirements>
+        <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern relies on both the SSN ontology and DUL in order to represent sensors and other techniqually needed objects to deploy a network in a smart home environment.
+
+The concept of Network is modeled in this pattern as a System (http://purl.oclc.org/NET/ssnx/ssn#System) whose constituents are NodeStations (subclass of Node which is in turn subsumed by the class http://purl.oclc.org/NET/ssnx/ssn#Device). Another subsumee of the Device class is the class Node describing more details about the content of each node station. Depending on their roles, nodes of a network are devided into types of node senders (whcih observe a phenomenon and send the data) and receivers (which receive the observation data).</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What is the receiving node of the given set of sending nodes?</cpannotationschema:coversRequirements>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Which types of nodes are available in a network?</cpannotationschema:coversRequirements>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#receivesDataFrom -->
+
+    <ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#receivesDataFrom">
+        <inverseOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#sendsDataTo"/>
+        <rdfs:domain rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode"/>
+        <rdfs:range rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#sendsDataTo -->
+
+    <ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#sendsDataTo">
+        <rdfs:domain rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode"/>
+        <rdfs:range rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#deployedSystem -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasDeployment -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#onPlatform -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode">
+        <rdfs:subClassOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Node"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#receivesDataFrom"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#ReceiverNodeStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode">
+        <rdfs:subClassOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Node"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#sendsDataTo"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SenderNodeStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Network -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Network">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SmartHomeDeployment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasConstituent"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A network which is a collection of Nodes</rdfs:comment>
+        <rdfs:label>Network</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Node -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Node">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode"/>
+                    <rdf:Description rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:subClassOf>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#ReceiverNodeStation"/>
+                    <rdf:Description rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SenderNodeStation"/>
+                </unionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Node"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConstituentOf"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Network"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#ReceiverNodeStation -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#ReceiverNodeStation">
+        <rdfs:subClassOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataReceiverNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SenderNodeStation -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SenderNodeStation">
+        <rdfs:subClassOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#NodeStation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#DataSenderNode"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SmartHomeDeployment -->
+
+    <Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#SmartHomeDeployment">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"/>
+                <someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Network.owl#Network"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Deployment -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Deployment"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Device -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Platform -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Platform"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#SensingDevice -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#System -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

@@ -8,6 +8,7 @@ title: ODPA Patterns
 [20px-Class.gif](./20px-Class.gif)  
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [ActingFor.md](./ActingFor.md)  
+[actingfor.owl](./actingfor.owl)  
 [COS.owl](./COS.owl)  
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  

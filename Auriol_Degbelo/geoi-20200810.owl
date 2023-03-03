@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://aurioldegbelo.github.io/geoi"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://aurioldegbelo.github.io/geoi">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2020/6/untitled-ontology-27#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="geoi" IRI="http://aurioldegbelo.github.io/geoi#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Auriol Degbelo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GeoInsight Content Design Pattern</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ontology design pattern for the annotation of geovisualization content</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Chart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cluster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Correlation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataPattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataView"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geovisualization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outlier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThematicLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trend"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="terms:Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#asGraphicalNote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#asMachineReadableDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endorsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#highlightsPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:spatial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:temporal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#asTextualDescription"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Chart"/>
+        <Class IRI="#DataView"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cluster"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Correlation"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataTable"/>
+        <Class IRI="#DataView"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distribution"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frequency"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geovisualization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#shows"/>
+            <Class IRI="#DataView"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geovisualization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#shows"/>
+            <Class IRI="#ThematicLayer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Map"/>
+        <Class IRI="#DataView"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outlier"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThematicLayer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponent"/>
+            <Class IRI="#DataView"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trend"/>
+        <Class IRI="#DataPattern"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Chart"/>
+        <Class IRI="#DataTable"/>
+        <Class IRI="#Map"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContentStatement"/>
+        <Class IRI="#Geovisualization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContentStatement"/>
+        <Class abbreviatedIRI="terms:Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DataView"/>
+        <Class IRI="#Geovisualization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DataView"/>
+        <Class IRI="#ThematicLayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SpatialRegion"/>
+        <Class IRI="#TemporalRegion"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#about"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#asGraphicalNote"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#asMachineReadableDescription"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endorsedBy"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#ThematicLayer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#highlightsPattern"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shows"/>
+        <Class IRI="#Geovisualization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:spatial"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="terms:temporal"/>
+        <Class IRI="#ContentStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#about"/>
+        <ObjectUnionOf>
+            <Class IRI="#DataView"/>
+            <Class IRI="#Geovisualization"/>
+            <Class IRI="#ThematicLayer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class abbreviatedIRI="terms:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endorsedBy"/>
+        <Class abbreviatedIRI="terms:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponent"/>
+        <Class IRI="#DataView"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#highlightsPattern"/>
+        <Class IRI="#DataPattern"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shows"/>
+        <ObjectUnionOf>
+            <Class IRI="#DataView"/>
+            <Class IRI="#ThematicLayer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:spatial"/>
+        <Class IRI="#SpatialRegion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="terms:temporal"/>
+        <Class IRI="#TemporalRegion"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#asTextualDescription"/>
+        <Class IRI="#ContentStatement"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#asTextualDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Chart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a data view that is neither a map nor a data table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cluster</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">group of similar items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContentStatement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">statement that summarizes interesting facts portrayed by a geovisualization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Correlation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">relationship between data dimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataPattern</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">high-level characteristic that is highlighted by a geovisualization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataTable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a row-column view of the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DataView</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a perspective on a geographic dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">extent and frequency of items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Frequency</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">how often items appear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Geovisualization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">an artifact whose visual properties encode geographic data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Map</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a data view that maintains spatial relationships explicitly; maps maintain the direct association between the physical space and the represented space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Outlier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">item that does not match a distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpatialRegion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A region of space. It may be specifed precisely (e.g. using geometries or a zoom level of a map), or vaguely (using a place name)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TemporalRegion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A region of time. It may be specified precisely using a timestamp/ time interval or vaguely using a temporal description in natural language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThematicLayer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a group of features that belong to the same class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trend</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">high-level change across a data dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#about</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">referent of a content statement (either a dataview, a geovisualization or a thematic layer)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#asMachineReadableDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">machine readable description (RDF) of a content statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#asTextualDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the textual description of a content statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#createdBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a property to relate a content statement to the agent that created it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endorsedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a property to relate a content statement to an agent that endorsed (i.e. recommended) it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComponent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">links a thematic layer to the dataviews that are part of it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#highlightsPattern</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">property that relates a content statement to a data pattern that it highlights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#shows</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">one of the perspectives on a dataset offered by a geovisualization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>terms:Agent</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">an entity that acts on a geovisualization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>terms:spatial</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">spatial region for which the content statement is valid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:spatial</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">spatialCoverage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>terms:temporal</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporal region for which the content statement is valid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>terms:temporal</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">temporalCoverage</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

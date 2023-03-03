@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#"
+     xml:base="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:isSpecializationOf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This pattern is a spacializayion of the GeoSPARQL ontology (http://www.opengis.net/ont/geosparql) in order to be used in the definition of spatial entities (e.g. places or physical objects) in a smart environment.</cpannotationschema:isSpecializationOf>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are the spatial entities (objects with geometry) in a smart home environment?</cpannotationschema:coversRequirements>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#eastOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#eastOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northEastOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northEastOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northWestOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#northWestOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southEastOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southEastOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southWestOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#southWestOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#westOf -->
+
+    <owl:ObjectProperty rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#westOf">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfContains -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfContains">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfCrosses -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfCrosses">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfDisjoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfDisjoint">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfEquals -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfEquals">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfIntersects -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfIntersects">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfOverlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfOverlaps">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfTouches -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfTouches">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin">
+        <rdfs:subPropertyOf rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#SmartHomeGeoFeature -->
+
+    <owl:Class rdf:about="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#SmartHomeGeoFeature">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasDirectionalRelation"/>
+                <owl:someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#SmartHomeGeoFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#hasSpatialRelation"/>
+                <owl:someValuesFrom rdf:resource="http://ecareathome-ontology.mpi.aass.oru.se/patterns/SmartHome_Geometry.owl#SmartHomeGeoFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

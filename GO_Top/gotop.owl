@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY gotop "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:gotop="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <cpannotationschema:scenarios rdf:datatype="&rdf;PlainLiteral">A &#39;template for synthesis of G-rich strand of telomere DNA activity&#39; must be part of a &#39;telomerase activity&#39;.</cpannotationschema:scenarios>
+        <cpannotationschema:scenarios rdf:datatype="&rdf;PlainLiteral">All &#39;templates for synthesis of G-rich strand of telomere DNA activity&#39; are &#39;molecular functions&#39;.</cpannotationschema:scenarios>
+        <cpannotationschema:hasConsequences rdf:datatype="&rdf;PlainLiteral">It allows to categorize gene-related types into three main types.
+It allows to represent parts of gene-related entities (transitively).
+It does not allow to represent the relationships between entities of different types.
+It does not say anything about disjointness of categories.</cpannotationschema:hasConsequences>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">This pattern is peculiar to the biomolecular domain, where types of entities, rather than specific instances, are the main focus of interest. As a result, the Gene Ontology, based on this top-level categories, is a huge TBox.</rdfs:comment>
+        <cpannotationschema:hasIntent rdf:datatype="&rdf;PlainLiteral">To represent types of gene-related entities and their parts.</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements rdf:datatype="&rdf;PlainLiteral">What are the possible most general supertypes for any type from the gene-related domain?</cpannotationschema:coversRequirements>
+        <cpannotationschema:coversRequirements rdf:datatype="&rdf;PlainLiteral">What entity is part of another entity in the gene-related domain?</cpannotationschema:coversRequirements>
+        <cpannotationschema:reengineeredFrom rdf:datatype="&rdf;PlainLiteral">http://purl.org/obo/owl/gene_ontology_edit</cpannotationschema:reengineeredFrom>
+        <cpannotationschema:extractedFrom rdf:datatype="&rdf;PlainLiteral">http://purl.org/obo/owl/gene_ontology_edit</cpannotationschema:extractedFrom>
+        <cpannotationschema:relatedCPs rdf:datatype="&rdf;PlainLiteral">http://www.ontologydesignpatterns.org/cp/owl/partof.owl can have this pattern as a specialization, if the three gene-related categories are considered as owl:subClassOf http://www.ontologydesignpatterns.org/cp/owl/partof.owl#Entity.</cpannotationschema:relatedCPs>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;isCloneOf"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasConsequences"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;scenarios"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;extractedFrom"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;coversRequirements"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasIntent"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;relatedCPs"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;reengineeredFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#partOf -->
+
+    <owl:ObjectProperty rdf:about="&gotop;partOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <cpannotationschema:isCloneOf>http://purl.org/obo/owl/obo#part_of</cpannotationschema:isCloneOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#All -->
+
+    <owl:Class rdf:about="&gotop;All">
+        <rdfs:comment>This term is the most general term possible</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#BiologicalProcess -->
+
+    <owl:Class rdf:about="&gotop;BiologicalProcess">
+        <rdfs:label xml:lang="en">biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&gotop;All"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <cpannotationschema:isCloneOf>http://purl.org/obo/owl/GO#GO_0008150</cpannotationschema:isCloneOf>
+        <rdfs:comment>Those processes specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#CellularComponent -->
+
+    <owl:Class rdf:about="&gotop;CellularComponent">
+        <rdfs:label xml:lang="en">cellular component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&gotop;All"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <cpannotationschema:isCloneOf>http://purl.org/obo/owl/GO#GO_0005575</cpannotationschema:isCloneOf>
+        <rdfs:comment>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#MolecularFunction -->
+
+    <owl:Class rdf:about="&gotop;MolecularFunction">
+        <rdfs:label xml:lang="en">molecular function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&gotop;All"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. Note that when this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <rdfs:comment>Elemental activities, such as catalysis or binding, describing the actions of a gene product at the molecular level. A given gene product may exhibit one or more molecular functions.</rdfs:comment>
+        <cpannotationschema:isCloneOf>http://purl.org/obo/owl/GO#GO_0003674</cpannotationschema:isCloneOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

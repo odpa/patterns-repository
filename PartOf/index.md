@@ -12,3 +12,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Partof.jpg](./Partof.jpg)  
 [PartOf.md](./PartOf.md)  
+[partof.owl](./partof.owl)  

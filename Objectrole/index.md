@@ -11,3 +11,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Objectrole.jpg](./Objectrole.jpg)  
 [Objectrole.md](./Objectrole.md)  
+[objectrole.owl](./objectrole.owl)  

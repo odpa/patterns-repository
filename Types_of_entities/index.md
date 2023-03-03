@@ -9,5 +9,6 @@ title: ODPA Patterns
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  
 [Typesofentities.jpg](./Typesofentities.jpg)  
+[typesofentities.owl](./typesofentities.owl)  
 [Types_of_entities.md](./Types_of_entities.md)  
 [Types_of_entitiesExampleDiagram.jpg](./Types_of_entitiesExampleDiagram.jpg)  

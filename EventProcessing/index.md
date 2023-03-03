@@ -11,4 +11,5 @@ title: ODPA Patterns
 [EP_ODP.png](./EP_ODP.png)  
 [eventexample.owl](./eventexample.owl)  
 [EventProcessing.md](./EventProcessing.md)  
+[eventprocessing.owl](./eventprocessing.owl)  
 [index.md](./index.md)  

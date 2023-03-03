@@ -1,0 +1,760 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ro-RO">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Not Found | Facultatea de Matematică și Informatică</title>
+<link rel="stylesheet" href="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/lib/css/reset.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/lib/css/defaults.css" type="text/css" media="screen, projection" />
+<!--[if lt IE 8]><link rel="stylesheet" href="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/lib/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+<link rel="stylesheet" href="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/style.css?v=1" type="text/css" media="screen, projection" />
+<meta property="og:image" content="http://www.cs.ubbcluj.ro/wp-content/uploads/internship-AXON-2023-212x300.png" />
+<meta name='robots' content='max-image-preview:large' />
+<link rel='stylesheet' id='wp-block-library-css' href='http://www.cs.ubbcluj.ro/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://www.cs.ubbcluj.ro/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='lightboxStyle-css' href='http://www.cs.ubbcluj.ro/wp-content/plugins/lightbox-plus/css/grey/colorbox.min.css?ver=2.7.2' type='text/css' media='screen' />
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1.4.1-wp' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/lib/js/superfish.js?ver=6.1.1' id='superfish-js'></script>
+<link rel="https://api.w.org/" href="http://www.cs.ubbcluj.ro/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.cs.ubbcluj.ro/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cs.ubbcluj.ro/wp-includes/wlwmanifest.xml" />
+
+
+        <script type="text/javascript">
+            var jQueryMigrateHelperHasSentDowngrade = false;
+
+			window.onerror = function( msg, url, line, col, error ) {
+				// Break out early, do not processing if a downgrade reqeust was already sent.
+				if ( jQueryMigrateHelperHasSentDowngrade ) {
+					return true;
+                }
+
+				var xhr = new XMLHttpRequest();
+				var nonce = '122831043e';
+				var jQueryFunctions = [
+					'andSelf',
+					'browser',
+					'live',
+					'boxModel',
+					'support.boxModel',
+					'size',
+					'swap',
+					'clean',
+					'sub',
+                ];
+				var match_pattern = /\)\.(.+?) is not a function/;
+                var erroredFunction = msg.match( match_pattern );
+
+                // If there was no matching functions, do not try to downgrade.
+                if ( typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
+                    return true;
+                }
+
+                // Set that we've now attempted a downgrade request.
+                jQueryMigrateHelperHasSentDowngrade = true;
+
+				xhr.open( 'POST', 'https://www.cs.ubbcluj.ro/wp-admin/admin-ajax.php' );
+				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				xhr.onload = function () {
+					var response,
+                        reload = false;
+
+					if ( 200 === xhr.status ) {
+                        try {
+                        	response = JSON.parse( xhr.response );
+
+                        	reload = response.data.reload;
+                        } catch ( e ) {
+                        	reload = false;
+                        }
+                    }
+
+					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
+					if ( reload ) {
+						location.reload();
+                    }
+				};
+
+				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
+
+				// Suppress error alerts in older browsers
+				return true;
+			}
+        </script>
+
+		<link rel="shortcut icon" href="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/favicon.png" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="Facultatea de Matematică și Informatică RSS Feed" href="http://www.cs.ubbcluj.ro/feed/" />
+<link rel="pingback" href="http://www.cs.ubbcluj.ro/xmlrpc.php" />
+<style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none !important; }
+/* ]]> */
+</style>
+<link rel="icon" href="http://www.cs.ubbcluj.ro/wp-content/uploads/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.cs.ubbcluj.ro/wp-content/uploads/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://www.cs.ubbcluj.ro/wp-content/uploads/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.cs.ubbcluj.ro/wp-content/uploads/cropped-favicon-270x270.png" />
+
+</head>
+
+<body class="error404">
+
+<div id="container">
+
+            <div class="clearfix">
+            			<div class="menu-primary-container"><ul id="menu-romanian-main-menu" class="menus menu-primary"><li id="menu-item-4527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4527"><a title="Pagina principală a Facultăţii de Matematică şi Informatică" href="http://www.cs.ubbcluj.ro/"><img src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/home.png" alt="Pagina principală"/></a></li>
+<li id="menu-item-11131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11131"><a href="#">Studenţi</a>
+<ul class="sub-menu">
+	<li id="menu-item-757" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-757"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/">Anunţuri studenţi</a></li>
+	<li id="menu-item-1121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1121"><a href="http://www.cs.ubbcluj.ro/studenti/documente-pentru-studenti/">Documente pentru studenţi</a></li>
+	<li id="menu-item-33082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33082"><a href="#">Taxe</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33083" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33083"><a href="http://www.cs.ubbcluj.ro/plata-on-line-a-taxelor-de-scolarizare-sau-a-taxelor-pentru-disciplinele-restante/">Plata on-line a taxelor</a></li>
+		<li id="menu-item-42357" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-42357"><a href="http://www.cs.ubbcluj.ro/taxe-2022-2023/">Termenele de plată a taxelor de şcolarizare</a></li>
+		<li id="menu-item-2410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2410"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-taxe/">Anunţuri taxe</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1943"><a href="http://www.cs.ubbcluj.ro/studenti/lista-studentilor/">Lista studenţilor</a></li>
+	<li id="menu-item-11134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11134"><a href="#">Tutoriat şi consultaţii</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2059"><a href="http://www.cs.ubbcluj.ro/studenti/tutoriat/lista-tutorilor/">Lista tutorilor si orarul de tutoriat pentru anul universitar 2022/2023</a></li>
+		<li id="menu-item-2058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2058"><a href="http://www.cs.ubbcluj.ro/studenti/tutoriat/atributiile-tutorilor/">Atribuţiile tutorilor</a></li>
+		<li id="menu-item-6685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6685"><a href="http://www.cs.ubbcluj.ro/studenti/tutoriat/orarul-consultatiilor/">Orarul consultaţiilor</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11136"><a href="#">Practică</a>
+	<ul class="sub-menu">
+		<li id="menu-item-37471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-37471"><a href="#">Practică nivel licență</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2010" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2010"><a href="http://www.cs.ubbcluj.ro/studenti/practica/informatii-utile-practica/">Informaţii utile practică nivel licență</a></li>
+			<li id="menu-item-1961" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1961"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-practica/">Anunţuri practică nivel licență</a></li>
+		</ul>
+</li>
+		<li id="menu-item-37472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-37472"><a href="#">Practică nivel master</a>
+		<ul class="sub-menu">
+			<li id="menu-item-37473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37473"><a href="http://www.cs.ubbcluj.ro/studenti/practica/informatii-utile-practica-nivel-master/">Informaţii utile practică nivel master</a></li>
+			<li id="menu-item-37474" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37474"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-practica-nivel-master/">Anunțuri practică nivel master</a></li>
+		</ul>
+</li>
+		<li id="menu-item-41772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41772"><a href="http://www.cs.ubbcluj.ro/studenti/practica/preluare-predare-documente-practica/">Orare de preluare/predare a documentelor de practică</a></li>
+		<li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="http://www.cs.ubbcluj.ro/studenti/practica/regulament-practica/">Regulament practică</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11138"><a href="#">Burse, cazare, tabere</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1356" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1356"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/mobilitati-internationale/">Mobilităţi internaţionale</a></li>
+		<li id="menu-item-2021" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2021"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-burse/">Anunţuri burse</a></li>
+		<li id="menu-item-31823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31823"><a target="_blank" rel="noopener" href="https://www.ubbcluj.ro/ro/studenti/burse/regulament_burse">Regulamentul privind acordarea burselor</a></li>
+		<li id="menu-item-1979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1979"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-cazare/">Anunţuri cazare</a></li>
+		<li id="menu-item-1980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1980"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-tabere/">Anunţuri tabere</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11139"><a href="#">Examen de licenţă şi disertaţie</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2003"><a href="http://www.cs.ubbcluj.ro/studenti/examen-de-licenta-si-disertatie/informatii-privind-sustinerea-examenului-de-licenta-si-disertatie/">Calendar, reglementări şi acte necesare</a></li>
+		<li id="menu-item-2006" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2006"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-licenta-si-disertatie/">Anunţuri licenţă şi disertaţie</a></li>
+		<li id="menu-item-2004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2004"><a href="http://www.cs.ubbcluj.ro/studenti/examen-de-licenta-si-disertatie/manuale-si-modele-de-subiecte-pentru-examenul-de-licenta/">Manuale, subiecte și bareme pentru examenul de licenţă</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11393"><a href="#">Concursuri</a>
+	<ul class="sub-menu">
+		<li id="menu-item-24545" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-24545"><a href="http://www.cs.ubbcluj.ro/regulament-calificare-acm-seerc-2016/">Regulament calificare ACM – SEERC 2016</a></li>
+		<li id="menu-item-24542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24542"><a href="http://www.cs.ubbcluj.ro/studenti/calendar-concursuri/">Calendar concursuri</a></li>
+		<li id="menu-item-11395" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11395"><a href="http://www.cs.ubbcluj.ro/anunturi/concursuri/concursuri-pentru-studenti/">Anunţuri concursuri studenţeşti</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11140"><a href="#">Legături utile</a>
+	<ul class="sub-menu">
+		<li id="menu-item-45965" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-45965"><a href="http://www.cs.ubbcluj.ro/acces-la-resursele-conturile-si-serverele-oferite-de-universitate-si-facultate/">Acces la resursele, conturile și serverele oferite de universitate și facultate</a></li>
+		<li id="menu-item-4949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4949"><a target="_blank" rel="noopener" href="https://academicinfo.ubbcluj.ro/#new_tab">Note şi contracte de studiu (Academic Info)</a></li>
+		<li id="menu-item-9314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9314"><a target="_blank" rel="nofollow" href="http://www.bcucluj.ro/#new_tab">Biblioteca Centrala Universitara &#8222;Lucian Blaga&#8221; Cluj-Napoca</a></li>
+		<li id="menu-item-3192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3192"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/apps/lucrari#new_tab">Lucrări de diplomă şi disertaţie</a></li>
+		<li id="menu-item-52104" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-52104"><a href="http://www.cs.ubbcluj.ro/software-microsoft-licentiat-gratuit-pentru-studenti/">Software Microsoft licențiat gratuit pentru studenți</a></li>
+		<li id="menu-item-3195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3195"><a target="_blank" rel="nofollow" href="https://aka.ms/devtoolsforteaching#new_tab">Microsoft Azure Dev Tools for Teaching</a></li>
+		<li id="menu-item-40728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40728"><a target="_blank" rel="nofollow" href="http://ibm.biz/academic">IBM Academic Initiative</a></li>
+		<li id="menu-item-27522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27522"><a target="_blank" rel="nofollow" href="https://ubbcluj.onthehub.com/">OnTheHub</a></li>
+		<li id="menu-item-4440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4440"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/apps/ftp/#new_tab">Web FTP</a></li>
+		<li id="menu-item-3185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3185"><a target="_blank" rel="noopener" href="https://www.scs.ubbcluj.ro/webmail/#new_tab">Webmail</a></li>
+		<li id="menu-item-23526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23526"><a target="_blank" rel="noopener" href="http://centre.ubbcluj.ro/ccarma/">Centrul de Carieră, Alumni și Relația cu Mediul de Afaceri</a></li>
+	</ul>
+</li>
+	<li id="menu-item-50555" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-50555"><a href="http://www.cs.ubbcluj.ro/orarul-cabinetului-medical-pentru-studentii-facultatii-de-matematica-si-informatica/">Orarul cabinetului medical</a></li>
+	<li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/secretariatul-facultatii/">Programul secretariatului pentru studenţi</a></li>
+</ul>
+</li>
+<li id="menu-item-11143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11143"><a href="#">Cadre didactice</a>
+<ul class="sub-menu">
+	<li id="menu-item-1360" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1360"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-cadre-didactice/">Anunţuri cadre didactice</a></li>
+	<li id="menu-item-49605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49605"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-personal-didactic-auxiliar/">Anunturi personal didactic auxiliar</a></li>
+	<li id="menu-item-1361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1361"><a href="http://www.cs.ubbcluj.ro/cadre-didactice/documente-personal-didactic/">Documente pentru personalul didactic</a></li>
+	<li id="menu-item-11144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11144"><a href="#">Lista cadrelor didactice</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/departamentul-de-matematica/">Departamentul de Matematică</a></li>
+		<li id="menu-item-3168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3168"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/departamentul-de-informatica/">Departamentul de Informatică</a></li>
+		<li id="menu-item-3169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3169"><a href="http://www.cs.ubbcluj.ro/departamentul-de-matematica-si-informatica-al-liniei-maghiare/">Departamentul de Matematică şi Informatică al Liniei Maghiare</a></li>
+		<li id="menu-item-17182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17182"><a href="http://www.cs.ubbcluj.ro/cadre-didactice/foste-cadre-didactice-ale-facultatii/">Foste cadre didactice ale facultăţii</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11145"><a href="#">Legături utile pentru cadrele didactice</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4947"><a target="_blank" rel="noopener" href="https://academicinfo.ubbcluj.ro/#new_tab">Academic Info</a></li>
+		<li id="menu-item-50739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50739"><a href="http://www.cs.ubbcluj.ro/manual-proceduri/">Manual de proceduri interne, circuitul documentelor și inventarierea activităților FMI</a></li>
+		<li id="menu-item-9313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9313"><a target="_blank" rel="nofollow" href="http://www.bcucluj.ro/#new_tab">Biblioteca Centrala Universitara &#8222;Lucian Blaga&#8221; Cluj-Napoca</a></li>
+		<li id="menu-item-19764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19764"><a href="http://www.cs.ubbcluj.ro/cercetare/factori-de-impact-si-clasificari-ale-revistelor/">Factori de impact şi clasificări ale revistelor</a></li>
+		<li id="menu-item-13493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13493"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/apps/fise/">Încărcarea fişelor disciplinelor</a></li>
+		<li id="menu-item-3198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3198"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/apps/lucrari#new_tab">Lucrări de diplomă şi disertaţie</a></li>
+		<li id="menu-item-50869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50869"><a target="_blank" rel="noopener" href="https://www.scs.ubbcluj.ro/apps/mail2all/">Mail catre studenti (pe adresele de SCS)</a></li>
+		<li id="menu-item-4956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4956"><a target="_blank" rel="noopener" href="http://infocercetare.ubbcluj.ro/#new_tab">Managementul Cercetării</a></li>
+		<li id="menu-item-3197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3197"><a target="_blank" rel="nofollow" href="https://aka.ms/devtoolsforteaching#new_tab">Microsoft Azure Dev Tools for Teaching</a></li>
+		<li id="menu-item-40729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40729"><a target="_blank" rel="nofollow" href="http://ibm.biz/academic">IBM Academic Initiative</a></li>
+		<li id="menu-item-27523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27523"><a target="_blank" rel="nofollow" href="https://ubbcluj.onthehub.com/">OnTheHub</a></li>
+		<li id="menu-item-4441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4441"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/apps/ftp/#new_tab">Web FTP</a></li>
+		<li id="menu-item-3203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3203"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/webmail#new_tab">Webmail CS</a></li>
+		<li id="menu-item-4258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4258"><a target="_blank" rel="noopener" href="https://math.ubbcluj.ro/webmail#new_tab">Webmail Math</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-11149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11149"><a href="#">Învăţământ</a>
+<ul class="sub-menu">
+	<li id="menu-item-4622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4622"><a href="http://www.cs.ubbcluj.ro/invatamant/oferta-educationala-a-facultatii-de-matematica-si-informatica/">Oferta educaţională</a></li>
+	<li id="menu-item-11150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11150"><a href="#">Programe academice</a>
+	<ul class="sub-menu">
+		<li id="menu-item-11151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11151"><a href="#">Licenţă</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1671"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/undergraduate-programmes/computer-science-programme-profile/">Informatică</a></li>
+			<li id="menu-item-53285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53285"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/licenta/matematica-informatica/">Matematică informatică</a></li>
+			<li id="menu-item-53281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53281"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/licenta/matematica/">Matematică</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11152"><a href="#">Masterat</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1699"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/databases-programme-profile/">Baze de date</a></li>
+			<li id="menu-item-1706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1706"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/distributed-systems-in-internet-programme-profile/">Sisteme distribuite în Internet</a></li>
+			<li id="menu-item-44696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44696"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/modern-methods-in-teaching-computer-science/">Metode moderne în predarea informaticii</a></li>
+			<li id="menu-item-1719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/software-engineering-programme-profile/">Inginerie software</a></li>
+			<li id="menu-item-8455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8455"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/applied-computational-intelligence-programme-profile/">Inteligenţă computaţională aplicată</a></li>
+			<li id="menu-item-19246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19246"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/masterat/calcul-de-inalta-performanta-si-analiza-volumelor-mari-de-date/">Calcul de înaltă performanţă şi analiza volumelor mari de date</a></li>
+			<li id="menu-item-51819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51819"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/data-science/">Știința datelor în industrie și societate</a></li>
+			<li id="menu-item-36369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36369"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/masterat/sisteme-informatice-avansate/">Sisteme informatice avansate: modelare, proiectare, dezvoltare</a></li>
+			<li id="menu-item-10622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10622"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/enterprise-software-design-and-development-programme-profile/">Proiectarea şi dezvoltarea aplicaţiilor Enterprise</a></li>
+			<li id="menu-item-44720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44720"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/modern-methods-in-teaching-computer-science-in-hungarian-programme-profile/">Metode moderne în predarea informaticii (în limba maghiară)</a></li>
+			<li id="menu-item-14312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14312"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/data-analysis-and-modelling-programme-profile/">Analiza datelor şi modelare</a></li>
+			<li id="menu-item-18782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18782"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/advanced-mathematics-programme-profile/">Matematici avansate</a></li>
+			<li id="menu-item-44695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44695"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/modern-methods-in-teaching-mathematics/">Metode moderne în predarea matematicii</a></li>
+			<li id="menu-item-44682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44682"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/modern-methods-in-teaching-mathematics-hungarian-programme-profile/">Metode moderne în predarea matematicii (în limba maghiară)</a></li>
+			<li id="menu-item-1776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1776"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/computational-mathematics-programme-profile/">Matematică computatională</a></li>
+		</ul>
+</li>
+		<li id="menu-item-50227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50227"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/doctorat/">Doctorat</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11155" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11155"><a href="#">Programe academice încheiate</a>
+	<ul class="sub-menu">
+		<li id="menu-item-11156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11156"><a href="#">Licenţă</a>
+		<ul class="sub-menu">
+			<li id="menu-item-1676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1676"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/undergraduate-programmes/information-engineering-programme-profile/">Ingineria informaţiei</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11157"><a href="#">Masterat</a>
+		<ul class="sub-menu">
+			<li id="menu-item-18763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18763"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/masterat/informatica-didactica-in-limba-romana/">Informatică didactică</a></li>
+			<li id="menu-item-1748" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1748"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/mathematics-programme-profile/">Matematică</a></li>
+			<li id="menu-item-1751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1751"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/applied-mathematics-programme-profile/">Matematică aplicată</a></li>
+			<li id="menu-item-19318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19318"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/masterat/matematica-didactica-program-de-master-in-limba-romana/">Matematică didactică</a></li>
+			<li id="menu-item-1763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1763"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/didactic-mathematics-in-hungarian-programme-profile/">Matematică didactică în limba maghiară</a></li>
+			<li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/modeling-and-simulation-programme-profile/">Modelare şi simulare</a></li>
+			<li id="menu-item-1736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1736"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/optimization-of-computational-models-programme-profile/">Optimizarea modelelor informatice</a></li>
+			<li id="menu-item-1726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1726"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/component-based-programming-programme-profile/">Programare bazată pe componente</a></li>
+			<li id="menu-item-1739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1739"><a href="http://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/intelligent-systems-programme-profile/">Sisteme inteligente</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-1884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1884"><a href="http://www.cs.ubbcluj.ro/invatamant/planuri-de-invatamant/">Planuri de învăţământ</a></li>
+	<li id="menu-item-11158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11158"><a href="#">Programe postuniversitare</a>
+	<ul class="sub-menu">
+		<li id="menu-item-27684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27684"><a href="#">Programul Postuniversitar de Pregătire şi Formare Profesională în Informatică</a>
+		<ul class="sub-menu">
+			<li id="menu-item-30335" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-30335"><a href="http://www.cs.ubbcluj.ro/programul-postuniversitar-de-pregatire-si-formare-profesionala-in-informatica/">Prezentarea programului</a></li>
+			<li id="menu-item-27685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27685"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-postuniversitare/pregatire-si-formare-profesionala-in-informatica/plan-de-invatamant/">Planul de învăţământ</a></li>
+			<li id="menu-item-27693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27693"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-postuniversitare/pregatire-si-formare-profesionala-in-informatica/fisa-programului/">Fişa Programului</a></li>
+			<li id="menu-item-32184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32184"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-postuniversitare/pregatire-si-formare-profesionala-in-informatica/structura-anului-academic/">Calendar an univ. 2022-2023</a></li>
+			<li id="menu-item-28124" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28124"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-postuniversitar-informatica/">Anunţuri postuniversitar informatică</a></li>
+		</ul>
+</li>
+		<li id="menu-item-38792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38792"><a href="#">Securitatea Sistemelor Informatice</a>
+		<ul class="sub-menu">
+			<li id="menu-item-38793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38793"><a href="http://www.cs.ubbcluj.ro/cyber/">Prezentarea programului</a></li>
+			<li id="menu-item-38794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38794"><a href="http://www.cs.ubbcluj.ro/cyber/plan-de-invatamant/">Planul de învăţământ</a></li>
+		</ul>
+</li>
+		<li id="menu-item-22027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22027"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-postuniversitare/program-de-conversie-profesionala-matematica/">Programul de Conversie Profesională Matematică</a></li>
+		<li id="menu-item-39132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-39132"><a href="#">Informatică și dezvoltare software (în limba maghiară)</a>
+		<ul class="sub-menu">
+			<li id="menu-item-39130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39130"><a href="http://www.cs.ubbcluj.ro/informatica-si-dezvoltare-software/">Prezentarea programului</a></li>
+			<li id="menu-item-39131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39131"><a href="http://www.cs.ubbcluj.ro/informatica-si-dezvoltare-software/plan-de-invatamant/">Planul de învăţământ</a></li>
+			<li id="menu-item-39658" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39658"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-postuniversitar-informatica-si-dezvoltare-software/">Anunțuri postuniversitar Informatică și dezvoltare software</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11159"><a href="#">Definitivat</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2463" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2463"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-definitivat/">Anunţuri definitivat</a></li>
+			<li id="menu-item-2455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2455"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/programa-matematica-definitivat-si-gradul-II.pdf#new_tab">Tematică matematică</a></li>
+			<li id="menu-item-2454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2454"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/programa-informatica-definitivat-si-gradul-II.pdf#new_tab">Tematică informatică</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11160"><a href="#">Gradul II</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2478" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2478"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-gradul-ii/">Anunţuri gradul II</a></li>
+			<li id="menu-item-2476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2476"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/programa-matematica-definitivat-si-gradul-II.pdf#new_tab">Tematică matematică</a></li>
+			<li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2475"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/programa-informatica-definitivat-si-gradul-II.pdf#new_tab">Tematică informatică</a></li>
+			<li id="menu-item-2474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2474"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-postuniversitare/gradul-ii/bibliografie-gradul-ii/">Bibliografie</a></li>
+		</ul>
+</li>
+		<li id="menu-item-11161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11161"><a href="#">Gradul I</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2496" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2496"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-gradul-i/">Anunţuri gradul I</a></li>
+			<li id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/tematica-matematica-gradul-I.pdf#new_tab">Tematică matematică gradul I</a></li>
+			<li id="menu-item-2493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2493"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/tematica-informatica-gradul-I.pdf#new_tab">Tematică informatică gradul I</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-47904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47904"><a href="#">Formare continuă și cursuri deschise</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33806"><a href="http://www.cs.ubbcluj.ro/invatamant/formare-continua/">Formare continuă</a></li>
+		<li id="menu-item-47778" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47778"><a href="http://www.cs.ubbcluj.ro/cursuri-deschise/">Cursuri deschise</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1638"><a href="http://www.cs.ubbcluj.ro/invatamant/structura-anului-universitar/">Structura anului universitar</a></li>
+</ul>
+</li>
+<li id="menu-item-11162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11162"><a href="#">Cercetare</a>
+<ul class="sub-menu">
+	<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1135"><a href="http://www.cs.ubbcluj.ro/research-journals/">Reviste</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9214"><a target="_blank" rel="noopener" href="http://www.math.ubbcluj.ro/~nodeacj/#new_tab">Fixed Point Theory</a></li>
+		<li id="menu-item-9216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9216"><a target="_blank" rel="noopener" href="https://www.cs.ubbcluj.ro/~studia-m#new_tab">Studia Universitatis Babeş-Bolyai, Series Mathematica</a></li>
+		<li id="menu-item-9215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9215"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/~studia-i#new_tab">Studia Universitatis Babeş-Bolyai, Series Informatica</a></li>
+		<li id="menu-item-37555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37555"><a target="_blank" rel="noopener" href="http://math.ubbcluj.ro/~mathjour/">Mathematica</a></li>
+		<li id="menu-item-12973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12973"><a target="_blank" rel="nofollow" href="http://atps.tucn.ro/html/">Annals of the Tiberiu Popoviciu Seminar of Functional Equations, Approximation and Convexity</a></li>
+		<li id="menu-item-9213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9213"><a target="_blank" rel="noopener" href="http://www.math.ubbcluj.ro/~didactica#new_tab">Didactica Matematicii</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"><a href="http://www.cs.ubbcluj.ro/conferences-organized-by-the-faculty/">Conferinţe</a></li>
+	<li id="menu-item-7070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7070"><a href="http://www.cs.ubbcluj.ro/summer-schools/">Şcoli de vară</a></li>
+	<li id="menu-item-1130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1130"><a href="http://www.cs.ubbcluj.ro/cercetare/grupuri-de-cercetare/">Centre şi grupuri de cercetare acreditate</a></li>
+	<li id="menu-item-1172" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1172"><a href="http://www.cs.ubbcluj.ro/comunicari/">Comunicări</a></li>
+</ul>
+</li>
+<li id="menu-item-11163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11163"><a href="#">Alumni</a>
+<ul class="sub-menu">
+	<li id="menu-item-48365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48365"><a href="http://www.cs.ubbcluj.ro/absolventi/inscrie-te-in-alumni/">Înscrieți-vă în comunitatea Alumni</a></li>
+	<li id="menu-item-2211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2211"><a href="http://www.cs.ubbcluj.ro/absolventi/informatii-pentru-absolventi/">Informaţii</a></li>
+	<li id="menu-item-25459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25459"><a href="http://www.cs.ubbcluj.ro/absolventi/intalniri-ale-absolventilor/">Întâlniri ale absolvenţilor</a></li>
+	<li id="menu-item-12651" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12651"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-alumni/">Anunţuri alumni</a></li>
+	<li id="menu-item-12652" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12652"><a href="http://www.cs.ubbcluj.ro/povesti-de-succes/">Poveşti de succes</a></li>
+</ul>
+</li>
+<li id="menu-item-11164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11164"><a href="#">Legislaţie</a>
+<ul class="sub-menu">
+	<li id="menu-item-2721" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2721"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/">Legislaţie naţională</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2816" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2816"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-de-referinta/">Legislaţie de referinţă</a></li>
+		<li id="menu-item-2807" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2807"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-privind-institutiile-de-invatamant-superior/">Legislaţie privind instituţiile de învăţământ superior</a></li>
+		<li id="menu-item-2786" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2786"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-privind-personalul-didactic/">Legislaţie privind personalul didactic</a></li>
+		<li id="menu-item-2728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2728"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-privind-organizarea-studiilor/">Legislaţie privind organizarea studiilor</a></li>
+		<li id="menu-item-2723" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2723"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-studenti/">Legislaţie studenţi</a></li>
+		<li id="menu-item-2722" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2722"><a href="http://www.cs.ubbcluj.ro/legislatie-nationala/legislatie-generala/">Legislaţie generală</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2684"><a href="http://www.cs.ubbcluj.ro/reglementari-interne-ale-universitatii/">Reglementări interne ale universităţii</a></li>
+	<li id="menu-item-2685" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2685"><a href="http://www.cs.ubbcluj.ro/reglementari-interne-ale-facultatii/">Reglementări interne ale facultăţii</a></li>
+</ul>
+</li>
+<li id="menu-item-11165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11165"><a href="#">Despre facultate</a>
+<ul class="sub-menu">
+	<li id="menu-item-11166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11166"><a href="#">Conducerea</a>
+	<ul class="sub-menu">
+		<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="http://www.cs.ubbcluj.ro/despre-facultate/conducerea/conducerea-facultatii/">Conducerea facultăţii</a></li>
+		<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="http://www.cs.ubbcluj.ro/despre-facultate/conducerea/reprezentantii-in-senat/">Reprezentanţii în senat</a></li>
+		<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://www.cs.ubbcluj.ro/despre-facultate/conducerea/consiliul-facultatii/">Consiliul facultăţii</a></li>
+		<li id="menu-item-26099" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-26099"><a href="http://www.cs.ubbcluj.ro/comisiile-permanente-ale-consiliului-facultatii-de-matematica-si-informatica/">Comisiile consiliului facultăţii</a></li>
+		<li id="menu-item-23660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23660"><a href="http://www.cs.ubbcluj.ro/despre-facultate/conducerea/directorii-si-consiliile-departamentelor/">Directorii şi consiliile departamentelor</a></li>
+		<li id="menu-item-25059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25059"><a href="http://www.cs.ubbcluj.ro/despre-facultate/conducerea/conducerea-scolii-doctorale-de-matematica-si-informatica/">Conducerea Şcolii Doctorale de Matematică şi Informatică</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11167"><a href="#">Structura</a>
+	<ul class="sub-menu">
+		<li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/departamentul-de-matematica/">Departamentul de Matematică</a></li>
+		<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/departamentul-de-informatica/">Departamentul de Informatică</a></li>
+		<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="http://www.cs.ubbcluj.ro/departamentul-de-matematica-si-informatica-al-liniei-maghiare/">Departamentul de Matematică şi Informatică al Liniei Maghiare</a></li>
+		<li id="menu-item-725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-725"><a href="http://www.cs.ubbcluj.ro/despre-facultate/structura/secretariatul-facultatii/">Secretariatul facultăţii</a></li>
+		<li id="menu-item-11168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11168"><a href="#">Centre şi institute subordonate</a>
+		<ul class="sub-menu">
+			<li id="menu-item-17895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17895"><a href="http://www.cs.ubbcluj.ro/observatorul-astronomic-al-universitatii-babes-bolyai/">Observatorul Astronomic</a></li>
+			<li id="menu-item-23651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23651"><a target="_blank" rel="nofollow" href="http://www.cs.ubbcluj.ro/mos/">Centrul de Cercetare Modelare, Optimizare si Simulare</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-2306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2306"><a href="http://www.cs.ubbcluj.ro/planuri-stategice-operationale-si-rapoarte-anuale/">Planuri stategice, operaţionale şi rapoarte anuale</a></li>
+	<li id="menu-item-55514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-55514"><a href="#">Asigurarea calității</a>
+	<ul class="sub-menu">
+		<li id="menu-item-55519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55519"><a href="http://www.cs.ubbcluj.ro/componenta-ceac-din-facultate/">Componența CEAC din facultate</a></li>
+		<li id="menu-item-55515" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55515"><a href="http://www.cs.ubbcluj.ro/planuri-stategice-operationale-si-rapoarte-anuale/programe-de-asigurare-a-calitatii-si-evaluarea-acestora/">Programe de asigurare a calității și evaluarea acestora</a></li>
+		<li id="menu-item-55516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55516"><a target="_blank" rel="nofollow" href="http://qa.ubbcluj.ro">Centrului Qualitas</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2318"><a target="_blank" rel="noopener" href="http://www.cs.ubbcluj.ro/wp-content/uploads/orgranigrama_FMI_2017.pdf#new_tab">Organigrama facultăţii</a></li>
+	<li id="menu-item-11199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11199"><a href="#">Dotări şi facilităţi</a>
+	<ul class="sub-menu">
+		<li id="menu-item-11200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11200"><a href="#">Biblioteci</a>
+		<ul class="sub-menu">
+			<li id="menu-item-2511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2511"><a target="_blank" rel="noopener" href="http://www.bcucluj.ro/#new_tab">Biblioteca Centrală</a></li>
+			<li id="menu-item-2510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2510"><a href="http://www.cs.ubbcluj.ro/despre-facultate/dotari-si-facilitati/biblioteci/biblioteca-de-matematica-si-informatica/">Biblioteca de Matematică şi Informatică</a></li>
+			<li id="menu-item-24317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24317"><a href="http://www.cs.ubbcluj.ro/despre-facultate/dotari-si-facilitati/biblioteci/biblioteca-de-astronomie/">Biblioteca de Astronomie</a></li>
+		</ul>
+</li>
+		<li id="menu-item-2508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2508"><a href="http://www.cs.ubbcluj.ro/despre-facultate/dotari-si-facilitati/laboratoarele-de-informatica/">Laboratoarele de informatică</a></li>
+		<li id="menu-item-43383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43383"><a href="http://www.cs.ubbcluj.ro/iotlab/">IoTLab (Internet of Things Lab)</a></li>
+		<li id="menu-item-28487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28487"><a target="_blank" rel="noopener" href="http://hpc.cs.ubbcluj.ro/#new_tab">Clusterul pentru calcul de înaltă performanţă</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11201"><a href="#">Relaţia cu societatea</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2099"><a href="http://www.cs.ubbcluj.ro/despre-facultate/relatia-cu-societatea/firme-partenere/">Firme partenere</a></li>
+		<li id="menu-item-2556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2556"><a href="http://www.cs.ubbcluj.ro/despre-facultate/relatia-cu-societatea/relatia-cu-unitati-de-invatamant-si-ong-uri/">Relaţia cu unităţi de învăţământ &#038; ONG-uri</a></li>
+		<li id="menu-item-29700" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-29700"><a href="http://www.cs.ubbcluj.ro/porti-deschise-la-facultatea-de-matematica-si-informatica-cu-ocazia-saptamanii-scoala-altfel-din-scoli-si-licee/">Săptămâna Porţilor Deschise</a></li>
+		<li id="menu-item-13162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13162"><a target="_blank" rel="noopener" href="http://math.ubbcluj.ro/~ssmcj/">Societatea de Ştiinţe Matematice &#8211; filiala Cluj</a></li>
+		<li id="menu-item-11394" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11394"><a href="http://www.cs.ubbcluj.ro/anunturi/concursuri/concursuri-pentru-elevii-de-liceu/">Concursuri pentru elevii de liceu</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11202"><a href="#">Istoric</a>
+	<ul class="sub-menu">
+		<li id="menu-item-796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-796"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/magistri/"><em>Magistri</em></a></li>
+		<li id="menu-item-17183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17183"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/in-memoriam/"><em>In memoriam</em></a></li>
+		<li id="menu-item-989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/invatamantul-universitar-in-transilvania/">Învăţământul universitar în Transilvania</a></li>
+		<li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/conducerea-facultatii-de-a-lungul-timpului/">Conducerea facultății de-a lungul timpului</a></li>
+		<li id="menu-item-15499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15499"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/matematica-de-performanta-la-universitatea-din-cluj/">Matematică de performanţă la Universitatea din Cluj</a></li>
+		<li id="menu-item-1012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012"><a href="http://www.cs.ubbcluj.ro/despre-facultate/istoric/momente-din-istoria-facultatii-de-matematica/">Momente din istoria Facultăţii de Matematică</a></li>
+		<li id="menu-item-11918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11918"><a href="http://www.cs.ubbcluj.ro/scoala-clujeana-de-matematica-traditie-si-modernitate/">Şcoala Clujeană de Matematică</a></li>
+		<li id="menu-item-11919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11919"><a href="http://www.cs.ubbcluj.ro/facultatea-de-matematica-si-informatica-rol-fundamental-in-dezvoltariea-informaticii-si-industriei-software-din-romania/">Şcoala Clujeană de Informatică</a></li>
+	</ul>
+</li>
+	<li id="menu-item-32972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32972"><a href="http://www.cs.ubbcluj.ro/doctori-si-profesori-honoris-causa/">Doctori și Profesori Honoris Causa</a></li>
+	<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="http://www.cs.ubbcluj.ro/despre-facultate/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-11206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11206"><a href="#">Admitere</a>
+<ul class="sub-menu">
+	<li id="menu-item-4642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4642"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-admitere/">Anunţuri admitere</a></li>
+	<li id="menu-item-11207" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11207"><a href="#">Nivel licenţă</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4654"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-licenta/admiterea-la-facultatea-de-matematica-si-informatica-nivel-licenta/">Admiterea la facultate 2023</a></li>
+		<li id="menu-item-4659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4659"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-licenta/calendarul-concursului-de-admitere-nivel-licenta/">Calendarul admiterii iulie 2023</a></li>
+		<li id="menu-item-5501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5501"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-licenta/acte-necesare-la-inscrierea-la-facultate-nivel-licenta/">Acte necesare la înscriere</a></li>
+		<li id="menu-item-5493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5493"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-licenta/taxe-admitere-facultate-nivel-licenta/">Taxe</a></li>
+		<li id="menu-item-53859" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-53859"><a href="http://www.cs.ubbcluj.ro/numar-locuri-admitere-nivel-licenta/">Număr locuri admitere nivel licenta, 2023</a></li>
+		<li id="menu-item-53320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53320"><a href="http://www.cs.ubbcluj.ro/intrebari-frecvente-admitere-nivel-licenta-2022/">Întrebări frecvente</a></li>
+		<li id="menu-item-50730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50730"><a href="http://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/">Concursul Mate-Info UBB 2023</a></li>
+		<li id="menu-item-50710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50710"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-licenta/subiecte-din-anii-precedenti/">Subiecte din anii precedenți</a></li>
+		<li id="menu-item-4684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4684"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-admitere/anunturi-admitere-nivel-licenta/">Anunţuri admitere nivel licenţă</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11209"><a href="#">Nivel masterat</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4687"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/admiterea-la-facultatea-de-matematica-si-informatica-nivel-master/">Admiterea la masterat 2023</a></li>
+		<li id="menu-item-46743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46743"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/procedura-administrativa-privind-inscrierea-candidatilor/">Procedură administrativă privind înscrierea candidaților</a></li>
+		<li id="menu-item-53393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53393"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/procedura-tehnica-privind-inscrierea-candidatilor/">Procedură tehnică privind înscrierea candidaților</a></li>
+		<li id="menu-item-53441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53441"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/procedura-tehnica-privind-confirmarea-locului/">Procedură tehnică privind confirmarea locului</a></li>
+		<li id="menu-item-52177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52177"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/acte-necesare-la-inscrierea-la-master/">Acte necesare la înscrierea la master 2023</a></li>
+		<li id="menu-item-45455" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-45455"><a href="http://www.cs.ubbcluj.ro/masterate-didactice/">Masterate didactice</a></li>
+		<li id="menu-item-4695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4695"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/calendarul-concursului-de-admitere-nivel-master/">Calendarul admiterii iulie 2023</a></li>
+		<li id="menu-item-5405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5405"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-masterat/taxe-admitere-master/">Taxe</a></li>
+		<li id="menu-item-4696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4696"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-admitere/anunturi-admitere-master/">Anunţuri admitere master</a></li>
+	</ul>
+</li>
+	<li id="menu-item-11210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11210"><a href="#">Nivel doctorat</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33336"><a href="#">Admiterea la doctorat</a>
+		<ul class="sub-menu">
+			<li id="menu-item-33343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33343"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-doctorat/criterii-tematica-matematica/">Domeniul Matematică</a></li>
+			<li id="menu-item-33344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33344"><a href="http://www.cs.ubbcluj.ro/admitere/nivel-doctorat/criterii-tematica-informatica/">Domeniul Informatică</a></li>
+		</ul>
+</li>
+		<li id="menu-item-44601" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44601"><a href="http://www.cs.ubbcluj.ro/regulament-de-admitere-la-doctorat-2020-in-regim-online/">Regulament de admitere la doctorat 2020, în regim online</a></li>
+		<li id="menu-item-4702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4702"><a target="_blank" rel="noopener" href="http://doctorat.ubbcluj.ro/admitere/date.php#new_tab">Informaţii admitere Institutul de Studii Doctorale</a></li>
+		<li id="menu-item-48860" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-48860"><a href="http://www.cs.ubbcluj.ro/calendar-admitere-doctorat/">Calendarul admiterii</a></li>
+		<li id="menu-item-50348" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-50348"><a href="http://www.cs.ubbcluj.ro/rezultatele-concursului-de-admitere-la-doctorat-sesiunea-septembrie-2021/">Rezultatele concursului de admitere la Doctorat, sesiunea Septembrie 2021</a></li>
+		<li id="menu-item-4703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4703"><a href="http://www.cs.ubbcluj.ro/invatamant/programe-academice/doctorat/conducatori-de-doctorat-in-matematica-si-informatica/">Conducători de doctorat</a></li>
+		<li id="menu-item-4704" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4704"><a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-admitere/anunturi-admitere-doctorat/">Anunţuri admitere doctorat</a></li>
+	</ul>
+</li>
+	<li id="menu-item-30337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30337"><a href="#">Programe postuniversitare</a>
+	<ul class="sub-menu">
+		<li id="menu-item-30338" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-30338"><a href="http://www.cs.ubbcluj.ro/programul-postuniversitar-de-pregatire-si-formare-profesionala-in-informatica/">Programul Postuniversitar de Pregătire şi Formare Profesională în Informatică</a></li>
+		<li id="menu-item-46978" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46978"><a href="http://www.cs.ubbcluj.ro/informatica-si-dezvoltare-software/">Informatică și Dezvoltare Software (în limba maghiară)</a></li>
+		<li id="menu-item-41190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41190"><a href="http://www.cs.ubbcluj.ro/cyber/">Programul postuniversitar Securitatea Sistemelor Informatice</a></li>
+		<li id="menu-item-45587" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-45587"><a href="http://www.cs.ubbcluj.ro/despre-programul-de-conversie-matematica-2020-2021/">Programul de Conversie Profesională Matematică</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5686"><a href="http://www.cs.ubbcluj.ro/admiterea-in-anii-precedenti/">Admiterea în anii precedenți</a></li>
+</ul>
+</li>
+<li id="menu-item-8324-ro" class="lang-item lang-item-17 lang-item-ro current-lang no-translation lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8324-ro"><a href="http://www.cs.ubbcluj.ro/" hreflang="ro-RO" lang="ro-RO"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEUAJsgAFMT13wDyAgLqAAB4muX8/G3581z5Vlb3RkZagt78/Ef5+T/08Tn1NTX1KSlQe9709Ez5+TX36S71GxvkAABHdNv4+CvzDw8AA7lqjuFBcNn29h/05Rg6adnfAAAAAK3nvQDrwgDkqgALguDCAAAAX0lEQVR4ARXHtWEDQBAEwNmn4BMz9V+eIzsTS8c7EWqR2mQgkJDTYHIZ5cRRg7XJWjG9tLIypqmVV7k0aN8f1vTw3OXaNft5mwyyG7NTxi/5+WPFSdYpPA+fSG60/4074PMLPA8bHzoAAAAASUVORK5CYII=" alt="Română" width="16" height="11" style="height: 11px; width: 16px;" /></a></li>
+<li id="menu-item-8324-en" class="lang-item lang-item-18 lang-item-en no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-8324-en"><a href="http://www.cs.ubbcluj.ro/en/" hreflang="en-US" lang="en-US"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="English" width="16" height="11" style="height: 11px; width: 16px;" /></a></li>
+<li id="menu-item-8324-hu" class="lang-item lang-item-20 lang-item-hu no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-8324-hu"><a href="http://www.cs.ubbcluj.ro/hu/" hreflang="hu-HU" lang="hu-HU"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAm0lEQVR4AWM4x4AFHUZF2xAILP2yogINPcvIgKCnUVEQ9MjPD4hWwjUgS0DQPXsHCLqppQVBQDZCA0HVCA1/McAvJPAVFTx79oyBsGpMDQilmKoxNTA4MiStT3aY5wBBJtNMgEh7grZKr4pst6x4u7hAswAQcddyAwUZGBmgGgiqRtcARAFLAuAIrh9uBMQUqAYGTRgSgSFGnAgA0U0GZhH1QEwAAAAASUVORK5CYII=" alt="Magyar" width="16" height="11" style="height: 11px; width: 16px;" /></a></li>
+<li id="menu-item-8324-de" class="lang-item lang-item-2543 lang-item-de no-translation menu-item menu-item-type-custom menu-item-object-custom menu-item-8324-de"><a href="http://www.cs.ubbcluj.ro/de/" hreflang="de-DE" lang="de-DE"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC" alt="Deutsch" width="16" height="11" style="height: 11px; width: 16px;" /></a></li>
+</ul></div>              <!--.primary menu--> 	
+                </div>
+        
+
+    <div id="header">
+        <div class="logo">
+                    <a href="http://www.cs.ubbcluj.ro"><img src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/logo.png" alt="Facultatea de Matematică și Informatică" title="Facultatea de Matematică și Informatică" /></a>
+         
+        </div><!-- .logo -->
+
+        <div class="header-right">
+        
+            <div id="topsearch">
+                <div id="search" title="Tastaţi şi apăsaţi Enter">
+    <form method="get" id="searchform" action="http://www.cs.ubbcluj.ro/">
+        <input type="text" value="Căutare" 
+            name="s" id="s"  onblur="if (this.value == '')  {this.value = 'Căutare';}"  
+            onfocus="if (this.value == 'Căutare') {this.value = '';}" 
+        />
+    </form>
+</div><!-- #search -->            </div>
+            
+            <div id="top-social-profiles">
+                            <ul class="widget-container"><li class="social-profiles-widget">
+            <a target="_blank" href="https://www.facebook.com/MateInfoUBBCluj" rel="nofollow"><img src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/social-profiles/facebook.png" alt="Pagina oficială de Facebook a Facultății de Matematică și Informatică din cadrul Universității Babeș-Bolyai" title="Pagina oficială de Facebook a Facultății de Matematică și Informatică din cadrul Universității Babeș-Bolyai"></a><a target="_blank" href="https://www.youtube.com/watch?v=ZU8XxwLL26o&list=PLR63lQ_rqQ02P5KC4fc2gaYj9FVdoZO8z&index=1" rel="nofollow"><img src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/social-profiles/youtube.png" alt="Youtube" title="Youtube"></a><a href="mailto:math@math.ubbcluj.ro" target="_blank"><img title="E-mail" alt="E-mail" src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/social-profiles/email.png" /></a><a href="http://www.cs.ubbcluj.ro/feed/" target="_blank"><img title="RSS Feed" alt="RSS Feed" src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/social-profiles/rss.png" /></a><a href="https://twitter.com/mateinfoubb" target="_blank"><img title="Twitter" alt="Twitter" src="http://www.cs.ubbcluj.ro/wp-content/themes/CSUBB/images/social-profiles/twitter.png" /></a>            </li></ul>
+                        </div>
+            
+        </div><!-- .header-right -->
+        
+    </div><!-- #header -->
+    
+    
+    <div id="main">
+    
+            
+        <div id="content">
+        
+                    
+            <div class="entry">
+                Ne pare rău, pagină cerută de dumneavoastră nu a fost găsită.            </div>
+            
+            <div id="content-search">
+                <div id="search" title="Tastaţi şi apăsaţi Enter">
+    <form method="get" id="searchform" action="http://www.cs.ubbcluj.ro/">
+        <input type="text" value="Căutare" 
+            name="s" id="s"  onblur="if (this.value == '')  {this.value = 'Căutare';}"  
+            onfocus="if (this.value == 'Căutare') {this.value = '';}" 
+        />
+    </form>
+</div><!-- #search -->            </div>
+            
+                    
+        </div><!-- #content -->
+    
+        
+<div id="sidebar-primary">
+
+    <ul class="widget_text widget-container"><li id="custom_html-5" class="widget_text widget widget_custom_html"><h3 class="widgettitle">Concursul Mate-Info UBB 2023</h3><div class="textwidget custom-html-widget"><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/Concurs-Mate-Info-UBB-2023-wide.jpg" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell; text-align: center">
+            <a href="https://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/">Informații despre concurs și regulament
+</a><br>
+<a href="https://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/inscrierea-unui-candidat-nou/">Inscriere concurs</a><br>
+					<a href="https://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/lista-candidati/">Lista candidatilor inscrisi</a>
+        </div>
+    </div>
+</div></div></li></ul><ul class="widget_text widget-container"><li id="custom_html-4" class="widget_text widget widget_custom_html"><h3 class="widgettitle">Informații utile și de actualitate pentru studenții</h3><div class="textwidget custom-html-widget"><ul>
+	<li><a href="https://www.cs.ubbcluj.ro/burse-semestrul-ii-an-universitar-2022-2023/">Burse semestrul II, an universitar 2022/2023</a></li>
+	<li><a href="https://www.cs.ubbcluj.ro/incasarea-taxelor-pentru-examenele-restante-din-sesiunea-de-iarna-inclusiv-studentii-aflati-in-prelungire-de-scolaritate/">Încasarea taxelor pentru examenele restante din sesiunea de IARNĂ (inclusiv studenţii aflaţi în prelungire de şcolaritate)</a></li>
+	<li><a href="https://www.cs.ubbcluj.ro/hotarare-privind-calendarul-elaborarii-lucrarilor-de-licenta-disertatie-pentru-studentii-care-vor-finaliza-studiile-incepand-cu-anul-2022/">In atentia studentilor an II nivel licenta si an I nivel master – Hotărâre privind calendarul elaborării lucrărilor de licenţă/disertație</a></li>
+	<li><a href="https://www.cs.ubbcluj.ro/acces-la-resursele-conturile-si-serverele-oferite-de-universitate-si-facultate-2/">Acces la resursele, conturile și serverele oferite de universitate și facultate</a></li>
+	<li><a href="https://www.cs.ubbcluj.ro/in-atentia-studentilor-facultatii-de-matematica-si-informatica-instruirea-de-securitatea-muncii-si-situatii-de-urgenta-efectuata-studentilor-din-ciclurile-de-studii-universitare-de-licenta-master-cu/">Instruirea de securitatea muncii și situații de urgență efectuată studenților</a></li>
+		<li><a href="https://www.cs.ubbcluj.ro/studenti/adeverinte/">Eliberarea adeverinţelor de student</a></li>
+	<li><a href="https://www.cs.ubbcluj.ro/studenti/practica/preluare-predare-documente-practica/">Orare și informații legate de preluarea/predarea documentelor de practică ale studenților</a></li>
+</ul></div></li></ul>        <ul class="widget-container"><li class="posts-widget">
+             <h3 class="widgettitle">Mate-Info@UBB in prim plan</h3>             <ul>
+        	                    <li class="clearfix">
+                        <a href="http://www.cs.ubbcluj.ro/matematica-si-informatica-din-universitatea-babes-bolyai-ubb-pe-primele-locuri-din-tara-in-qs-world-university-rankings-by-subjects-2022/"><img width="70" height="70" src="http://www.cs.ubbcluj.ro/wp-content/uploads/QS-2022-Mathematics-150x150.png" class="posts-widget-featured-image alignleft wp-post-image" alt="" decoding="async" loading="lazy" /></a>                          <h3 class="posts-widgettitle"><a href="http://www.cs.ubbcluj.ro/matematica-si-informatica-din-universitatea-babes-bolyai-ubb-pe-primele-locuri-din-tara-in-qs-world-university-rankings-by-subjects-2022/" rel="bookmark" title="Matematica și Informatica din Universitatea Babeș-Bolyai (UBB), pe primele locuri din țară în QS World University Rankings by Subjects 2022">Matematica și Informatica din Universitatea Babeș-Bolyai (UBB), pe primele locuri din țară în QS World University Rankings by Subjects 2022</a></h3>                        <div class="posts-widget-entry">Domeniile Matematică și Informatică din cadrul UBB se află și în acest an pe primele locuri din țară în clasamentul internațional de ranking universitar. În rankingul <a class="posts-widget-more" href="http://www.cs.ubbcluj.ro/matematica-si-informatica-din-universitatea-babes-bolyai-ubb-pe-primele-locuri-din-tara-in-qs-world-university-rankings-by-subjects-2022/" rel="bookmark" title="Link spre Matematica și Informatica din Universitatea Babeș-Bolyai (UBB), pe primele locuri din țară în QS World University Rankings by Subjects 2022">Continuare &raquo;</a>                                </div>                    </li>
+                            </ul>
+        </li></ul>
+        <ul class="widget-container"><li id="rs_event_widget-2" class="widget rseventwidget"><h3 class="widgettitle">Următoarele evenimente găzduite de facultate</h3><ul class="rsevent"><li class="rsevent"><div style="line-height: 18px"><strong><a href="http://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/" style="font-size: 14px; font-weight: 700">Concursul Mate-Info UBB 2023</a></strong> <br/>26.03.2023 @ 09:00 | sălile de curs ale Universității Babeș-Bolyai</div></li></ul></li></ul><ul class="widget-container"><li id="text-2" class="widget widget_text"><h3 class="widgettitle">Legături importante</h3>			<div class="textwidget"></div>
+		</li></ul><ul class="widget-container"><li class="banners-125"><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/orar.jpg" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a target="_blank" href="https://www.cs.ubbcluj.ro/files/orar/2022-2/">Orar semestrul 2, an univ. 2022-2023 (valabil pentru prima saptamana a semestrului)</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/Ore-online-300x170.jpg" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="https://www.cs.ubbcluj.ro/consultatii-admitere-2023/">Consultații pentru admiterea și concursul Mate-Info UBB 2023</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/Workshop-practica-2023-wide.jpg" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="https://www.cs.ubbcluj.ro/workshop-ul-de-practica-2023-in-atentia-studentilor-din-anul-ii-nivel-licenta-si-master/">Workshop-ul de practică 2023</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/ROSE-2020-wide-small.jpg" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="http://www.cs.ubbcluj.ro/anunturi/anunturi-studenti/anunturi-proiect-rose/">Anunțuri proiect ROSE</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/ubb.jpg" alt="Universitatea Babeş-Bolyai" title="Universitatea Babeş-Bolyai"
+         style="float: left; margin: 0 4px 0 0"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="http://www.ubbcluj.ro" target="_blank">Universitatea<br/>Babeş-Bolyai</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/RISMAA-wide.png" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="http://www.cs.ubbcluj.ro/rismaa/">Romanian Itinerant Seminar on Mathematical Analysis and its Applications (RISMAA)</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/adeverinta-studenti.png" alt="" title=""
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="https://www.cs.ubbcluj.ro/studenti/adeverinte/">Eliberarea adeverinţelor de student</a>
+        </div>
+    </div>
+</div><div style="border: 1px dashed #bbbbbb; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/innohub.png" alt="CS InnoHUB" title="CS InnoHUB"
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a target="_blank" href="https://csinnohub.com/" rel="noopener nofollow">CS InnoHUB</a>
+        </div>
+    </div>
+</div></li></ul>
+		<ul class="widget-container"><li id="recent-posts-2" class="widget widget_recent_entries">
+		<h3 class="widgettitle">Anunţuri recente</h3>
+		<ul>
+											<li>
+					<a href="https://www.cs.ubbcluj.ro/concursul-mate-info-ubb-2023/inscrierea-unui-candidat-nou/">Inscrierea unui candidat la Concursul Mate-Info UBB, ediția 2023</a>
+									</li>
+											<li>
+					<a href="http://www.cs.ubbcluj.ro/prof-dr-adrian-petrusel-fixed-points-and-multi-valued-operators-after-40-years/">Prof. dr. Adrian Petrușel: <em> Fixed Points and Multi-valued Operators &#8211; after 40 years &#8211;</em></a>
+									</li>
+											<li>
+					<a href="http://www.cs.ubbcluj.ro/orarul-programului-postuniversitar-de-pregatire-si-formare-profesionala-in-informatica-modulul-1-sem-2-an-univ-2022-2023/">Orarul programului postuniversitar de pregatire si formare profesionala in Informatica, modulul 1, sem. 2, an univ. 2022-2023</a>
+									</li>
+											<li>
+					<a href="https://www.cs.ubbcluj.ro/files/orar/2022-2/#new_tab">Orar semestrul 2, an univ. 2022-2023 (valabil pentru prima saptamana a semestrului)</a>
+									</li>
+											<li>
+					<a href="http://www.cs.ubbcluj.ro/sesiune-de-prezentare-a-masteratului-de-securitate-cibernetica-desfasurat-sub-egida-eit-digital/">Sesiune de prezentare a masteratului de Securitate Cibernetică desfășurat sub egida EIT Digital</a>
+									</li>
+											<li>
+					<a href="http://www.cs.ubbcluj.ro/a-xi-a-editie-a-cariereinit-isi-deschide-portile-studentilor/">A XI-a ediție a CariereÎnIT își deschide porțile studenților!</a>
+									</li>
+											<li>
+					<a href="http://www.cs.ubbcluj.ro/apel-training-si-competitie-internationala-games-of-science/">Apel training și competiție internațională Games of Science</a>
+									</li>
+					</ul>
+
+		</li></ul><ul class="widget-container"><li id="text-12" class="widget widget_text"><h3 class="widgettitle">Covid-19</h3>			<div class="textwidget"></div>
+		</li></ul><ul class="widget-container"><li class="banners-125"><div style="border: 1px dashed red; height: 70px; width: 290px; padding: 4px; margin-bottom: 8px">
+    <img src="http://www.cs.ubbcluj.ro/wp-content/uploads/covid-19.jpg" alt="Covid-19" title="Covid-19"
+         style="float: left; margin: 0 4px 0 0; width: 120px; height: 70px"/>
+    <div style="float: right; width: 166px; height: 70px; display: table">
+        <div style="vertical-align:middle; display: table-cell">
+            <a href="http://www.cs.ubbcluj.ro/covid-19/" style="color: red">Decizii și măsuri luate la nivelul facultății pentru prevenirea răspândirii Covid-19</a>
+        </div>
+    </div>
+</div></li></ul>    
+</div><!-- #sidebar-primary -->        
+                
+    </div><!-- #main -->
+    
+    
+
+    <div id="footer">
+    
+        <div id="copyrights">
+             &copy; 1996-2023  <a href="http://www.cs.ubbcluj.ro">Facultatea de Matematică și Informatică, Universitatea Babeș-Bolyai Cluj-Napoca</a><br><a href='https://www.ubbcluj.ro/ro/politici/' target='_blank'>Protecția datelor cu caracter personal</a>. <a href='http://www.cs.ubbcluj.ro/politica-cookies/'>Politica de utilizare a cookie-urilor</a><br>Webmaster: Lect. dr. Darius Bufnea (<a href="mailto:webmaster[at]cs.ubbcluj.ro">webmaster[at]cs.ubbcluj.ro</a>) 
+        </div>
+
+    </div><!-- #footer -->
+    
+</div><!-- #container -->
+
+<!-- Lightbox Plus Colorbox v2.7.2/1.5.9 - 2013.01.24 - Message: -->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $("a[rel*=lightbox]").colorbox({speed:350,initialWidth:"300",initialHeight:"100",opacity:0.8,loop:false,scrolling:false,escKey:false,arrowKey:false,top:false,right:false,bottom:false,left:false});
+});
+</script>
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js'></script>
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.6' id='page-links-to-js'></script>
+<script type='text/javascript' src='http://www.cs.ubbcluj.ro/wp-content/plugins/lightbox-plus/js/jquery.colorbox.1.5.9-min.js?ver=1.5.9' id='jquery-colorbox-js'></script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+jQuery.noConflict();
+jQuery(function(){ 
+	jQuery('ul.menu-primary').superfish({ 
+	animation: {opacity:'show'},
+autoArrows:  true,
+                dropShadows: false, 
+                speed: 200,
+                delay: 800
+                });
+            });
+
+jQuery(function(){ 
+	jQuery('ul.menu-secondary').superfish({ 
+	animation: {opacity:'show'},
+autoArrows:  true,
+                dropShadows: false, 
+                speed: 200,
+                delay: 800
+                });
+            });
+
+/* ]]> */
+</script>
+<script type="text/javascript">
+    jQuery(function() {
+        jQuery(".fp-content-wrap").each(function() {
+            var h3 = jQuery(this).find("h3 a");
+            if (h3.html().trim() == "")
+                jQuery(this).hide();
+        });
+    });
+</script>
+</body>
+</html>

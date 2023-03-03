@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class by path attribute value  |
-|  Also known as  |  |
-|  Author(s)  |  Francois Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class by path attribute value |
+|  Also known as |  |
+|  Author(s) |  Francois Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  | [General](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)")  |
-|  Alignment problem addressed  |  A class in one ontology is aligned to a class in another ontology and the criteria  for membership in the class are specified by an attribute value at the end of a path.  |
-|  Alignment solution  |  The two classes in two ontologies are provided along with a statement involving  either one class or both classes. This statement is a precondition for the correspondence. This pattern is agnostic to whether the correspondence is unidirectional or bidirectional. However, if the correspondence is bidirectional (equivalence relation), the same precondition applies for both directions.  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) | [General](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)") |
+|  Alignment problem addressed |  A class in one ontology is aligned to a class in another ontology and the criteriafor membership in the class are specified by an attribute value at the end of a path. |
+|  Alignment solution |  The two classes in two ontologies are provided along with a statement involvingeither one class or both classes. This statement is a precondition for the correspondence. This pattern is agnostic to whether the correspondence is unidirectional or bidirectional. However, if the correspondence is bidirectional (equivalence relation), the same precondition applies for both directions. |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  Example correspondence: ```<Cell> <entity1>  <Class>   <and>    <Class rdf:about="o1 :Person"/>    <AttributeValueCondition>     <onAttribute>       <Property>        <first>        <Relation rdf:about="o1 :workplace"/>       </first>       <next>        <Property>         <first>          <Relation rdf:about="o1 :address"/>         </first>         <next>          <Property rdf:about="o1 :city"/></next>         </next>        </Property>       </next>      </Property>     </onAttribute>     <comparator rdf:resource="xsd:not-equal"/>     <value>      <Property>       <first>        <Relation rdf:about="o1 :address"/>       </first>       <next>        <Property rdf:about="o1 :city"/>       </next>      </Property>     </value>    </AttributeValueCondition>   </and>  </Class>   </entity1> <entity2>   <Class rdf:about="o2 :Commuter"> </entity2></Cell>``` |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Solution example |  Example correspondence:```<Cell> <entity1>  <Class>   <and>    <Class rdf:about="o1 :Person"/>    <AttributeValueCondition>     <onAttribute>       <Property>        <first>        <Relation rdf:about="o1 :workplace"/>       </first>       <next>        <Property>         <first>          <Relation rdf:about="o1 :address"/>         </first>         <next>          <Property rdf:about="o1 :city"/></next>         </next>        </Property>       </next>      </Property>     </onAttribute>     <comparator rdf:resource="xsd:not-equal"/>     <value>      <Property>       <first>        <Relation rdf:about="o1 :address"/>       </first>       <next>        <Property rdf:about="o1 :city"/>       </next>      </Property>     </value>    </AttributeValueCondition>   </and>  </Class>   </entity1> <entity2>   <Class rdf:about="o2 :Commuter"> </entity2></Cell>``` |
+|  Consequences |  |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  |  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to |  |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class by path attribute value__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class by path attribute value__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class by path attribute value__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8500__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class by path attribute value__
+There is no review about this proposal.
+This revision (revision ID __8500__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_path_attribute_value&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_path_attribute_value&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_path_attribute_value&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_path_attribute_value&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class by path attribute value__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class by path attribute value__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class by path attribute value__
 
 
 
-
-# 
-
- References
+#  References

@@ -10,4 +10,5 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [ontopic.owl](./ontopic.owl)  
 [Topic.md](./Topic.md)  
+[topic.owl](./topic.owl)  
 [Topic.png](./Topic.png)  

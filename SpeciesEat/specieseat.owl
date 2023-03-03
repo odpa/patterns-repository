@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/specieseat.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/specieseat.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>Created by Eva Blomqvist</owl:versionInfo>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</owl:versionInfo>
+    <cpannotationschema:coversRequirements>What species feed upon a certain species? What species are eaten by a certain species? What species is preyed upon by a certain species? What species preyes upon a certain species?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasIntent>The pattern intends to model the situation that a certain species feed upon other species and that some species are preyed upon by a certain species.</cpannotationschema:hasIntent>
+    <cpannotationschema:hasUnitTest>SELECT ?x WHERE {?x a :AquaticSpecies.  ?x :feedsUpon :Shrimp. }
+SELECT ?x WHERE {?x a :AquaticSpecies.  :Shrimp :isEatenBy ?x. }
+SELECT ?x WHERE {?x a :AquaticSpecies.  ?x :isPreyedUponBy :Seals.}
+SELECT ?x WHERE {?x a :AquaticSpecies.  :Seals :preyesUpon ?x.}</cpannotationschema:hasUnitTest>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:scenarios>What species eat 'shrimp'
+What species are eaten by 'seals'</cpannotationschema:scenarios>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AquaticSpecies">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#AquaticSpecies"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isPreyedUponBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#AquaticSpecies"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="feedsUpon"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Aquatic species</rdfs:label>
+    <rdfs:comment>Aquatic species are conceptual entities that are characterized together with resources and water areas. 
+Mappable to fi:Species, fi:SpeciesRef, fi:SpeciesFeature, etc.
+It has related axioms from FIGIS Schema that are included in the classes linked to the fi:Species class, such as fi:SpeciesRef (holding association with fi:AqResRef, which holds association with fi:WaterAreaRef).</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="isFoodOf">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#feedsUpon"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:range rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">is food of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#feedsUpon">
+    <rdfs:range rdf:resource="#AquaticSpecies"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">feeds upon</rdfs:label>
+    <owl:inverseOf rdf:resource="#isFoodOf"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isPreyedUponBy">
+    <rdfs:range rdf:resource="#AquaticSpecies"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">is preyed upon by</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="preyesUpon"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#preyesUpon">
+    <owl:inverseOf rdf:resource="#isPreyedUponBy"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:range rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">preyes upon</rdfs:label>
+  </owl:ObjectProperty>
+</rdf:RDF>

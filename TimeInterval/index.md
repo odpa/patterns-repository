@@ -11,3 +11,4 @@ title: ODPA Patterns
 [january2008.owl](./january2008.owl)  
 [Timeinterval.jpg](./Timeinterval.jpg)  
 [TimeInterval.md](./TimeInterval.md)  
+[timeinterval.owl](./timeinterval.owl)  

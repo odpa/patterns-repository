@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+   <META NAME="Author" CONTENT="Maciej Drozdowski">
+   <TITLE>www.cs.put.poznan.pl - Error 404</TITLE>
+</HEAD>
+<BODY bgcolor=white>
+<table>
+<tr>
+<td>
+<img src="/imgs/pp1.gif">
+</td>
+<td>
+<font face="Arial,Aria,Helvetica" size=5 color=blue>
+POZNAN UNIVERSITY OF TECHNOLOGY
+</font>
+<br>
+<font face="Arial,Aria,Helvetica" size=5>
+<b>INSTITUTE OF COMPUTING SCIENCE</b>
+</font>
+<hr color="black" size=6 align="left" width=400 noshade></td></table>
+<br>
+
+<img src="/imgs/polish-brdr.gif" alt="[Polish Version]">
+<p>
+Szanowna Pani, Szanowny Panie,<br>
+Plik, ani zasób o podanym przez Pana/Panią nazwie nie istnieje na tym serwerze.
+Można wybrać jeden z głównych serwisów:
+<UL>
+<LI><A HREF="/">Instytut Informatyki, P.P.</A>
+<LI><A HREF="/tatry/">Tatra Mountains Virtual Tourist</A>
+<LI><A HREF="http://bio.cs.put.poznan.pl/">Computational Biology Server</A>
+</UL>
+<hr>
+<br>
+<img src="/imgs/english.gif" alt="[English Version]">
+<p>
+Madam, Sir,<br>
+a file or a resource you requested does not exist on this server.
+You can select one of the following main entry points:
+<UL>
+<LI><A HREF="/">Institute of Computing Science</A>
+<LI><A HREF="/tatry/">Tatra Mountains Virtual Tourist</A>
+<LI><A HREF="http://bio.cs.put.poznan.pl/">Computational Biology Server</A>
+</UL>
+<HR>
+<P ALIGN="right">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+        document.write("Ostatnia modyfikacja/ Last modified: " + document.lastModified);
+// -->
+
+</SCRIPT>
+
+</P>
+</FONT>
+
+
+</BODY>
+</HTML>
+

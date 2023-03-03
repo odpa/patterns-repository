@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/MON/affordance.owl#"
+     xml:base="https://w3id.org/MON/affordance.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:j.0="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/MON/affordance.owl">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/MON/action.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/MON/generic.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/MON/time.owl"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/luigi-asprino/MON/main/src/Affordance.png"/>
+        <dc:description xml:lang="en">The Affordance ontology is one of the modules of the MARIO Ontology Network (&lt;a href=&quot;https://w3id.org/MON&quot;&gt;MON&lt;/a&gt;) which aims at extending the classical notion of affordance (Gibson 1977). 
+This theory suggests that the physical objects (e.g., a door) offer the opportunity of performing an action (e.g., open). 
+The Affordance ontology is designed by relying on the assumption that, not only physical objects, but also complex situations (e.g. the user want to listen to some music) afford actions (e.g. play music). A complex situation can be seen as the fulfilment at a certain time of certain conditions. These conditions may involve temporal aspects (e.g. lunchtime may afford the task remember the user to take the pills), the perception of certain physical objects, the receiving of a command (e.g. I want to listen to some music), or even the existence of certain state-of-affairs (e.g. the situation the user is sitting on a chair for a long while may afford the task entertain the user).
+
+The affordance is formalised as a weighted relation (i.e. a specialization of dul:Relation), which connects a stereotyped situation (i.e. a dul:Description) to the task to be performed in the situation (i.e. a dul:Task) or the goal that the agent has to achieve in a given situation (i.e. dul:Goal).
+
+This solution enables  two (mutually exclusive) behavior arbitration strategies:
+
+- A &lt;i&gt;purely-reactive strategy&lt;/i&gt; in which the task is directly activated at the occurrence of a certain situation. For example, if the battery is in critical level, then the robot has to charge it.
+    
+- A &lt;i&gt;goal-oriented strategy&lt;/i&gt; in which the occurrence of a certain stereotyped situation causes the robot to set a goal, and the choice of the actions to perform for achieving the goal are delegated to a planner. For example, the goal &quot;entertaining the user&quot; might require multiple actions (including approaching the user, and entertaining the user with different activities such as playing musing, showing videos etc.) scheduled according to a certain sequence.
+    
+The affordanceStrength allows to define a prioritization among the affordance relations. For example, if the battery is in critical level, then the robot should not activate the goal ``entertaining the user&apos;&apos;. 
+This can be achieved by assigning to (battery in critical level, recharge) a strength higher than (user annoyed, entertain the user).
+
+&lt;b&gt;References&lt;/b&gt;
+
+- L. Asprino, A. G. Nuzzolese, A. Russo, A. Gangemi, V. Presutti, S. Nolfi. &quot;An  ontology  design  pattern  for  supporting  behaviour  arbitration  in  cognitive agents&quot; in:  K. Hammar, P. Hitzler, A. Krisnadhi, A. Lawrynowicz, A. G. Nuzzolese, M. Solanki (Eds.), Advances in Ontology Design and Patterns, IOS Press, 2017, pp. 85–95
+
+- Gibson, James J. &quot;The concept of affordances&quot; Perceiving, acting, and knowing (1977).
+
+- MARIO Ontology Network (MON) https://w3id.org/MON
+
+&lt;b&gt;Example of Usage&lt;/b&gt;
+
+We provide an example of usage of the Affordance ontology for specifying the following scenario.
+X is a social robot able to entertain its user by playing music. X can play whatever musical genre the user likes and whenever the user wants to, unless its battery is in critical level.
+Therefore, if the the user wants to listen to some music and the battery is not in critical level, X accommodates the user&apos;s request.
+Otherwise, if the battery is in critical level, then X go recharging itself.
+
+&lt;pre&gt;
+@prefix aff: &amp;#60;https://w3id.org/MON/affordance.owl#&amp;#62; .
+@prefix action: &amp;#60;https://w3id.org/MON/action.owl#&amp;#62; .
+@prefix dul: &amp;#60;http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#&amp;#62; .
+
+:UserWantsToListenToSomeMusic a dul:Description .
+
+:BatteryInCritalLevel a dul:Description .
+
+:PlayMusic a action:Task;
+  aff:hasParameter :genre .
+
+:Recharge a aff:Task.
+
+:affordancePlayMusicBatteryCritical a aff:Affodance ;
+  aff:affordanceStrength &quot;-10&quot;^^xsd:double ;
+  aff:holds :BatteryInCritalLevel ;
+  aff:hasTask :PlayMusic  .
+
+:affordancePlayMusicUserWantsToListenToSomeMusic a aff:Affodance ;
+  aff:affordanceStrength &quot;10&quot;^^xsd:double ; 
+  aff:holds :UserWantsToListenToSomeMusic ;
+  aff:hasTask :PlayMusic  .
+
+:affordanceRechargeBatteryCritical a aff:Affodance ;
+  aff:affordanceStrength &quot;1&quot;^^xsd:double ;
+  aff:holds :BatteryInCritalLevel ; 
+  aff:hasTask :Recharge  .
+&lt;/pre&gt;</dc:description>
+        <dc:title xml:lang="en">Affordance Ontology</dc:title>
+        <j.0:coversRequirements xml:lang="en">What are the tasks afforded in a certain situation?</j.0:coversRequirements>
+        <j.0:coversRequirements xml:lang="en">Which is the strength of an Affordance?</j.0:coversRequirements>
+        <j.0:hasIntent xml:lang="en">To represent the model for supporting the action selection mechanism.</j.0:hasIntent>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/MON/affordance.owl#hasGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/MON/affordance.owl#Affordance"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+        <rdfs:comment xml:lang="en">It connects an Affordance with the Goal that will be activated.</rdfs:comment>
+        <rdfs:label xml:lang="en">has goal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#hasTask -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/MON/affordance.owl#hasTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/MON/affordance.owl#Affordance"/>
+        <rdfs:range rdf:resource="https://w3id.org/MON/action.owl#Task"/>
+        <rdfs:comment xml:lang="en">It associates an Affordance to the Task it refers to.</rdfs:comment>
+        <rdfs:label xml:lang="en">has task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#holds -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/MON/affordance.owl#holds">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/MON/affordance.owl#isHeldBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/MON/affordance.owl#Affordance"/>
+        <rdfs:comment xml:lang="en">It associates an Affordance with the Description in which it holds.</rdfs:comment>
+        <rdfs:label xml:lang="en">holds</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#isHeldBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/MON/affordance.owl#isHeldBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:range rdf:resource="https://w3id.org/MON/affordance.owl#Affordance"/>
+        <rdfs:comment xml:lang="en">It associates a Description with the Affordance it enables.</rdfs:comment>
+        <rdfs:label xml:lang="en">is held by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#affordanceStrength -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/MON/affordance.owl#affordanceStrength">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/MON/affordance.owl#Affordance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">It encodes the strength of the Affordance.</rdfs:comment>
+        <rdfs:label xml:lang="en">affordance strength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    
+
+
+    <!-- https://w3id.org/MON/affordance.owl#Affordance -->
+
+    <owl:Class rdf:about="https://w3id.org/MON/affordance.owl#Affordance">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Relation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#hasGoal"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#hasTask"/>
+                        <owl:allValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#holds"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#affordanceStrength"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An affordance is modelled in DnS fashion and is an n-ary that relates state of the world (i.e., stereotyped situations) to tasks according to specific weights or affordance strengths.</rdfs:comment>
+        <rdfs:label xml:lang="en">Affordance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#hasGoal"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/MON/affordance.owl#hasTask"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

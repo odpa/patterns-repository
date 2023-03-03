@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY region "http://www.ontologydesignpatterns.org/cp/owl/region.owl#" >
+    <!ENTITY taskrole "http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#" >
+    <!ENTITY parameter "http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#" >
+    <!ENTITY basicplan "http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#" >
+    <!ENTITY situation "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
+    <!ENTITY objectrole "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#" >
+    <!ENTITY description "http://www.ontologydesignpatterns.org/cp/owl/description.owl#" >
+    <!ENTITY participation "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#" >
+    <!ENTITY classification "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#" >
+    <!ENTITY basicplanexecution "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#" >
+    <!ENTITY basicplandescription "http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"
+     xmlns:region="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
+     xmlns:basicplan="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#"
+     xmlns:taskrole="http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#"
+     xmlns:basicplandescription="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:parameter="http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#"
+     xmlns:description="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"
+     xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+     xmlns:classification="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:objectrole="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#"
+     xmlns:basicplanexecution="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">Created by Valentina Presutti</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">The basic plans. This content ontology design patterns represents plans descriptions and their executions. It is defined by combining and expanding other CPs: basic plans description, basic plans execution, and object role. Expansion involves the partial clone of ontology elements from DOLCE Ultra Lite and Plans Lite ontologies.</rdfs:comment>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#conceptualizes -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;conceptualizes">
+        <rdfs:label xml:lang="en">conceptualizes</rdfs:label>
+        <rdfs:label xml:lang="it">concettualizza</rdfs:label>
+        <rdfs:comment>A relation stating that an Agent is internally representing a SocialObject . E.g., &#39;John believes in the conspiracy theory&#39;; &#39;Niels Bohr created the solar-system metaphor for the atomic theory&#39;; &#39;Jacques assumes all swans are white&#39;; &#39;the task force members share the attack plan&#39;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <rdfs:range rdf:resource="&basicplandescription;Plan"/>
+        <rdfs:domain rdf:resource="&basicplanexecution;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#executesTask -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;executesTask">
+        <rdfs:label xml:lang="en">executes task</rdfs:label>
+        <rdfs:label xml:lang="it">esegue il task</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A relation between an action and a task, e.g. &#39;putting some water in a pot and putting the pot on a fire until the water starts bubbling&#39; executes the task &#39;boiling&#39;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <owl:inverseOf rdf:resource="&basicplan;isExecutedIn"/>
+        <rdfs:domain rdf:resource="&basicplanexecution;Action"/>
+        <rdfs:subPropertyOf rdf:resource="&classification;isClassifiedBy"/>
+        <rdfs:range rdf:resource="&taskrole;Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isConceptualizedBy -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;isConceptualizedBy">
+        <rdfs:label xml:lang="en">is conceptualized by</rdfs:label>
+        <rdfs:label xml:lang="it">è concettualizzato da</rdfs:label>
+        <rdfs:comment>A relation stating that an Agent is internally representing a Description . E.g., &#39;John believes in the conspiracy theory&#39;; &#39;Niels Bohr created a solar-system metaphor for his atomic theory&#39;; &#39;Jacques assumes all swans are white&#39;; &#39;the task force shares the attack plan&#39;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <owl:inverseOf rdf:resource="&basicplan;conceptualizes"/>
+        <rdfs:domain rdf:resource="&basicplandescription;Plan"/>
+        <rdfs:range rdf:resource="&basicplanexecution;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isExecutedIn -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;isExecutedIn">
+        <rdfs:label xml:lang="en">is executed in</rdfs:label>
+        <rdfs:label xml:lang="it">è eseguito mediante</rdfs:label>
+        <rdfs:comment>A relation between an action and a task, e.g. &#39;putting some water in a pot and putting the pot on a fire until the water starts bubbling&#39; executes the task &#39;boiling&#39;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <rdfs:range rdf:resource="&basicplanexecution;Action"/>
+        <rdfs:subPropertyOf rdf:resource="&classification;classifies"/>
+        <rdfs:domain rdf:resource="&taskrole;Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isParametrizedBy -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;isParametrizedBy">
+        <rdfs:label xml:lang="en">is parametrized by</rdfs:label>
+        <rdfs:label xml:lang="it">è parametrizzato da</rdfs:label>
+        <rdfs:comment>The relation between a Parameter, e.g. &#39;MajorAge&#39;, and a Region, e.g. &#39;&gt;17 year&#39;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <owl:inverseOf rdf:resource="&basicplan;parametrizes"/>
+        <rdfs:subPropertyOf rdf:resource="&classification;isClassifiedBy"/>
+        <rdfs:range rdf:resource="&parameter;Parameter"/>
+        <rdfs:domain rdf:resource="&region;Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#isSatisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;isSatisfiedBy">
+        <rdfs:label xml:lang="en">is satisfied by</rdfs:label>
+        <rdfs:label xml:lang="it">è soddisfatta da</rdfs:label>
+        <rdfs:comment>A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <owl:inverseOf rdf:resource="&basicplan;satisfies"/>
+        <rdfs:domain rdf:resource="&description;Description"/>
+        <rdfs:range rdf:resource="&situation;Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#parametrizes -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;parametrizes">
+        <rdfs:label xml:lang="en">parametrizes</rdfs:label>
+        <rdfs:label xml:lang="it">parametrizza</rdfs:label>
+        <rdfs:comment>The relation between a Parameter, e.g. &#39;MajorAgeLimit&#39;, and a Region, e.g. &#39;18_year&#39;.
+For a more data-oriented relation, see hasDataValue</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&classification;classifies"/>
+        <rdfs:domain rdf:resource="&parameter;Parameter"/>
+        <rdfs:range rdf:resource="&region;Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#satisfies -->
+
+    <owl:ObjectProperty rdf:about="&basicplan;satisfies">
+        <rdfs:label xml:lang="en">satisfies</rdfs:label>
+        <rdfs:label xml:lang="it">soddisfa</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">A relation between a Situation and a Description, e.g. the execution of a Plan satisfies that plan.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+        <rdfs:range rdf:resource="&description;Description"/>
+        <rdfs:domain rdf:resource="&situation;Situation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies -->
+
+    <owl:ObjectProperty rdf:about="&classification;classifies"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="&classification;isClassifiedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="&objectrole;isRoleOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl#GoalSituation -->
+
+    <owl:Class rdf:about="&basicplan;GoalSituation">
+        <rdfs:label xml:lang="en">Goal situation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&situation;Situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&basicplan;satisfies"/>
+                        <owl:someValuesFrom rdf:resource="&basicplandescription;Goal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&situation;Situation"/>
+        <rdfs:comment rdf:datatype="&xsd;string">A goal situation is a situation that satisfies a goal.Opposite to the case of subplan executions, a goal situation is not part of a plan execution.In other words, it is not true in general that any situation satisfying a part of a description, is also part of the situation that satisfies the whole description. This helps to account for the following cases: a) Execution of plans containing abort or suspension conditions (the plan would be satisfied even if the goal has not been reached, see below), b) Incidental satisfaction, like when a situation satisfies a goal without being intentionally planned (but anyway desired).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/basicplan.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Goal -->
+
+    <owl:Class rdf:about="&basicplandescription;Goal"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplandescription.owl#Plan -->
+
+    <owl:Class rdf:about="&basicplandescription;Plan">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basicplan;isSatisfiedBy"/>
+                <owl:allValuesFrom rdf:resource="&basicplanexecution;PlanExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action -->
+
+    <owl:Class rdf:about="&basicplanexecution;Action"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Agent -->
+
+    <owl:Class rdf:about="&basicplanexecution;Agent">
+        <owl:disjointWith rdf:resource="&description;Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#PlanExecution -->
+
+    <owl:Class rdf:about="&basicplanexecution;PlanExecution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&situation;Situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&basicplan;satisfies"/>
+                        <owl:someValuesFrom rdf:resource="&basicplandescription;Plan"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basicplan;satisfies"/>
+                <owl:allValuesFrom rdf:resource="&basicplandescription;Plan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept -->
+
+    <owl:Class rdf:about="&classification;Concept">
+        <owl:equivalentClass rdf:resource="&description;Concept"/>
+        <owl:equivalentClass rdf:resource="&parameter;Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#Concept -->
+
+    <owl:Class rdf:about="&description;Concept">
+        <owl:disjointWith rdf:resource="&situation;Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#Description -->
+
+    <owl:Class rdf:about="&description;Description"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object -->
+
+    <owl:Class rdf:about="&objectrole;Object">
+        <owl:equivalentClass rdf:resource="&participation;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role -->
+
+    <owl:Class rdf:about="&objectrole;Role">
+        <owl:equivalentClass rdf:resource="&taskrole;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Concept -->
+
+    <owl:Class rdf:about="&parameter;Concept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/parameter.owl#Parameter -->
+
+    <owl:Class rdf:about="&parameter;Parameter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basicplan;parametrizes"/>
+                <owl:allValuesFrom rdf:resource="&region;Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&taskrole;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object -->
+
+    <owl:Class rdf:about="&participation;Object"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region -->
+
+    <owl:Class rdf:about="&region;Region">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basicplan;isParametrizedBy"/>
+                <owl:allValuesFrom rdf:resource="&parameter;Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="&situation;Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Role -->
+
+    <owl:Class rdf:about="&taskrole;Role">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&objectrole;isRoleOf"/>
+                <owl:allValuesFrom rdf:resource="&objectrole;Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/taskrole.owl#Task -->
+
+    <owl:Class rdf:about="&taskrole;Task">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&basicplan;isExecutedIn"/>
+                <owl:allValuesFrom rdf:resource="&basicplanexecution;Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

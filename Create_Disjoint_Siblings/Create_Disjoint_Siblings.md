@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Create Disjoint Siblings  |
-|  Also known as  |  |
-|  Author(s)  |  |
-|  SubmittedBy  | [Chris Mungall](http://ontologydesignpatterns.org/wiki/index.php?title=User:Chris_Mungall&action=edit&redlink=1 "User:Chris Mungall (not yet written)")  |
-
+|  Name |  Create Disjoint Siblings |
+|  Also known as |  |
+|  Author(s) |  |
+|  SubmittedBy | [Chris Mungall](http://ontologydesignpatterns.org/wiki/index.php?title=User:Chris_Mungall&action=edit&redlink=1 "User:Chris Mungall (not yet written)") |
 
 
   
@@ -37,24 +29,20 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Motivation  |  |
-|  Aim  |  |
-|  Solution description  |  |
-|  Elements  |  |
-|  Implementation  |  |
-|  Reusable component  |  |
-|  Component type  |  |
-
+|  Motivation |  |
+|  Aim |  |
+|  Solution description |  |
+|  Elements |  |
+|  Implementation |  |
+|  Reusable component |  |
+|  Component type |  |
 
 
   
@@ -62,20 +50,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Pattern solution example  |  |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Pattern solution example |  |
+|  Consequences |  |
 
 
   
@@ -83,68 +67,44 @@ __Diagram__
 
 
 
-
-# 
-
- Pattern reference
+#  Pattern reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related ODP  |  |
-|  Used in combination with  |  |
-|  Test  |  |
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related ODP |  |
+|  Used in combination with |  |
+|  Test |  |
+
+
+#  Additional information
+
+
+#  Scenarios
 
 
 
-# 
-
- Additional information
-
-
-
-# 
-
- Scenarios
-
-
-
-
-__Scenarios about Create Disjoint Siblings__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Create Disjoint Siblings__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Create Disjoint Siblings__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __13388__ 
- ) takes in account the reviews: none
- 
+__Reviews about Create Disjoint Siblings__
+There is no review about this proposal.
+This revision (revision ID __13388__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Create_Disjoint_Siblings&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Create_Disjoint_Siblings&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Create_Disjoint_Siblings&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Create_Disjoint_Siblings&action=evaluation")
 
 
 
@@ -154,19 +114,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Create Disjoint Siblings__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Create Disjoint Siblings__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -176,7 +129,4 @@ __Modeling issues about Create Disjoint Siblings__
 
 
 
-
-# 
-
- References
+#  References

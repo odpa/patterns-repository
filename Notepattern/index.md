@@ -10,4 +10,5 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [Notepattern.md](./Notepattern.md)  
+[notepattern.owl](./notepattern.owl)  
 [Scorepart_pattern.png](./Scorepart_pattern.png)  

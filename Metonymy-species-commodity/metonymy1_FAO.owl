@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>GATE.ac.uk  - Login</title>
+    
+    <script type="text/javascript" src="/js/../gwt/gate.cow.gwt.NewPage/gate.cow.gwt.NewPage.nocache.js"></script>
+
+    <script type="text/javascript" src="/js/../gwt/gate.cow.gwt.Upload/gate.cow.gwt.Upload.nocache.js"></script>
+
+    <link rel="stylesheet" href="/css/page.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet"
+      href="/css/prototip/prototip.css"
+    />
+    
+    
+    
+    <!--[if lt IE 7]>
+    <style type="text/css" media="screen">
+    /* I'd like to put this in the ie-menus.css but need to use a gsp tag to
+     * generate the behaviour url value.
+     */
+    body {
+      behavior: url('/_images/menu/csshover.htc');
+      font-size: 100%;
+    }
+    </style>
+    <link rel="stylesheet" href="/css/ie-menus.css" />
+    <![endif]-->
+    
+    <script type="text/javascript" src="/js/prototype/prototype.js"></script>
+
+    <script type="text/javascript" src="/js/prototype/scriptaculous.js?load=effects"></script>
+
+    <script type="text/javascript" src="/js/prototip.js"></script>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="layout" content="cowguest" />
+    <meta name="google-site-verification" content="5l2GPDO4drzRBEHSskaHF5vrSALPVNkM8MyeK0Gz9wI">
+    <script type="text/javascript" src="/js/application.js"></script>
+
+  </head>
+  
+  <body>
+    <div id="topBar">
+      <span id="topLogo">
+        <a href="/"><img src="/plugins/gau-0.1/images/logo-gate.png" alt="GATE" border="0" height="70" width="361"></a>
+      </span>
+      
+      <!-- first row header links -->
+      <div id="topLoginEtc">
+        
+          <form name="searchForm" method="GET" action="https://www.google.com/search" class="inlineForm">
+            <label class="pageLink" for="as_q">Search:</label>
+            <input type="text" name="as_q" maxlength="255">
+            <input type="hidden" name="as_sitesearch" value="gate.ac.uk">
+          </form>
+        
+        
+        
+          
+            
+          
+        
+        
+        
+        <span class="pageLink"><a href="/gatewiki/cow/doc/gatewiki.html">Help</a></span>
+
+
+        <!-- page links -->
+        <br/>
+        <span id="topPageSpecific"></span>
+      </div>
+
+      <!-- second row header links -->
+      <div id="topBreadcrumbs">
+        
+      </div>
+    </div>
+
+    <!-- header menus -->
+    <div id="header">
+      
+      <div class="horizontal menu">
+        <ul>
+        <li><b><a href="#">Products</a></b>
+          <ul>
+          <li><a href="/family/">The GATE Family</a></li>
+          <li><a href="/family/developer.html">GATE Developer</a></li>
+          <li><a href="/family/embedded.html">GATE Embedded</a></li>
+          <li><a href="/teamware">GATE Teamware</a></li>
+          <li><a href="/family/process.html">The GATE Process</a></li>
+          <li><a href="https://cloud.gate.ac.uk/">GATE Cloud</a></li>
+          <li><a href="/mimir/">GATE M&iacute;mir</a></li>
+          <li><a href="/gatewiki/cow/">GATE Wiki</a></li>
+          <li><a href="/family/training.html">Training/Certification</a></li>
+          </ul>
+        </li>
+        <li><b><a href="#">Services</a></b>
+          <ul>
+          <li><a href="/biz/customers.html">Customer stories</a></li>
+          <li><a href="/biz/usps.html">Why GATE?</a></li>
+          <li><a href="/family/training.html">Training/Certification</a></li>
+          </ul>
+        </li>
+        <li><b><a href="#">Support</a></b>
+          <ul>
+          <li><a href="/support.html">GATE Support</a></li>
+          <li><a href="/mail/">Community-based</a></li>
+          <li><a href="/customisation/">For business</a></li>
+          </ul>
+        </li>
+        <li><a href="/download/">Download</a></li>
+        <li><b><a href="#">Documentation</a></b>
+          <ul>
+          <li><a href="/userguide/">User guide</a></li>
+          <li><a href="/mail/">Mailing list</a></li>
+          <li><b><a href="#">Wiki</a></b>
+            <ul>
+            <li><a href="/wiki/">Main page</a></li>
+            <li><a href="/wiki/jape-repository/">JAPE tips</a></li>
+            <li><a href="/wiki/code-repository/">Example code</a></li>
+            <li><a href="/wiki/quick-start/">Beginners' quick-start guide</a></li>
+            <li><a href="/wiki/groovy-recipes/">Groovy recipes</a></li>
+            </ul>
+          </li>
+          <li><a href="/demos/">Demos</a></li>
+          <li><a href="/books.html">Books</a></li>
+          <li><a href="/gate/doc/plugins.html">Core plugins</a></li>
+          <li><a href="/sale/gate-flyer/2009/gate-flyer-4-page.pdf">Brochure</a></li>
+          <li><a href="https://gatenlp.github.io/gate-core/apidocs/">Javadocs</a></li>
+          <li><a href="/documentation.html">Docs summary</a></b>
+          </ul>
+        </li>
+        <li><b><a href="#">Contact</a></b>
+          <ul>
+          <li><a href="/people/">About the team</a></li>
+          <li><a href="/g8/contact">Contact us</a></li>
+          </ul>
+        </li>
+        <li><a href="/donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- sep, left/right bars, body and footer -->
+    <div id="topSeparator"> </div>
+    <div id="leftBar">
+      
+    </div>
+    <div id="main" class="noBorder">
+      <div class="cowSpacer">&nbsp;</div>
+      <div align="center">
+    
+  
+  <form action="/g8/auth/signIn" method="post" >
+    <input type="hidden" name="targetUri" value="/gate-extras/neon/ontologies/metonymy1_FAO.owl" />
+    <table>
+      <tbody>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="username" value="" tabindex="1" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" value="" tabindex="2" /></td>
+        </tr>
+        <!--
+        <tr>
+          <td>Remember me?</td>
+          <td><input type="hidden" name="_rememberMe" /><input type="checkbox" name="rememberMe" tabindex="3" id="rememberMe"  /></td>
+        </tr>
+        -->
+        <tr>
+          <td />
+          <td><input type="submit" value="Sign in" tabindex="4" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+    
+  <p><a href="/g8/register/index">Register as a new user</a></p>
+
+  </div>    
+      <div class="cowSpacer">&nbsp;</div>
+    </div>
+    <div id="rightBar"></div>
+    <div id="footer">
+      
+
+      <!-- key partners -->
+      <table align="center">
+        <tr>
+          <td rowspan="3" style="vertical-align:middle"><a href="http://www.shef.ac.uk/dcs/"><img src="/plugins/gau-0.1/images/logo-usfd.png" alt="The University of Sheffield" height="81" width="191"></a></td>
+          <td width="30" rowspan="3">&nbsp;</td>
+          <td colspan="5"><b><span class="menu" style="margin-left:auto; margin-right:auto"><a href="/partners.html">Our partners:</a></span></b></td>
+        </tr>
+        <tr>
+          <td ><a href="http://www.ontotext.com/"><img src="/plugins/gau-0.1/images/logo-ontotext.png" alt="Ontotext" height="50" width="250"></a></td>
+          <td width="10">&nbsp;</td>
+          <td align="right"><a href="http://www.synaptica.com"><img src="/plugins/gau-0.1/images/logo-synaptica.png" alt="Synaptica Knowledge Organisation and Discovery Solutions" height="60" width="300"></a></td>
+          <td width="10">&nbsp;</td>
+          <td align="right"><a href="http://www.textminingsolutions.co.uk/"><img src="/plugins/gau-0.1/images/logo-tms.png" alt="Text Mining Solutions" height="70" width="89"></a></td>
+        </tr>
+	<tr>
+        <td colspan="5">
+        <table border="0"><tr>
+          <td style="vertical-align:bottom; text-align:right;"><font size="-2">
+            &copy; The University of Sheffield, 1995-2023.<br>GATE is
+            <a href="http://www.fsf.org/">free software</a>
+            under <a href="http://www.gnu.org/licenses/">the GNU licences</a> and
+            others.<br>All our products and services supplied <b>with no warranty</b>.
+            <br>This website is licenced under the <a rel="license" 
+            href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative 
+            Commons Attribution-NonCommercial-ShareAlike Licence</a>.</font>
+          </td>
+          <td style="vertical-align:bottom;"><a rel="license" 
+            href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+            <img alt="Creative Commons License" style="border-width: 0pt;" 
+            src="/plugins/gau-0.1/images/cc-by-nc-sa.png"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- GWT support -->
+    <iframe id="__gwt_historyFrame" style="width:0;height:0;border:0">
+    </iframe>
+
+<!-- Google analytics -->
+<script type="text/javascript">
+<!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+-->
+</script>
+<script type="text/javascript">
+<!--
+var pageTracker = _gat._getTracker("UA-4360259-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+-->
+</script>
+  </body>
+</html>

@@ -10,3 +10,4 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [NewsReportingEvent.md](./NewsReportingEvent.md)  
+[newsreportingevent.owl](./newsreportingevent.owl)  

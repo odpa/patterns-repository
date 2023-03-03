@@ -1,0 +1,53 @@
+<rdf:RDF
+    xmlns:mq="http://www.ontologydesignpatterns.org/schemas/matchingquantification.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.ontologydesignpatterns.org/ekp/owl/Airline.owl#"
+    xmlns:base="http://www.ontologydesignpatterns.org/ekp/owl/Airline.owl"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ekp="http://www.ontologydesignpatterns.org/cp/ekp#"
+    xmlns:cpa="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Aircraft">
+    <rdfs:label xml:lang="fr">avion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">aircraft</rdfs:label>
+    <rdfs:label xml:lang="el">αεροσκάφος</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasAircraft">
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/MeanOfTransportation"/>
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Airline"/>
+    <rdfs:comment xml:lang="en">Relation between Airline and Aircraft</rdfs:comment>
+    <rdfs:label xml:lang="en">has Aircraft</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">Relazione tra Airline e Aircraft</rdfs:comment>
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Aircraft"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Airline">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <rdfs:subClassOf rdf:nodeID="A4"/>
+    <rdfs:subClassOf rdf:nodeID="A5"/>
+    <rdfs:label xml:lang="en">airline</rdfs:label>
+    <rdfs:label xml:lang="fr">compagnie aérienne</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/MeanOfTransportation">
+    <rdfs:label xml:lang="en">has Aircraft</rdfs:label>
+    <rdfs:comment xml:lang="en">Relation between Airline and Aircraft</rdfs:comment>
+    <rdfs:comment xml:lang="it">Relazione tra Airline e Aircraft</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <cpa:extractedFrom rdf:resource="http://dbpedia.org/"/>
+    <cpa:hasAuthor>Andrea Giovanni Nuzzolese</cpa:hasAuthor>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <cpa:extractedFrom rdf:resource="http://en.wikipedia.org/"/>
+    <cpa:hasAuthor>Valentina Presutti</cpa:hasAuthor>
+    <cpa:hasAuthor>Aldo Gangemi</cpa:hasAuthor>
+    <cpa:hasIntent>To represent the encyclopedic knowledge expressed by an object typed as Airline</cpa:hasIntent>
+    <rdfs:comment>Airline Encyclopedic Knowledge Pattern</rdfs:comment>
+    <owl:imports rdf:resource="/schemas/cpannotationschema.owl"/>
+  </rdf:Description>
+</rdf:RDF>

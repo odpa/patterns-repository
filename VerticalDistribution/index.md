@@ -13,3 +13,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [observation.owl](./observation.owl)  
 [VerticalDistribution.md](./VerticalDistribution.md)  
+[verticaldistribution.owl](./verticaldistribution.owl)  

@@ -9,3 +9,4 @@ title: ODPA Patterns
 [FOI.png](./FOI.png)  
 [index.md](./index.md)  
 [SmartHome_FeatureOfInterest.md](./SmartHome_FeatureOfInterest.md)  
+[SmartHome_FeatureOfInterest.owl](./SmartHome_FeatureOfInterest.owl)  

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/speciesnames.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/speciesnames.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>Created by Aldo Gangemi</owl:versionInfo>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</owl:versionInfo>
+    <cpannotationschema:hasConsequences>Terminological and conceptual similarity between species can be encoded byusing the three properties in this pattern.</cpannotationschema:hasConsequences>
+    <cpannotationschema:coversRequirements>what local names are used for that species? what synonyms exist for that species? can that species be confused with some other one?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasIntent>To express the terminological variants and the conceptual similarity that can be sources of confusion between species.</cpannotationschema:hasIntent>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:scenarios>give me the species containing local name 'oyster'
+give me the synonyms and localnames for species 'Ostrica gigas'
+give me the species with which species 'Ostrica gigas' can be confused</cpannotationschema:scenarios>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AquaticSpecies">
+    <rdfs:label xml:lang="en">Aquatic species</rdfs:label>
+    <rdfs:comment>Aquatic species are conceptual entities that are characterized together with resources and water areas. 
+Mappable to fi:Species, fi:SpeciesRef, fi:SpeciesFeature, etc.
+It has related axioms from FIGIS Schema that are included in the classes linked to the fi:Species class, such as fi:SpeciesRef (holding association with fi:AqResRef, which holds association with fi:WaterAreaRef).</rdfs:comment>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="hasLocalName">
+    <rdfs:comment>Property to express a species' localname , where it is used , and any additional information like the name of the dialect or more detailed geographical information on where exactly the local-common name is used for the aquatic species in a given country.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">has local name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="canBeConfusedWith">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A property for expressing a description of why a species may be confused with another. It may instead/also contain a list of other species with which a species may be confused.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">can be confused with</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasSynonym">
+    <rdfs:comment>Expresses the scientific names that exist for a species but are no longer valid.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">has synonym</rdfs:label>
+  </owl:DatatypeProperty>
+</rdf:RDF>

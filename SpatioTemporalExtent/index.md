@@ -10,3 +10,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Spatiotemporal.png](./Spatiotemporal.png)  
 [SpatioTemporalExtent.md](./SpatioTemporalExtent.md)  
+[spatiotemporalextent.owl](./spatiotemporalextent.owl)  

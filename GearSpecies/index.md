@@ -10,4 +10,5 @@ title: ODPA Patterns
 [cpannotationschema.owl](./cpannotationschema.owl)  
 [Gearspecies.jpg](./Gearspecies.jpg)  
 [GearSpecies.md](./GearSpecies.md)  
+[gearspecies.owl](./gearspecies.owl)  
 [index.md](./index.md)  

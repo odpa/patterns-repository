@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,36 +11,32 @@ __Diagram__
 
 
 
-
-# 
-
- General description
+#  General description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name:  |  Interest  |
-|  Submitted by:  | [CoganShimizu](../User/CoganShimizu.md "User:CoganShimizu")  |
-|  Also Known As:  |  |
-|  Intent:  |  Used for capturing the interest of a user, as well as capturing the provenance of interest predictions.  |
-|  Domains:  |  |
-|  Competency Questions:  |  |
-|  Solution description:  |  Used for capturing the interest of a user, as well as capturing the provenance of interest predictions.  |
-|  Reusable OWL Building Block:  | [https://raw.githubusercontent.com/cogan-shimizu-wsu/UserInterestOWL/master/InterestOntology.owl](http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&link=https://raw.githubusercontent.com/cogan-shimizu-wsu/UserInterestOWL/master/InterestOntology.owl&message=OWL building block&from_page_id=4478&update=)  (0)  |
-|  Consequences:  |  |
-|  Scenarios:  |  |
-|  Known Uses:  |  |
-|  Web References:  |  |
-|  Other References:  |  |
-|  Examples (OWL files):  |  |
-|  Extracted From:  |  |
-|  Reengineered From:  |  |
-|  Has Components:  |  |
-|  Specialization Of:  |  |
-|  Related CPs:  |  |
-
+|  Name: |  Interest |
+|  Submitted by: | [CoganShimizu](../User/CoganShimizu.md "User:CoganShimizu") |
+|  Also Known As: |  |
+|  Intent: |  Used for capturing the interest of a user, as well as capturing the provenance of interest predictions. |
+|  Domains: |  |
+|  Competency Questions: |  |
+|  Solution description: |  Used for capturing the interest of a user, as well as capturing the provenance of interest predictions. |
+|  Reusable OWL Building Block: | [https://raw.githubusercontent.com/cogan-shimizu-wsu/UserInterestOWL/master/InterestOntology.owl](http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&link=https://raw.githubusercontent.com/cogan-shimizu-wsu/UserInterestOWL/master/InterestOntology.owl&message=OWL building block&from_page_id=4478&update=) (0) |
+|  Consequences: |  |
+|  Scenarios: |  |
+|  Known Uses: |  |
+|  Web References: |  |
+|  Other References: |  |
+|  Examples (OWL files): |  |
+|  Extracted From: |  |
+|  Reengineered From: |  |
+|  Has Components: |  |
+|  Specialization Of: |  |
+|  Related CPs: |  |
 
 
   
@@ -52,63 +44,36 @@ __Diagram__
 
 
 
-
-# 
-
- Elements
+#  Elements
 
 
-
-_The
- __Interest__ 
- Content OP locally defines the following ontology elements:_ 
+_The __Interest__ Content OP locally defines the following ontology elements:_
 
 
 
-
-# 
-
- Additional information
+#  Additional information
 
 
+#  Scenarios
 
-# 
 
- Scenarios
+
+__Scenarios about Interest__
+No scenario is added to this Content OP.
 
 
 
 
-__Scenarios about Interest__ 
-
-
- No scenario is added to this Content OP.
- 
+#  Reviews
 
 
 
-
-# 
-
- Reviews
-
+__Reviews about Interest__
+There is no review about this proposal.
+This revision (revision ID __13483__) takes in account the reviews: none
 
 
-
-__Reviews about Interest__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __13483__ 
- ) takes in account the reviews: none
- 
-
-
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Interest&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Interest&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Interest&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Interest&action=evaluation")
 
 
 
@@ -118,19 +83,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Interest__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Interest__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -140,7 +98,4 @@ __Modeling issues about Interest__
 
 
 
-
-# 
-
- References
+#  References

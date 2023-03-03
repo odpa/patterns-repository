@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class correspondence defined by relation domain  |
-|  Also known as  |  Subclass correspondence defined by relation domain  |
-|  Author(s)  |  Francois Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class correspondence defined by relation domain |
+|  Also known as |  Subclass correspondence defined by relation domain |
+|  Author(s) |  Francois Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  | [General](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)")  |
-|  Alignment problem addressed  |  A class in one ontology is equivalent to the subclass of a class in a second ontology of exactly those instances which are in the domain of a specified relation.  |
-|  Alignment solution  |  This pattern establishes a correspondence between a class and relation in one ontology and a class in another  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) | [General](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)") |
+|  Alignment problem addressed |  A class in one ontology is equivalent to the subclass of a class in a second ontology of exactly those instances which are in the domain of a specified relation. |
+|  Alignment solution |  This pattern establishes a correspondence between a class and relation in one ontology and a class in another |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  <Cell> ``` <entity1>   <Class rdf:about="o1:Parent"/> </entity1> <entity2>  <Class>   <and>    <Class rdf:about="o2:Animal">   </and>   <and>    <AttributeOccurenceCondition>     <onAttribute>      <Relation rdf:about="o2:children"/>     </onAttribute>    <AttributeOccurenceCondition>   </and>  </Class> </entity2> <relation>subsumption</relation></Cell>``` |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Solution example |  <Cell>``` <entity1>   <Class rdf:about="o1:Parent"/> </entity1> <entity2>  <Class>   <and>    <Class rdf:about="o2:Animal">   </and>   <and>    <AttributeOccurenceCondition>     <onAttribute>      <Relation rdf:about="o2:children"/>     </onAttribute>    <AttributeOccurenceCondition>   </and>  </Class> </entity2> <relation>subsumption</relation></Cell>``` |
+|  Consequences |  |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  | [Submissions:Class by Attribute Occurence Correspondence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_Attribute_Occurence_Correspondence&action=edit&redlink=1 "Submissions:Class by Attribute Occurence Correspondence (not yet written)")  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to | [Submissions:Class by Attribute Occurence Correspondence](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_by_Attribute_Occurence_Correspondence&action=edit&redlink=1 "Submissions:Class by Attribute Occurence Correspondence (not yet written)") |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class correspondence defined by relation domain__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class correspondence defined by relation domain__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class correspondence defined by relation domain__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8790__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class correspondence defined by relation domain__
+There is no review about this proposal.
+This revision (revision ID __8790__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_correspondence_defined_by_relation_domain&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_correspondence_defined_by_relation_domain&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_correspondence_defined_by_relation_domain&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_correspondence_defined_by_relation_domain&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class correspondence defined by relation domain__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class correspondence defined by relation domain__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class correspondence defined by relation domain__
 
 
 
-
-# 
-
- References
+#  References

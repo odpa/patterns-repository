@@ -12,3 +12,4 @@ title: ODPA Patterns
 [situation.owl](./situation.owl)  
 [Speciesconditions.jpg](./Speciesconditions.jpg)  
 [SpeciesConditions.md](./SpeciesConditions.md)  
+[speciesconditions.owl](./speciesconditions.owl)  

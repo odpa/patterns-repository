@@ -10,3 +10,4 @@ title: ODPA Patterns
 [Biologicalentities.jpg](./Biologicalentities.jpg)  
 [Biological_Entities.md](./Biological_Entities.md)  
 [index.md](./index.md)  
+[species_v1.0_model.owl](./species_v1.0_model.owl)  

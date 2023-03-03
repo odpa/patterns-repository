@@ -11,4 +11,5 @@ title: ODPA Patterns
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  
 [TimeIndexedPartOf.md](./TimeIndexedPartOf.md)  
+[timeindexedpartof.owl](./timeindexedpartof.owl)  
 [yarispneumatics.owl](./yarispneumatics.owl)  

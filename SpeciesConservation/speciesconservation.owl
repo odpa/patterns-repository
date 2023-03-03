@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/speciesconservation.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/speciesconservation.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>Created by Eva Blomqvist</owl:versionInfo>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</owl:versionInfo>
+    <cpannotationschema:hasUnitTest>SELECT ?x WHERE {?x a :AquaticSpecies.  ?x :hasConservationStatus "The status is vulnerable"^^xsd:string}
+SELECT ?x WHERE {?x a :AquaticSpecies.  ?x :hasConservationStatus ?y FILTER regex(?y, "Vulnerable", "i")}
+SELECT ?y WHERE {:Ostrica_gigas :hasConservationStatus ?y}</cpannotationschema:hasUnitTest>
+    <cpannotationschema:hasIntent>This pattern intend to represent a description of the conservation status of aquatic species.</cpannotationschema:hasIntent>
+    <cpannotationschema:hasConsequences>The conservation status is simply represented as a string, there are no restrictions on how to express the status, thereby an additional convention on how to express this in natural language could be needed if a uniform naming of status levels is desired.</cpannotationschema:hasConsequences>
+    <cpannotationschema:coversRequirements>What is the conservation status of this species? What are the species with a specific conservation status? What species' conservation status contain a specific string?</cpannotationschema:coversRequirements>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:scenarios>Give me the species for which conservation status contains 'Vulnerable'.
+Give me the species for which conservation status is 'vulnerable'
+Give me the conservation status for species 'Ostrica gigas"'</cpannotationschema:scenarios>
+  </owl:Ontology>
+  <owl:Class rdf:ID="AquaticSpecies">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasConservationStatus"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Aquatic species</rdfs:label>
+    <rdfs:comment>Aquatic species are conceptual entities that are characterized together with resources and water areas. 
+Mappable to fi:Species, fi:SpeciesRef, fi:SpeciesFeature, etc.
+It has related axioms from FIGIS Schema that are included in the classes linked to the fi:Species class, such as fi:SpeciesRef (holding association with fi:AqResRef, which holds association with fi:WaterAreaRef).</rdfs:comment>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="#hasConservationStatus">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#AquaticSpecies"/>
+    <rdfs:label xml:lang="en">has conservation status</rdfs:label>
+  </owl:DatatypeProperty>
+</rdf:RDF>

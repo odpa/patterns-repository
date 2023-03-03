@@ -9,4 +9,5 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [cpannotationschema.owl](./cpannotationschema.owl)  
 [GearVessel.md](./GearVessel.md)  
+[gearvessel.owl](./gearvessel.owl)  
 [index.md](./index.md)  

@@ -11,4 +11,5 @@ title: ODPA Patterns
 [gearvessel.owl](./gearvessel.owl)  
 [index.md](./index.md)  
 [VesselSpecies.md](./VesselSpecies.md)  
+[vesselspecies.owl](./vesselspecies.owl)  
 [Vesselspecies2.jpg](./Vesselspecies2.jpg)  

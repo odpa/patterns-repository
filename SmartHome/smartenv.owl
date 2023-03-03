@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/smartenvironment/smartenv.owl#"
+     xml:base="https://w3id.org/smartenvironment/smartenv.owl"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/smartenvironment/smartenv.owl">
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/time.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/geometry.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/situation.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/place.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl"/>
+        <terms:description xml:lang="en">This ontology as a network of 8 ontology patterns relies on the SSN ontology and represents a smart environment. Each pattern model one aspect of such environments including temporal, spatial, objects, network, observation etc. The patterns are:
+
+https://w3id.org/smartenvironment/patterns/time.owl
+https://w3id.org/smartenvironment/patterns/geometry.owl
+https://w3id.org/smartenvironment/patterns/event.owl
+https://w3id.org/smartenvironment/patterns/object.owl
+https://w3id.org/smartenvironment/patterns/sensing.owl
+https://w3id.org/smartenvironment/patterns/situation.owl
+https://w3id.org/smartenvironment/patterns/place.owl
+https://w3id.org/smartenvironment/patterns/network.owl
+
+The links between each pair of modules is provided by specializing ther concepts&apos; definition.</terms:description>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#date">sh</vann:preferredNamespacePrefix>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-22</terms:created>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#date">SmartEnv Ontology</terms:title>
+        <rdfs:seeAlso rdf:resource="https://www.w3.org/TR/vocab-ssn/"/>
+        <cpannotationschema:hasIntent xml:lang="en">This ontology as a network of 8 ontology patterns relies on the SSN ontology and represents a smart environment. Each pattern model one aspect of such environments including temporal, spatial, objects, network, observation etc.</cpannotationschema:hasIntent>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#Event -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#EventCondition -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#EventCondition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/situation.owl#Situation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/event.owl#Manifestation -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/event.owl#Manifestation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isEventIncludedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/situation.owl#Situation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#Deployment -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#Deployment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/deployedOnPlatform"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#NodeStation -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isHostedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#NodeHolder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/network.owl#SenderNodeStation -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/network.owl#SenderNodeStation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubSystem"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#Agent -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#Agent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/event.owl#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#NodeHolder -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#NodeHolder">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hosts"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#NodeStation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/object.owl#Object -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/object.owl#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/place.owl#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/place.owl#Section -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/place.owl#Section">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/object.owl#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment -->
+
+    <rdf:Description rdf:about="https://w3id.org/smartenvironment/patterns/place.owl#SmartEnvironment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/inDeployment"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/smartenvironment/patterns/network.owl#Deployment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor -->
+
+    <owl:Class rdf:about="https://w3id.org/smartenvironment/patterns/sensing.owl#Sensor"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

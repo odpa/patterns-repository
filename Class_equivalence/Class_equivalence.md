@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class equivalence  |
-|  Also known as  |  Equivalent classes  |
-|  Author(s)  |  François Scharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class equivalence |
+|  Also known as |  Equivalent classes |
+|  Author(s) |  François Scharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  |  |
-|  Alignment problem addressed  |  Two classes in two ontologies have the same intension.  |
-|  Alignment solution  |  The pattern relates the two classes by specifying them as being equivalent.  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) |  |
+|  Alignment problem addressed |  Two classes in two ontologies have the same intension. |
+|  Alignment solution |  The pattern relates the two classes by specifying them as being equivalent. |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  Example solution in the ontology alignment language: ```<Cell> <entity1><Class rdf:about="O1:Human"/></entity1> <entity2><Class rdf:about="O2:Person"/></entity2> <relation>equivalence</relation></Cell>``` |
-|  Consequences  |  The equivalent classed are related by an equivalence correspondence.  |
-
+|  Problem example |  |
+|  Solution example |  Example solution in the ontology alignment language:```<Cell> <entity1><Class rdf:about="O1:Human"/></entity1> <entity2><Class rdf:about="O2:Person"/></entity2> <relation>equivalence</relation></Cell>``` |
+|  Consequences |  The equivalent classed are related by an equivalence correspondence. |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  This is a very common correspondence.  |
-|  Reference  |  |
-|  Related to  | [Submissions:Lexico Syntactic ODP corresponding to Equivalence relation between Classes ODP](../LexicoSyntacticODPs/Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP.md "Submissions:Lexico Syntactic ODP corresponding to Equivalence relation between Classes ODP")  , [Submissions:SynonymOrEquivalence (SOE)](Submissions%253ASynonymOrEquivalence_(SOE).html "Submissions:SynonymOrEquivalence (SOE)")  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  This is a very common correspondence. |
+|  Reference |  |
+|  Related to | [Submissions:Lexico Syntactic ODP corresponding to Equivalence relation between Classes ODP](../LexicoSyntacticODPs/Lexico_Syntactic_ODP_corresponding_to_Equivalence_relation_between_Classes_ODP.md "Submissions:Lexico Syntactic ODP corresponding to Equivalence relation between Classes ODP"), [Submissions:SynonymOrEquivalence (SOE)](Submissions%253ASynonymOrEquivalence_(SOE).html "Submissions:SynonymOrEquivalence (SOE)") |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class equivalence__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class equivalence__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class equivalence__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8570__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class equivalence__
+There is no review about this proposal.
+This revision (revision ID __8570__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_equivalence&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_equivalence&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_equivalence&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_equivalence&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class equivalence__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class equivalence__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class equivalence__
 
 
 
-
-# 
-
- References
+#  References

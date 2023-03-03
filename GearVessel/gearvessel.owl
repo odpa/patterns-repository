@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/fsdas/gearvessel.owl#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/fsdas/gearvessel.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created by Alessandro Adamou</owl:versionInfo>
+    <cpannotationschema:hasConsequences>This is a straightforward pattern that describes vessel types in terms of the fishing gear they can be equipped with. The original usesGearType object property has been reworked, in that subclass restrictions for affected classes have been replacd with domain and range axiom. This also allows the definition of inverse property usedByVesselType.</cpannotationschema:hasConsequences>
+    <cpannotationschema:coversRequirements>what vessel type can equip what gear type?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasIntent>to represent types of fishing gear with regard to the types of vessel they can be mounted on</cpannotationschema:hasIntent>
+    <cpannotationschema:scenarios>give me the vesseltypes that use 'trawls'</cpannotationschema:scenarios>
+  </owl:Ontology>
+  <owl:Class rdf:ID="VesselType">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="GearType"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="usesGearType"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#GearType"/>
+    </owl:disjointWith>
+    <rdfs:label xml:lang="en">Vessel type</rdfs:label>
+    <rdfs:comment>Vessel types are conceptual entities. 
+Mappable to fi:VesseltypeRef</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#GearType">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#VesselType"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="usedByVesselType"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Gear type</rdfs:label>
+    <owl:disjointWith rdf:resource="#VesselType"/>
+    <rdfs:comment>Gear types are conceptual entities that are characterized together with AquaticSpecies that are either targeted or can be incidentally caught. 
+Mappable to fi:GeartypeRef</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#usedByVesselType">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#usesGearType"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#GearType"/>
+    <rdfs:range rdf:resource="#VesselType"/>
+    <rdfs:label xml:lang="en">used by vessel type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#usesGearType">
+    <rdfs:range rdf:resource="#GearType"/>
+    <rdfs:domain rdf:resource="#VesselType"/>
+    <rdfs:label xml:lang="en">uses gear type</rdfs:label>
+    <owl:inverseOf rdf:resource="#usedByVesselType"/>
+  </owl:ObjectProperty>
+</rdf:RDF>

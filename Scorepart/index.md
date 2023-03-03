@@ -10,3 +10,4 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [Scorepart.md](./Scorepart.md)  
+[scorepart.owl](./scorepart.owl)  

@@ -10,4 +10,5 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [OOPMetrics.md](./OOPMetrics.md)  
+[oopmetrics.owl](./oopmetrics.owl)  
 [OOPMetricsDiagram.png](./OOPMetricsDiagram.png)  

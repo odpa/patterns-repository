@@ -10,6 +10,7 @@ title: ODPA Patterns
 [alm-istack.owl](./alm-istack.owl)  
 [collectionentity.owl](./collectionentity.owl)  
 [index.md](./index.md)  
+[ObjectWithStates.owl](./ObjectWithStates.owl)  
 [ObjectWithStatesODP.png](./ObjectWithStatesODP.png)  
 [Object_with_states.md](./Object_with_states.md)  
 [set.owl](./set.owl)  

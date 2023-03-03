@@ -10,3 +10,4 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [SimpleOrAggregated.md](./SimpleOrAggregated.md)  
+[SimpleOrAggregated.owl](./SimpleOrAggregated.owl)  

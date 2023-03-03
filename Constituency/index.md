@@ -9,5 +9,6 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [Constituency.jpg](./Constituency.jpg)  
 [Constituency.md](./Constituency.md)  
+[constituency.owl](./constituency.owl)  
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  

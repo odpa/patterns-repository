@@ -11,3 +11,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Resourceabundanceobservation.jpg](./Resourceabundanceobservation.jpg)  
 [ResourceAbundanceObservation.md](./ResourceAbundanceObservation.md)  
+[resourceabundanceobservation.owl](./resourceabundanceobservation.owl)  

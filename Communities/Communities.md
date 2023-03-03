@@ -1,44 +1,37 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-_(this article has no graphical representation)_ 
+__Diagram__
+_(this article has no graphical representation)_
 
 
 
-
-# 
-
- General description
+#  General description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name:  |  Communities  |
-|  Submitted by:  | [AldoGangemi](../User/AldoGangemi.md "User:AldoGangemi")  |
-|  Also Known As:  |  |
-|  Intent:  |  -  |
-|  Domains:  |  |
-|  Competency Questions:  |  |
-|  Solution description:  |  -  |
-|  Reusable OWL Building Block:  | [http://www.ontologydesignpatterns.org/cp/owl/communities.owl](http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&link=http://www.ontologydesignpatterns.org/cp/owl/communities.owl&message=OWL building block&from_page_id=2251&update=)  (704)  |
-|  Consequences:  |  |
-|  Scenarios:  |  |
-|  Known Uses:  |  |
-|  Web References:  |  |
-|  Other References:  |  |
-|  Examples (OWL files):  |  |
-|  Extracted From:  |  |
-|  Reengineered From:  |  |
-|  Has Components:  |  |
-|  Specialization Of:  |  |
-|  Related CPs:  |  |
-
+|  Name: |  Communities |
+|  Submitted by: | [AldoGangemi](../User/AldoGangemi.md "User:AldoGangemi") |
+|  Also Known As: |  |
+|  Intent: |  - |
+|  Domains: |  |
+|  Competency Questions: |  |
+|  Solution description: |  - |
+|  Reusable OWL Building Block: | [http://www.ontologydesignpatterns.org/cp/owl/communities.owl](http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&link=http://www.ontologydesignpatterns.org/cp/owl/communities.owl&message=OWL building block&from_page_id=2251&update=) (704) |
+|  Consequences: |  |
+|  Scenarios: |  |
+|  Known Uses: |  |
+|  Web References: |  |
+|  Other References: |  |
+|  Examples (OWL files): |  |
+|  Extracted From: |  |
+|  Reengineered From: |  |
+|  Has Components: |  |
+|  Specialization Of: |  |
+|  Related CPs: |  |
 
 
   
@@ -46,73 +39,38 @@ _(this article has no graphical representation)_
 
 
 
-
-# 
-
- Elements
+#  Elements
 
 
-
-_The
- __Communities__ 
- Content OP locally defines the following ontology elements:_ 
+_The __Communities__ Content OP locally defines the following ontology elements:_
 
 
 
+[![Class](./20px-Class.gif)](../Image/Class.gif.md "Class") __Community__ (owl:Class) A Collection whose members are agents, e.g. "the nurses", "the Italian rockabilly fans". 
+ [![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif") _[Community](./Communities/Community.md "Submissions:Communities/Community") page_
+#  Additional information
 
 
-[![Class](./20px-Class.gif)](../Image/Class.gif.md "Class")
-__Community__ 
- (owl:Class) A Collection whose members are agents, e.g. "the nurses", "the Italian rockabilly fans".
- 
-[![](./11px-ArrowRight.gif)](../Image/ArrowRight.gif.md "ArrowRight.gif")
-_[Community](./Communities/Community.md "Submissions:Communities/Community") 
- page_ 
-
-
-# 
-
- Additional information
+#  Scenarios
 
 
 
-# 
-
- Scenarios
+__Scenarios about Communities__
+No scenario is added to this Content OP.
 
 
 
 
-__Scenarios about Communities__ 
-
-
- No scenario is added to this Content OP.
- 
+#  Reviews
 
 
 
-
-# 
-
- Reviews
-
+__Reviews about Communities__
+There is no review about this proposal.
+This revision (revision ID __9076__) takes in account the reviews: none
 
 
-
-__Reviews about Communities__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __9076__ 
- ) takes in account the reviews: none
- 
-
-
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Communities&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Communities&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Communities&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Communities&action=evaluation")
 
 
 
@@ -122,19 +80,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Communities__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Communities__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -144,7 +95,4 @@ __Modeling issues about Communities__
 
 
 
-
-# 
-
- References
+#  References

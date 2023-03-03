@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/mmd/matlprop/mp-prop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/mmd/matlprop/mp-prop">
+    <Prefix name="" IRI="http://example.org/mmd/matlprop/mp-prop"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="mp-cond" IRI="http://example.org/mmd/matlprop/mp-cond#"/>
+    <Prefix name="mp-prop" IRI="http://example.org/mmd/matlprop/mp-prop#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2016-06-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:language"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">en</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The intent of this ontology is to enable the materials, manufacturing, and design community to associate materials with their materials properties.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Materials Property Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Materials Property Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pascal Hitzler</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Cogan Matthew Shimizu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Clare Paul</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mp-cond:Condition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#materialsPropertyAssertionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyCollection"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#forMaterialsProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertionWithAuthority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyAuthority"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:wasAttributedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaterialsPropertyQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#materialsPropertyAssertionWithAuthorityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#materialsPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaterialsPropertyDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialsPropertyAuthority"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#MaterialsProperty"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMaterialsPropertyDescriptor"/>
+                <Class IRI="#MaterialsPropertyDescriptor"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMaterialsPropertyDescriptor"/>
+                <Class abbreviatedIRI="owl:Thing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMaterialsPropertyQuantity"/>
+                <Class abbreviatedIRI="owl:Thing"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsProperty"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#materialsPropertyOf"/>
+            <Class IRI="#MaterialsPropertyAssertion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#forMaterialsProperty"/>
+            <Class IRI="#MaterialsProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#materialsPropertyAssertionOf"/>
+            <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+            <Class IRI="#MaterialsPropertyAssertion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMaterialsPropertyAuthority"/>
+            <Class IRI="#MaterialsPropertyAuthority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#materialsPropertyAssertionWithAuthorityOf"/>
+            <Class IRI="#Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAuthority"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyAuthority"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="prov:Agent"/>
+            <Class abbreviatedIRI="prov:Entity"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialsPropertyDescriptor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#forMaterialsProperty"/>
+        <ObjectProperty IRI="#materialsPropertyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+        <ObjectProperty IRI="#materialsPropertyAssertionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertionWithAuthority"/>
+        <ObjectProperty IRI="#materialsPropertyAssertionWithAuthorityOf"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#forMaterialsProperty"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertionWithAuthority"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#forMaterialsProperty"/>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#MaterialsProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertionWithAuthority"/>
+        <Class IRI="#Material"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyAuthority"/>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyCollection"/>
+        <Class IRI="#MaterialsProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyDescriptor"/>
+        <Class IRI="#MaterialsProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaterialsPropertyQuantity"/>
+        <Class IRI="#MaterialsProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#forMaterialsProperty"/>
+        <Class IRI="#MaterialsProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class abbreviatedIRI="mp-cond:Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertion"/>
+        <Class IRI="#MaterialsPropertyAssertion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyAssertionWithAuthority"/>
+        <Class IRI="#MaterialsPropertyAssertionWithAuthority"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyAuthority"/>
+        <Class IRI="#MaterialsPropertyAuthority"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyCollection"/>
+        <Class IRI="#MaterialsPropertyCollection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyDescriptor"/>
+        <Class IRI="#MaterialsPropertyDescriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaterialsPropertyQuantity"/>
+        <Class IRI="#MaterialsPropertyQuantity"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMaterialsPropertyDescription"/>
+        <Class IRI="#MaterialsProperty"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaterialsPropertyDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasAttributedTo"/>
+        <IRI>#MaterialsPropertyAssertion</IRI>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
+        <IRI>#MaterialsPropertyAssertion</IRI>
+        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

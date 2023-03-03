@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY region "http://www.ontologydesignpatterns.org/cp/owl/region.owl#" >
+    <!ENTITY situation "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#" >
+    <!ENTITY transition "http://www.ontologydesignpatterns.org/cp/owl/transition.owl#" >
+    <!ENTITY timeinterval "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#" >
+    <!ENTITY participation "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+    <!ENTITY timeindexedsituation "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#" >
+    <!ENTITY timeindexedparticipation "http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/transition.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"
+     xmlns:region="http://www.ontologydesignpatterns.org/cp/owl/region.owl#"
+     xmlns:timeinterval="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+     xmlns:timeindexedparticipation="http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#"
+     xmlns:transition="http://www.ontologydesignpatterns.org/cp/owl/transition.owl#"
+     xmlns:timeindexedsituation="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:participation="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:situation="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/transition.owl">
+        <rdfs:label rdf:datatype="&rdf;PlainLiteral">Transition pattern</rdfs:label>
+        <owl:versionInfo rdf:datatype="&rdf;PlainLiteral">1.1
+- Enriched axioms on transition class, revised properties, added annotations for ODP submission
+1.0
+- Created by Aldo Gangemi</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">A simple pattern to represent transitions between states.</rdfs:comment>
+        <cpannotationschema:hasAuthor rdf:datatype="&rdf;PlainLiteral">Aldo Gangemi</cpannotationschema:hasAuthor>
+        <cpannotationschema:hasComponent rdf:datatype="&rdf;PlainLiteral">Region,Sequence,Time indexed participation</cpannotationschema:hasComponent>
+        <cpannotationschema:hasUnitTest rdf:datatype="&rdf;PlainLiteral">SELECT ?is ?e ?fs ?p ?o ?t1 ?t2 ?t3
+WHERE {
+?x :includesInitialSituation ?is .
+?x :includeFinalSituation ?fs .
+?x :includeEvent ?e .
+?x :includesProcess ?p .
+?x :includesObject ?o .
+?x :atTimeInitial ?t1 .
+?x :atTimeEvent ?t2 .
+?x :atTimeFinal ?t3 .
+?is :occursAt ?t1 .
+?e :occursAt ?t2 .
+?fs :occursAt ?t3 .
+?t1 :precedes ?t2 .
+?t2 :precedes ?t3 }</cpannotationschema:hasUnitTest>
+        <cpannotationschema:scenarios rdf:datatype="&rdf;PlainLiteral">The addition of Bud Powell on piano made the tune jump from a static, aerial comping into a hard driving swing improvisation</cpannotationschema:scenarios>
+        <cpannotationschema:hasIntent rdf:datatype="&rdf;PlainLiteral">To represent basic knowledge about transitions (events, states, processes, objects).</cpannotationschema:hasIntent>
+        <cpannotationschema:hasConsequences rdf:datatype="&rdf;PlainLiteral">We are able to represent part of the semantics involved in transitions (e.g. what is implied by Petri Nets): initial and final states, causal events, underlying processes, affected objects, and sequences of time intervals for situations and events.
+However, it is not possible to define axioms for automatically infer initial and final states from time sequences, because coreference is not allowed in OWL (not even in OWL2).</cpannotationschema:hasConsequences>
+        <cpannotationschema:coversRequirements rdf:datatype="&rdf;PlainLiteral">What states of some object are changed by what event during a transition?,What is the process that is invariant through the transition?,What transitions are occurring on what object at what time?</cpannotationschema:coversRequirements>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasAuthor"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;scenarios"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasConsequences"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasUnitTest"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasComponent"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;coversRequirements"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasIntent"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;isSpecializationOf"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="&region;hasRegion"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor -->
+
+    <owl:ObjectProperty rdf:about="&region;isRegionFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="&situation;isSettingFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesEvent -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedparticipation;includesEvent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#includesObject -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedparticipation;includesObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;atTime"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;forEntity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;hasTimeIndexedSetting"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor -->
+
+    <owl:ObjectProperty rdf:about="&timeindexedsituation;isTimeIndexFor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#hasEventAtTime -->
+
+    <owl:ObjectProperty rdf:about="&transition;hasEventAtTime">
+        <rdfs:label>atTimeEvent</rdfs:label>
+        <rdfs:comment>The time of the event causing the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;atTime"/>
+        <rdfs:range rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:domain rdf:resource="&transition;Transition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#hasFinalStateAtTime -->
+
+    <owl:ObjectProperty rdf:about="&transition;hasFinalStateAtTime">
+        <rdfs:label>atTimeFinal</rdfs:label>
+        <rdfs:comment>The time of the final state of the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;atTime"/>
+        <rdfs:range rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:domain rdf:resource="&transition;Transition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#hasInitialStateAtTime -->
+
+    <owl:ObjectProperty rdf:about="&transition;hasInitialStateAtTime">
+        <rdfs:label>atTimeInitial</rdfs:label>
+        <rdfs:comment>The time of the initial state in the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;atTime"/>
+        <rdfs:range rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:domain rdf:resource="&transition;Transition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#includesFinalSituation -->
+
+    <owl:ObjectProperty rdf:about="&transition;includesFinalSituation">
+        <rdfs:label>includesFinalSituation</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the situation resulting from the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;forEntity"/>
+        <owl:inverseOf rdf:resource="&transition;isFinalSituationIncludedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#includesInitialSituation -->
+
+    <owl:ObjectProperty rdf:about="&transition;includesInitialSituation">
+        <rdfs:label>includesInitialSituation</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the situation existing before  the transition event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;forEntity"/>
+        <owl:inverseOf rdf:resource="&transition;isInitialSituationIncludedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#includesProcess -->
+
+    <owl:ObjectProperty rdf:about="&transition;includesProcess">
+        <rdfs:label>includesProcess</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the underlying process that  is invariant for the object(s) included in the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;forEntity"/>
+        <owl:inverseOf rdf:resource="&transition;isProcessIncludedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isEventTimeIndexFor -->
+
+    <owl:ObjectProperty rdf:about="&transition;isEventTimeIndexFor">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;isTimeIndexFor"/>
+        <rdfs:domain rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:range rdf:resource="&transition;Transition"/>
+        <owl:inverseOf rdf:resource="&transition;hasEventAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isFinalSituationIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="&transition;isFinalSituationIncludedIn">
+        <rdfs:label>isFinalSituationIncludedIn</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the situation resulting from the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;hasTimeIndexedSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isFinalStateTimeIndexFor -->
+
+    <owl:ObjectProperty rdf:about="&transition;isFinalStateTimeIndexFor">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;isTimeIndexFor"/>
+        <rdfs:domain rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:range rdf:resource="&transition;Transition"/>
+        <owl:inverseOf rdf:resource="&transition;hasFinalStateAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isInitialSituationIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="&transition;isInitialSituationIncludedIn">
+        <rdfs:label>isInitialSituationIncludedIn</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the situation existing before  the transition event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;hasTimeIndexedSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isInitialStateTimeIndexFor -->
+
+    <owl:ObjectProperty rdf:about="&transition;isInitialStateTimeIndexFor">
+        <rdfs:label rdf:datatype="&xsd;string">is initial state time index for</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;isTimeIndexFor"/>
+        <rdfs:domain rdf:resource="&timeinterval;TimeInterval"/>
+        <rdfs:range rdf:resource="&transition;Transition"/>
+        <owl:inverseOf rdf:resource="&transition;hasInitialStateAtTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isProcessIncludedIn -->
+
+    <owl:ObjectProperty rdf:about="&transition;isProcessIncludedIn">
+        <rdfs:label>isProcessIncludedIn</rdfs:label>
+        <rdfs:comment>A relation between a transition situation and the underlying process that  is invariant for the object(s) included in the transition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&timeindexedsituation;hasTimeIndexedSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#isTimeOf -->
+
+    <owl:ObjectProperty rdf:about="&transition;isTimeOf">
+        <rdfs:label>isTimeOf</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:range rdf:resource="&participation;Event"/>
+        <rdfs:subPropertyOf rdf:resource="&region;isRegionFor"/>
+        <rdfs:domain rdf:resource="&timeinterval;TimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#occursAt -->
+
+    <owl:ObjectProperty rdf:about="&transition;occursAt">
+        <rdfs:label>occursAt</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+        <rdfs:domain rdf:resource="&participation;Event"/>
+        <rdfs:subPropertyOf rdf:resource="&region;hasRegion"/>
+        <rdfs:range rdf:resource="&timeinterval;TimeInterval"/>
+        <owl:inverseOf rdf:resource="&transition;isTimeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event -->
+
+    <owl:Class rdf:about="&participation;Event">
+        <rdfs:comment>In this pattern, it is the cause for the transition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object -->
+
+    <owl:Class rdf:about="&participation;Object">
+        <rdfs:comment>In this pattern, it is the entity that is invariant through the Process underlying  the transition, but is also changed by the Event that causes the transition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region -->
+
+    <owl:Class rdf:about="&region;Region"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <owl:Class rdf:about="&situation;Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedparticipation.owl#TimeIndexedParticipation -->
+
+    <owl:Class rdf:about="&timeindexedparticipation;TimeIndexedParticipation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+    <owl:Class rdf:about="&timeinterval;TimeInterval">
+        <rdfs:subClassOf rdf:resource="&region;Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Process -->
+
+    <owl:Class rdf:about="&transition;Process">
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&participation;Event"/>
+        <rdfs:comment>The invariance under some different transitions (including the one represented here), in which at least one Object is situated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/transition.owl#Transition -->
+
+    <owl:Class rdf:about="&transition;Transition">
+        <rdfs:label xml:lang="en">Transition</rdfs:label>
+        <rdfs:label xml:lang="it">Transizione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&situation;Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&transition;includesInitialSituation"/>
+                <owl:onClass rdf:resource="&timeindexedparticipation;TimeIndexedParticipation"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&transition;includesFinalSituation"/>
+                <owl:onClass rdf:resource="&timeindexedparticipation;TimeIndexedParticipation"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&situation;isSettingFor"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">8</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&transition;includesProcess"/>
+                <owl:onClass rdf:resource="&transition;Process"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedparticipation;includesObject"/>
+                <owl:someValuesFrom rdf:resource="&participation;Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedsituation;atTime"/>
+                <owl:onClass rdf:resource="&timeinterval;TimeInterval"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&timeindexedparticipation;includesEvent"/>
+                <owl:onClass rdf:resource="&participation;Event"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A transition is a Situation that creates a context for three TimeInterval(s), two additional different Situation(s), one Event, one Process, and at least one Object: the Event is observed as the cause for the transition, one Situation is the state before the transition, the second Situation is the state after the transition, the Process is the invariance under some different transitions (including the one represented here), in which at least one Object is situated. Finally, the time intervals position the situations and the transitional event in time.
+This class of situations partly encodes the ontology underlying typical engineering algebras for processes, e.g. Petri Nets. 
+A full representation of the transition ontology is outside the expressivity of OWL, because we would need qualified cardinality restrictions,  coreference, property equivalence, and property composition.</rdfs:comment>
+        <rdfs:comment>In this pattern, it is the entity that is invariant across the Process underlying the transition, but is also changed from an initial to a final state by an Event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/transition.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

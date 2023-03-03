@@ -1,11 +1,7 @@
-# 
-
- Graphical representation
+#  Graphical representation
 
 
-
-__Diagram__ 
-
+__Diagram__
 
 
 
@@ -15,21 +11,17 @@ __Diagram__
 
 
 
-
-# 
-
- General information
+#  General information
 
 
 
 
 |  |  |
 | --- | --- |
-|  Name  |  Class subsumption  |
-|  Also known as  |  |
-|  Author(s)  |  FrancoisScharffe  |
-|  SubmittedBy  | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe")  |
-
+|  Name |  Class subsumption |
+|  Also known as |  |
+|  Author(s) |  FrancoisScharffe |
+|  SubmittedBy | [FrancoisScharffe](../User/FrancoisScharffe.md "User:FrancoisScharffe") |
 
 
   
@@ -37,22 +29,18 @@ __Diagram__
 
 
 
-
-# 
-
- Description
+#  Description
 
 
 
 
 |  |  |
 | --- | --- |
-|  Domain (if applicable)  | [general](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)")  |
-|  Alignment problem addressed  |  A class in one ontology is a subclass of a class in a second ontology but there is  no functional description of the exact mapping. There is no way of expressingadditional properties of the subclass.  |
-|  Alignment solution  |  This pattern establishes a unidirectional correspondence from a more specific class  in one ontology to a broader class in another ontology. The relation is broadenedto allow class expressions in addition to merely class names.  |
-|  Alignment workflow  |  |
-|  Reusable component  |  |
-
+|  Domain (if applicable) | [general](http://ontologydesignpatterns.org/wiki/index.php?title=General&action=edit&redlink=1 "General (not yet written)") |
+|  Alignment problem addressed |  A class in one ontology is a subclass of a class in a second ontology but there isno functional description of the exact mapping. There is no way of expressingadditional properties of the subclass. |
+|  Alignment solution |  This pattern establishes a unidirectional correspondence from a more specific classin one ontology to a broader class in another ontology. The relation is broadenedto allow class expressions in addition to merely class names. |
+|  Alignment workflow |  |
+|  Reusable component |  |
 
 
   
@@ -60,20 +48,16 @@ __Diagram__
 
 
 
-
-# 
-
- Example
+#  Example
 
 
 
 
 |  |  |
 | --- | --- |
-|  Problem example  |  |
-|  Solution example  |  Example solution in the ontology alignment language: ```<Cell> <entity1><Class rdf:about="O1:Mammal"/></entity1> <entity2><Class rdf:about="O2:Vertebrate"/></entity2> <relation>subsumedBy</relation></Cell>``` |
-|  Consequences  |  |
-
+|  Problem example |  |
+|  Solution example |  Example solution in the ontology alignment language:```<Cell> <entity1><Class rdf:about="O1:Mammal"/></entity1> <entity2><Class rdf:about="O2:Vertebrate"/></entity2> <relation>subsumedBy</relation></Cell>``` |
+|  Consequences |  |
 
 
   
@@ -81,22 +65,18 @@ __Diagram__
 
 
 
-
-# 
-
- Reference
+#  Reference
 
 
 
 
 |  |  |
 | --- | --- |
-|  Origin  |  |
-|  Known use  |  |
-|  Reference  |  |
-|  Related to  | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence")  |
-|  Test  |  |
-
+|  Origin |  |
+|  Known use |  |
+|  Reference |  |
+|  Related to | [Submissions:Class equivalence](../Class_equivalence/Class_equivalence.md "Submissions:Class equivalence") |
+|  Test |  |
 
 
   
@@ -104,44 +84,26 @@ __Diagram__
 
 
 
-
-# 
-
- Scenarios
+#  Scenarios
 
 
 
-
-__Scenarios about Class subsumption__ 
-
-
- No scenario is added to this Content OP.
- 
+__Scenarios about Class subsumption__
+No scenario is added to this Content OP.
 
 
 
 
-# 
-
- Reviews
+#  Reviews
 
 
 
-
-__Reviews about Class subsumption__ 
-
-
- There is no review about this proposal.
-This revision (revision ID
- __8960__ 
- ) takes in account the reviews: none
- 
+__Reviews about Class subsumption__
+There is no review about this proposal.
+This revision (revision ID __8960__) takes in account the reviews: none
 
 
-
- Other info at
- [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_subsumption&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_subsumption&action=evaluation") 
-
+Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_subsumption&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Class_subsumption&action=evaluation")
 
 
 
@@ -151,19 +113,12 @@ This revision (revision ID
 
 
 
-
-# 
-
- Modeling issues
+#  Modeling issues
 
 
 
-
-__Modeling issues about Class subsumption__ 
-
-
- There is no Modeling issue related to this proposal.
- 
+__Modeling issues about Class subsumption__
+There is no Modeling issue related to this proposal.
 
 
 
@@ -173,7 +128,4 @@ __Modeling issues about Class subsumption__
 
 
 
-
-# 
-
- References
+#  References

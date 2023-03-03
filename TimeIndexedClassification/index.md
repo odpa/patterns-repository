@@ -9,4 +9,5 @@ title: ODPA Patterns
 [countingAs.owl](./countingAs.owl)  
 [index.md](./index.md)  
 [TimeIndexedClassification.md](./TimeIndexedClassification.md)  
+[timeindexedclassification.owl](./timeindexedclassification.owl)  
 [timeindexedsituation.owl](./timeindexedsituation.owl)  

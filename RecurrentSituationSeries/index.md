@@ -12,3 +12,4 @@ title: ODPA Patterns
 [Recurrent-situation-series.jpg](./Recurrent-situation-series.jpg)  
 [recurrenteventseries.owl](./recurrenteventseries.owl)  
 [RecurrentSituationSeries.md](./RecurrentSituationSeries.md)  
+[recurrentsituationseries.owl](./recurrentsituationseries.owl)  

@@ -9,5 +9,6 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [Classification.jpg](./Classification.jpg)  
 [Classification.md](./Classification.md)  
+[classification.owl](./classification.owl)  
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  

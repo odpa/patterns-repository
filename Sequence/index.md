@@ -9,4 +9,5 @@ title: ODPA Patterns
 [DUL.owl](./DUL.owl)  
 [index.md](./index.md)  
 [Sequence.md](./Sequence.md)  
+[sequence.owl](./sequence.owl)  
 [Sequence.png](./Sequence.png)  

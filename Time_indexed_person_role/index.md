@@ -13,4 +13,5 @@ title: ODPA Patterns
 [naryclassification.owl](./naryclassification.owl)  
 [objectrole.owl](./objectrole.owl)  
 [Timeindexedpersonrole.jpg](./Timeindexedpersonrole.jpg)  
+[timeindexedpersonrole.owl](./timeindexedpersonrole.owl)  
 [Time_indexed_person_role.md](./Time_indexed_person_role.md)  

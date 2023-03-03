@@ -13,3 +13,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Speciesbathymetry.jpg](./Speciesbathymetry.jpg)  
 [SpeciesBathymetry.md](./SpeciesBathymetry.md)  
+[speciesbathymetry.owl](./speciesbathymetry.owl)  

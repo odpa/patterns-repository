@@ -10,3 +10,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [ParticipantRole.jpg](./ParticipantRole.jpg)  
 [ParticipantRole.md](./ParticipantRole.md)  
+[ParticipantRole.owl](./ParticipantRole.owl)  

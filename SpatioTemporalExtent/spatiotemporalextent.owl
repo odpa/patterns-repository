@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/daselab/onto/spatiotemporalextent#"
+     xml:base="http://w3id.org/daselab/onto/spatiotemporalextent"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:spatime="http://w3id.org/daselab/onto/spatiotemporalextent#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://w3id.org/daselab/onto/spatiotemporalextent">
+        <owl:imports rdf:resource="http://w3id.org/daselab/onto/trajectory"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:hasIntent>This pattern models a spatiotemporal extent, i.e., a combination of spatial and temporal extent as a set of generalized trajectories which cannot have temporal overlap. This pattern reuses semantic trajectory pattern as component.</cpannotationschema:hasIntent>
+        <cpannotationschema:relatedCPs>Trajectory</cpannotationschema:relatedCPs>
+        <cpannotationschema:hasComponent>Trajectory</cpannotationschema:hasComponent>
+        <dc:creator>Adila Krisnadhi, Pascal Hitzler</dc:creator>
+        <cpannotationschema:hasComponent rdf:resource="http://w3id.org/daselab/onto/trajectory"/>
+        <cpannotationschema:coversRequirements>Where is Poland located in 1700?, 
+List all places and time in which the 1990 World Chess Championship Match take place.,
+Where and when did the oceanographic cruise A01132 go?</cpannotationschema:coversRequirements>
+        <cpannotationschema:scenarios>The World Chess Championship Match 1990 was held in two parts: New York (October 8 to November 7) and Lyons - France (November 26 to December 30).
+
+The Renaissance occured in different places at different times.
+
+A hurricane moves through the spacetime.</cpannotationschema:scenarios>
+        <cpannotationschema:hasComponent rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Trajectory"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/daselab/onto/spatiotemporalextent#hasSpatioTemporalExtent -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/daselab/onto/spatiotemporalextent#hasSpatioTemporalExtent">
+        <rdfs:range rdf:resource="http://w3id.org/daselab/onto/spatiotemporalextent#SpatioTemporalExtent"/>
+        <rdfs:comment>Property relating anything (thus the domain is trivially owl:Thing and the range is unscoped) to a SpatioTemporalExtent.</rdfs:comment>
+        <rdfs:label>hasSpatioTemporalExtent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/daselab/onto/spatiotemporalextent#hasTrajectory -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/daselab/onto/spatiotemporalextent#hasTrajectory">
+        <owl:equivalentProperty rdf:resource="http://w3id.org/daselab/onto/trajectory#hasTrajectory"/>
+        <rdfs:comment>Set to be equivalent to trj:hasTrajectory from the Trajectory pattern, this property relates anything (including SpatioTemporalExtent) to Trajectory.</rdfs:comment>
+        <rdfs:label>hasTrajectory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/daselab/onto/trajectory#hasTrajectory -->
+
+    <rdf:Description rdf:about="http://w3id.org/daselab/onto/trajectory#hasTrajectory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/daselab/onto/spatiotemporalextent#SpatioTemporalExtent -->
+
+    <owl:Class rdf:about="http://w3id.org/daselab/onto/spatiotemporalextent#SpatioTemporalExtent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/daselab/onto/spatiotemporalextent#hasTrajectory"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/daselab/onto/spatiotemporalextent#Trajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/daselab/onto/spatiotemporalextent#hasTrajectory"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/daselab/onto/spatiotemporalextent#Trajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The class that represents the notion of spatiotemporal extent. A spatiotemporal extent is realized as a collection of generalized trajectories that have no temporal overlap.</rdfs:comment>
+        <rdfs:label>SpatioTemporalExtent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/daselab/onto/spatiotemporalextent#Trajectory -->
+
+    <owl:Class rdf:about="http://w3id.org/daselab/onto/spatiotemporalextent#Trajectory">
+        <owl:equivalentClass rdf:resource="http://w3id.org/daselab/onto/trajectory#Trajectory"/>
+        <rdfs:comment>The hook to the Trajectory pattern, which acts as a component of the Spatiotemporal Extent pattern.</rdfs:comment>
+        <rdfs:label>Trajectory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/daselab/onto/trajectory#Trajectory -->
+
+    <rdf:Description rdf:about="http://w3id.org/daselab/onto/trajectory#Trajectory"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

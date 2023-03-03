@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/set.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:collectionentity="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/set.owl">
+  <owl:Ontology rdf:about="">
+    <cpannotationschema:extractedFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://swan.mindinformatics.org/ontologies/1.2/collections.owl</cpannotationschema:extractedFrom>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <cpannotationschema:relatedCPs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/list.owl</cpannotationschema:relatedCPs>
+    <cpannotationschema:relatedCPs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/bag.owl</cpannotationschema:relatedCPs>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What is the cardinality (size) of this set?</cpannotationschema:coversRequirements>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl"/>
+    <cpannotationschema:hasComponent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl</cpannotationschema:hasComponent>
+    <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >To model sets of things (elements). A Set is a collection that cannot contain duplicate elements. </cpannotationschema:hasIntent>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A Set is a collection that cannot contain duplicate elements. A Set is expressed by linking to it directly all the members (elements), multiple identical values of members (elements) will be eliminated because by default they are treated as a set.</rdfs:comment>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What are the elements in this set?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PaoloCiccarese</cpannotationschema:hasAuthor>
+    <cpannotationschema:reengineeredFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://swan.mindinformatics.org/ontologies/1.2/collections.owl</cpannotationschema:reengineeredFrom>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Set">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Set - A collection that cannot contain duplicate elements.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="size">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >size - The number of items belonging to a collection</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >size</rdfs:label>
+  </owl:DatatypeProperty>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The link to the members of a Set</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

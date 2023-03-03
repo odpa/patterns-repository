@@ -10,3 +10,4 @@ title: ODPA Patterns
 [cpannotationschema.owl](./cpannotationschema.owl)  
 [index.md](./index.md)  
 [RTMSmapping.md](./RTMSmapping.md)  
+[rtmsmapping.owl](./rtmsmapping.owl)  

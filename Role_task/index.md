@@ -12,3 +12,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Role_task.md](./Role_task.md)  
 [Taskrole.jpg](./Taskrole.jpg)  
+[taskrole.owl](./taskrole.owl)  

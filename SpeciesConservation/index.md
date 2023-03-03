@@ -10,3 +10,4 @@ title: ODPA Patterns
 [index.md](./index.md)  
 [Speciesconservation.jpg](./Speciesconservation.jpg)  
 [SpeciesConservation.md](./SpeciesConservation.md)  
+[speciesconservation.owl](./speciesconservation.owl)  

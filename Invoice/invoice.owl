@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY invoice2 "http://www.ontologydesignpatterns.org/cp/invoice.owl#" >
+    <!ENTITY invoice "http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#" >
+    <!ENTITY cpannotationschema "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#"
+     xml:base="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:invoice="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:invoice2="http://www.ontologydesignpatterns.org/cp/invoice.owl#">
+    <owl:Ontology rdf:about="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">1.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">1.1 added rdfs:isDefinedBy for all named entities</owl:versionInfo>
+        <cpannotationschema:scenarios rdf:datatype="&rdf;PlainLiteral">An invoice refers to transactions related to an ordered item for a certain amount of currency, and is grounded in a (legally valid) document.</cpannotationschema:scenarios>
+        <cpannotationschema:hasIntent rdf:datatype="&rdf;PlainLiteral">To represent the core attributes of an invoice</cpannotationschema:hasIntent>
+        <cpannotationschema:coversRequirements rdf:datatype="&rdf;PlainLiteral">What are the transactions involved in this invoice? What is the order this invoice is referring to? What is the line item for this invoice? What is the amount of the transactions involved in this invoice? What currency is applied to this invoice?</cpannotationschema:coversRequirements>
+        <cpannotationschema:extractedFrom rdf:datatype="&rdf;PlainLiteral">http://www-neon-project.org/InvoiceReferenceOntology</cpannotationschema:extractedFrom>
+        <cpannotationschema:relatedCPs rdf:datatype="&rdf;PlainLiteral">http://www.ontologydesignpatterns.org/cp/owl/salespurchaseordercontracts.owl</cpannotationschema:relatedCPs>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;scenarios"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;extractedFrom"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;coversRequirements"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;hasIntent"/>
+    <owl:AnnotationProperty rdf:about="&cpannotationschema;relatedCPs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#InvoiceCurrencyCode -->
+
+    <owl:ObjectProperty rdf:about="&invoice;InvoiceCurrencyCode">
+        <rdfs:domain rdf:resource="&invoice2;InvoiceType"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#InvoiceCurrencyType -->
+
+    <owl:ObjectProperty rdf:about="&invoice;InvoiceCurrencyType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;CurrencyMeasure"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#IssueDate -->
+
+    <owl:ObjectProperty rdf:about="&invoice;IssueDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#PricingCurrencyType -->
+
+    <owl:ObjectProperty rdf:about="&invoice;PricingCurrencyType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;CurrencyMeasure"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#ReferencedOrder -->
+
+    <owl:ObjectProperty rdf:about="&invoice;ReferencedOrder">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#TaxCurrencyType -->
+
+    <owl:ObjectProperty rdf:about="&invoice;TaxCurrencyType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;CurrencyMeasure"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#TaxPointDate -->
+
+    <owl:ObjectProperty rdf:about="&invoice;TaxPointDate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#buyerTransaction -->
+
+    <owl:ObjectProperty rdf:about="&invoice;buyerTransaction">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;Buying"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#context -->
+
+    <owl:ObjectProperty rdf:about="&invoice;context">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;Context"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#grounding -->
+
+    <owl:ObjectProperty rdf:about="&invoice;grounding">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:range rdf:resource="&invoice;Grounding"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#legalTotals -->
+
+    <owl:ObjectProperty rdf:about="&invoice;legalTotals">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;LegalTotals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#lineItem -->
+
+    <owl:ObjectProperty rdf:about="&invoice;lineItem">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;LineItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#sellerTransaction -->
+
+    <owl:ObjectProperty rdf:about="&invoice;sellerTransaction">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;Selling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#subText -->
+
+    <owl:ObjectProperty rdf:about="&invoice;subText">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;TransactionAmount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#taxTotal -->
+
+    <owl:ObjectProperty rdf:about="&invoice;taxTotal">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&invoice;TaxTotal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#ID -->
+
+    <owl:DatatypeProperty rdf:about="&invoice;ID">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#LineItemCountQuantity -->
+
+    <owl:DatatypeProperty rdf:about="&invoice;LineItemCountQuantity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+        <rdfs:domain rdf:resource="&invoice;Invoice"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/invoice.owl#InvoiceType -->
+
+    <owl:Class rdf:about="&invoice2;InvoiceType"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Buying -->
+
+    <owl:Class rdf:about="&invoice;Buying">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Context -->
+
+    <owl:Class rdf:about="&invoice;Context">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#CurrencyMeasure -->
+
+    <owl:Class rdf:about="&invoice;CurrencyMeasure">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Grounding -->
+
+    <owl:Class rdf:about="&invoice;Grounding">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Invoice -->
+
+    <owl:Class rdf:about="&invoice;Invoice">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#LegalTotals -->
+
+    <owl:Class rdf:about="&invoice;LegalTotals">
+        <rdfs:subClassOf rdf:resource="&invoice;TransactionAmount"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#LineItem -->
+
+    <owl:Class rdf:about="&invoice;LineItem">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Order -->
+
+    <owl:Class rdf:about="&invoice;Order">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#Selling -->
+
+    <owl:Class rdf:about="&invoice;Selling">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#TaxTotal -->
+
+    <owl:Class rdf:about="&invoice;TaxTotal">
+        <rdfs:subClassOf rdf:resource="&invoice;TransactionAmount"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/invoice.owl#TransactionAmount -->
+
+    <owl:Class rdf:about="&invoice;TransactionAmount">
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/invoice.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

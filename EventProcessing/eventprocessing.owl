@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:model="http://events.semantic-multimedia.org/ontology/2009/4/15/model.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl">
+  <owl:Ontology rdf:about="">
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What event objects are this complex event object and abstraction of?</cpannotationschema:coversRequirements>
+    <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >To model event objects (in the context of complex event processing), their attributes, and their relations actual events, and sensor readings producing the events. Different types of event objects, such as complex, composite, and simple events are modelled, preoperties for expressing relations between event objects, such as constituency and componency are expressed, and attributes of event objects, such as timestamps and other data values. This pattern is aligned both to the SSN (Semantic Sensor Network) ontology, and the Event-F model, which in turn both use DUL as an upper layer.</cpannotationschema:hasIntent>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What is the header/body of this event object?</cpannotationschema:coversRequirements>
+    <cpannotationschema:isSpecializationOf rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The pattern extends both the SSN ontology and the Event-F model, which in turn are based on DUL.</cpannotationschema:isSpecializationOf>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What are the parts of this composite event object?</cpannotationschema:coversRequirements>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What is the timestamp of this event object?</cpannotationschema:coversRequirements>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >By what sensor was this event object recorded?</cpannotationschema:coversRequirements>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What actual event does this event object document?</cpannotationschema:coversRequirements>
+    <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Eva Blomqvist and Mikko Rinne</dc:creator>
+    <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >What are the attribute values of this event object?</cpannotationschema:coversRequirements>
+  </owl:Ontology>
+  <owl:Class rdf:ID="SimpleEventObject">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An event object that is not an abstraction of other event objects, nor is composed of other event objects.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EventObject"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >simple event object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="CompositeEventObject">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ComplexEventObject"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:TransitiveProperty rdf:ID="hasEventObjectPart"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EventObject"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An event object that is composed of a set of other event objects, i.e. its parts.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >composite event object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="SensorOutput">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EventObject"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Class representing the alignement to ssn:SensorOutput, expressing the restriction that an ssn:SensorOutput is either a complex event or a simple event, depending on the sensor used.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#ComplexEventObject"/>
+          <owl:Class rdf:about="#SimpleEventObject"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >sensor output</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#ComplexEventObject">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#EventObject"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An event that summarizes, represents, or denotes a set of other events, i.e. it is an abstraction over other events. Anything that is not a complex event is instead a simple event.</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="#EventObject"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:TransitiveProperty rdf:ID="hasSubEventObject"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:TransitiveProperty rdf:about="#hasEventObjectPart"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="#EventObject"/>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Complex event object</rdfs:label>
+    <owl:disjointWith rdf:resource="#SimpleEventObject"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EventObjectHeader">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasEventObjectTime"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasEventDuration"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >event object header</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasEventObjectAttributeValue"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasEventObjectAttributeDataValue"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+          </owl:Restriction>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <owl:onProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isEventObjectHeaderOf"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EventObject"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Some event processing systems need to distinguish between an event object header and its body, where the event object header is the part of the event object with known content (e.g. known vocabulary) that can be directly processed by the event processing system. Although a header is considered mandatory for an event object, if not specified what the header consists of, it can be inferred by the system through the fact that it contains the "known" part, as opposed to the body that may contain a payload that the system cannot interpret.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="EventObjectPart"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#EventObjectPart">
+    <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >event object part</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="EventObjectBody"/>
+          <owl:Class rdf:about="#EventObjectHeader"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EventObjectBody">
+    <rdfs:subClassOf rdf:resource="#EventObjectPart"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >event object body</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isEventObjectBodyOf"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EventObject"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Some event processing systems need to distinguish between an event object header and its body, where the event object header is the part of the event object with known content (e.g. known vocabulary) that can be directly processed by the event processing system, and the body is the rest of the event object. The body may always be empty or missing.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#EventObject">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasEventObjectTime"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#hasEventDuration"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An object that represents, encodes, or records an event, generally for the purpose of computer processing. 
+
+An event object may consist of an event object header and a body, where the header is defined as the part of the event object that can be interpreted by the event processing system, i.e. and event object needs to contain at least some information (e.g. with a known vocabulary) that can be used by the event processing system. Note that the open world assumption allows us to choose not to explicitly specify a header, despite the restriction that it exists. 
+
+An event object is either a complex event, i.e. an event object that has some relation (either through abstraction or componency) to other event objects, or a simple event. 
+
+An event object records information about an actual event, which is then by implication a documented event (i.e. participating in an event documentation situation).</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://events.semantic-multimedia.org/ontology/2009/4/15/model.owl#EventDocumentationDescription"/>
+          <rdf:Description rdf:about="http://events.semantic-multimedia.org/ontology/2009/4/15/model.owl#EventInterpretationDescription"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#hasEventObjectAttributeValue"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Region"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasEventObjectAttributeDataValue"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#EventObjectHeader"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasEventObjectHeader"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="informationAboutEvent"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://events.semantic-multimedia.org/ontology/2009/4/15/model.owl#EventDocumentationSituation"/>
+            <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"/>
+          </owl:Restriction>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Event object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SimpleEventObject"/>
+          <owl:Class rdf:about="#ComplexEventObject"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasEventLocation">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event location</rdfs:label>
+    <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasEventObjectAttributeValue"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasEventDuration">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Property for represting a time interval of an event object, rather than a time point. Alternative is to define several time points, using the subproperties of the datatype property hasEventObjectTime.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasEventObjectAttributeValue"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event duration</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isEventObjectBodyOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is event object body of</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasEventObjectBody"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="refersToEventObjectConstituent">
+    <rdfs:range rdf:resource="#EventObject"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Event objects that use a header/body structure can use this property to refer to the constituents (i.e. direct sub-events in an abstraction hierarchy) of the event object. Through a property chain axiom, the presence of a "hasDirectSubEventObject" relation can be inferred.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EventObjectHeader"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >refers to event object constituent</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="refersToEventObjectComponent">
+    <rdfs:range rdf:resource="#EventObject"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Event objects that use a header/body structure can use this property to refer to the components (i.e. direct parts) of the event object. Through a property chain axiom, the presence of a "hasEventObjectComponent" relation can be inferred.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EventObjectHeader"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >refers to event object component</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isEventObjectHeaderOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is event object header of</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasEventObjectHeader"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isEventObjectComponentOf">
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is event object component of</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasEventObjectComponent"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf>
+      <owl:TransitiveProperty rdf:ID="isEventObjectPartOf"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="#CompositeEventObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSensorReadingValue">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Property for expresseing the alignemet to the SSN ontology, equivalent to ssn:hasValue.</rdfs:comment>
+    <owl:equivalentProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has sensor reading value</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasEventObjectAttributeValue"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasEventObjectAttributeValue">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#EventObjectPart"/>
+          <owl:Class rdf:about="#EventObject"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object attribute value</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasDirectSubEventObject">
+    <rdfs:range rdf:resource="#EventObject"/>
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#hasEventObjectHeader"/>
+      <owl:ObjectProperty rdf:about="#refersToEventObjectConstituent"/>
+    </owl:propertyChainAxiom>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation that connects a complex event with the low-level events it is a higher-level representation of. This is a non-transitive relation that can be used to create a hierarchy of levels of sub-events, that represents the reasoning/triggering or abstraction process that led up to the creation or detection of a complex event. The transitive superproperty hasSubEventObject allows for direclty querying for the transitive closure of sub-events, regardless of the hierarchy, even if only this non-transitive sub-property is used in the data.</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:TransitiveProperty rdf:about="#hasSubEventObject"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has direct sub-event object</rdfs:label>
+    <rdfs:domain rdf:resource="#ComplexEventObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasEventObjectBody">
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object body</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Some event processing systems need to distinguish between an event object header and its body, where the event object header is the part of the event object with known content (e.g. known vocabulary) that can be directly processed by the event processing system. This property relates an event object to its body part.</rdfs:comment>
+    <rdfs:range rdf:resource="#EventObjectBody"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasEventObjectHeader">
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object header</rdfs:label>
+    <rdfs:range rdf:resource="#EventObjectHeader"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Some event processing systems need to distinguish between an event object header and its body, where the event object header is the part of the event object with known content (e.g. known vocabulary) that can be directly processed by the event processing system. This property relates an event object to its header part.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#informationAboutEvent">
+    <rdfs:range rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >expresses information about an event</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"/>
+    <rdfs:domain rdf:resource="#EventObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasEventObjectComponent">
+    <rdfs:subPropertyOf>
+      <owl:TransitiveProperty rdf:about="#hasEventObjectPart"/>
+    </rdfs:subPropertyOf>
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#hasEventObjectHeader"/>
+      <owl:ObjectProperty rdf:about="#refersToEventObjectComponent"/>
+    </owl:propertyChainAxiom>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object component</rdfs:label>
+    <rdfs:range rdf:resource="#EventObject"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This non-transitive property expresses the direct relation between an event object and its direct parts, i.e. its components. Using this property a hierarchy of components can be expressed for an event object. The components of the event object do not exist on their own, but exist to "make up" the whole of the encapsulating event, likewise the encapsulating event is not complete without its parts. Please note the difference between this stronger relation, compared to the "hasSubEvent"-property which merely relates event objects to each other, e.g. expressing the triggering of abstractions, but without implying that the events are parts of each other.</rdfs:comment>
+    <rdfs:domain rdf:resource="#CompositeEventObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isDirectSubEventObjectOf">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is direct sub event object of</rdfs:label>
+    <owl:inverseOf rdf:resource="#hasDirectSubEventObject"/>
+    <rdfs:subPropertyOf>
+      <owl:TransitiveProperty rdf:ID="isSubEventObjectOf"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:range rdf:resource="#ComplexEventObject"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasEventObjectSystemTime">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasEventObjectTime"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object system time</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The timestamp of the event according to the event processing system (in terms of its internal clock time), i.e. when the event object was received byt the event processing system through the stream.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasEventObjectExpirationTime">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object expiration time</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Time limit on the validity of this event object.</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasEventObjectTime"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasEventObjectSamplingTime">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The time the event was detected and recorded as data, e.g. when it was recorded by a sensor in terms of the sensor's internal clock.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object sampling time</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasEventObjectTime"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasEventObjectTime">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasEventObjectAttributeDataValue"/>
+    </rdfs:subPropertyOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object time</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#EventObject"/>
+          <owl:Class rdf:about="#EventObjectPart"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasEventObjectAttributeDataValue">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object attribute data value</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#EventObject"/>
+          <owl:Class rdf:about="#EventObjectPart"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasEventObjectApplicationTime">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The timestamp assigned by the source of the data when it was transmitted, i.e. when it entered the stream.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object application time</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#hasEventObjectTime"/>
+  </owl:DatatypeProperty>
+  <owl:TransitiveProperty rdf:about="#isSubEventObjectOf">
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is sub event object of</rdfs:label>
+    <owl:inverseOf>
+      <owl:TransitiveProperty rdf:about="#hasSubEventObject"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"/>
+    <rdfs:range rdf:resource="#ComplexEventObject"/>
+  </owl:TransitiveProperty>
+  <owl:TransitiveProperty rdf:about="#hasSubEventObject">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has sub-event object</rdfs:label>
+    <rdfs:range rdf:resource="#EventObject"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation that connects a complex event with the low-level events it is a higher-level representation of. An event object may reference another event, on a lower level of abstraction or granularity, upon which is it is based or from which it was derived or triggered, making that other event a "sub event" of this aggregated or more abstract event object. Note that for modelling instance data, normally, the non-transitive sub-property "hasDirectSubEventObject" should be used, based on which the presence of this transitive relation can be inferred.</rdfs:comment>
+    <rdfs:domain rdf:resource="#ComplexEventObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:TransitiveProperty>
+  <owl:TransitiveProperty rdf:about="#hasEventObjectPart">
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has event object part</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This transitive property represents a partonomy relation between event objects. An event object can consist of several "partial events" that together make up the complete event object. The parts of the event object do not exist on their own, but exist to "make up" the whole of the encapsulating event, likewise the encapsulating event is not complete without its parts. Please note the difference between this stronger relation, compared to the "hasSubEvent"-property which merely relates event objects to each other, e.g. expressing the triggering of abstractions, but without implying that the events are parts of each other.</rdfs:comment>
+    <rdfs:range rdf:resource="#EventObject"/>
+    <rdfs:domain rdf:resource="#CompositeEventObject"/>
+  </owl:TransitiveProperty>
+  <owl:TransitiveProperty rdf:about="#isEventObjectPartOf">
+    <owl:inverseOf rdf:resource="#hasEventObjectPart"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is event object part of</rdfs:label>
+    <rdfs:domain rdf:resource="#EventObject"/>
+    <rdfs:range rdf:resource="#CompositeEventObject"/>
+  </owl:TransitiveProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

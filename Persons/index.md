@@ -9,3 +9,4 @@ title: ODPA Patterns
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [index.md](./index.md)  
 [Persons.md](./Persons.md)  
+[persons.owl](./persons.owl)  
