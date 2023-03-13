@@ -6,497 +6,497 @@ baseurl: /
 description: A Portal for ODPA
 markdown: GFM
 collections:
-  Reactor:
-    output: true
-  RelativeRelationship:
-    output: true
-  PharmaInnova:
-    output: true
-  Interest:
-    output: true
-  Class_by_attribute_value:
-    output: true
-  ActingFor:
-    output: true
-  Nary_Participation:
-    output: true
-  ContextualizedWinstonPartWhole:
-    output: true
-  Object:
-    output: true
-  OOPMetrics:
-    output: true
-  An_Ontology_Design_Pattern_for_Activity_Reasoning:
-    output: true
-  SmartHome_Geometry:
-    output: true
-  Standard:
-    output: true
-  Metonymy-species-commodity:
-    output: true
-  HowToSubmitAnExemplaryOntology:
-    output: true
-  PrivacyPolicyPersonalData:
-    output: true
-  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_adjacency_list_data_model,_into_an_ontology_schema:
-    output: true
-  SynonymOrEquivalence:
-    output: true
-  Pollution:
-    output: true
-  IntensionExtension:
-    output: true
-  Stub_Metapattern:
-    output: true
-  CountingAs:
-    output: true
-  Class_intersection:
-    output: true
-  AffectedBy:
-    output: true
-  LinnaeanTaxonomy:
-    output: true
-  EventCore:
-    output: true
-  Spatial_Graph_Adapter_Pattern_(moved_to_Content_ODPs):
-    output: true
-  Action:
-    output: true
-  SpeciesEat:
-    output: true
-  TransportPattern:
-    output: true
-  Disposition:
-    output: true
-  GearSpecies:
-    output: true
-  Classification:
-    output: true
-  Airline.owl:
-    output: true
-  List_2:
-    output: true
-  ContentOPs:
-    output: true
-  Partition:
-    output: true
-  Class_subsumption:
-    output: true
-  NegativePropertyAssertions:
-    output: true
-  Objectrole:
-    output: true
-  Normalization:
-    output: true
-  HowDoIPostAModelingIssue:
-    output: true
-  AOS_AGROVOC_Concept_Server_fundation_ontology_model:
-    output: true
-  Class_by_attribute_type:
-    output: true
-  MicroblogEntry:
-    output: true
-  Invoice:
-    output: true
-  AquaticResourceObservation:
-    output: true
-  HistoricalMap:
-    output: true
-  OnlynessIsLoneliness:
-    output: true
-  ReportingEvent:
-    output: true
-  ProposeRP:
-    output: true
-  Define_Hybrid_Class_Resolving_Disjointness_due_to_Subsumption:
-    output: true
-  Literal_Reification:
-    output: true
-  ModifiedHazardousSituation:
-    output: true
-  N-Ary_Relation_Pattern_(OWL_2):
-    output: true
-  ProposeLSP:
-    output: true
-  Reactor_pattern:
-    output: true
-  Create_Disjoint_Siblings:
-    output: true
-  Biological:
-    output: true
-  DataTransformationPattern:
-    output: true
-  Template:
-    output: true
-  Change_of_Time_Varying_Entities:
-    output: true
-  Policy:
-    output: true
-  Enlarge_Class_Definition_for_Resolving_Disjointness_due_to_Subsomption:
-    output: true
-  SmartHome_Situation:
-    output: true
-  ResourceAbundanceObservation:
-    output: true
-  Constituency:
-    output: true
-  ReportingNewsEvent:
-    output: true
-  Professor:
-    output: true
-  SynonymOrEquivalence_(SOE):
-    output: true
-  CriterionS:
-    output: true
-  Auriol_Degbelo:
-    output: true
-  WinstonPartWhole:
-    output: true
-  ActivitySpecification:
-    output: true
-  AgentRole:
-    output: true
-  PeriodicInterval:
-    output: true
-  public:
-    output: true
-  SimpleOrAggregated:
-    output: true
-  Object_with_states:
-    output: true
-  Tree_Pattern:
-    output: true
-  Co-participation:
-    output: true
-  ProposeCP:
-    output: true
-  Pattern_for_re-engineering_a_term-based_thesaurus,_which_follows_the_relationbased_data_model,_into_an_ontology_schema:
-    output: true
-  SmartHome:
-    output: true
-  SpeciesConservation:
-    output: true
-  Adrian_Walker_2:
-    output: true
-  Affordance:
-    output: true
-  ProposeARP:
-    output: true
-  Communities:
-    output: true
-  Summarization_of_an_inverse_n-ary_relation:
-    output: true
-  Collection:
-    output: true
-  AquaticResources:
-    output: true
-  CatchRecord:
-    output: true
-  Persons:
-    output: true
-  Region:
-    output: true
-  Faceted:
-    output: true
-  Main:
-    output: true
-  Time_indexed_participation:
-    output: true
-  DisjointnessOfComplement:
-    output: true
-  VesselSpecies:
-    output: true
-  HasPest:
-    output: true
-  MaterialsProperty:
-    output: true
-  TimeIndexedClassification:
-    output: true
-  LicenseLinkedDataResources:
-    output: true
-  DisjointnessOfComplement_(DOC):
-    output: true
-  Set:
-    output: true
-  SimpleTopic:
-    output: true
-  Classification_scheme_-_path_enumeration_model_-_to_Taxonomy:
-    output: true
-  Inverse_n-ary_relationship:
-    output: true
-  Context:
-    output: true
-  SpeciesHabitat:
-    output: true
-  Disjoint_Classes:
-    output: true
-  SmartHome_TimeInterval:
-    output: true
-  SmartHome_Sensing:
-    output: true
-  Actuation-Actuator-Effect:
-    output: true
-  CollectionEntity:
-    output: true
-  SmartHome_Object:
-    output: true
-  LCA_Pattern:
-    output: true
-  Device-Interface-Link_Pattern:
-    output: true
-  Pattern_for_re-engineering_a_term-based_thesaurus,_which_follows_the_recordbased_data_model,_into_an_ontology_schema:
-    output: true
-  Smart_City_Strategy_Design:
-    output: true
   ClimaticZone:
-    output: true
-  ConceptGroup:
-    output: true
-  SmartHome_Network:
-    output: true
-  Map_Legend_Ontology:
-    output: true
-  Participation:
-    output: true
-  Parameter:
-    output: true
-  ArchitecturalODPs:
-    output: true
-  SmartHome_Place:
-    output: true
-  ReengineeringODPs:
-    output: true
-  TaskExecution:
-    output: true
-  List:
-    output: true
-  VerticalDistribution:
-    output: true
-  CyclicSubClassOf:
-    output: true
-  AlgorithmImplementationExecution:
-    output: true
-  Criterion:
-    output: true
-  SpatioTemporalExtent:
-    output: true
-  DigitalVideo:
-    output: true
-  PartOf:
-    output: true
-  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_snowflake_data_model,_into_an_ontology_schema:
-    output: true
-  RTMSmapping:
-    output: true
-  SpeciesBathymetry:
-    output: true
-  LogisticsService:
-    output: true
-  Controlflow:
-    output: true
-  GearWaterArea:
-    output: true
-  SmartHome_Property:
-    output: true
-  PlanConditions:
-    output: true
-  ParticipantRole:
-    output: true
-  Social_Reality_(OWL_2):
-    output: true
-  SmartHome_FeatureOfInterest:
-    output: true
-  Price:
-    output: true
-  Role_task:
-    output: true
-  Class_equivalence:
-    output: true
-  ResourceExploitationObservation:
-    output: true
-  Situation:
-    output: true
-  Logistics_Service_(LoSe_ODP):
-    output: true
-  GO_Top:
-    output: true
-  Adrian_Walker:
-    output: true
-  Define_Hybrid_Class_Resolving_Disjointness_due_to_Subsomption:
-    output: true
-  Scorepart:
-    output: true
-  ChessGame:
-    output: true
-  Define:
-    output: true
-  Template_Instance:
-    output: true
-  BasicPlan:
-    output: true
-  Sequence:
-    output: true
-  Literal:
-    output: true
-  Transition:
-    output: true
-  TimeIndexedSituation:
-    output: true
-  DescriptionAndSituation:
-    output: true
-  LexicoSyntacticODPs:
-    output: true
-  Quantity_Triad_Pattern:
-    output: true
-  Born_Digital_Archives:
-    output: true
-  Class_by_path_attribute_value:
-    output: true
-  Place:
-    output: true
-  SmartHome_Event:
-    output: true
-  SpeciesConditions:
-    output: true
-  SubmitAPattern:
-    output: true
-  Spatial_Graph_Adapter_(SGA):
-    output: true
-  Complaint_Design_Pattern:
-    output: true
-  HazardousSituation:
-    output: true
-  Classification_scheme_-_adjacency_list_model_-_to_Taxonomy:
-    output: true
-  Faceted_Classification_Scheme:
-    output: true
-  Standard_Enforcer_Pattern:
-    output: true
-  TimeInterval:
-    output: true
-  TimePeriod:
-    output: true
-  HowDoISubmitAModelllingIssue:
-    output: true
-  Musicalobject:
-    output: true
-  TimeIndexedPartOf:
-    output: true
-  View_Inheritance:
-    output: true
-  EthnicGroup:
-    output: true
-  Bag:
-    output: true
-  City_Resident_Pattern:
-    output: true
-  Topic:
-    output: true
-  Trajectory:
-    output: true
-  EEP:
-    output: true
-  Computer_System:
-    output: true
-  Food_Recipe_Ingredient_Substitution_ODP:
-    output: true
-  Class_by_attribute_occurence:
-    output: true
-  Symmetric_n-ary_relationship:
-    output: true
-  Food_Recipe_Ingredient_Substitution_Ontology_Design_Pattern:
-    output: true
-  DetectorFinalState:
-    output: true
-  Roles_(OWL_2):
-    output: true
-  HowToPostAPattern:
-    output: true
-  Class_Union:
-    output: true
-  Biological_Entities:
-    output: true
-  VesselWaterArea:
-    output: true
-  Inverse:
-    output: true
-  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_path_enumeration_data_model,_into_an_ontology_schema:
-    output: true
-  Notepattern:
-    output: true
-  EventProcessing:
-    output: true
-  ComputationalEnvironment:
-    output: true
-  SpeciesNames:
-    output: true
-  Enlarge:
-    output: true
-  Information_realization:
-    output: true
-  LogicalODPs:
-    output: true
-  NewsReportingEvent:
-    output: true
-  CriterionSetter:
-    output: true
-  Time_indexed_person_role:
-    output: true
-  BasicPlanExecution:
-    output: true
-  Class_correspondence_defined_by_relation_domain:
-    output: true
-  Material_Transformation:
-    output: true
-  Provenance:
-    output: true
-  Tagging:
-    output: true
-  GearVessel:
-    output: true
-  Airline:
-    output: true
-  CommunicationEvent:
-    output: true
-  AlignmentODPs:
-    output: true
-  Description_in_Range:
-    output: true
-  OnlynessIsLoneliness_(OIL):
-    output: true
-  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_flattened_data_model,_into_an_ontology_schema:
-    output: true
-  Observation:
-    output: true
-  ProposeALP:
-    output: true
-  Types_of_entities:
-    output: true
-  ExplanationODP:
-    output: true
-  Description:
-    output: true
-  ProposeLP:
-    output: true
-  ConceptTerms:
-    output: true
-  Context_Slices:
-    output: true
-  Course:
-    output: true
-  RecurrentSituationSeries:
     output: true
   Experience_&_Observation:
     output: true
+  LCA_Pattern:
+    output: true
+  LogisticsService:
+    output: true
+  ProposeRP:
+    output: true
+  AgentRole:
+    output: true
+  Classification_scheme_-_adjacency_list_model_-_to_Taxonomy:
+    output: true
+  Description_in_Range:
+    output: true
+  TransportPattern:
+    output: true
+  Create_Disjoint_Siblings:
+    output: true
+  LexicoSyntacticODPs:
+    output: true
+  AquaticResources:
+    output: true
+  EventProcessing:
+    output: true
+  SmartHome:
+    output: true
+  Actuation-Actuator-Effect:
+    output: true
+  Literal_Reification:
+    output: true
+  Set:
+    output: true
+  ProposeLSP:
+    output: true
+  AlgorithmImplementationExecution:
+    output: true
+  HowDoIPostAModelingIssue:
+    output: true
+  CatchRecord:
+    output: true
+  DigitalVideo:
+    output: true
+  Musicalobject:
+    output: true
+  Class_correspondence_defined_by_relation_domain:
+    output: true
+  Pattern_for_re-engineering_a_term-based_thesaurus,_which_follows_the_recordbased_data_model,_into_an_ontology_schema:
+    output: true
+  GO_Top:
+    output: true
+  ParticipantRole:
+    output: true
+  Food_Recipe_Ingredient_Substitution_ODP:
+    output: true
+  TaskExecution:
+    output: true
+  Main:
+    output: true
+  CommunicationEvent:
+    output: true
+  HistoricalMap:
+    output: true
+  Metonymy-species-commodity:
+    output: true
+  Food_Recipe_Ingredient_Substitution_Ontology_Design_Pattern:
+    output: true
+  Classification:
+    output: true
+  ChessGame:
+    output: true
+  RecurrentSituationSeries:
+    output: true
+  SpatioTemporalExtent:
+    output: true
+  Constituency:
+    output: true
+  Time_indexed_participation:
+    output: true
+  PeriodicInterval:
+    output: true
+  IntensionExtension:
+    output: true
+  Airline.owl:
+    output: true
+  VesselWaterArea:
+    output: true
+  ConceptTerms:
+    output: true
+  Persons:
+    output: true
+  SmartHome_Object:
+    output: true
+  NegativePropertyAssertions:
+    output: true
+  Computer_System:
+    output: true
+  Nary_Participation:
+    output: true
+  Criterion:
+    output: true
+  HasPest:
+    output: true
+  InformationObjectsAndRepresentationLanguages:
+    output: true
+  Define_Hybrid_Class_Resolving_Disjointness_due_to_Subsumption:
+    output: true
+  RelativeRelationship:
+    output: true
+  GearSpecies:
+    output: true
+  Inverse:
+    output: true
+  Context_Slices:
+    output: true
+  Born_Digital_Archives:
+    output: true
+  Summarization_of_an_inverse_n-ary_relation:
+    output: true
+  Airline:
+    output: true
   Move:
     output: true
-  Componency:
+  Description:
     output: true
-  RecurrentEventSeries:
+  SmartHome_FeatureOfInterest:
+    output: true
+  Template:
+    output: true
+  GearWaterArea:
+    output: true
+  An_Ontology_Design_Pattern_for_Activity_Reasoning:
+    output: true
+  Context:
+    output: true
+  Object:
+    output: true
+  Define_Hybrid_Class_Resolving_Disjointness_due_to_Subsomption:
+    output: true
+  Template_Instance:
+    output: true
+  HowToPostAPattern:
+    output: true
+  List_2:
+    output: true
+  AffectedBy:
+    output: true
+  ComputationalEnvironment:
+    output: true
+  Communities:
+    output: true
+  Co-participation:
+    output: true
+  Parameter:
+    output: true
+  Disposition:
+    output: true
+  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_path_enumeration_data_model,_into_an_ontology_schema:
+    output: true
+  Policy:
+    output: true
+  EthnicGroup:
+    output: true
+  PartOf:
+    output: true
+  Price:
+    output: true
+  Enlarge:
+    output: true
+  ProposeALP:
+    output: true
+  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_adjacency_list_data_model,_into_an_ontology_schema:
+    output: true
+  Time_indexed_person_role:
+    output: true
+  Adrian_Walker:
+    output: true
+  Spatial_Graph_Adapter_Pattern_(moved_to_Content_ODPs):
     output: true
   Symmetric:
     output: true
-  InformationObjectsAndRepresentationLanguages:
+  TimePeriod:
+    output: true
+  Quantity_Triad_Pattern:
+    output: true
+  WinstonPartWhole:
+    output: true
+  ReengineeringODPs:
+    output: true
+  CyclicSubClassOf:
+    output: true
+  List:
+    output: true
+  SynonymOrEquivalence:
+    output: true
+  SmartHome_Network:
+    output: true
+  Reactor_pattern:
+    output: true
+  ReportingNewsEvent:
+    output: true
+  DescriptionAndSituation:
+    output: true
+  BasicPlan:
+    output: true
+  AlignmentODPs:
+    output: true
+  ArchitecturalODPs:
+    output: true
+  OnlynessIsLoneliness:
+    output: true
+  ProposeCP:
+    output: true
+  Interest:
+    output: true
+  AquaticResourceObservation:
+    output: true
+  Objectrole:
+    output: true
+  VesselSpecies:
+    output: true
+  View_Inheritance:
+    output: true
+  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_snowflake_data_model,_into_an_ontology_schema:
+    output: true
+  Place:
+    output: true
+  Roles_(OWL_2):
+    output: true
+  TimeIndexedPartOf:
+    output: true
+  Action:
+    output: true
+  Stub_Metapattern:
+    output: true
+  SpeciesHabitat:
+    output: true
+  City_Resident_Pattern:
+    output: true
+  NewsReportingEvent:
+    output: true
+  Tree_Pattern:
+    output: true
+  Complaint_Design_Pattern:
+    output: true
+  Faceted:
+    output: true
+  SpeciesConservation:
+    output: true
+  SynonymOrEquivalence_(SOE):
+    output: true
+  LinnaeanTaxonomy:
+    output: true
+  ResourceExploitationObservation:
+    output: true
+  SpeciesBathymetry:
+    output: true
+  Symmetric_n-ary_relationship:
+    output: true
+  MicroblogEntry:
+    output: true
+  CriterionSetter:
+    output: true
+  Class_subsumption:
+    output: true
+  Tagging:
+    output: true
+  Class_intersection:
+    output: true
+  EEP:
+    output: true
+  HowDoISubmitAModelllingIssue:
+    output: true
+  Class_by_attribute_value:
+    output: true
+  Collection:
+    output: true
+  Logistics_Service_(LoSe_ODP):
+    output: true
+  PrivacyPolicyPersonalData:
+    output: true
+  Class_equivalence:
+    output: true
+  ModifiedHazardousSituation:
+    output: true
+  Standard:
+    output: true
+  ContentOPs:
+    output: true
+  Professor:
+    output: true
+  ReportingEvent:
+    output: true
+  SmartHome_Geometry:
+    output: true
+  Transition:
+    output: true
+  SmartHome_Sensing:
+    output: true
+  TimeInterval:
+    output: true
+  PlanConditions:
+    output: true
+  DataTransformationPattern:
+    output: true
+  ContextualizedWinstonPartWhole:
+    output: true
+  CriterionS:
+    output: true
+  Smart_City_Strategy_Design:
+    output: true
+  Normalization:
+    output: true
+  SmartHome_Property:
+    output: true
+  HazardousSituation:
+    output: true
+  Observation:
+    output: true
+  SpeciesConditions:
+    output: true
+  DisjointnessOfComplement:
+    output: true
+  Define:
+    output: true
+  Class_Union:
+    output: true
+  ExplanationODP:
+    output: true
+  public:
+    output: true
+  Device-Interface-Link_Pattern:
+    output: true
+  Region:
+    output: true
+  SmartHome_Place:
+    output: true
+  Classification_scheme_-_path_enumeration_model_-_to_Taxonomy:
+    output: true
+  Controlflow:
+    output: true
+  DetectorFinalState:
+    output: true
+  SimpleOrAggregated:
+    output: true
+  Pattern_for_re-engineering_a_term-based_thesaurus,_which_follows_the_relationbased_data_model,_into_an_ontology_schema:
+    output: true
+  Biological:
+    output: true
+  Participation:
+    output: true
+  Class_by_attribute_type:
+    output: true
+  Scorepart:
+    output: true
+  SpeciesNames:
+    output: true
+  Invoice:
+    output: true
+  Map_Legend_Ontology:
+    output: true
+  Role_task:
+    output: true
+  Pattern_for_re-engineering_a_classification_scheme,_which_follows_the_flattened_data_model,_into_an_ontology_schema:
+    output: true
+  SmartHome_TimeInterval:
+    output: true
+  GearVessel:
+    output: true
+  Class_by_path_attribute_value:
+    output: true
+  SubmitAPattern:
+    output: true
+  Componency:
+    output: true
+  Object_with_states:
+    output: true
+  PharmaInnova:
+    output: true
+  Material_Transformation:
+    output: true
+  Adrian_Walker_2:
+    output: true
+  Inverse_n-ary_relationship:
+    output: true
+  Course:
+    output: true
+  TimeIndexedClassification:
+    output: true
+  Situation:
+    output: true
+  SmartHome_Event:
+    output: true
+  Change_of_Time_Varying_Entities:
+    output: true
+  RTMSmapping:
+    output: true
+  Literal:
+    output: true
+  RecurrentEventSeries:
+    output: true
+  ResourceAbundanceObservation:
+    output: true
+  Trajectory:
+    output: true
+  VerticalDistribution:
+    output: true
+  MaterialsProperty:
+    output: true
+  SpeciesEat:
+    output: true
+  Pollution:
+    output: true
+  Enlarge_Class_Definition_for_Resolving_Disjointness_due_to_Subsomption:
+    output: true
+  Auriol_Degbelo:
+    output: true
+  Types_of_entities:
+    output: true
+  SimpleTopic:
+    output: true
+  LicenseLinkedDataResources:
+    output: true
+  Faceted_Classification_Scheme:
+    output: true
+  Social_Reality_(OWL_2):
+    output: true
+  OOPMetrics:
+    output: true
+  ConceptGroup:
+    output: true
+  LogicalODPs:
+    output: true
+  AOS_AGROVOC_Concept_Server_fundation_ontology_model:
+    output: true
+  CollectionEntity:
+    output: true
+  ProposeARP:
+    output: true
+  SmartHome_Situation:
+    output: true
+  Topic:
+    output: true
+  BasicPlanExecution:
+    output: true
+  Information_realization:
+    output: true
+  Standard_Enforcer_Pattern:
+    output: true
+  TimeIndexedSituation:
+    output: true
+  OnlynessIsLoneliness_(OIL):
+    output: true
+  Class_by_attribute_occurence:
+    output: true
+  CountingAs:
+    output: true
+  Reactor:
+    output: true
+  Partition:
+    output: true
+  ActingFor:
+    output: true
+  DisjointnessOfComplement_(DOC):
+    output: true
+  ActivitySpecification:
+    output: true
+  Spatial_Graph_Adapter_(SGA):
+    output: true
+  Bag:
+    output: true
+  N-Ary_Relation_Pattern_(OWL_2):
+    output: true
+  Notepattern:
+    output: true
+  Provenance:
+    output: true
+  Affordance:
+    output: true
+  ProposeLP:
+    output: true
+  Sequence:
+    output: true
+  HowToSubmitAnExemplaryOntology:
+    output: true
+  EventCore:
+    output: true
+  Disjoint_Classes:
+    output: true
+  Biological_Entities:
     output: true
 excludes:
 - public

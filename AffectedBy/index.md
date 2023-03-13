@@ -8,5 +8,5 @@ title: ODPA Patterns
 [20px-Class.gif](./20px-Class.gif)  
 [20px-ObjectProperty.gif](./20px-ObjectProperty.gif)  
 [800px-ODPAffectedBy_Diagram.png](./800px-ODPAffectedBy_Diagram.png)  
-[AffectedBy.md](./AffectedBy.md)  
+[affectedBy.md](./affectedBy.md)  
 [index.md](./index.md)  

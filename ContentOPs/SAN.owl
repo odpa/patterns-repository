@@ -1,7 +1,718 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-</body></html>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:san="http://www.irit.fr/recherches/MELODI/ontologies/SAN#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <Ontology rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN">
+        <!--imports rdf:resource="http://delicias.dia.fi.upm.es/ontologies/ObjectWithStates.owl"/-->
+        <dc:title>SAN</dc:title>
+        <terms:modified>2016-02-26</terms:modified>
+        <terms:issued>2015-02-20</terms:issued>
+        <foaf:primaryTopic>Actuators and actuation</foaf:primaryTopic>
+        <versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0.0</versionInfo>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:creator rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/contributors#hernandez"/>
+        <dc:publisher>LAAS-CNRS (https://www.laas.fr)</dc:publisher>
+        <dc:creator rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/contributors#drira"/>
+        <voaf:reliesOn rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+        <vann:preferredNamespacePrefix>san</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceURI>http://www.irit.fr/recherches/MELODI/ontologies/SAN</vann:preferredNamespaceURI>
+        <dc:publisher>IRIT (https://www.irit.fr/)</dc:publisher>
+        <dc:creator rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/contributors#ben_alaya"/>
+        <dc:description>SAN stands for Semantic Actuator Network. It is intended to describe Semantic Actuator Networks, as a counterpoint to SSN definition of Semantic Sensor Networks. An actuator is a physical device having an effect on the world (see Actuator for more information).
+
+It is worth noticing that some concepts are imported from SSN, but not SSN as a whole. This is a design choice intended to separate as much as possible the definition on actuator from the definition of sensor, which are completely different concept that can be used independantly from each other.
+
+This ontology is used as a ontological module in IoT-O ontology.</dc:description>
+        <dc:creator>Nicolas Seydoux, Mahdi Ben Alaya, Khalil Drira, Nathalie Hernandez, Thierry Monteil</dc:creator>
+        <dc:creator rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/contributors#monteil"/>
+        <rdfs:seeAlso>http://www.irit.fr/recherches/MELODI/ontologies/IoT-O</rdfs:seeAlso>
+        <dc:creator rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/contributors#seydoux"/>
+    </Ontology>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- xsd:integer -->
+
+    <rdfs:Datatype rdf:about="xsd:integer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#forProperty -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasProperty -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#hasValue -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#implements -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf -->
+
+    <ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf">
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </ObjectProperty>
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#actuationMethodUsed -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#actuationMethodUsed">
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"/>
+        <rdfs:comment>Process involved in the Actuation</rdfs:comment>
+        <rdfs:label>actuation method used</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#actuationResults -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#actuationResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatorInput"/>
+        <rdfs:comment>Relation between an actuation and an actuator input, its result. Implements the ODP Effect-Actuator-Observation</rdfs:comment>
+        <rdfs:label>actuation results</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#consumes -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#consumes">
+        <inverseOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isConsumedBy"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Relation between an consumer entity and a consumee entity. Consumption can be destructive, transformative or neutral for the consumed entity.</rdfs:comment>
+        <rdfs:label>consumes</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#controlledBy -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#controlledBy">
+        <inverseOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isController"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Describes the relationship between a controlledentity and a controller  one. The controlled entity can be a situation (state of a system, property of an environment), a device, a piece of software...</rdfs:comment>
+        <rdfs:label>controlled by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingCapability -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingCapability">
+        <rdfs:subPropertyOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingCapability"/>
+        <rdfs:comment>Relation between an Actuator and an ActuatingCapability, describing the actuating properties of an actuator.</rdfs:comment>
+        <rdfs:label>has actuation capability</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingProperty -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingProperty">
+        <rdfs:subPropertyOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingCapability"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty"/>
+        <rdfs:comment>Relation from an actuation capability to an actuation property.</rdfs:comment>
+        <rdfs:label>has actuation property</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasDateTime -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasDateTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.linkedmodel.org/schema/vaem#date"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment>Relationship between an event (DUL:Region) and a point in time.</rdfs:comment>
+        <rdfs:label>has date time</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasEffect -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasEffect">
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect"/>
+        <rdfs:comment>Relationship between an Actuator and the effect that it induces. The Effect will be linked to a physical property that the actuator impacts</rdfs:comment>
+        <rdfs:label>has effect</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#impactedProperty -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#impactedProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation"/>
+        <rdfs:range rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:comment>Property on which an Actuation has an impact</rdfs:comment>
+        <rdfs:label>impacted property</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#impacts -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#impacts">
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect"/>
+        <rdfs:range rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:comment>Relationship between an effect and the property it impacts. Used in the Effect-Actuator-Actuation design pattern to describe the link between an actuator and the physical property it acts upon.</rdfs:comment>
+        <rdfs:label>impacts</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#isActedUponBy -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isActedUponBy">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Relation between an entity that is acted upen by another acting entity</rdfs:comment>
+        <rdfs:label>is acted upon by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#isConsumedBy -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isConsumedBy">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>Describes a relation between a consumer and a consumee</rdfs:comment>
+        <rdfs:label>is consumed by</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#isController -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isController">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:comment>An entity is controller of another one when it has influence on its decision process or evolution in time.</rdfs:comment>
+        <rdfs:label>is controller</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#receivedActuation -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#receivedActuation">
+        <inverseOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#wasActuationSent"/>
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation"/>
+        <rdfs:comment>Relationship between an actuator and an Actuation it received in order to modify its action.</rdfs:comment>
+        <rdfs:label>receives actuation</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#wasActuationSent -->
+
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#wasActuationSent">
+        <rdfs:domain rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation"/>
+        <rdfs:range rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+        <rdfs:comment>Relationship between an actuation that was sent and the actuator that received it</rdfs:comment>
+        <rdfs:label>is actuation sent</rdfs:label>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.linkedmodel.org/schema/vaem#date -->
+
+    <ObjectProperty rdf:about="http://www.linkedmodel.org/schema/vaem#date"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+    
+    <ObjectProperty rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#actsOn">
+        <rdfs:label>acts on</rdfs:label>
+        <inverseOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isActedUponBy"/>
+        <rdfs:comment>Relationship between an entity that acts upon a quantity or another entity</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </ObjectProperty>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://delicias.dia.fi.upm.es/ontologies/ObjectWithStates.owl#Object -->
+
+    <rdf:Description rdf:about="http://delicias.dia.fi.upm.es/ontologies/ObjectWithStates.owl#Object">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Device -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Device">
+        <rdfs:subClassOf rdf:resource="http://delicias.dia.fi.upm.es/ontologies/ObjectWithStates.owl#Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    </Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest">
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Input -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Process -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Process">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
+    </Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Property -->
+
+    <Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Property">
+        <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#QuantityKind -->
+
+    <Class rdf:about="http://qudt.org/schema/qudt#QuantityKind">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    </Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt#Unit -->
+
+    <Class rdf:about="http://qudt.org/schema/qudt#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure"/>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#Acting -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Acting">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
+        <rdfs:comment>Acting is the process that results in an action on the physical world, might it be a motion, a display, the emission of a sound...</rdfs:comment>
+        <rdfs:label>Acting</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingCapability -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingCapability">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#forProperty"/>
+                <someValuesFrom rdf:resource="http://qudt.org/schema/qudt#QuantityKind"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingProperty"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Represents actuation properties such as precision, latency, power consumption, and the environmental conditions in which these actuation can take place normally.</rdfs:comment>
+        <rdfs:label>Actuating Capability</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingDevice -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+        <rdfs:comment>A device that implements actuating</rdfs:comment>
+        <rdfs:label>Actuating device</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+                <someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A characteristic of an Actuator that gives information about the Actuations it is able to perform.</rdfs:comment>
+        <rdfs:label>Actuating Property</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingRange -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingRange">
+        <rdfs:subClassOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty"/>
+        <rdfs:comment>Range of commands that the actuator can receive and transduce into the physical world without damage to itself or security issues to its surrounding environment.</rdfs:comment>
+        <rdfs:label>Actuating Range</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingTime -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingTime">
+        <rdfs:subClassOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingProperty"/>
+        <rdfs:comment>Time between the moment when the actuator receives an actuation command and the actual actuation.</rdfs:comment>
+        <rdfs:label>Actuating Time</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuation">
+        <rdfs:subClassOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Situation"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#wasActuationSent"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesEvent"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#actuationMethodUsed"/>
+                <allValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Acting"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Actuation is the abstract representation of the command that will be translated into Effect by the Actuator (cf http://ontologydesignpatterns.org/wiki/Submissions:Actuation-Actuator-Effect for more information).</rdfs:comment>
+        <rdfs:label>Actuation</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuationValue -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuationValue">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParametrizedBy"/>
+                <someValuesFrom rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasDateTime"/>
+                <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
+                <onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Value of the command sent to an actuator</rdfs:comment>
+        <rdfs:label>Actuation Value</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Acting"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#actsOn"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasActuatingCapability"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatingCapability"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#hasEffect"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An actuator is an entity which is able to act upon the physical world. Whether it is a light bulb or a servomotor, an actuator receives inputs represented by Actuations and produces an effect on the world.</rdfs:comment>
+        <rdfs:label>Actuator</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatorInput -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatorInput">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuationValue"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#isConsumedBy"/>
+                <someValuesFrom rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Actuator"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An actuator input is a piece of information provided to an actuator describing its expected behaviour, and it is described by an Actuation Value</rdfs:comment>
+        <rdfs:label>Actuator Input</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatorOutput -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#ActuatorOutput">
+        <equivalentClass rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:comment>Behaviour of an actuator after it has been given an input. To stick to its definition, an actuator output must have an effect on the physical world.</rdfs:comment>
+        <rdfs:label>Actuator Output</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect -->
+
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Effect">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#impacts"/>
+                <someValuesFrom rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Concept bound to the definition of an actuator as an agent havong an effect on the physical world. Therefore, an effect is any kind of physical modification induced by an actuator.</rdfs:comment>
+        <rdfs:label>Effect</rdfs:label>
+    </Class>
+    
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Amount"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Process"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+    
+    
+    
+    <Class rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf rdf:resource="http://www.irit.fr/recherches/MELODI/ontologies/SAN#Situation"/>
+    </Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure -->
+
+    <Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/set.owl#Set -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/set.owl#Set"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.irit.fr/recherches/MELODI/ontologies/SAN -->
+
+    <NamedIndividual rdf:about="http://www.irit.fr/recherches/MELODI/ontologies/SAN">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </NamedIndividual>
+    
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
