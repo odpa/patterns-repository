@@ -6,7 +6,7 @@ __Diagram__
 
 
 
-[![Image:RoleDependentNames.pdf](./RoleDependentNames.pdf)](../Image/RoleDependentNames.pdf "Image:RoleDependentNames.pdf")
+[![Image:RoleDependentNames.png](./RoleDependentNames.png)](../Image/RoleDependentNames.png "Image:RoleDependentNames.png")
 
 
 
@@ -24,7 +24,7 @@ __Diagram__
 |  Domains: | [General](../Community/General.md "Community:General") |
 |  Competency Questions: | <li> Under what pseudonym did the author C. S. Lewis published a collection of poems, Spirit in Bondage?</li><li> What alternative did C. S. Lewis used to assume the role of a book writer? </li><li> Show the trajectories of rivers which cross national parks</li> |
 |  Solution description: |  The pattern is a modified merger of a standard Agent Role and a standard Name pattern stub |
-|  Reusable OWL Building Block: | [./RoleDependentNames.owl](RoleDependentNames.owl) |
+|  Reusable OWL Building Block: | [/RoleDependentNames.owl](RoleDependentNames.owl) |
 |  Consequences: |  |
 |  Scenarios: | An author adopting different names to publish books, Name changes (e.g. - after marriage) |
 |  Known Uses: |  |
