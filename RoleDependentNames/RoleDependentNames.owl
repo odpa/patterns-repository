@@ -1,0 +1,187 @@
+@prefix : <https://kastle-labl.org/lod/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix modl: <https://archive.org/services/purl/domain/modular_ontology_design_library> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix kastle-ont: <https://kastle-labl.org/lod/ontology/> .
+@base <https://kastle-labl.org/lod/ontology/> .
+
+<https://kastle-labl.org/lod/ontology/> rdf:type owl:Ontology ;
+                                         opla-core:hasPatternName "Role Module Pattern" ;
+                                         opla-cp:addressesScenario """Use Case
+                                                                Use Case Description"""^^xsd:string ;
+                                         opla-cp:hasCompetencyQuestion "cq1"^^xsd:string ,
+                                                                       "cq2"^^xsd:string ;
+                                         opla-sd:hasConnections """Thing providesAgentRole AgentRole r
+AgentRole hasRoleUnderName Name r st
+Agent assumesAgentRole AgentRole st sd iqsf sr
+Agent hasName Name r e iqsf
+Name hasNameAsString xsd:string e"""^^xsd:string ;
+                                         opla-sd:hasSchemaDiagramFileName "M_Role.png"^^xsd:string ;
+                                         dc:contributor "Cogan Shimizu" ,
+                                                        "Pascal Hitzler" ,
+                                                        "Rushrukh Rayan" ;
+                                         dc:creator "Cogan Shimizu" ,
+                                                    "Pascal Hitzler" ,
+                                                    "Rushrukh Rayan" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologydesignpatterns.org/opla-core#hasPatternName
+opla-core:hasPatternName rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-cp#addressesScenario
+opla-cp:addressesScenario rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-cp#hasCompetencyQuestion
+opla-cp:hasCompetencyQuestion rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#hasConnections
+opla-sd:hasConnections rdf:type owl:AnnotationProperty .
+
+
+###  http://ontologydesignpatterns.org/opla-sd#hasSchemaDiagramFileName
+opla-sd:hasSchemaDiagramFileName rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
+owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://kastle-labl.org/lod/ontology/assumesAgentRole
+kastle-ont:assumesAgentRole rdf:type owl:ObjectProperty ;
+                            owl:propertyChainAxiom ( kastle-ont:hasName
+                                                     [ owl:inverseOf kastle-ont:hasRoleUnderName
+                                                     ]
+                                                   ) .
+
+
+###  https://kastle-labl.org/lod/ontology/hasName
+kastle-ont:hasName rdf:type owl:ObjectProperty ;
+                   owl:propertyChainAxiom ( kastle-ont:assumesAgentRole
+                                            kastle-ont:hasRoleUnderName
+                                          ) .
+
+
+###  https://kastle-labl.org/lod/ontology/hasNameAsString
+kastle-ont:hasNameAsString rdf:type owl:ObjectProperty .
+
+
+###  https://kastle-labl.org/lod/ontology/hasRoleUnderName
+kastle-ont:hasRoleUnderName rdf:type owl:ObjectProperty .
+
+
+###  https://kastle-labl.org/lod/ontology/providesAgentRole
+kastle-ont:providesAgentRole rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty kastle-ont:hasName ;
+                            owl:allValuesFrom kastle-ont:Name
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty kastle-ont:hasRoleUnderName ;
+                            owl:allValuesFrom kastle-ont:Name
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty kastle-ont:providesAgentRole ;
+                            owl:allValuesFrom kastle-ont:AgentRole
+                          ] .
+
+
+###  https://kastle-labl.org/lod/ontology/Agent
+kastle-ont:Agent rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty kastle-ont:hasName ;
+                                   owl:someValuesFrom kastle-ont:Name
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty kastle-ont:assumesAgentRole ;
+                                   owl:allValuesFrom kastle-ont:AgentRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty kastle-ont:assumesAgentRole ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass kastle-ont:AgentRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty [ owl:inverseOf kastle-ont:assumesAgentRole
+                                                  ] ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass kastle-ont:AgentRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty [ owl:inverseOf kastle-ont:hasName
+                                                  ] ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass kastle-ont:Name
+                                 ] ;
+                 owl:disjointWith kastle-ont:AgentRole ,
+                                  kastle-ont:Name .
+
+
+###  https://kastle-labl.org/lod/ontology/AgentRole
+kastle-ont:AgentRole rdf:type owl:Class ;
+                     rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ;
+                     owl:disjointWith kastle-ont:Name .
+
+
+###  https://kastle-labl.org/lod/ontology/Name
+kastle-ont:Name rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty kastle-ont:hasNameAsString ;
+                                  owl:someValuesFrom kastle-ont:xsd:string
+                                ] .
+
+
+###  https://kastle-labl.org/lod/ontology/xsd:string
+kastle-ont:xsd:string rdf:type owl:Class .
+
+
+[ owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger
+] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:Restriction ;
+   owl:onProperty kastle-ont:assumesAgentRole ;
+   owl:someValuesFrom kastle-ont:Agent ;
+   rdfs:subClassOf kastle-ont:Agent
+ ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
