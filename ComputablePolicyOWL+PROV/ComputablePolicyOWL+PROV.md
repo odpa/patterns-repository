@@ -19,7 +19,7 @@ __Diagram__
 |  Reusable OWL Building Block: | [Example 1](owl+prov.ttl) |
 |  Consequences: |  Ontologies created following this pattern extend domain knowledge graphs to include the encoding of the policy's rules in class equivalencies, expressed as OWL restrictions over domain entities. |
 |  Scenarios: |  Umbria Jazz is a collection of events, which all take place in July and in the Italian region of Umbria, and has the musical genre jazz as a topic. Its events recur at regular time periods, i.e. annually. |
-|  Known Uses: | Radio Spectrum Sharing [Link 1](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_30) [Link 2](https://arxiv.org/abs/2011.04085), Diabetes Guidelines |
+|  Known Uses: | Radio Spectrum Sharing [[Link 1]](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_30) [[Link 2]](https://arxiv.org/abs/2011.04085), Diabetes Guidelines |
 |  Web References: |  |
 |  Other References: |  |
 |  Examples (OWL files): |  |
