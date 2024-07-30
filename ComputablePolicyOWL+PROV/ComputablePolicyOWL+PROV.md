@@ -19,7 +19,7 @@ __Diagram__
 |  Reusable OWL Building Block: | [Example 1](owl+prov.ttl) |
 |  Consequences: |  Ontologies created following this pattern extend domain knowledge graphs to include the encoding of the policy's rules in class equivalencies, expressed as OWL restrictions over domain entities. |
 |  Scenarios: |  Umbria Jazz is a collection of events, which all take place in July and in the Italian region of Umbria, and has the musical genre jazz as a topic. Its events recur at regular time periods, i.e. annually. |
-|  Known Uses: Radio Spectrum Sharing, Diabetes Guidelines |  |
+|  Known Uses: | Radio Spectrum Sharing [Link 1](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_30) [Link 2](https://arxiv.org/abs/2011.04085), Diabetes Guidelines |
 |  Web References: |  |
 |  Other References: |  |
 |  Examples (OWL files): |  |
@@ -38,10 +38,6 @@ __Diagram__
 #  Elements
 
 
-_The __RecurrentEventSeries__ Content OP locally defines the following ontology elements:_
-
-
-
 #  Additional information
 
 
@@ -49,43 +45,13 @@ _The __RecurrentEventSeries__ Content OP locally defines the following ontology 
 
 
 
-__Scenarios about RecurrentEventSeries__
-No scenario is added to this Content OP.
-
-
-
-
 #  Reviews
 
-
-
-__Reviews about RecurrentEventSeries__
-There is no review about this proposal.
-This revision (revision ID __13662__) takes in account the reviews: none
-
-
-Other info at [evaluation tab](http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:RecurrentEventSeries&action=evaluation "http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:RecurrentEventSeries&action=evaluation")
-
-
-
-
-  
 
 
 
 
 #  Modeling issues
-
-
-
-__Modeling issues about RecurrentEventSeries__
-There is no Modeling issue related to this proposal.
-
-
-
-
-  
-
 
 
 
