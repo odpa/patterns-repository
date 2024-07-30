@@ -3,18 +3,9 @@
 
 __Diagram__
 
-
-
-
-[![Image:owl+prov.png](./owl+prov.png)]("OWL+PROV Design Pattern diagram")
-
-
-
+![OWL+PROV Design Pattern diagram](./owl+prov.png "OWL+PROV Design Pattern diagram")
 
 #  General description
-
-
-
 
 |  |  |
 | --- | --- |
