@@ -1,0 +1,190 @@
+@prefix ex: <http://example.org/>.
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix opla-core: <http://ontologydesignpatterns.org/opla-core#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
+@prefix opla-sd: <http://ontologydesignpatterns.org/opla-sd#> .
+
+cc:license a owl:AnnotationProperty .
+dct:issued a owl:AnnotationProperty .
+dct:title a owl:AnnotationProperty .
+dct:description a owl:AnnotationProperty .
+dct:modified a owl:AnnotationProperty .
+dct:contributor a owl:AnnotationProperty .
+skos:Concept a owl:Class .
+skos:example a owl:AnnotationProperty .
+skos:note a owl:AnnotationProperty .
+skos:broader a owl:ObjectProperty .
+skos:narrower a owl:ObjectProperty .
+
+ex:KindOfXAndXOfInterest a opla-core:OntologyDesignPattern ;
+  opla-core:name "Kind of X and X of Interest"@en ;
+  opla-core:description "Kind of X and X of Interest ontology design pattern, as described in https://openreview.net/pdf?id=nWTpluoDrh."@en ;
+  cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dct:contributor "Maxime Lefrançois", "Catherine Roussey", "Fatma-Zohra Hannou", "Victor Charpenay", "Antoine Zimmermann" .
+
+
+
+## Some specific entity can be linked to its kind(s) using OP ex:hasKind.
+
+ex:hasKind a owl:ObjectProperty ;
+  rdfs:label "has kind"@en ;
+  rdfs:comment """The hasKind property binds a specific entity to its archetypes. A local restriction on
+XOfInterest forces any object of the hasKind property to be of archetype XKind. Additionally,
+hasKind is a superproperty of the property chain hasKind o skos:broader, so that an instance of
+XOfInterest “inherits” the more generic archetype XKind."""@en ;
+  skos:note """ The hasKind property being “non-simple” by the property chain axiom, it should not be subject to cardinality restrictions. We nevertheless add a local existential restriction XOfInterest⊑ ∃hasKind.XKind, and a universal restriction XKind⊑ ∀hasKind.⊥. 
+  This last restriction prohibits the use of hasKind on instances of type XKind."""@en ;
+  owl:propertyChainAxiom ( ex:hasKind skos:broader ) ; ## X of interest inherit broader X kinds.
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+
+## pattern for X
+
+ex:X a owl:Class ;
+  rdfs:label "X"@en ;
+  rdfs:comment """The class X (e.g. Feature, Property, Device) represents the class of entities whose type is
+indeterminate (neither generic nor specific). It can be specialized in a class hierarchy. The class 
+X is equivalent to the disjoint union of XKind and XOfInterest, which represent respectively
+the class of archetypes of X and specific X. XKind is a subclass of skos:Concept, and these
+instances are organized into a SKOS model using the skos:broader and skos:narrower properties.
+Local restrictions on XKind force more specific and more generic concepts to also be of type
+XKind."""@en ;
+  skos:note """When a subclass of X is defined, it is possible, but not mandatory, to use the same architectural
+design pattern. For example, the classes Sensor, SensorKind, and SensorOfInterest, will have
+respectively subclasses Device, DeviceKind, and DeviceOfInterest."""@en ;
+  owl:disjointUnionOf ( ex:XOfInterest ex:XKind ) ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:XKind a owl:Class ;
+  rdfs:label "X kind"@en ;
+  rdfs:comment """XKind represents the class of archetypes of X (e.g. Feature, Property, Device).
+XKind is a subclass of skos:Concept, and these
+instances are organized into a SKOS model using the skos:broader and skos:narrower properties.
+Local restrictions on XKind force more specific and more generic concepts to also be of type XKind."""@en ;
+  rdfs:subClassOf ex:X, skos:Concept ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty skos:broader ; owl:allValuesFrom ex:XKind ] ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty skos:narrower ; owl:allValuesFrom ex:XKind ] ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:allValuesFrom owl:Nothing ] ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:XOfInterest a owl:Class ;
+  rdfs:label "X of interest"@en ;
+  rdfs:comment """XOfInterest represents the class of specific X (e.g. Feature, Property, Device) ."""@en ;
+  rdfs:subClassOf ex:X ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:allValuesFrom ex:XKind ];
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:someValuesFrom ex:XKind ];
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+
+## pattern for Y
+
+ex:Y a owl:Class ;
+  rdfs:label "Y"@en ;
+  rdfs:comment """The class Y (e.g. Feature, Property, Device) represents the class of entities whose type is
+indeterminate (neither generic nor specific). It can be specialized in a class hierarchy. The class 
+Y is equivalent to the disjoint union of YKind and YOfInterest, which represent respectively
+the class of archetypes of Y and specific Y. YKind is a subclass of skos:Concept, and these
+instances are organized into a SKOS model using the skos:broader and skos:narrower properties.
+Local restrictions on YKind force more specific and more generic concepts to also be of type
+YKind."""@en ;
+  skos:note """When a subclass of Y is defined, it is possible, but not mandatory, to use the same architectural
+design pattern. For example, the classes Sensor, SensorKind, and SensorOfInterest, will have
+respectively subclasses Device, DeviceKind, and DeviceOfInterest."""@en ;
+  owl:disjointUnionOf ( ex:YOfInterest ex:YKind ) ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:YKind a owl:Class ;
+  rdfs:label "Y kind"@en ;
+  rdfs:comment """YKind represents the class of archetypes of Y (e.g. Feature, Property, Device).
+YKind is a subclass of skos:Concept, and these
+instances are organized into a SKOS model using the skos:broader and skos:narrower properties.
+Local restrictions on YKind force more specific and more generic concepts to also be of type YKind."""@en ;
+  rdfs:subClassOf ex:Y, skos:Concept ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty skos:broader ; owl:allValuesFrom ex:YKind ] ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty skos:narrower ; owl:allValuesFrom ex:YKind ] ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:allValuesFrom owl:Nothing ] ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:YOfInterest a owl:Class ;
+  rdfs:label "Y of interest"@en ;
+  rdfs:comment """YOfInterest represents the class of specific Y (e.g. Feature, Property, Device) ."""@en ;
+  rdfs:subClassOf ex:Y ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:allValuesFrom ex:YKind ];
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty ex:hasKind ; owl:someValuesFrom ex:YKind ];
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+
+
+
+## hasX extension
+
+ex:hasX a owl:ObjectProperty ;
+  owl:inverseOf ex:isXOf ;
+  rdfs:label "has X"@en ;
+  rdfs:comment "Links a Y to one of its X."@en ;
+  rdfs:domain ex:Y ;
+  rdfs:range ex:X ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:isXOf a owl:ObjectProperty ;
+  owl:inverseOf ex:hasX ;
+  rdfs:label "is X of"@en ;
+  rdfs:comment "Links a X to the Y it is a X of."@en ;
+  rdfs:domain ex:X ;
+  rdfs:range ex:Y ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:YKind 
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty ex:hasX ;
+    owl:allValuesFrom ex:XKind
+  ] .
+
+## The OP ex:hasXKind may be used to link a Y to its X kind. Its inverse is ex:isXKindOf.
+
+ex:hasXKind a owl:ObjectProperty ;
+  rdfs:subPropertyOf ex:hasX ;
+  owl:inverseOf ex:isXKindOf ;
+  rdfs:label "has X kind"@en ;
+  rdfs:comment "Links a Y to one of its X kinds."@en ;
+  rdfs:domain ex:Y ;
+  rdfs:range ex:XKind ;
+  owl:propertyChainAxiom ( skos:broader ex:hasXKind ) ; ## Y kinds inherit the X of their broader Y kinds.
+  owl:propertyChainAxiom ( ex:hasKind ex:hasXKind ) ; ## Y of interest inherit the X of their Y kinds.
+  owl:propertyChainAxiom ( ex:hasXOfInterest ex:hasKind ) ; ## Y of interest inherit the X kinds of their X of interest.
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:isXKindOf a owl:ObjectProperty ;
+  rdfs:subPropertyOf ex:isXOf ;
+  owl:inverseOf ex:hasXKind ;
+  rdfs:label "is X kind of"@en ;
+  rdfs:comment "Links a X kind to the Y it is a X of."@en ;
+  rdfs:domain ex:XKind ;
+  rdfs:range ex:Y ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+## The OP ex:hasXOfInterest may be used to link a Y of interest to its X of interest. Its inverse is ex:isXOfInterestOf and is functional.
+
+ex:hasXOfInterest a owl:ObjectProperty ;
+  rdfs:subPropertyOf ex:hasX ;
+  owl:inverseOf ex:isXOfInterestOf ;
+  rdfs:comment "Links a Y of interest to one of its X of interest."@en ;
+  rdfs:label "has X of interest"@en ;
+  rdfs:domain ex:YOfInterest ;
+  rdfs:range ex:XOfInterest ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
+
+ex:isXOfInterestOf a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:subPropertyOf ex:isXOf ;
+  owl:inverseOf ex:hasXOfInterest ;
+  rdfs:comment "Links a X of interest to the Y of interest it is a X of."@en ;
+  rdfs:label "is X of interest of"@en ;
+  rdfs:domain ex:XOfInterest ;
+  rdfs:range ex:YOfInterest ;
+  rdfs:isDefinedBy ex:KindOfXAndXOfInterest .
