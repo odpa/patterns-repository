@@ -1,0 +1,432 @@
+@prefix : <http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#> .
+@prefix chs: <http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#> .
+
+<http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl> rdf:type owl:Ontology ;
+                                                                           rdfs:comment "An ontology design pattern for modelling cultural heritage survey activities, including observation processes, equipment configurations, sampling procedures, and interpretative reasoning." ;
+                                                                           rdfs:label "Cultural Heritage Survey Ontology Design Pattern" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#basedOn
+chs:basedOn rdf:type owl:ObjectProperty ;
+            owl:inverseOf chs:isBasisFor ;
+            rdfs:domain chs:Interpretation ;
+            rdfs:range chs:Interpretation ,
+                       chs:Observation ;
+            rdfs:comment "Relates an interpretation to the observations it relies on."@en ;
+            rdfs:label "based on"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasFeatureOfInterest
+chs:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
+                         owl:inverseOf chs:isFeatureOfInterestOf ;
+                         rdfs:domain chs:Observation ;
+                         rdfs:range chs:FeatureOfInterest ;
+                         rdfs:comment "Relates an observation to the feature it targets."@en ;
+                         rdfs:label "has feature of interest"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasInterpretation
+chs:hasInterpretation rdf:type owl:ObjectProperty ;
+                      owl:inverseOf chs:isInterpretationOf ;
+                      rdfs:domain chs:CulturalHeritageSurvey ,
+                                  chs:Observation ,
+                                  chs:ObservationCollection ;
+                      rdfs:range chs:Interpretation ;
+                      rdfs:comment "Relates a survey, an observation, or a collection of observations to an interpretation."@en ;
+                      rdfs:label "has interpretation"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasMember
+chs:hasMember rdf:type owl:ObjectProperty ;
+              owl:inverseOf chs:isMemberOf ;
+              rdfs:domain chs:ObservationCollection ;
+              rdfs:range chs:Observation ;
+              rdfs:comment "Relates an observation collection to the observations that compose it."@en ;
+              rdfs:label "has member"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasObservation
+chs:hasObservation rdf:type owl:ObjectProperty ;
+                   owl:inverseOf chs:isObservationOf ;
+                   rdfs:domain chs:CulturalHeritageSurvey ;
+                   rdfs:range chs:Observation ;
+                   rdfs:comment "Relates a survey to the observations performed within it."@en ;
+                   rdfs:label "has observation"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasObservationCollection
+chs:hasObservationCollection rdf:type owl:ObjectProperty ;
+                             owl:inverseOf chs:isObservationCollectionOf ;
+                             rdfs:domain chs:CulturalHeritageSurvey ;
+                             rdfs:range chs:ObservationCollection ;
+                             rdfs:comment "Relates a survey to an organized set of observations."@en ;
+                             rdfs:label "has observation collection"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasResult
+chs:hasResult rdf:type owl:ObjectProperty ;
+              owl:inverseOf chs:isResultOf ;
+              rdfs:domain chs:Observation ;
+              rdfs:range chs:Result ;
+              rdfs:comment "Relates an observation to the data it produces."@en ;
+              rdfs:label "has result"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasSample
+chs:hasSample rdf:type owl:ObjectProperty ;
+              owl:inverseOf chs:isPartOf ;
+              rdfs:domain chs:CulturalProperty ;
+              rdfs:range chs:Sample ;
+              rdfs:comment "Relates a cultural property with a sample which is part of it."@en ;
+              rdfs:label "has sample"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasSampling
+chs:hasSampling rdf:type owl:ObjectProperty ;
+                owl:inverseOf chs:isSamplingOf ;
+                rdfs:domain chs:CulturalHeritageSurvey ;
+                rdfs:range chs:Sampling ;
+                rdfs:comment "Relates a survey to sampling activities performed during it."@en ;
+                rdfs:label "has sampling"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasSurvey
+chs:hasSurvey rdf:type owl:ObjectProperty ;
+              owl:inverseOf chs:isSurveyOf ;
+              rdfs:domain chs:CulturalHeritageProject ;
+              rdfs:range chs:CulturalHeritageSurvey ;
+              rdfs:comment "Relates a project to the surveys conducted within it."@en ;
+              rdfs:label "has survey"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#hasSurveyOn
+chs:hasSurveyOn rdf:type owl:ObjectProperty ;
+                owl:inverseOf chs:isSurveyOn ;
+                rdfs:domain chs:CulturalProperty ;
+                rdfs:range chs:CulturalHeritageSurvey ;
+                rdfs:comment "Relates the cultural property investigated to the investigation survey."@en ;
+                rdfs:label "is survey on"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isBasisFor
+chs:isBasisFor rdf:type owl:ObjectProperty ;
+               rdfs:domain chs:Interpretation ,
+                           chs:Observation ;
+               rdfs:range chs:Interpretation ;
+               rdfs:comment "Relates an observation to the interpretation it builds on."@en ;
+               rdfs:label "is basis for"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isEquipmentConfigurationOf
+chs:isEquipmentConfigurationOf rdf:type owl:ObjectProperty ;
+                               owl:inverseOf chs:usesEquipmentConfiguration ;
+                               rdfs:domain chs:EquipmentConfiguration ;
+                               rdfs:range chs:CulturalHeritageSurvey ;
+                               rdfs:comment "Relates an equipment configuration to the survey where it is used."@en ;
+                               rdfs:label "is equipment configuration of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isEquipmentUsedIn
+chs:isEquipmentUsedIn rdf:type owl:ObjectProperty ;
+                      owl:inverseOf chs:usesEquipment ;
+                      rdfs:domain chs:Equipment ;
+                      rdfs:range chs:EquipmentConfiguration ;
+                      rdfs:comment "Relates equipment to the configuration where it is used."@en ;
+                      rdfs:label "is equipment used in"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isFeatureOfInterestOf
+chs:isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
+                          rdfs:domain chs:FeatureOfInterest ;
+                          rdfs:range chs:Observation ;
+                          rdfs:comment "Relates a feature to the observation targeting it."@en ;
+                          rdfs:label "is feature of interest of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isInterpretationOf
+chs:isInterpretationOf rdf:type owl:ObjectProperty ;
+                       rdfs:domain chs:Interpretation ;
+                       rdfs:range chs:CulturalHeritageSurvey ,
+                                  chs:Observation ,
+                                  chs:ObservationCollection ;
+                       rdfs:comment "Relates an interpretation to the survey, the observation, or the collection of observations context it belongs to."@en ;
+                       rdfs:label "is interpretation of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isMemberOf
+chs:isMemberOf rdf:type owl:ObjectProperty ;
+               rdfs:domain chs:Observation ;
+               rdfs:range chs:ObservationCollection ;
+               rdfs:comment "Relates an observation to the collection it belongs to."@en ;
+               rdfs:label "is member of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isObservationCollectionOf
+chs:isObservationCollectionOf rdf:type owl:ObjectProperty ;
+                              rdfs:domain chs:ObservationCollection ;
+                              rdfs:range chs:CulturalHeritageSurvey ;
+                              rdfs:comment "Relates an observation collection to the survey it belongs to."@en ;
+                              rdfs:label "is observation collection of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isObservationOf
+chs:isObservationOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain chs:Observation ;
+                    rdfs:range chs:CulturalHeritageSurvey ;
+                    rdfs:comment "Relates an observation to the survey it belongs to."@en ;
+                    rdfs:label "is observation of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isPartOf
+chs:isPartOf rdf:type owl:ObjectProperty ;
+             rdfs:domain chs:Sample ;
+             rdfs:range chs:CulturalProperty ;
+             rdfs:comment "Relates a sample to the cultural property from which it derives."@en ;
+             rdfs:label "is part of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isProducedBy
+chs:isProducedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf chs:produces ;
+                 rdfs:domain chs:Sample ;
+                 rdfs:range chs:Sampling ;
+                 rdfs:comment "Relates a sample to the sampling activity that produces it."@en ;
+                 rdfs:label "is produced by"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isResultOf
+chs:isResultOf rdf:type owl:ObjectProperty ;
+               rdfs:domain chs:Result ;
+               rdfs:range chs:Observation ;
+               rdfs:comment "Relates a result to the observation that generated it."@en ;
+               rdfs:label "is result of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isSamplingOf
+chs:isSamplingOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain chs:Sampling ;
+                 rdfs:range chs:CulturalHeritageSurvey ;
+                 rdfs:comment "Relates a sampling activity to the survey in which it is performed."@en ;
+                 rdfs:label "is sampling of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isSupportedBy
+chs:isSupportedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf chs:supports ;
+                  rdfs:domain chs:Claim ;
+                  rdfs:range chs:Interpretation ;
+                  rdfs:comment "Relates a claim to the interpretation it is based on."@en ;
+                  rdfs:label "supports"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isSurveyOf
+chs:isSurveyOf rdf:type owl:ObjectProperty ;
+               rdfs:domain chs:CulturalHeritageSurvey ;
+               rdfs:range chs:CulturalHeritageProject ;
+               rdfs:comment "Relates a survey to the project that includes it." ;
+               rdfs:label "is survey of" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#isSurveyOn
+chs:isSurveyOn rdf:type owl:ObjectProperty ;
+               rdfs:domain chs:CulturalHeritageSurvey ;
+               rdfs:range chs:CulturalProperty ;
+               rdfs:comment "Relates a survey to the cultural property under investigation."@en ;
+               rdfs:label "is survey on"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#produces
+chs:produces rdf:type owl:ObjectProperty ;
+             rdfs:domain chs:Sampling ;
+             rdfs:range chs:Sample ;
+             rdfs:comment "Relates a sampling activity to the samples it produces."@en ;
+             rdfs:label "produces"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#supports
+chs:supports rdf:type owl:ObjectProperty ;
+             rdfs:domain chs:Interpretation ;
+             rdfs:range chs:Claim ;
+             rdfs:comment "Relates an interpretation to the claim it supports."@en ;
+             rdfs:label "supports"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#usesEquipment
+chs:usesEquipment rdf:type owl:ObjectProperty ;
+                  rdfs:domain chs:EquipmentConfiguration ;
+                  rdfs:range chs:Equipment ;
+                  rdfs:comment "Relates an equipment configuration to the equipment involved."@en ;
+                  rdfs:label "uses equipment"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#usesEquipmentConfiguration
+chs:usesEquipmentConfiguration rdf:type owl:ObjectProperty ;
+                               rdfs:domain chs:CulturalHeritageSurvey ;
+                               rdfs:range chs:EquipmentConfiguration ;
+                               rdfs:comment "Associates a survey with the equipment configuration used during observations."@en ;
+                               rdfs:label "uses equipment configuration"@en .
+
+
+###  https://w3id.org/e-rihs-it/ontology/cultural-heritage/hasObservableProperty
+<https://w3id.org/e-rihs-it/ontology/cultural-heritage/hasObservableProperty> rdf:type owl:ObjectProperty ;
+                                                                              owl:inverseOf <https://w3id.org/e-rihs-it/ontology/cultural-heritage/isObservablePropertyOf> ;
+                                                                              rdfs:domain chs:Observation ;
+                                                                              rdfs:range <https://w3id.org/e-rihs-it/ontology/cultural-heritage/ObservableProperty> ;
+                                                                              rdfs:comment "Relates an observation to the property of the feature of interest that is being investigated."@en ;
+                                                                              rdfs:label "has observable property"@en .
+
+
+###  https://w3id.org/e-rihs-it/ontology/cultural-heritage/isObservablePropertyOf
+<https://w3id.org/e-rihs-it/ontology/cultural-heritage/isObservablePropertyOf> rdf:type owl:ObjectProperty ;
+                                                                               rdfs:domain <https://w3id.org/e-rihs-it/ontology/cultural-heritage/ObservableProperty> ;
+                                                                               rdfs:range chs:Observation ;
+                                                                               rdfs:comment "Relates an observable property to the observation in which it is investigated."@en ;
+                                                                               rdfs:label "is observable property of"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#AgentRole
+chs:AgentRole rdf:type owl:Class ;
+              rdfs:comment "A contextual role played by an agent during a survey activity. Example: imaging technician or project investigator."@en ;
+              rdfs:label "Agent Role"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Claim
+chs:Claim rdf:type owl:Class ;
+          rdfs:comment "A knowledge statement supported by an interpretation. Example: the identification of a specific motif in rock art."@en ;
+          rdfs:label "Claim"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#CulturalHeritageProject
+chs:CulturalHeritageProject rdf:type owl:Class ;
+                            rdfs:comment "A research initiative aimed at studying or documenting cultural properties through structured survey activities. Example: a project documenting rock art panels in Valtellina."@en ;
+                            rdfs:label "Cultural Heritage Project"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#CulturalHeritageSurvey
+chs:CulturalHeritageSurvey rdf:type owl:Class ;
+                           rdfs:subClassOf dul:Description ;
+                           rdfs:comment "A structured investigative activity carried out on one or more cultural properties according to a defined method and within a specific temporal scope. Example: an RTI survey conducted on a rock art panel."@en ;
+                           rdfs:label "Cultural Heritage Survey"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#CulturalProperty
+chs:CulturalProperty rdf:type owl:Class ;
+                     rdfs:comment "A heritage entity investigated through surveys. Example: a rock art panel or a manuscript page."@en ;
+                     rdfs:label "Cultural Property"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Equipment
+chs:Equipment rdf:type owl:Class ;
+              rdfs:comment "Any technological resource used during a survey. Example: a specific kind of camera or image processing software."@en ;
+              rdfs:label "Equipment"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#EquipmentConfiguration
+chs:EquipmentConfiguration rdf:type owl:Class ;
+                           rdfs:comment "The arrangement and parameterization of equipment used during a survey or observation. Example: camera positioned at fixed distance with calibrated lighting."@en ;
+                           rdfs:label "Equipment Configuration"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#FeatureOfInterest
+chs:FeatureOfInterest rdf:type owl:Class ;
+                      rdfs:comment "The entity or aspect targeted by an observation. Example: the engraved surface of a rock panel."@en ;
+                      rdfs:label "Feature of Interest"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Hardware
+chs:Hardware rdf:type owl:Class ;
+             rdfs:subClassOf chs:Equipment ;
+             rdfs:comment "A physical device used during observation activities. Example: a digital camera or lighting rig."@en ;
+             rdfs:label "Hardware"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Interpretation
+chs:Interpretation rdf:type owl:Class ;
+                   rdfs:comment "An analytical activity that derives knowledge from observation results and it is performed by an agent. Example: identifying a carved figure based on RTI images."@en ;
+                   rdfs:label "Interpretation"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Method
+chs:Method rdf:type owl:Class ;
+           rdfs:comment "A procedural framework governing how observations are conducted. Example: Reflectance Transformation Imaging (RTI)."@en ;
+           rdfs:label "Method"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Observation
+chs:Observation rdf:type owl:Class ;
+                rdfs:subClassOf dul:Situation ;
+                rdfs:comment "A data acquisition event targeting a feature of interest. Observations generate raw results and do not include interpretative reasoning. Example: a single RTI image capture."@en ;
+                rdfs:label "Observation"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#ObservationCollection
+chs:ObservationCollection rdf:type owl:Class ;
+                          rdfs:subClassOf dul:Collection ;
+                          rdfs:comment "A structured aggregation of observations belonging to the same survey and contributing to a common analytical outcome. Example: the set of images acquired for an RTI dataset."@en ;
+                          rdfs:label "Observation Collection"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Result
+chs:Result rdf:type owl:Class ;
+           rdfs:comment "Data produced by an observation activity. Example: a raw image file produced by a camera capture."@en ;
+           rdfs:label "Result"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Sample
+chs:Sample rdf:type owl:Class ;
+           rdfs:comment "A material portion taken from a cultural property for analysis. Example: a microscopic pigment sample from a manuscript."@en ;
+           rdfs:label "Sample"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Sampling
+chs:Sampling rdf:type owl:Class ;
+             rdfs:comment "An activity producing material samples from a cultural property. Example: extracting a pigment fragment for laboratory analysis."@en ;
+             rdfs:label "Sampling"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#Software
+chs:Software rdf:type owl:Class ;
+             rdfs:subClassOf chs:Equipment ;
+             rdfs:comment "A computational tool used for data acquisition or processing. Example: RTIBuilder software."@en ;
+             rdfs:label "Software"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/culturalheritagesurvey.owl#TemporalEntity
+chs:TemporalEntity rdf:type owl:Class ;
+                   rdfs:comment "A temporal interval associated with an observation or survey. Example: the date when an RTI capture session took place."@en ;
+                   rdfs:label "Temporal Entity"@en .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection
+dul:Collection rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+dul:Description rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+dul:Situation rdf:type owl:Class .
+
+
+###  https://w3id.org/e-rihs-it/ontology/cultural-heritage/ObservableProperty
+<https://w3id.org/e-rihs-it/ontology/cultural-heritage/ObservableProperty> rdf:type owl:Class ;
+                                                                           rdfs:comment "A property or attribute of a feature of interest that an observation aims to measure or describe. For example, the colour of a manuscript miniature."@en ,
+                                                                                        "Observable Property"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
