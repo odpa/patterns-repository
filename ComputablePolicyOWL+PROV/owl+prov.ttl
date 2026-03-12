@@ -1,0 +1,114 @@
+@prefix : <http://purl.org/twc/owlplusprov/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/twc/owlplusprov/> .
+
+<http://purl.org/twc/owlplusprov/> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://purl.org/twc/owlplusprov-20240730/> ;
+                                    owl:imports <http://semanticscience.org/ontology/sio/v1.59/sio-subset-dash-labels.owl> ,
+                                                <http://www.w3.org/ns/prov-o-20130430> ;
+                                    <http://purl.org/dc/elements/1.1/contributor> "Henrique Santos, Rensselaer Polytechnic Institute" ;
+                                    rdfs:comment "Example OWL for the OWL+PROV pattern as submitted to the 15th Workshop on Ontology Design and Patterns (WOP 2024)"@en ;
+                                    rdfs:label "OWL+PROV Ontology Design Pattern for Representing Computable Policies"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/twc/owlplusprov/DeniedActivity
+:DeniedActivity rdf:type owl:Class ;
+                rdfs:subClassOf prov:Activity .
+
+
+###  http://purl.org/twc/owlplusprov/FirstLevelRule
+:FirstLevelRule rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty prov:wasAssociatedWith ;
+                                      owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                           owl:onProperty sio:has-attribute ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( sio:attribute
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty sio:has-value ;
+                                                                                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                            owl:onDatatype xsd:float ;
+                                                                                                                            owl:withRestrictions ( [ xsd:maxInclusive "1.0"^^xsd:float
+                                                                                                                                                   ]
+                                                                                                                                                 )
+                                                                                                                          ]
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
+                                                                              ]
+                                                         ]
+                                    ] ;
+                rdfs:subClassOf prov:Activity .
+
+
+###  http://purl.org/twc/owlplusprov/FourthLevelRule
+:FourthLevelRule rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :ThirdLevelRule
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty prov:endedAtTime ;
+                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:dateTime ;
+                                                                                   owl:withRestrictions ( [ xsd:minInclusive "2019-10-01T15:00:00Z"
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ]
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty prov:startedAtTime ;
+                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:dateTime ;
+                                                                                   owl:withRestrictions ( [ xsd:maxInclusive "2019-10-01T21:00:00Z"
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :PermittedActivity ,
+                                 :ThirdLevelRule .
+
+
+###  http://purl.org/twc/owlplusprov/PermittedActivity
+:PermittedActivity rdf:type owl:Class ;
+                   rdfs:subClassOf prov:Activity .
+
+
+###  http://purl.org/twc/owlplusprov/SecondLevelRule
+:SecondLevelRule rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :FirstLevelRule
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty prov:wasAssociatedWith ;
+                                                              owl:someValuesFrom prov:Agent
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :FirstLevelRule .
+
+
+###  http://purl.org/twc/owlplusprov/ThirdLevelRule
+:ThirdLevelRule rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :SecondLevelRule
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty prov:wasAssociatedWith ;
+                                                             owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty prov:atLocation ;
+                                                                                  owl:someValuesFrom prov:Location
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :SecondLevelRule .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
