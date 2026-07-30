@@ -1,0 +1,152 @@
+@prefix : <http://example.org/SoftwareRequirements/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix devopshw: <http://w3id.org/devops-infra/hardware#> .
+@prefix devopssw: <http://w3id.org/devops-infra/software#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix opla-cp: <http://ontologydesignpatterns.org/opla-cp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sd: <https://w3id.org/okn/o/sd#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+<http://example.org/SoftwareRequirements> a owl:Ontology ;
+    rdfs:label "Software Requirements ODP" ;
+    opla-cp:addressesScenarios "The Software X requires a Software Y with minimum version 1.x ; The Software X requires a Hardware Y ; The Software X requires a Hardware Y that has a Hardware Z with the value n for the property P ; The Software X requires a Software Y with either A property or B property." ;
+    opla-cp:hasCompetencyQuestion "Which is the (software/hardware) requirement of a software?",
+        "Which is the required (maximum/minimum/exact) value of a property of a software/hardware required by a software?",
+        "Which is the required (maximum/minimum/exact) version of a software required by a software?",
+        "Which is the software/hardware required by a software?",
+        "Which is the type of software/hardware required by a software?" ;
+    opla-cp:hasConsequence "Simple and complex software requirements can be represented and thus automatically evaluated" ;
+    dcterms:contributor <https://orcid.org/0000-0003-1948-807X>,
+        <https://orcid.org/0000-0003-3139-3049> ;
+    dcterms:creator <https://orcid.org/0000-0003-1427-3723> ;
+    dcterms:description "The Software Requirements ODP addresses the representation of requirements (both hardware and software) of software." ;
+    dcterms:issued "2026-07-24" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:publisher <https://ror.org/046bfkz44> ;
+    dcterms:title "Software Requirements ODP" ;
+    schema:funding <https://doi.org/10.3030/101140087> ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+:appliesToProperty a owl:ObjectProperty ;
+    rdfs:label "applies to property" ;
+    rdfs:domain :Requirement ;
+    rdfs:range ssn:Property .
+
+:hasRequirement a owl:ObjectProperty ;
+    rdfs:label "has requirement" ;
+    rdfs:domain devopssw:Software ;
+    rdfs:range :Requirement .
+
+:requiredHardware a owl:ObjectProperty ;
+    rdfs:label "required hardware" ;
+    rdfs:domain :HardwareRequirement ;
+    rdfs:range devopshw:HardwareItem .
+
+:requiredHardwareType a owl:ObjectProperty ;
+    rdfs:label "required hardware type" ;
+    rdfs:domain :Requirement ;
+    rdfs:range :HardwareType .
+
+:requiredMaximumSoftwareVersion a owl:ObjectProperty ;
+    rdfs:label "required maximum software version" ;
+    rdfs:domain :Requirement ;
+    rdfs:range sd:SoftwareVersion .
+
+:requiredMaximumValue a owl:ObjectProperty ;
+    rdfs:label "required maximum value" ;
+    rdfs:domain :Requirement ;
+    rdfs:range qudt:QuantityValue .
+
+:requiredMinimumSoftwareVersion a owl:ObjectProperty ;
+    rdfs:label "required minimum software version" ;
+    rdfs:domain :Requirement ;
+    rdfs:range sd:SoftwareVersion .
+
+:requiredMinimumValue a owl:ObjectProperty ;
+    rdfs:label "required minimum value" ;
+    rdfs:domain :Requirement ;
+    rdfs:range qudt:QuantityValue .
+
+:requiredSoftware a owl:ObjectProperty ;
+    rdfs:label "required software" ;
+    rdfs:domain :SoftwareRequirement ;
+    rdfs:range devopssw:Software .
+
+:requiredSoftwareType a owl:ObjectProperty ;
+    rdfs:label "required software type" ;
+    rdfs:domain :Requirement ;
+    rdfs:range :SoftwareType .
+
+:requiredSoftwareVersion a owl:ObjectProperty ;
+    rdfs:label "required software version" ;
+    rdfs:domain :Requirement ;
+    rdfs:range sd:SoftwareVersion .
+
+:requiredValue a owl:ObjectProperty ;
+    rdfs:label "required value" ;
+    rdfs:domain :Requirement ;
+    rdfs:range qudt:QuantityValue .
+
+opla-cp:addressesScenarios a owl:AnnotationProperty .
+
+opla-cp:hasCompetencyQuestion a owl:AnnotationProperty .
+
+opla-cp:hasConsequence a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+schema:funding a owl:AnnotationProperty .
+
+sd:hasVersionId a owl:DatatypeProperty ;
+    rdfs:label "has version id" .
+
+:HardwareRequirement a owl:Class ;
+    rdfs:label "Hardware Requirement" ;
+    rdfs:subClassOf :Requirement .
+
+:HardwareType a owl:Class ;
+    rdfs:label "Hardware Type" .
+
+:SoftwareRequirement a owl:Class ;
+    rdfs:label "Software Requirement" ;
+    rdfs:subClassOf :Requirement .
+
+:SoftwareType a owl:Class ;
+    rdfs:label "Software Type" .
+
+devopshw:HardwareItem a owl:Class ;
+    rdfs:label "Hardware Item" .
+
+ssn:Property a owl:Class ;
+    rdfs:label "Property" .
+
+devopssw:Software a owl:Class ;
+    rdfs:label "Software" .
+
+qudt:QuantityValue a owl:Class ;
+    rdfs:label "Quantity Value" .
+
+sd:SoftwareVersion a owl:Class ;
+    rdfs:label "Software Version" .
+
+:Requirement a owl:Class ;
+    rdfs:label "Requirement" .
+
