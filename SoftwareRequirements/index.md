@@ -16,5 +16,5 @@ The pattern distinguishes between software and hardware requirements, supports r
 |  addresses scenarios: | The Software X requires a Software Y with minimum version 1.x ; The Software X requires a Hardware Y ; The Software X requires a Hardware Y that has a Hardware Z with the value n for the property P ; The Software X requires a Software Y with either A property or B property. |
 
 ## Schema Diagram
-
+The diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/).
 <p align="left"><img src="SoftwareRequirements.png" alt="Software Requirements ODP" width="800"></p>
