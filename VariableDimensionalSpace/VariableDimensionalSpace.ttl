@@ -1,0 +1,1119 @@
+@prefix : <https://w3id.org/hacid/onto/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/hacid/onto/data/> .
+
+<https://w3id.org/hacid/onto/data> rdf:type owl:Ontology ;
+                                    owl:imports <https://w3id.org/hacid/onto/top-level> ;
+                                    terms:title "HACID data ontology module"@en ;
+                                    rdfs:comment """This module provides a semantically rich way to represent variables (which may be dependent from other variables or not, computationally derived from other variables or not), the dimensional spaces they take values in (which can be discrete or continuous, made of points or extended regions, limited or not, derived-from/part-of other dimensional spaces), and concrete datasets.
+
+The aim is to represent the concept of variables in a flexible way, while preserving well-defined semantics. Here, as usual in mathematics and other fields, a variable is an abstraction that has meaning in the context of some relation between different variables and can be associated to different values in a set that is usually well defined (e.g., x is anelement of ℝ). In the ontology module presented here, a data:Variable is akin to that concept and the set of possible values is represented by a data:DimensionalSpace; the two are linked via the data:hasValuesOn property. To a variable that is a data:DependentVariable can be implicitly associated with a function having as range the associated dimensional space and as domain the cartesian set of the dimensional spaces of the variables from which it depends. A data:IndependentVariable, conversely, is a variable that does not depend on other variables.
+
+A variable can be aggregating, i.e. include aggregation mechanisms whose execution is deferred to derived variables. This allows to represent variables defined using one or more aggregation functions for combining data along one or more independent variables, without specifying the actual granularity. A general purpose example of usage is representing as variables the SQL expressions including aggregation functions (e.g. AVG(...)) which are then derived to actual serialisable variables by the usage of specific GROUP BY clauses. In the context of climate services, the CMOR Tables variables (e.g., tasmax) fall into this category. From the ontology point of view, a (dependent) variable is aggregating if it offers one or more aggregations: i.e. it is linked with one or more instances of  data:Aggregation via the property data:definesAggregation. Each aggregation is associated with one variable (which must be a variable the dependent variable depends on) and optionally one or more suggested options for the adopted aggregation grid (i.e. specific granularity).
+
+A data:FiniteVariable is a variable for which the set of all the possible values is finite. For an independent variable it means being defined on a finite dimensional space (instance of data:FiniteDimensionalSpace); for a dependent variable it means that all the variables it depends on are finite variables. The concept of data:FiniteVariable is important because it corresponds to variables that can be fully represented extensively with a finite amount of resources. It corresponds functionally to the concept of a dataset. The property data:hasDataSerialisation links such a dataset with a data source (data:DataSource) holding one or more concrete serialisations of it. A data:DataSource (e.g., an URL resolving to a dump of a dataset) is associated to one or more supported data formats (data:DataFormat) via the data:hasAvailableDataFormat property. 
+
+A data:DimensionalSpace is composed of a set (not necessarily finite) of regions (data:Region). It can be either continuous (data:Continuum) or discrete (data:DiscreteDimensionalSpace). A discrete dimensional space can be a grid (data:Grid), i.e. composed of a set of regions that form a partition of all the space.
+
+In order to avoid unnecessary complexity in concrete usage, a data:DimensionalSpace is also a data:IndependentVariable. Conceptually, it associates a dimensional space with a “default variable” with values on that dimensional space (on itself). This allows using directly a dimensional space as a variable when there are no possible ambiguities: e.g., a variable representing time in a context where no other variables represent time, can be directly represented by the corresponding temporal dimensional space."""@en ;
+                                    rdfs:label "HACID data ontology module"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/hacid/onto/data/aggregatesVariable
+:aggregatesVariable rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                    owl:inverseOf :isVariableAggregatedBy ;
+                    rdfs:domain :Aggregation ;
+                    rdfs:range :Variable ;
+                    rdfs:comment "Associates an aggregation specification with each variable whose values will be grouped by the aggregation."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "aggregates variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/basedOnDimensionalSpace
+:basedOnDimensionalSpace rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isSpecializationOfVariable ;
+                         owl:inverseOf :isBasisOfDimensionalSpace ;
+                         rdfs:domain :DimensionalSpace ;
+                         rdfs:range :DimensionalSpace ;
+                         rdfs:comment "Associates a dimensional space to another dimensional space it is based on, e.g., by structuring or specializing it."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "based on dimensional space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/definesAggregation
+:definesAggregation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                    owl:inverseOf :isAggregationDefinedFor ;
+                    rdfs:domain :DependentVariable ;
+                    rdfs:range :Aggregation ;
+                    rdfs:comment "Associates a dependent variable with an aggregation specification, when the value of such variable is obtained performing one or more aggregations. The aggregation specification is in turn associated with the variables whose values will be grouped by the aggregation and optionally with a set of suggested quantizations used for such groupings."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "defines aggregation"@en .
+
+
+###  https://w3id.org/hacid/onto/data/dependsOnVariable
+:dependsOnVariable rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                   owl:inverseOf :hasDependentOnVariable ;
+                   rdfs:domain :DependentVariable ;
+                   rdfs:range :Variable ;
+                   rdfs:comment "Associates a dependent variable with a variable it depends on."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "depends on variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/derivedFromVariable
+:derivedFromVariable rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                     owl:inverseOf :hasVariableDerivedFrom ;
+                     rdfs:domain :DerivedVariable ;
+                     rdfs:range :Variable ;
+                     rdfs:comment "Associates a derived variable with a variable from which is derived."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                     rdfs:label "derived from variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasApproximateBoundingRegion
+:hasApproximateBoundingRegion rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :hasBoundingRegion ,
+                                                 <https://w3id.org/hacid/onto/top-level/hasApproximateRegion> ;
+                              owl:inverseOf :isApproximateBoundingRegionOf ;
+                              rdfs:domain :DimensionalSpace ;
+                              rdfs:range :Region ;
+                              rdfs:comment "Associates a dimensional space with a region (possibly defined on a more generic dimensional space) which approximates the dimensional space bounding: i,e., the extension of the dimensional space matches with the region within some (possibly but non necessarily specified) error."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                              rdfs:label "has approximate bounding region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasApproximateResolution
+:hasApproximateResolution rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasResolution ,
+                                             <https://w3id.org/hacid/onto/top-level/hasApproximateRegion> ;
+                          owl:inverseOf :isApproximateResolutionOf ;
+                          rdfs:domain :Quantization ;
+                          rdfs:comment "Associates a quantization with its approximate resolution."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                          rdfs:label "has approximate resolution"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasAvailableDataFormat
+:hasAvailableDataFormat rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                        owl:inverseOf :isAvailableDataFormatOf ;
+                        rdfs:domain :DataSource ;
+                        rdfs:range :DataFormat ;
+                        rdfs:comment "Associates a data source with a data format in which the data is available."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "has available data format"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasBoundingRegion
+:hasBoundingRegion rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/hasRegion> ;
+                   owl:inverseOf :isBoundingRegionOf ;
+                   rdfs:domain :DimensionalSpace ;
+                   rdfs:range :Region ;
+                   rdfs:comment "Associates a dimensional space with a region (possibly defined on a more generic dimensional space) which bounds the dimensional space: i,e., such that the dimensional space is contained in the region."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "has bounding region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasComponentVariable
+:hasComponentVariable rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasVariableDerivedFrom ,
+                                         :holdsSpecializationOfVariable ;
+                      owl:inverseOf :isComponentVariableOf ;
+                      rdfs:domain :Variable ;
+                      rdfs:range :DerivedVariable ;
+                      rdfs:comment "Associates a variable with a variable that is a part of the former as component (e.g., a variable with geodetic coordinates has the component variables corrisponding to latitute and longitude)."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                      rdfs:label "has component variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasDataSerialization
+:hasDataSerialization rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                      owl:inverseOf :isDataSerializationOf ;
+                      rdfs:domain :FiniteVariable ;
+                      rdfs:range :DataSource ;
+                      rdfs:comment "Associates a finite variable, i.e., a dataset, with a data source that offers one or more serializations of such dataset."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                      rdfs:label "has data serialization"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasDependentOnVariable
+:hasDependentOnVariable rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                        rdfs:domain :Variable ;
+                        rdfs:range :DependentVariable ;
+                        rdfs:comment "Associates a variable with a dependent variable that depends on the former."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "has dependent-on variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasDiscretization
+:hasDiscretization rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :basedOnDimensionalSpace ;
+                   owl:inverseOf :isDiscretizationFor ;
+                   rdfs:domain :DiscreteDimensionalSpace ;
+                   rdfs:range :Quantization ;
+                   rdfs:comment "Associates a discrete dimensional space (based on a continuum) with the quantization adopted for discretization."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "has discretization"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasEndDateTime
+:hasEndDateTime rdf:type owl:ObjectProperty ;
+                rdfs:domain :TemporalRegion ;
+                rdfs:range xsd:datetime .
+
+
+###  https://w3id.org/hacid/onto/data/hasExactBoundingRegion
+:hasExactBoundingRegion rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasBoundingRegion ,
+                                           <https://w3id.org/hacid/onto/top-level/hasExactRegion> ;
+                        owl:inverseOf :isExactBoundingRegionOf ;
+                        rdfs:domain :DimensionalSpace ;
+                        rdfs:range :Region ;
+                        rdfs:comment "Associates a dimensional space with a region (possibly defined on a more generic dimensional space) which bounds exactly the dimensional space: i,e., the extension of the dimensional space matches with the region."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "has exact bounding region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasExactResolution
+:hasExactResolution rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasResolution ,
+                                       <https://w3id.org/hacid/onto/top-level/hasExactRegion> ;
+                    owl:inverseOf :isExactResolutionOf ;
+                    rdfs:domain :Quantization ;
+                    rdfs:comment "Associates a quantization with its exact resolution."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "has exact resolution"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasInPeriodResolution
+:hasInPeriodResolution rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                       owl:inverseOf :isInPeriodResolutionOf ;
+                       rdfs:domain :PeriodicBinning ;
+                       rdfs:comment "Associates a periodic binning with the resolution adopted inside each period (to associate a literal resource use data:hasInPeriodResolutionValue)."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                       rdfs:label "has in period resolution"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+          owl:inverseOf :isInputOf ;
+          rdfs:domain :DataConsumingProcess ;
+          rdfs:range :Dataset ;
+          rdfs:comment "Associates a data consuming process with a dataset used as input."@en ;
+          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+          rdfs:label "has input"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasOffset
+:hasOffset rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           owl:inverseOf :isOffsetOf ;
+           rdfs:domain :Quantization ;
+           rdfs:comment "Optionally associates a quantization with an offset in respect to the given reference frame (to associate directly a literal use data:hasOffsetValue)."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "has offset"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           owl:inverseOf :isOutputOf ;
+           rdfs:domain :DataGeneratingProcess ;
+           rdfs:range :Dataset ;
+           rdfs:comment "Associates a data generating process with a dataset obtained as output."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "has output"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasPeriod
+:hasPeriod rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           owl:inverseOf :isPeriodOf ;
+           rdfs:domain :PeriodicBinning ;
+           rdfs:comment "Associates a periodic regular grid with its period (to associate direclty a literal use data:hasPeriodValue)."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "has period"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasPoint
+:hasPoint rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+          owl:inverseOf :isPointOf ;
+          rdfs:domain :DimensionalSpace ;
+          rdfs:range :Point ;
+          rdfs:comment "Associates a dimensional space with a point of that dimensional space, i.e. any point that is contained and representable in that dimensional space (use data:hasPointValue to directly associate a literal)."@en ;
+          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+          rdfs:label "has point"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasReferencePoint
+:hasReferencePoint rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                   owl:inverseOf :isReferencePointOf ;
+                   rdfs:domain :DimensionalSpace ;
+                   rdfs:range :Point ;
+                   rdfs:comment "Associates a dimensional space with a point that is used as reference to identify the points of the dimensional space (e.g., the North Pole for geodetic coordinates on Earth)."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "has reference point"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasRegion
+:hasRegion rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           owl:inverseOf :isRegionOf ;
+           rdfs:domain :DimensionalSpace ;
+           rdfs:range :Region ;
+           rdfs:comment "Associates a dimensional space with a region of that dimensional space, i.e. any region that is contained and representable in that dimensional space (use data:hasRegionValue to directly associate a literal)."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "has region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasRescaledVersion
+:hasRescaledVersion rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasVariableDerivedFrom ;
+                    owl:inverseOf :isRescaledVersionOfVariable ;
+                    rdfs:domain :Variable ;
+                    rdfs:range :DerivedVariable ;
+                    rdfs:comment "Associates a variable with a rescaled version of it."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "has rescaled version"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasResolution
+:hasResolution rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/hasRegion> ;
+               owl:inverseOf :isResolutionOf ;
+               rdfs:domain :Quantization ;
+               rdfs:comment "Associates a quantization with its resolution (to associate directly a literal use data:hasResolutionValue)."@en ;
+               rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+               rdfs:label "has resolution"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasStartDateTime
+:hasStartDateTime rdf:type owl:ObjectProperty ;
+                  rdfs:domain :TemporalRegion ;
+                  rdfs:range xsd:datetime .
+
+
+###  https://w3id.org/hacid/onto/data/hasSubDimensionalSpace
+:hasSubDimensionalSpace rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasComponentVariable ;
+                        owl:inverseOf :isSubDimensionalSpaceOf ;
+                        rdfs:domain :DimensionalSpace ;
+                        rdfs:range :DimensionalSpace ;
+                        rdfs:comment "Associates a dimensional space with another dimensional space that is a projection of the first one, by selecting  specific components (e.g., time is a subdimensional space of spacetime)."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "has sub dimensional space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasSuggestedQuantization
+:hasSuggestedQuantization rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                          owl:inverseOf :isSuggestedQuantizationFor ;
+                          rdfs:domain :Aggregation ;
+                          rdfs:range :Quantization ;
+                          rdfs:comment "Associates an aggregation specification with a quantization which is suggested for that aggregation."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                          rdfs:label "has suggested quantization"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasValuesOn
+:hasValuesOn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+             owl:inverseOf :providesValuesFor ;
+             rdfs:domain :Variable ;
+             rdfs:range :DimensionalSpace ;
+             rdfs:comment "Associates a variable with the dimensional space on which the variable is defined, i.e. possibile values for the variable are points in that dimensional space."@en ;
+             rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+             rdfs:label "has values on"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasVariableDerivedFrom
+:hasVariableDerivedFrom rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                        rdfs:domain :Variable ;
+                        rdfs:range :DerivedVariable ;
+                        rdfs:comment "Associates a variable with a variable that has been derived from it."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "has derived-from variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasVariableSpecialization
+:hasVariableSpecialization rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasVariableDerivedFrom ,
+                                              :hasVariableSpecializationAsComponentOf ;
+                           owl:inverseOf :isSpecializationOfVariable ;
+                           rdfs:domain :Variable ;
+                           rdfs:range :DerivedVariable ;
+                           rdfs:comment "Associates a variable with a variable that is a specialization of the first variable (e.g., the atmospheric temperature on the sea surface is a specialization of the atmospheric temperature)."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                           rdfs:label "has variable specialization"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasVariableSpecializationAsComponentOf
+:hasVariableSpecializationAsComponentOf rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                                        owl:inverseOf :holdsSpecializationOfVariable ;
+                                        rdfs:domain :Variable ;
+                                        rdfs:range :DerivedVariable ;
+                                        rdfs:comment "Associates a variable with a variable that contains as component a specialization of the first variable."@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                                        rdfs:label "has variable specialization as component of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/holdsSpecializationOfVariable
+:holdsSpecializationOfVariable rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                               rdfs:domain :DerivedVariable ;
+                               rdfs:range :Variable ;
+                               rdfs:comment "Associates a variable with a variable for which the former contains, as component, a specialization of."@en ;
+                               rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                               rdfs:label "holds specialization of variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isAggregationDefinedFor
+:isAggregationDefinedFor rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                         rdfs:domain :Aggregation ;
+                         rdfs:range :DependentVariable ;
+                         rdfs:comment "Associates an aggregation specification with a dependent variable, when the value of such variable is obtained performing that specified aggregation."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "is aggregation defined for"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isApproximateBoundingRegionOf
+:isApproximateBoundingRegionOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :isBoundingRegionOf ,
+                                                  <https://w3id.org/hacid/onto/top-level/isApproximateRegionFor> ;
+                               rdfs:domain :Region ;
+                               rdfs:range :DimensionalSpace ;
+                               rdfs:comment "Associates a region with a dimensional space (possibly more specific that the one on which the region is defined) which is approximately bounded by the region: i,e., the extension of the dimensional space matches with the region within some (possibly but non necessarily specified) error."@en ;
+                               rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                               rdfs:label "is approximate bounding region of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isApproximateResolutionOf
+:isApproximateResolutionOf rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :isResolutionOf ,
+                                              <https://w3id.org/hacid/onto/top-level/isApproximateRegionFor> ;
+                           rdfs:range :Quantization ;
+                           rdfs:comment "Associates a resource with a quantization of which the resource is an approximate resolution."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                           rdfs:label "is approximate resolution of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isAvailableDataFormatOf
+:isAvailableDataFormatOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                         rdfs:domain :DataFormat ;
+                         rdfs:range :DataSource ;
+                         rdfs:comment "Associates a data format with a data source that offers that format."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "is available data format of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isBasisOfDimensionalSpace
+:isBasisOfDimensionalSpace rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasVariableSpecialization ;
+                           rdfs:domain :DimensionalSpace ;
+                           rdfs:range :DimensionalSpace ;
+                           rdfs:comment "Associates a dimensional space to another dimensional space that is based on the former one, e.g., by structuring or specializing it."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                           rdfs:label "is basis of dimensional space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isBoundingRegionOf
+:isBoundingRegionOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/isRegionFor> ;
+                    rdfs:domain :Region ;
+                    rdfs:range :DimensionalSpace ;
+                    rdfs:comment "Associates a region with a dimensional space (possibly more specific that the one on which the region is defined) which is bounded by the region: i,e., such that the dimensional space is contained in the region."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "is bounding region of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isComponentVariableOf
+:isComponentVariableOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :derivedFromVariable ,
+                                          :hasVariableSpecializationAsComponentOf ;
+                       rdfs:domain :DerivedVariable ;
+                       rdfs:range :Variable ;
+                       rdfs:comment "Associates a variable with a variable of which the former is a component (e.g., a variable with geodetic coordinates has the component variables corrisponding to latitute and longitude)."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                       rdfs:label "is component variable of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isConstrainedVariableIn
+:isConstrainedVariableIn rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                         owl:inverseOf :isSpecializationOn ;
+                         rdfs:domain :IndependentVariable ;
+                         rdfs:range :VariableSpecialization ;
+                         rdfs:comment "Associates an independent variable with a variable specialization specification in which that variable is constrained."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "is constrained variable in"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isDataSerializationOf
+:isDataSerializationOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                       rdfs:domain :DataSource ;
+                       rdfs:range :FiniteVariable ;
+                       rdfs:comment "Associates a data source with the finite variable, i.e., the dataset, that is serialized by that source."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                       rdfs:label "is data serialization of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isDiscretizationFor
+:isDiscretizationFor rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isBasisOfDimensionalSpace ;
+                     rdfs:domain :Quantization ;
+                     rdfs:range :DiscreteDimensionalSpace ;
+                     rdfs:comment "Associates a quantization with a discrete dimensional space (based on a continuum) that has been discretized by such quantization."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                     rdfs:label "is discretization for"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isEquivalentTo
+:isEquivalentTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                rdf:type owl:SymmetricProperty ;
+                rdfs:domain :Variable ;
+                rdfs:range :Variable ;
+                rdfs:comment "Associates two variables that are mathematically equivalent, i.e. they always have the same value."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "is equivalent to"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isExactBoundingRegionOf
+:isExactBoundingRegionOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isBoundingRegionOf ,
+                                            <https://w3id.org/hacid/onto/top-level/isExactRegionFor> ;
+                         rdfs:domain :Region ;
+                         rdfs:range :DimensionalSpace ;
+                         rdfs:comment "Associates a region with a dimensional space (possibly more specific that the one on which the region is defined) which is exactly bounded by the region: i,e., such that the extension of the dimensional space matches with the region."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "is exact bounding region of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isExactResolutionOf
+:isExactResolutionOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :isResolutionOf ,
+                                        <https://w3id.org/hacid/onto/top-level/isExactRegionFor> ;
+                     rdfs:range :Quantization ;
+                     rdfs:comment "Associates a resource with a quantization of which the resource is the exact resolution."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                     rdfs:label "is exact resolution of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isInPeriodResolutionOf
+:isInPeriodResolutionOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                        rdfs:range :PeriodicBinning ;
+                        rdfs:comment "Associates a resource with a periodic binning of which the resource is the resolution adopted inside each period."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "is in period resolution of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isInputOf
+:isInputOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           rdfs:domain :Dataset ;
+           rdfs:range :DataConsumingProcess ;
+           rdfs:comment "Associates a dataset with a data consuming process that uses it."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "is input of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isOffsetOf
+:isOffsetOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+            rdfs:range :Quantization ;
+            rdfs:comment "Associates a resource with a quantization of which the resource is the offset."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "is offset of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isOutputOf
+:isOutputOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+            rdfs:domain :Dataset ;
+            rdfs:range :DataGeneratingProcess ;
+            rdfs:comment "Associates a dataset with the data generating process that produced it."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "is output of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isPeriodOf
+:isPeriodOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+            rdfs:range :PeriodicBinning ;
+            rdfs:comment "Associates a resource with a periodic binning of which the resource is the period."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "is period of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isPointOf
+:isPointOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+           rdfs:domain :Point ;
+           rdfs:range :DimensionalSpace ;
+           rdfs:comment "Associates a point with a dimensional space it is part of (any dimensional space that contains and is able to represent that point)."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "is point of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isReferencePointOf
+:isReferencePointOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                    rdfs:domain :Point ;
+                    rdfs:range :DimensionalSpace ;
+                    rdfs:comment "Associates a point with a dimensional space for which that point is used as reference to identify the points of the dimensional space (e.g., the North Pole for geodetic coordinates on Earth)."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "is reference point of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isRegionOf
+:isRegionOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+            rdfs:domain :Region ;
+            rdfs:range :DimensionalSpace ;
+            rdfs:comment "Associates a region with a dimensional space it is part of (any dimensional space that contains and is able to represent that region)."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "is region of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isRescaledVersionOfVariable
+:isRescaledVersionOfVariable rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :derivedFromVariable ;
+                             rdfs:domain :DerivedVariable ;
+                             rdfs:range :Variable ;
+                             rdfs:comment "Associates a variable with a variable of which the former is a rescaled version."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                             rdfs:label "is rescaled version of variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isResolutionOf
+:isResolutionOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/isRegionFor> ;
+                rdfs:range :Quantization ;
+                rdfs:comment "Associates a resource with a quantization of which the resource is the resolution."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "is resolution of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isSpecializationOfVariable
+:isSpecializationOfVariable rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :derivedFromVariable ,
+                                               :holdsSpecializationOfVariable ;
+                            rdfs:domain :DerivedVariable ;
+                            rdfs:range :Variable ;
+                            owl:propertyChainAxiom ( :isSpecializedAccordingTo
+                                                     :isSpecializationOn
+                                                   ) ;
+                            rdfs:comment "Associates a variable with a variable of which the former is a specialization of."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                            rdfs:label "is specialization of variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isSpecializationOn
+:isSpecializationOn rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                    rdfs:domain :VariableSpecialization ;
+                    rdfs:range :IndependentVariable ;
+                    rdfs:comment "Associates a variable specialization specification with the independent variable that is constrained."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "is specialization on"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isSpecializedAccordingTo
+:isSpecializedAccordingTo rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                          owl:inverseOf :specifiesVariableSpecializationFor ;
+                          rdfs:domain :Variable ;
+                          rdfs:range :VariableSpecialization ;
+                          rdfs:comment "Associates a variable with the specification of how it is specialized from a more generic variable."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                          rdfs:label "is specialized according to"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isSubDimensionalSpaceOf
+:isSubDimensionalSpaceOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isComponentVariableOf ;
+                         rdfs:domain :DimensionalSpace ;
+                         rdfs:range :DimensionalSpace ;
+                         rdfs:comment "Associates a dimensional space with another dimensional space of which the first one is a projection, by selecting  specific components (e.g., time is a subdimensional space of spacetime)."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "is sub dimensional space of"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isSuggestedQuantizationFor
+:isSuggestedQuantizationFor rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                            rdfs:domain :Quantization ;
+                            rdfs:range :Aggregation ;
+                            rdfs:comment "Associates a quantization with an aggregation specification for which that aggregation is suggested."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                            rdfs:label "is suggested quantization for"@en .
+
+
+###  https://w3id.org/hacid/onto/data/isVariableAggregatedBy
+:isVariableAggregatedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                        rdfs:domain :Variable ;
+                        rdfs:range :Aggregation ;
+                        rdfs:comment "Associates a variable to an aggregation specification for which its values are grouped."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "is variable aggregated by"@en .
+
+
+###  https://w3id.org/hacid/onto/data/providesValuesFor
+:providesValuesFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                   rdfs:domain :DimensionalSpace ;
+                   rdfs:range :Variable ;
+                   rdfs:comment "Associates a dimensional space with a variable defined on it, i.e. possibile values for the variable are points in that dimensional space."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "provides values for"@en .
+
+
+###  https://w3id.org/hacid/onto/data/specifiesVariableSpecializationFor
+:specifiesVariableSpecializationFor rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf <https://w3id.org/hacid/onto/top-level/associatedWith> ;
+                                    rdfs:domain :VariableSpecialization ;
+                                    rdfs:range :Variable ;
+                                    rdfs:comment "Associates a variable specialization specification with a variable for which it is used."@en ;
+                                    rdfs:label "specifies variable specialization for"@en .
+
+
+###  https://w3id.org/hacid/onto/top-level/associatedWith
+<https://w3id.org/hacid/onto/top-level/associatedWith> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/hacid/onto/top-level/hasPart
+<https://w3id.org/hacid/onto/top-level/hasPart> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/hacid/onto/data/hasEndDateTime
+:hasEndDateTime rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/hacid/onto/data/hasInPeriodResolutionValue
+:hasInPeriodResolutionValue rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :PeriodicBinning ;
+                            rdfs:comment "Associates a periodic binning with the resolution adopted inside each period (to associate a non-literal resource use data:hasInPeriodResolution)."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                            rdfs:label "has in period resolution value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasOffsetValue
+:hasOffsetValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Quantization ;
+                rdfs:comment "Optionally associates a quantization with an offset in respect to the given reference frame (to associate a non-literal resource use data:hasOffset)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "has offset value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasPeriodValue
+:hasPeriodValue rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :PeriodicBinning ;
+                rdfs:comment "Associates a periodic binning with its period (to associate a non-literal resource use data:hasPeriod)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "has period value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasPointValue
+:hasPointValue rdf:type owl:DatatypeProperty ;
+               rdfs:domain :DimensionalSpace ;
+               rdfs:comment "Associates a dimensional space with a point of that dimensional space, i.e. any point that is contained and representable in that dimensional space, directly expressed as literal (use data:hasPoint to associate a non-literal resource)."@en ;
+               rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+               rdfs:label "has point value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasRegionValue
+:hasRegionValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :DimensionalSpace ;
+                rdfs:comment "Associates a dimensional space with a region of that dimensional space, i.e. any region that is contained and representable in that dimensional space, directly expressed as literal (use data:hasRegion to associate a non-literal resource)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "has region value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasResolutionValue
+:hasResolutionValue rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Quantization ;
+                    rdfs:comment "Associates a quantization with its resolution (to associate a non-literal resource use data:hasResolution)."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "has resolution value"@en .
+
+
+###  https://w3id.org/hacid/onto/data/hasStartDateTime
+:hasStartDateTime rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/hacid/onto/data/hasURL
+:hasURL rdf:type owl:DatatypeProperty ;
+        rdfs:domain :DataSource ;
+        rdfs:range xsd:anyURI ;
+        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+        rdfs:label "has URL"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#datetime
+xsd:datetime rdf:type owl:Class .
+
+
+###  https://w3id.org/hacid/onto/data/Aggregation
+:Aggregation rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Concept> ;
+             rdfs:comment "An aggregation of a dependent variable over a variable it depends on. While the actual application of the aggregation depends on a grouping (more in general a quantization) over the independent variable, the aggregation is agnostic to the chosen quantization. It represents just that an aggregation function is to be applied along that dimension."@en ;
+             rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+             rdfs:label "Aggregation"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Binning
+:Binning rdf:type owl:Class ;
+         rdfs:subClassOf :Quantization ;
+         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+         rdfs:label "Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/BoundedDimensionalSpace
+:BoundedDimensionalSpace rdf:type owl:Class ;
+                         rdfs:subClassOf :DimensionalSpace ;
+                         rdfs:comment "A dimensional space that has finite boundaries (does not extend indefinitely), although not necessarily discrete and so still holding possibly infinite values (e.g., a finite interval of time)."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                         rdfs:label "Bounded Dimensional Space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/ConstantDimensionalSpace
+:ConstantDimensionalSpace rdf:type owl:Class ;
+                          rdfs:subClassOf :DiscreteDimensionalSpace ;
+                          rdfs:comment "A degenerate dimensional space consisting of a single value."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                          rdfs:label "Constant Dimensional Space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Continuum
+:Continuum rdf:type owl:Class ;
+           rdfs:subClassOf :DimensionalSpace ;
+           owl:disjointWith :DiscreteDimensionalSpace ;
+           rdfs:comment "A continuous dimensional space."@en ;
+           rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+           rdfs:label "Continuum"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DataConsumingProcess
+:DataConsumingProcess rdf:type owl:Class ;
+                      rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Entity> ;
+                      rdfs:comment "A process that uses some data as input."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                      rdfs:label "Data Consuming Process"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DataFormat
+:DataFormat rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Concept> ;
+            rdfs:comment "A data format that can be used to serialize a dataset (e.g., CSV). Usage of controlled vocabularies is suggested."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "Data Format"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DataGeneratingProcess
+:DataGeneratingProcess rdf:type owl:Class ;
+                       rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Entity> ;
+                       rdfs:comment "A process that generates some data as output."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                       rdfs:label "Data Generating Process"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DataSource
+:DataSource rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/InformationEntity> ;
+            rdfs:comment "A data source is a location (in a broader sense, but typically an URL or a path in a specific file system) which contains somehow a dataset, alongside with the technical specification of how to access it. The hosted dataset should be available in one or more data formats."@en ;
+            rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+            rdfs:label "Data Source"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DataTransformation
+:DataTransformation rdf:type owl:Class ;
+                    rdfs:subClassOf :DataConsumingProcess ,
+                                    :DataGeneratingProcess ;
+                    rdfs:comment "A process that gets some data as input and produces some data as output."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                    rdfs:label "Data Transformation"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Dataset
+:Dataset rdf:type owl:Class ;
+         owl:equivalentClass :FiniteVariable ;
+         rdfs:subClassOf :Variable ;
+         rdfs:comment "A dataset is a variable (which can be composed of multiple sub-variables) whose extension is finitely expressable, i.e. a finite variable. This is an alias of data:FiniteVariable to be used when this alternative phrasing fits to the context  better."@en ;
+         rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+         rdfs:label "Dataset"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DependentVariable
+:DependentVariable rdf:type owl:Class ;
+                   rdfs:subClassOf :Variable ;
+                   owl:disjointWith :IndependentVariable ;
+                   rdfs:comment "A variable that is depedent on one or more (independent) variables in the given context of use."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                   rdfs:label "Dependent Variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DerivedVariable
+:DerivedVariable rdf:type owl:Class ;
+                 rdfs:subClassOf :Variable ;
+                 rdfs:comment "A variable that has been derived mathematically from one or more variables"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                 rdfs:label "Derived Variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DimensionalSpace
+:DimensionalSpace rdf:type owl:Class ;
+                  rdfs:subClassOf :IndependentVariable ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasValuesOn ;
+                                    owl:hasSelf "true"^^xsd:boolean
+                                  ] ;
+                  rdfs:comment "A dimension that can be somehow quantified, possibly structured by a system of measurement/classification. It can be bounded (e.g., a period of time) or not (e.g., the \"whole\" time), discrete (e.g, time by days) or continuous (e.g., a time continuum). It is a special case of an independent variable, specifically the most generic variable defined on the dimensional space. This enables a simple representation when the context of use does not require the distinction between variable and dimensional space."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                  rdfs:label "Dimensional Space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/DiscreteDimensionalSpace
+:DiscreteDimensionalSpace rdf:type owl:Class ;
+                          rdfs:subClassOf :DimensionalSpace ;
+                          rdfs:comment "A dimensional space composed of discrete values. It could be inherently discrete (e.g., the set of international recognized countries) or obtained discretizing a continuous dimensional space (e.g., by sampling or partitioning). It can still have infinite (but countable) values if it is not bounded (e.g., the time sampled by hours, streching indefinetely in one or both directions)."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                          rdfs:label "Discrete Dimensional Space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/FiniteDimensionalSpace
+:FiniteDimensionalSpace rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :BoundedDimensionalSpace
+                                                                   :DiscreteDimensionalSpace
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :BoundedDimensionalSpace ,
+                                        :DiscreteDimensionalSpace ,
+                                        :FiniteVariable ;
+                        rdfs:comment "A finite dimensional space, i.e. a dimensional space that is both discrete and bounded."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "Finite Dimensional Space"@en .
+
+
+###  https://w3id.org/hacid/onto/data/FiniteVariable
+:FiniteVariable rdf:type owl:Class ;
+                rdfs:subClassOf :Variable ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <https://w3id.org/hacid/onto/top-level/hasPart> ;
+                                  owl:allValuesFrom :FiniteVariable
+                                ] ;
+                rdfs:comment "A finite variable, i.e. a variable whose set of possible values is finite. For an independent variable, it means the corresponding dimensional space is finite. For a depedent variable, it means the independent variables it depends on are finite."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "Finite Variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/GeodeticPoint
+:GeodeticPoint rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ,
+                               :Point ;
+               rdfs:comment "A point in a geodetic dimensional space, i.e. a georaphic location of the Earth surface."@en ;
+               rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+               rdfs:label "Geodetic Point"@en .
+
+
+###  https://w3id.org/hacid/onto/data/GeodeticRegion
+:GeodeticRegion rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ,
+                                :Region ;
+                rdfs:comment "A region in a geodetic dimensional space, i.e. a georaphic area of the Earth surface (e.g., the area of a country)."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "Geodetic Region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/IndependentVariable
+:IndependentVariable rdf:type owl:Class ;
+                     rdfs:subClassOf :Variable ;
+                     rdfs:comment "A variable that is indepedent (not dependent from other variables) in the given context of use."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                     rdfs:label "Independent Variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Instant
+:Instant rdf:type owl:Class ;
+         rdfs:subClassOf :Point ;
+         rdfs:comment "An instant in time, i.e. a point in a temporal dimensional space."@en ;
+         rdfs:label "Instant"@en .
+
+
+###  https://w3id.org/hacid/onto/data/IntervalSampling
+:IntervalSampling rdf:type owl:Class ;
+                  rdfs:subClassOf :Sampling ;
+                  rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                  rdfs:label "Interval Sampling"@en .
+
+
+###  https://w3id.org/hacid/onto/data/PeriodicBinning
+:PeriodicBinning rdf:type owl:Class ;
+                 rdfs:subClassOf :Binning ;
+                 rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                 rdfs:label "Periodic Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/PeriodicRegion
+:PeriodicRegion rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Region> ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "Periodic Region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Point
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Entity> ;
+       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+       rdfs:label "Point"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Quantization
+:Quantization rdf:type owl:Class ;
+              rdfs:subClassOf :DiscreteDimensionalSpace ;
+              rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+              rdfs:label "Quantization"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Region> ;
+        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+        rdfs:label "Region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/RegularBinning
+:RegularBinning rdf:type owl:Class ;
+                rdfs:subClassOf :Binning ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "Regular Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/RegularPeriodicBinning
+:RegularPeriodicBinning rdf:type owl:Class ;
+                        rdfs:subClassOf :PeriodicBinning ,
+                                        :RegularBinning ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "Regular Periodic Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Sampling
+:Sampling rdf:type owl:Class ;
+          rdfs:subClassOf :Quantization ;
+          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+          rdfs:label "Sampling"@en .
+
+
+###  https://w3id.org/hacid/onto/data/SimpleRegularBinning
+:SimpleRegularBinning rdf:type owl:Class ;
+                      rdfs:subClassOf :RegularBinning ;
+                      rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                      rdfs:label "Simple Regular Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/SingleBinBinning
+:SingleBinBinning rdf:type owl:Class ;
+                  rdfs:subClassOf :Binning ,
+                                  :ConstantDimensionalSpace ;
+                  rdfs:comment "A degenerate partitioning of a dimensional space, such that it is composed of one single region encompassin the whole dimensional space."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                  rdfs:label "Single-Bin Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/SinglePeriodicBinning
+:SinglePeriodicBinning rdf:type owl:Class ;
+                       rdfs:subClassOf :PeriodicBinning ;
+                       rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                       rdfs:label "Single Periodic Binning"@en .
+
+
+###  https://w3id.org/hacid/onto/data/TemporalRegion
+:TemporalRegion rdf:type owl:Class ;
+                rdfs:subClassOf :Region ;
+                rdfs:comment "A region in time."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "Temporal region"@en .
+
+
+###  https://w3id.org/hacid/onto/data/Variable
+:Variable rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Concept> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <https://w3id.org/hacid/onto/top-level/hasPart> ;
+                            owl:allValuesFrom :Variable
+                          ] ;
+          rdfs:comment "A variable is an abstraction that has meaning in the context of some relation between different variables and can be associated to different values in a set that is usually well defined. The set of possible values is represented by a data:DimensionalSpace; the two are linked via the data:hasValuesOn property."@en ;
+          rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+          rdfs:label "Variable"@en .
+
+
+###  https://w3id.org/hacid/onto/data/VariableSpecialization
+:VariableSpecialization rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/hacid/onto/top-level/Parameter> ;
+                        rdfs:comment "The specialization of a dependent variable by choosing a specific region for the values of one or more of the inependent variables it depends on."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                        rdfs:label "Variable Specialization"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasEndDateTime rdfs:comment "Associates a temporal region (which happens to be an interval) with its end date time."@en ;
+                rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                rdfs:label "has end date-time"@en .
+
+
+:hasStartDateTime rdfs:comment "Associates a temporal region (which happens to be an interval) with its start date time."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/hacid/onto/data> ;
+                  rdfs:label "has start date-time"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
